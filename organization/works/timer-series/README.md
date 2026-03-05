@@ -10,7 +10,7 @@
 |------|------|------|------|
 | TIMER 2026（规划中） | Apple Vision Pro 双目立体空间版本 | 2026 | [timer-2026.md](./timer-2026.md) |
 | TIMER 影像环形沉浸版 | UFO Terminal「加载…权限2」 | 2024.11-12 | [timer.md](./timer.md) |
-| TIMER 学术获奖版 | Chinagraph 2024 电子剧场二等奖 | 2024.10 | [timer.md](./timer.md) |
+| TIMER 学术获奖版 | **Chinagraph 2024 电子剧场优秀音乐作品二等奖**<br>**获奖人**：徐昊、钱誉文 | 2024.10 | [timer.md](./timer.md) |
 | TIMER 杭州首演影像版 | 杭州国际电子音乐节 2024 | 2024.09 | [timer.md](./timer.md) |
 | TIMER 创作营实验版 | UFO Terminal「加载…创作营」 | 2024.08-09 | [timer.md](./timer.md) |
 
