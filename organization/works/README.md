@@ -14,8 +14,8 @@
 | [滴流 Drop Flow 重庆展演版](./drop-flow-series/drop-flow-hangzhou.md) | 2025「流光绘影」光影科技艺术节参展作品 & 优秀作品奖 - 异形屏幕影像装置版本 | 2025.11 |
 | [滴流 Drop Flow 杭州双年展版・核心代表作](./drop-flow-series/drop-flow-hangzhou.md) | 首届中国（杭州）艺术与科技国际双年展开幕式展演 | 2025.10 |
 | [滴流 Drop Flow 竞赛获奖版](./drop-flow-series/drop-flow-hangzhou.md) | C组：学术类 / 与视觉影像结合的多媒体电子音乐作品 - 武汉音乐学院 徐昊｜一等奖 | 2025.09 |
-| [滴流 Drop Flow 3.0 展演版](./drop-flow-series/drop-flow-ufo-internal.md) | Rooooooom719 音画现场（UFO Terminal × PRE） | 2025.07 |
 | [滴流 Drop Flow 2.0创作营实验版](./drop-flow-series/drop-flow-ufo-internal.md) | UFO Terminal「加载… 创作营」内部实验展演 | 2025.08–09 |
+| [滴流 Drop Flow 3.0 展演版](./drop-flow-series/drop-flow-ufo-internal.md) | Rooooooom719 音画现场（UFO Terminal × PRE） | 2025.07 |
 | [滴流 Drop Flow 1.0原型版](./drop-flow-series/drop-flow-ufo-internal.md) | 纯黑白点云视觉早期实验版本 | 2025.01–06 |
 
 ### 时间操纵者 / 控时者 TIMER

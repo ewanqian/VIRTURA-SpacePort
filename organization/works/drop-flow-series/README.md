@@ -14,15 +14,15 @@
 
 ## 版本总览
 
-| 版本 | 说明 | 时间 | 文档 |
-|------|------|------|------|
-| 滴流 2026（规划中） | 实时引擎 + 空间交互版本 | 2026 | [drop-flow-2026.md](./drop-flow-2026.md) |
-| 滴流 重庆展演版 | 「流光绘影」光影科技艺术节优秀作品奖 | 2025.11 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
-| 滴流 杭州双年展版 | 首届中国（杭州）艺术与科技国际双年展开幕式 | 2025.10 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
-| 滴流 竞赛获奖版 | 杭州国际电子音乐作曲比赛C组一等奖 | 2025.09 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
-| 滴流 3.0 展演版 | UFO Terminal × PRE / Rooooooom719 音画现场 | 2025.07 | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
-| 滴流 2.0 创作营实验版 | UFO Terminal「加载…创作营」 | 2025.08-09 | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
-| 滴流 1.0 原型版 | 纯黑白点云视觉早期实验版本 | 2025.01-06 | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
+| 版本 | 说明 | 时间 | 贡献者 | 文档 |
+|------|------|------|--------|------|
+| 滴流 2026（规划中） | 实时引擎 + 空间交互版本 | 2026 | - | [drop-flow-2026.md](./drop-flow-2026.md) |
+| 滴流 重庆展演版 | 「流光绘影」光影科技艺术节优秀作品奖 | 2025.11 | 视觉艺术：马逍遥、王家明<br>电子音乐：徐昊 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
+| 滴流 杭州双年展版 | 首届中国（杭州）艺术与科技国际双年展开幕式 | 2025.10 | 视觉艺术：马逍遥、王家明<br>电子音乐：徐昊<br>舞蹈：沈轩 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
+| 滴流 竞赛获奖版 | 杭州国际电子音乐作曲比赛C组一等奖 | 2025.09 | 视觉艺术：马逍遥<br>电子音乐：徐昊 | [drop-flow-hangzhou.md](./drop-flow-hangzhou.md) |
+| 滴流 3.0 展演版 | UFO Terminal × PRE / Rooooooom719 音画现场 | 2025.07 | 视觉艺术：马逍遥<br>电子音乐：徐昊<br>声光装置：许思慧<br>视觉艺术/场景构成：钱誉文（主厨·能量校准） | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
+| 滴流 2.0 创作营实验版 | UFO Terminal「加载…创作营」 | 2025.08-09 | 视觉艺术：黄敏萱<br>电子音乐：徐昊 | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
+| 滴流 1.0 原型版 | 纯黑白点云视觉早期实验版本 | 2025.01-06 | 视觉艺术：钱誉文<br>电子音乐：徐昊<br>交互艺术：许思慧 | [drop-flow-ufo-internal.md](./drop-flow-ufo-internal.md) |
 
 ---
 
