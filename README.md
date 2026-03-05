@@ -39,6 +39,42 @@
 
 ---
 
+## 🏗️ 团队作品与项目
+
+### 滴流 Drop Flow 系列（7个版本）
+
+| 版本 | 说明 | 技术形态 |
+|------|------|----------|
+| [滴流 Drop Flow 2026（规划中）](organization/works/drop-flow-series/drop-flow-2026.md) | 实时引擎 + 空间交互版本 | 实时引擎、空间交互 |
+| [滴流 Drop Flow 重庆展演版](organization/works/drop-flow-series/drop-flow-hangzhou.md) | 2025「流光绘影」光影科技艺术节 - 异形屏幕影像装置 | 异形屏幕 |
+| [滴流 Drop Flow 杭州双年展版・核心代表作](organization/works/drop-flow-series/drop-flow-hangzhou.md) | 首届中国（杭州）艺术与科技国际双年展开幕式 | 360°环形大屏 |
+| [滴流 Drop Flow 竞赛获奖版](organization/works/drop-flow-series/drop-flow-hangzhou.md) | 杭州国际电子音乐节 C组一等奖 | 多媒体大屏 |
+| [滴流 Drop Flow 3.0 展演版](organization/works/drop-flow-series/drop-flow-ufo-internal.md) | Rooooooom719 音画现场（UFO Terminal × PRE）| 实时互动 |
+| [滴流 Drop Flow 2.0创作营实验版](organization/works/drop-flow-series/drop-flow-ufo-internal.md) | UFO Terminal「加载…创作营」内部实验 | 裸眼3D空间光影 |
+| [滴流 Drop Flow 1.0原型版](organization/works/drop-flow-series/drop-flow-ufo-internal.md) | 纯黑白点云视觉早期实验 | 黑白点云 |
+
+**注：滴流系列有一个未公开发布的全景视频版本，作为杭州双年展和重庆展演的中间层可引用版本。**
+
+### 时间操纵者 / 控时者 TIMER 系列（5个版本）
+
+| 版本 | 说明 | 技术形态 |
+|------|------|----------|
+| [TIMER 控时者 2026（规划中）](organization/works/timer-series/timer-2026.md) | Apple Vision Pro 双目立体空间版本 | Vision Pro沉浸 |
+| [TIMER 控时者 影像环形沉浸版](organization/works/timer-series/timer.md) | UFO Terminal「加载…权限2」展览单元 | 环形沉浸屏幕 |
+| [TIMER 控时者 学术获奖版](organization/works/timer-series/timer.md) | Chinagraph 2024 电子剧场二等奖 | 音画联动 |
+| [TIMER 控时者 杭州首演影像版](organization/works/timer-series/timer.md) | 杭州国际电子音乐节 2024 官方展演 | 21:9宽屏 |
+| [TIMER 控时者 创作营实验版](organization/works/timer-series/timer.md) | UFO Terminal「加载…创作营」实验原型 | 实验原型 |
+
+---
+
+## 🛸 太空站 Stations
+
+[MOVA美术馆](stations/mova/README.md) - Museum of Virtura Art - 数字美术馆（太空站1）  
+[林中茶屋 Seleiumeaves](stations/teahouse-forest-pavilion/README.md) - 沉浸式数字茶屋空间（太空站2）  
+[赛尼亚岛 Senia-Digital-Resort](../senia-digital-resort/README.md) - 基于 Minecraft 的空间感知体验实验（太空站4）
+
+---
+
 ## 📚 知识网络 Knowledge Network
 
 知识网络是 VIRTURA-SpacePort 的核心学习与实践体系，为沉浸式体验领域的学习者和创作者提供从入门到精通的完整路径。
@@ -46,17 +82,6 @@
 以"沉浸式体验"为核心，构建"入门启蒙→进阶实现→运营维护→可持续发展"的完整知识链条；以国际一流大学本科课程为标杆，兼顾理论深度与实操落地，重点降低Unity实操门槛，融入轻量化实操技巧与便捷插件用法。
 
 [进入知识网络 →](knowledge-network/README.md)
-
----
-
-## 团队作品与项目档案
-
-[查看团队完整作品档案 →](organization/works/README.md)
-
-- 滴流 Drop Flow（7个版本）
-- TIMER 控时者（5个版本）
-- 太空站 Stations（MOVA美术馆、林中茶屋、赛尼亚岛）
-- 工作坊与分享经历（6个）
 
 ---
 
