@@ -181,8 +181,9 @@
 
 ## 研究方向
 
-- 从"被动观看"到"主动探索"的观演转译
-- 环形投影与多声道构成的"沉浸式蒙太奇"
+- [智力装备理论](../knowledge-network/our-theory/intellectual-equipment/README.md)
+- [数字情感容器理论](../knowledge-network/our-theory/digital-emotion-container/README.md)
+- [工程控制论](../knowledge-network/our-theory/engineering-cybernetics/README.md)
 
 ---
 
