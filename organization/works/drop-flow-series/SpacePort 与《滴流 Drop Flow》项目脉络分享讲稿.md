@@ -548,6 +548,9 @@ VIRTURA 更像一个持续变化的协作结构，而不是一个从头到尾固
 - 滴流 UFO 内部展演完整实录（2025.05.14 发布）
   https://www.bilibili.com/video/BV1PREczgEzC/
 
+- `Timer / 时间操纵者` 公开视频
+  https://www.bilibili.com/video/BV1SWvhenErp/
+
 ### 建议补充的现场素材
 
 - Rooooooom719 现场片段
@@ -564,6 +567,56 @@ VIRTURA 更像一个持续变化的协作结构，而不是一个从头到尾固
 3. 用 Rooooooom719 讲“公开演出语言成熟”
 4. 用杭州和重庆讲“作品变成空间适配方法”
 5. 用其他项目片段讲“方法如何外溢到别的合作和作品里”
+
+### 已核对的公开链接
+
+以下链接分为三类：
+
+- 视频：优先用 B 站或项目站，方便直播直接播放
+- 官方活动页：优先用主办方官网、政府页、项目官网做事实核对
+- 微信原文：仅放搜索中能稳定定位到的链接；没有稳定检索到原文的，先用官网替代
+
+#### 1. 《滴流 Drop Flow》
+
+- 1.0 技术验证视频：
+  https://www.bilibili.com/video/BV12tRrYTEYB
+- UFO 内部实验版 / 实录视频：
+  https://www.bilibili.com/video/BV1PREczgEzC/
+
+#### 2. 杭州双年展 / 余杭美术馆
+
+- 中国美术学院官方开幕报道：
+  https://www.caa.edu.cn/info/1198/171082.htm
+- 余杭区官方报道：
+  https://www.yuhang.gov.cn/art/2025/10/19/art_1532136_59159551.html
+
+#### 3. 重庆“流光绘影”光影科技艺术节
+
+- 重庆市政府活动预告：
+  https://cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychdyg/202511/t20251107_15148371.html
+- 中新网重庆开幕报道：
+  https://www.cq.chinanews.com.cn/news/2025/1109/39-50443.html
+
+#### 4. Kashiwa Daisuke / Can Festival / 深圳 BO LIVE
+
+- Kashiwa Daisuke 官方站活动页：
+  https://kashiwadaisuke.com/2025/10/28/can-festival-shenzhen-bo-live/
+- 可定位到的微信原文链接：
+  https://mp.weixin.qq.com/s/dJ2Zqer8IABJHwoEIyvLfw
+
+#### 5. 《Dérive 双城记：Digital Dérive》
+
+- 项目官网 / 在线展入口：
+  https://cityfactory.site/
+
+### 当前还没稳定检索到的微信原文
+
+- UFO Terminal「加载…」相关原文
+- 杭州双年展官方公众号原文
+- 重庆“流光绘影”官方公众号原文
+- `Timer` 与《观察与共生》的公众号原文
+
+如果你手里有这些公众号收藏或原始海报，我后面可以继续把它们补成“视频 + 官网 + 微信原文”完整三联证据链。
 
 ---
 
