@@ -158,6 +158,27 @@ YYYYMMDD_项目名_地点_类型_序号.ext
 - 海报：`2025“流光绘影”光影科技艺术节海报.jpg`
 - 获奖证书：`滴流 2025流光绘影光影科技艺术节获奖证书.jpg`
 
+## 当前已建好的目录骨架
+
+- `_inbox/`
+- `drop-flow-1.0/stage/`
+- `drop-flow-ufo/stage/`
+- `drop-flow-ufo/social/`
+- `drop-flow-hangzhou/stage/`
+- `drop-flow-hangzhou/rehearsal/`
+- `drop-flow-luminous/docs/`
+- `kashiwa-shenzhen/stage/`
+- `timer/stage/`
+
+你现在可以直接把图片先扔进 `_inbox/`，或者按项目扔进上面这些目录。
+
+## 现阶段找图最快的顺序
+
+1. 先截你自己 B 站视频封面和关键帧
+2. 再截朋友圈里已经发过的现场图
+3. 再去官方活动页抓海报、舞台照、新闻配图
+4. 最后再补公众号原文和视频号封面图
+
 ---
 
 *整理日期：2026年3月14日*
