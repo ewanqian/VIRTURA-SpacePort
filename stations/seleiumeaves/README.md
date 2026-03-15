@@ -1,7 +1,5 @@
 # 雾中茶屋 Seleiumeaves
 
-> 英文版本：[README-en.md](README-en.md)
-
 ---
 
 ## 项目介绍
@@ -32,7 +30,7 @@
 
 ## 知识网络联动
 
-- [空间感知体验研究](../knowledge-network/01-discover/02-spatial-experience/README.md)
+- [空间感知体验研究](../../knowledge-network/01-discover/02-spatial-experience/README.md)
 
 ---
 

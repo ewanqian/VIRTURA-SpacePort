@@ -1,7 +1,5 @@
 # 工具层 Tools
 
-> 英文版本：[README-en.md](README-en.md)
-
 ---
 
 ## 工具层总览
@@ -25,7 +23,7 @@ VIRTURA 太空港体系的工具集合，支撑沉浸式体验项目的全流程
 
 [链接到 SceneForge 仓库](https://github.com/ewanqian/SceneForge)
 
-**对应知识网络阶段**：[02-build 实现构建阶段](../knowledge-network/02-build/sceneforge.md)
+**对应知识网络阶段**：[02-build 实现构建阶段](../knowledge-network/02-build/README.md)
 
 ### LiveForge
 
@@ -33,7 +31,7 @@ VIRTURA 太空港体系的工具集合，支撑沉浸式体验项目的全流程
 
 [链接到 LiveForge 仓库](https://github.com/ewanqian/LiveForge)
 
-**对应知识网络阶段**：[02-build 实现构建阶段](../knowledge-network/02-build/liveforge.md)
+**对应知识网络阶段**：[02-build 实现构建阶段](../knowledge-network/02-build/README.md)
 
 ---
 

@@ -1,7 +1,5 @@
 # MOVA美术馆 MOVA Art Museum
 
-> 英文版本：[README-en.md](README-en.md)
-
 ---
 
 ## MOVA美术馆
@@ -14,13 +12,13 @@ Museum of Virtura Art - 数字美术馆。
 
 联动知识网络的作品展示区，重点展示使用者用 Unity+插件快速制作的第一个 Demo 作品。
 
-[Demo作品展示区 →](demo-showcase/)
+Demo作品展示区内容整理中。
 
 ---
 
 ## 知识网络联动
 
-- [你的第一个 Demo →](../knowledge-network/01-discover/04-first-demo/showcase.md)
+- 相关 Demo 展示与案例整理中。
 
 ---
 

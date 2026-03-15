@@ -1,7 +1,5 @@
 # 组织层 Organization
 
-> 英文版本：[README-en.md](README-en.md)
-
 ---
 
 ## 组织层总览
@@ -36,7 +34,7 @@ VIRTURA 太空港体系的组织与协作层。
 
 ### 问题反馈
 
-使用知识网络的 [反馈模板](../knowledge-network/01-discover/04-first-demo/feedback-template.md) 提交问题。
+当前请直接使用仓库 Issues 或相关页面说明提交反馈。
 
 **重点收集**：
 - Unity 插件使用问题

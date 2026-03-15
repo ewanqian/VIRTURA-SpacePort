@@ -44,9 +44,9 @@
 
 | 作品 | 描述 | 状态 |
 |------|------|------|
-| [MOVA美术馆](../stations/mova/README.md) | Museum of Virtura Art - 数字美术馆（太空站1） | 概念验证 |
-| [林中茶屋 Seleiumeaves](../stations/teahouse-forest-pavilion/README.md) | TEAHOUSE Forest Pavilion - 沉浸式数字茶屋空间（太空站2）⚡ 高优先级 | 开发中 |
-| [赛尼亚岛 Senia-Digital-Resort](../senia-digital-resort/README.md) | 基于 Minecraft 的空间感知体验实验（太空站4） | 维护中 |
+| [MOVA美术馆](../../stations/mova/README.md) | Museum of Virtura Art - 数字美术馆（太空站1） | 概念验证 |
+| [林中茶屋 Seleiumeaves](../../stations/teahouse-forest-pavilion/README.md) | TEAHOUSE Forest Pavilion - 沉浸式数字茶屋空间（太空站2）⚡ 高优先级 | 开发中 |
+| [赛尼亚岛 Senia-Digital-Resort](https://github.com/ewanqian/Senia-Digital-Resort) | 基于 Minecraft 的空间感知体验实验（太空站4） | 维护中 |
 
 ---
 

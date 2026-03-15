@@ -1,7 +1,5 @@
 # VIRTURA SPACE PORT | 林中茶屋 Seleiumeaves
 
-> 英文版本：[README-en.md](README-en.md)
-
 ---
 
 ## 项目介绍
@@ -116,7 +114,7 @@
 
 ## 相关项目
 
-- [Senia-Digital-Resort 赛尼亚岛数字度假旅游区](../senia-digital-resort/README.md)
+- [Senia-Digital-Resort 赛尼亚岛数字度假旅游区](https://github.com/ewanqian/Senia-Digital-Resort)
 
 ---
 
