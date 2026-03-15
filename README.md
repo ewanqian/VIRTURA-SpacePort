@@ -20,9 +20,9 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 按照你的目的，可以直接走下面几条路线:
 
-- 第一次进入: 先看仓库分工，再进入团队主入口
-- 想看作品与项目线索: 先看作品档案与相关站点
-- 想看方法与知识结构: 先看知识网络
+- 第一次进入: 先看仓库分工，再进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
+- 想看作品与项目线索: 先看 [organization/works](./organization/works/README.md)
+- 想看方法与知识结构: 先看 [knowledge-network](./knowledge-network/README.md)
 - 想看工具线: 直接去 [SceneForge](https://github.com/ewanqian/SceneForge)
 - 想看公开发布内容: 去 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
@@ -40,8 +40,8 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 如果你希望在最短时间内理解整个公开体系，建议按这个顺序阅读:
 
 1. [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
-2. `organization/works`
-3. `knowledge-network`
+2. [organization/works](./organization/works/README.md)
+3. [knowledge-network](./knowledge-network/README.md)
 4. [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 5. [SceneForge](https://github.com/ewanqian/SceneForge)
 
