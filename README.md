@@ -1,73 +1,49 @@
 # VIRTURA-SpacePort
 
-VIRTURA-SpacePort 是 VIRTURA 的公共导览前台、公开档案入口和叙事门面。
+VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
-这里承担四件事：
+它更像一个前厅与导航台: 帮助第一次进入的人快速建立方向感，也帮助外部访客找到项目、知识网络和公开档案的入口。
 
-- 新人欢迎
-- 生态导览
-- 项目导航
-- 公开资料沉淀
+## 如何使用这里
 
-这里不承担团队本体和产品研发主线。  
-团队主入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担。  
-产品主线由 [SceneForge](https://github.com/ewanqian/SceneForge) 承担。
+你可以把这里理解成三层功能叠在一起:
 
-## 当前状态
+- 公共导览前台
+- 公开档案入口
+- 知识网络主宿主
 
-状态：公开维护中  
-定位：公共导览前台 / 档案数据库 / ARG 式公开门面
+如果你想先认识团队本体，请进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。  
+如果你想看当前最明确的工具主线，请进入 [SceneForge](https://github.com/ewanqian/SceneForge)。  
+如果你想看项目文章、复盘与公告，请进入 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)。
 
-这不是一个“生态总平台”，也不是一个“技术中台总控仓”。
-它更接近一个持续更新的公开前台：新人可以从这里进入体系，外部可以从这里理解我们的项目、方法、档案与公开世界观包装。
+## Start From Here
 
-## 我们是谁
+按照你的目的，可以直接走下面几条路线:
 
-我们把这里作为 VIRTURA 的公共导览层使用。
+- 第一次进入: 先看仓库分工，再进入团队主入口
+- 想看作品与项目线索: 先看作品档案与相关站点
+- 想看方法与知识结构: 先看知识网络
+- 想看工具线: 直接去 [SceneForge](https://github.com/ewanqian/SceneForge)
+- 想看公开发布内容: 去 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
-你可以把它理解为三个东西的组合：
+## What Lives Here
 
-- 公共前厅
-- 公开档案库
-- 带叙事包装的项目导航页
+这里目前主要承接四类内容:
 
-如果你想直接认识团队，请看 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。  
-如果你想了解个人作品与个人方法，请看 [portfolio](https://github.com/ewanqian/portfolio)。  
-如果你想看当前唯一明确的产品主线，请看 [SceneForge](https://github.com/ewanqian/SceneForge)。
+- 团队生态入口与仓库分工说明
+- 项目与站点级公开档案
+- `knowledge-network` 相关知识结构
+- 带叙事包装的公开门面材料
 
-## 从哪里开始
+## Suggested Reading Route
 
-根据你的身份，可以直接从这里进入：
+如果你希望在最短时间内理解整个公开体系，建议按这个顺序阅读:
 
-- 第一次来：先看仓库分工与入口路线
-- 想先认识团队：直接进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
-- 想看我们做过什么：先看作品档案
-- 想看我们如何思考：先看理论与方法
-- 想看工具主线：直接进入 [SceneForge](https://github.com/ewanqian/SceneForge)
-
-## 你可以在这里看到什么
-
-### 1. 团队入口
-
-- 团队是谁
-- 谁在参与
-- 如何合作与进入
-
-### 2. 公开档案
-
-- 作品档案
-- 项目脉络
-- 研究与方法
-- 公开世界观材料
-
-### 3. 项目导航
-
-如果你是第一次接触，建议按下面顺序阅读：
-
-1. 团队与入口说明
-2. 作品与项目档案
-3. 研究与理论材料
-4. 具体工具仓库
+1. [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
+2. `organization/works`
+3. `knowledge-network`
+4. [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
+5. [SceneForge](https://github.com/ewanqian/SceneForge)
 
 ## 仓库分工
 
@@ -83,36 +59,26 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台、公开档案入口和叙�
 | [RepoForge](https://github.com/ewanqian/RepoForge) | 公开治理工具壳 | 对外展示自动化运维能力 |
 | Forge | 私有内部治理仓 | 实际工作流、缓存、自动化配置 |
 
-## 关于 VIRTURA-Team
+## Important Boundary
 
-`VIRTURA-Team` 的新人欢迎、团队入口、基础协作说明将逐步合并到 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。
+这里不是团队本体仓，也不是产品研发主线仓。
 
-这样做的原因很简单：
+- 团队主入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担
+- 产品主线由 [SceneForge](https://github.com/ewanqian/SceneForge) 承担
+- `knowledge-network` 与较详细的旧档案仍以这里为主宿主
 
-- 减少入口重复
-- 降低维护成本
-- 让外部面对一个清晰的团队主入口和一个清晰的公共前台
+## Current Status
 
-## 关于世界观与公开叙事
+当前版本处于公开维护中。重点不是扩张概念，而是让已有资料更易读、更易导航、更适合长期沉淀。
 
-这里保留 ARG 式表达和世界观包装，但它们只服务于入口和档案，不再承担“平台化扩张”的职责。
-
-公开叙事可以存在，但必须服从下面的边界：
-
-- 不代替真实产品
-- 不制造重复产品线
-- 不把组织想象写成已完成事实
-
-## 当前优先阅读
+## Recommended Entrances
 
 - [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
-- 作品档案
-- 我们的理论与方法
+- [organization/works/README.md](./organization/works/README.md)
+- [knowledge-network/README.md](./knowledge-network/README.md)
 - [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 - [SceneForge](https://github.com/ewanqian/SceneForge)
 
-## 说明
+## Note On Public Narrative
 
-这个仓库会持续更新，但更新目标不是堆概念，而是沉淀公开可读、可引用、可导航的资料。
-
-如果你想看核心工具进展，请直接看 [SceneForge](https://github.com/ewanqian/SceneForge)。
+这里仍然保留带有叙事性的表达，但叙事只服务于导览与公开档案，不替代真实的团队结构、项目状态和产品边界。
