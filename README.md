@@ -1,43 +1,46 @@
 # VIRTURA-SpacePort
 
-VIRTURA-SpacePort 是团队的公开入口、档案数据库和叙事门面。
+VIRTURA-SpacePort 是 VIRTURA 的公共导览前台、公开档案入口和叙事门面。
 
 这里承担四件事：
 
 - 新人欢迎
-- 团队介绍
+- 生态导览
 - 项目导航
 - 公开资料沉淀
 
-这里不承担产品研发主线。  
+这里不承担团队本体和产品研发主线。  
+团队主入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担。  
 产品主线由 [SceneForge](https://github.com/ewanqian/SceneForge) 承担。
 
 ## 当前状态
 
 状态：公开维护中  
-定位：团队入口 / 档案数据库 / ARG 式公开门面
+定位：公共导览前台 / 档案数据库 / ARG 式公开门面
 
 这不是一个“生态总平台”，也不是一个“技术中台总控仓”。
-它更接近一个持续更新的公开前台：新人可以从这里认识我们，外部可以从这里理解我们的项目、方法和档案。
+它更接近一个持续更新的公开前台：新人可以从这里进入体系，外部可以从这里理解我们的项目、方法、档案与公开世界观包装。
 
 ## 我们是谁
 
-我们把这里作为团队公开层使用。
+我们把这里作为 VIRTURA 的公共导览层使用。
 
 你可以把它理解为三个东西的组合：
 
-- 团队入口
+- 公共前厅
 - 公开档案库
 - 带叙事包装的项目导航页
 
-如果你想了解个人作品与个人方法，请看 [portfolio](https://github.com/ewanqian/portfolio)。
+如果你想直接认识团队，请看 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。  
+如果你想了解个人作品与个人方法，请看 [portfolio](https://github.com/ewanqian/portfolio)。  
 如果你想看当前唯一明确的产品主线，请看 [SceneForge](https://github.com/ewanqian/SceneForge)。
 
 ## 从哪里开始
 
 根据你的身份，可以直接从这里进入：
 
-- 第一次来：先看团队入口与仓库分工
+- 第一次来：先看仓库分工与入口路线
+- 想先认识团队：直接进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 - 想看我们做过什么：先看作品档案
 - 想看我们如何思考：先看理论与方法
 - 想看工具主线：直接进入 [SceneForge](https://github.com/ewanqian/SceneForge)
@@ -46,9 +49,9 @@ VIRTURA-SpacePort 是团队的公开入口、档案数据库和叙事门面。
 
 ### 1. 团队入口
 
-- 我们是谁
-- 我们在做什么
-- 新人如何开始理解这个体系
+- 团队是谁
+- 谁在参与
+- 如何合作与进入
 
 ### 2. 公开档案
 
@@ -73,20 +76,22 @@ VIRTURA-SpacePort 是团队的公开入口、档案数据库和叙事门面。
 | 仓库 | 角色 | 说明 |
 |---|---|---|
 | [portfolio](https://github.com/ewanqian/portfolio) | 个人入口 | 个人身份、作品与对外展示 |
-| [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort) | 团队入口 | 公开入口、档案数据库、叙事门面 |
+| [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) | 团队主入口 | 团队、成员、作品、研究与合作入口 |
+| [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort) | 公共导览前台 | 公开入口、档案数据库、叙事门面 |
+| [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) | 发布出口 | 研究文章、项目复盘、公告与媒体资料 |
 | [SceneForge](https://github.com/ewanqian/SceneForge) | 核心产品 | 网页端场景查看器 / 舞台预演器 |
 | [RepoForge](https://github.com/ewanqian/RepoForge) | 公开治理工具壳 | 对外展示自动化运维能力 |
 | Forge | 私有内部治理仓 | 实际工作流、缓存、自动化配置 |
 
 ## 关于 VIRTURA-Team
 
-`VIRTURA-Team` 的新人欢迎、团队入口、基础协作说明将逐步合并到这里。
+`VIRTURA-Team` 的新人欢迎、团队入口、基础协作说明将逐步合并到 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。
 
 这样做的原因很简单：
 
 - 减少入口重复
 - 降低维护成本
-- 让外部只面对一个清晰的团队入口
+- 让外部面对一个清晰的团队主入口和一个清晰的公共前台
 
 ## 关于世界观与公开叙事
 
@@ -100,9 +105,10 @@ VIRTURA-SpacePort 是团队的公开入口、档案数据库和叙事门面。
 
 ## 当前优先阅读
 
-- 团队入口与说明
+- [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 - 作品档案
 - 我们的理论与方法
+- [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 - [SceneForge](https://github.com/ewanqian/SceneForge)
 
 ## 说明
