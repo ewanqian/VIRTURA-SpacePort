@@ -36,7 +36,7 @@ Timer系列作品"指缝中流出时间的沙粒"，将观众置入一个巨大�
 
 ## 相关版本
 
-- [TIMER 影像环形沉浸版](./timer.md) - UFO Terminal「加载…权限2」
+- [TIMER 影像环形版](./timer.md) - UFO Terminal「加载…权限2」
 - [TIMER 杭州首演影像版](./timer.md) - 杭州国际电子音乐节 2024
 - [TIMER 创作营实验版](./timer.md) - UFO Terminal「加载…创作营」
 
