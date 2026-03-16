@@ -23,6 +23,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - 第一次进入: 先看仓库分工，再进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 - 想看作品与项目线索: 先看 [organization/works](./organization/works/README.md)
 - 想看方法与知识结构: 先看 [knowledge-network](./knowledge-network/README.md)
+- 想看活动、沙龙与公共交流记录: 先看 [stations/space-salon](./stations/space-salon/README.md)
 - 想看工具线: 直接去 [SceneForge](https://github.com/ewanqian/SceneForge)
 - 想看公开发布内容: 去 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
@@ -33,6 +34,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - 团队生态入口与仓库分工说明
 - 项目与站点级公开档案
 - `knowledge-network` 相关知识结构
+- 活动、沙龙与公共交流档案
 - 带叙事包装的公开门面材料
 
 ## Suggested Reading Route
@@ -42,8 +44,9 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 1. [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 2. [organization/works](./organization/works/README.md)
 3. [knowledge-network](./knowledge-network/README.md)
-4. [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
-5. [SceneForge](https://github.com/ewanqian/SceneForge)
+4. [stations/space-salon](./stations/space-salon/README.md)
+5. [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
+6. [SceneForge](https://github.com/ewanqian/SceneForge)
 
 ## 仓库分工
 
@@ -76,6 +79,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 - [organization/works/README.md](./organization/works/README.md)
 - [knowledge-network/README.md](./knowledge-network/README.md)
+- [stations/space-salon/README.md](./stations/space-salon/README.md)
 - [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 - [SceneForge](https://github.com/ewanqian/SceneForge)
 

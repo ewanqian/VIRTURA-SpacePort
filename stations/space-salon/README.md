@@ -41,6 +41,14 @@ VIRTURA 空间茶话会系列档案入口。
 - [VIRTURA 空间茶话会 Vol.1｜云端续章，把创作的漫谈搬进线上客厅](./vol-01-cloud-sequel/README.md)
 - [VIRTURA 空间茶话会 Vol.2｜筹备中](./vol-02-planning/README.md)
 
+## Reading Advice
+
+如果你是第一次看这个系列，建议按下面顺序进入:
+
+1. 先看某一期的 `README.md`
+2. 再看 `public-release.md` 了解对外版本
+3. 最后再看 `internal-full-record.md` 理解完整整理稿
+
 ## Template
 
 - [Activity Template](./activity-template.md)
