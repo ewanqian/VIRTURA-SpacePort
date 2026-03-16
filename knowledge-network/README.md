@@ -40,68 +40,29 @@
 
 ## 10个知识领域大类
 
-```
-知识网络（10个知识领域）
+如果你不想直接扎进长目录，先从下面的领域导航开始：
 
-1. 空间计算/设备
-   - Apple Vision Pro（最短路径：快速发布第一个Demo）
-   - Meta Quest
-   - 交互逻辑
-   
-2. Blender实时引擎
-   - Eevee快速渲染
-   - 几何节点
-   - 模拟节点（与音画互动交叉 → 特色内容）
-   - 光影/材质
-   
-3. 音画互动
-   - 音频分析（多种方法：BPM/MIDI/频谱）
-   - 音频驱动视觉
-   - OSC/时间码同步
-   - 与几何节点交叉 → 特色内容
-   
-4. 3D重建/可视化
-   - 物体扫描
-   - AI生成3D
-   - 高斯点云
-   
-5. 网页端/发布
-   - Spline（快速网页Demo）
-   - Three.js/Babylon.js
-   - 网页端性能优化（烘焙技巧）
-   - Blender→网页工作流
-   
-6. 生产管线
-   - 扫描→AI→高斯流程
-   - 跨软件联动（Blender→Unity→网页）
-   - SceneForge联动
-   - LiveForge联动
-   - 工程化管理
-   
-7. 角色体系
-   - 导演思维
-   - 叙事设计
-   - 分镜头脚本
-   - 服务设计
-   - 刻意练习科目
+| 领域 | 更适合谁先看 | 入口 |
+|---|---|---|
+| 空间计算 / 设备 | 想尽快做出第一个设备端 Demo 的人 | [spatial-computing](./spatial-computing/README.md) |
+| Blender 实时引擎 | 想把 Blender 当成可复用的实时创作底座的人 | [blender-realtime](./blender-realtime/README.md) |
+| 音画互动 | 想把声音和视觉真正连起来的人 | [audio-visual](./audio-visual/README.md) |
+| 3D 重建 / 可视化 | 想从扫描、生成到高斯点云的人 | [3d-reconstruction](./3d-reconstruction/README.md) |
+| 网页端 / 发布 | 想把内容迁到网页端和公开入口的人 | [web-publishing](./web-publishing/README.md) |
+| 生产管线 | 想看跨软件联动和工程化组织的人 | [production-pipeline](./production-pipeline/README.md) |
+| 角色体系 | 想补导演、叙事、分镜和创作软技能的人 | [role-system](./role-system/README.md) |
+| 学习路线 | 想从零到一按路径推进的人 | [learning-paths](./learning-paths/README.md) |
+| 现场表演 / 剧场艺术 | 想把空间感知带回演出和现场的人 | [live-performance](./live-performance/README.md) |
+| 我们的理论 / 后日谈 | 想直接读团队自己的方法和反思的人 | [our-theory](./our-theory/README.md) |
 
-8. 现场表演/剧场艺术 ⚡ 新增
-   - 具身理论
-   - 经典案例（rhizomatiks syn等）
-   - 2026年论坛
-   - 设计理论
-   
-9. 我们的理论/后日谈 ⚡ 新增
-   - 我们的心得体会
-   - 项目复盘
-   - 技术心得
-   - 设计思考
-   
-10. 学习路线
-    - 最短路径（零基础→第一个作品）
-    - 进阶路径
-    - 困境预设 + 解决方案
-```
+## Recommended First Routes
+
+如果你是第一次进入，这里更推荐直接按目的选路线，而不是从头读到尾：
+
+- 想尽快做出第一个作品：先看 [learning-paths](./learning-paths/README.md)
+- 想做视觉与声音联动：先看 [audio-visual](./audio-visual/README.md)
+- 想把内容迁到网页端：先看 [web-publishing](./web-publishing/README.md)
+- 想理解团队自己的方法论：先看 [our-theory](./our-theory/README.md)
 
 ## 如何参与建设
 
@@ -116,6 +77,10 @@
 ---
 
 ## 知识领域详解
+
+下面这部分更接近长期资料目录。
+
+如果你只是第一次进入，不一定需要从这里开始通读；它更适合在你已经选定一个方向之后，再往下钻。
 
 ### 1. 空间计算/设备
 
