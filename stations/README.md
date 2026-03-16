@@ -59,9 +59,12 @@
 
 这条线承接线上演出空间、音乐与音画实验、公开测试以及后续更完整的线上线下演出节点。
 
-当前代表入口：
+它最早能追到 `2022` 年的 `VRChat` 地图构想。现在公开活动里看到的 `Alpha` 和 `Session`，是这条线被收回到更轻的三维内容直播间之后，第一批真正对外开放的测试。
 
-- [太空气球线上演出空间 Alpha 测试](https://luma.com/go6kxnnw)
+当前入口：
+
+- [太空气球 / Baloon Live Space 系列页](./baloon-live-space/README.md)
+- [太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set](https://luma.com/go6kxnnw)
 
 ### 2. Space Salon / 数字沙龙 / 交流客厅
 
@@ -112,16 +115,16 @@
 
 | 日期 | 节点 | 类型 | 入口 |
 |---|---|---|---|
-| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个最近还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | [Luma](https://luma.com/l0ga9o3i) |
-| 2026-04-24 | Digital Library / Digital Stage 公开说明 02｜知识网络怎么整理成别人真的能用的入口 | 线上公开说明 | [Luma](https://luma.com/8qfq3vpr) |
+| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | [Luma](https://luma.com/l0ga9o3i) |
+| 2026-04-24 | Digital Library / Digital Stage 公开说明 02｜知识网络不是目录，怎么整理成别人真能用的入口 | 线上公开说明 | [Luma](https://luma.com/8qfq3vpr) |
 | 2026-04-18 | 太空气球 Session 02｜线上 live set 试放与视觉共演夜 | 线上音画实验夜 | [Luma](https://luma.com/wsafafy2) |
 | 2026-04-17 | 发布与观看入口开放 01｜Drop Flow 版本观看室开放 | 观看入口上线 | [Luma](https://luma.com/isjom11h) |
-| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一段最近看到的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | [Luma](https://luma.com/wqi71c4f) |
-| 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜AI 时代怎么把作品、材料和过程整理成能继续工作的库 | 线上公开说明 | [Luma](https://luma.com/kjyluf41) |
-| 2026-04-04 | 在制内容审计会 01｜把正在做的东西拿出来，我们一起挑问题 | 小范围审计 / 批评会 | [Luma](https://luma.com/3be89q8l) |
-| 2026-04-03 | MOVA 展映 01｜我们第一次把 GitHub 里的内容整理成数字展览 | 线上展映开启 | [Luma](https://luma.com/kw41rtby) |
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜AI 时代，我们怎么整理自己的作品、过程和知识 | 交流客厅 / 小范围社群互动 | [Luma](https://luma.com/jy5fef4u) |
-| 2026-03-21 | 太空气球线上演出空间 Alpha 测试 | 线上演出空间测试 / 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
+| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | [Luma](https://luma.com/wqi71c4f) |
+| 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜作品、过程和仓库，到底怎么整理才不会越积越乱 | 线上公开说明 | [Luma](https://luma.com/kjyluf41) |
+| 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 小范围审计 / 批评会 | [Luma](https://luma.com/3be89q8l) |
+| 2026-04-03 | MOVA 展映 01｜把 GitHub 里的东西真的排成一次能看的数字展览 | 线上展映开启 | [Luma](https://luma.com/kw41rtby) |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | [Luma](https://luma.com/jy5fef4u) |
+| 2026-03-21 | 太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set | 线上演出空间测试 / 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
 | 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | [Space Salon](./space-salon/vol-01-cloud-sequel/README.md) |
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | [Space Salon](./space-salon/vol-00-archive-and-distance/README.md) |
 | 待定 | VIRTURA 空间茶话会 Vol.2 | 系列筹备中 | [Space Salon](./space-salon/vol-02-planning/README.md) |
@@ -141,10 +144,10 @@
 
 | 日期 | 节点 | 线 | 说明 |
 |---|---|---|---|
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜AI 时代，我们怎么整理自己的作品、过程和知识 | Space Salon | 把“数字归档”这件事聊实 |
-| 2026-04-03 | MOVA 展映 01｜我们第一次把 GitHub 里的内容整理成数字展览 | MOVA | 让线上展映成为真实发布线 |
-| 2026-04-04 | 在制内容审计会 01｜把正在做的东西拿出来，我们一起挑问题 | 审计会 | 把问题直接拿上桌 |
-| 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜AI 时代怎么把作品、材料和过程整理成能继续工作的库 | 公开说明 | 讲清内容管理和仓库结构 |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | Space Salon | 把“数字归档”这件事聊实 |
+| 2026-04-03 | MOVA 展映 01｜把 GitHub 里的东西真的排成一次能看的数字展览 | MOVA | 让线上展映成为真实发布线 |
+| 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 审计会 | 把问题直接拿上桌 |
+| 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜作品、过程和仓库，到底怎么整理才不会越积越乱 | 公开说明 | 讲清内容管理和仓库结构 |
 | 2026-04-17 | [发布与观看入口开放 01｜Drop Flow 版本观看室开放](https://luma.com/isjom11h) | 发布 | 把作品版本公开线真正接进时间线 |
 | 2026-05-09 | 太空气球 Beta 共测夜 | 太空气球 | 把 Alpha 的反馈推进到第二轮联调 |
 
@@ -169,6 +172,7 @@
 ## 站点列表
 
 - [Space Salon](./space-salon/README.md)
+- [Baloon Live Space](./baloon-live-space/README.md)
 - [MOVA](./mova/README.md)
 - [Seleiumeaves](./seleiumeaves/README.md)
 - [Teahouse Forest Pavilion](./teahouse-forest-pavilion/README.md)

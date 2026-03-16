@@ -43,15 +43,16 @@ VIRTURA 空间茶话会系列档案入口。
 
 - [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)：当前公开活动会持续从这里对外发布，也是最简单的后续活动更新入口
 - [VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方](https://luma.com/iehkdjr0)
-- [太空气球线上演出空间 Alpha 测试](https://luma.com/go6kxnnw)
+- [太空气球 / Baloon Live Space 系列页](../baloon-live-space/README.md)
+- [太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set](https://luma.com/go6kxnnw)
 
 ## 系列时间线
 
 | 日期 | 节点 | 形式 | 状态 | 入口 |
 |---|---|---|---|---|
-| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个最近还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | 已公开 | [Luma](https://luma.com/l0ga9o3i) |
-| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一段最近看到的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | 已公开 | [Luma](https://luma.com/wqi71c4f) |
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜AI 时代，我们怎么整理自己的作品、过程和知识 | 交流客厅 / 小范围社群互动 | 已公开 | [Luma](https://luma.com/jy5fef4u) |
+| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | 已公开 | [Luma](https://luma.com/l0ga9o3i) |
+| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | 已公开 | [Luma](https://luma.com/wqi71c4f) |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | 已公开 | [Luma](https://luma.com/jy5fef4u) |
 | 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | 已归档 | [查看](./vol-01-cloud-sequel/README.md) |
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | 已归档 | [查看](./vol-00-archive-and-distance/README.md) |
 | 待定 | VIRTURA 空间茶话会 Vol.2 | 待定 | 筹备中 | [查看](./vol-02-planning/README.md) |
@@ -79,9 +80,9 @@ VIRTURA 空间茶话会系列档案入口。
 ## 接下来几期分别偏什么
 
 1. `Vol.3`
-   更偏 AI 时代下的数字归档、仓库管理和内容整理。
+   更偏 AI 热点之外的真实工作流，聊作品、过程、旧项目和仓库到底怎么整理。
 2. `Vol.4`
-   更偏一起放最近看到的东西，一块聊最近在做什么。
+   更偏一起放最近反复在看的东西，一块聊它为什么值得看。
 3. `Vol.5`
    更偏把最近还没讲顺、还没做完的东西带来，继续拆、继续聊。
 
