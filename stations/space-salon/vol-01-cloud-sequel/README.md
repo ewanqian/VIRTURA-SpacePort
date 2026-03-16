@@ -14,6 +14,18 @@
 - [对外发布版：活动文案](./public-release.md)
 - [内部完整记录版：分享整理长文](./internal-full-record.md)
 
+## 本期主要分享人与继续阅读
+
+- 沈轩：围绕空间产品化、项目经验和团队活动展开分享
+- 钱誉文 Ewan Qian：围绕数字空间、视觉演出、仓库整理与长期归档展开分享
+- [周子凌 Murphy Nile](https://github.com/ewanqian/VIRTURA-Collective/blob/main/artists/murphy-nile.md)：围绕国际新媒体艺术语境、数字景观与 `Segla` 相关构想展开分享
+
+如果你是通过活动邮件或回访入口重新来到这里，建议继续看：
+
+- [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
+- [Space Salon 系列入口](../README.md)
+- [Segla / 塞尼亚岛数字化旅居地](https://github.com/ewanqian/Senia-Digital-Resort)
+
 ## 归档说明
 
 - 本目录用于统一保存本次活动的公开文案与整理稿

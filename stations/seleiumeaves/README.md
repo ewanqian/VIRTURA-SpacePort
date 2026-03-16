@@ -6,6 +6,10 @@
 
 雾中茶屋是 VIRTURA 当前保留的站点档案之一，用于记录数字茶屋方向的空间项目设想。
 
+如果你更想看这条线当前更具体、也更接近高保真空间 demo 的版本，建议继续看：
+
+- [林中茶屋 Seleiumeaves](../teahouse-forest-pavilion/README.md)
+
 ---
 
 ## 数字专辑
