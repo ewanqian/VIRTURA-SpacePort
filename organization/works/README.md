@@ -44,9 +44,9 @@
 
 | 作品 | 描述 | 状态 |
 |------|------|------|
-| [MOVA美术馆](../../stations/mova/README.md) | Museum of Virtura Art - 数字美术馆（太空站1） | 概念验证 |
-| [林中茶屋 Seleiumeaves](../../stations/teahouse-forest-pavilion/README.md) | TEAHOUSE Forest Pavilion - 沉浸式数字茶屋空间（太空站2）⚡ 高优先级 | 开发中 |
-| [赛尼亚岛 Senia-Digital-Resort](https://github.com/ewanqian/Senia-Digital-Resort) | 基于 Minecraft 的空间感知体验实验（太空站4） | 维护中 |
+| [MOVA美术馆](../../stations/mova/README.md) | 数字美术馆概念验证项目 | 概念验证 |
+| [林中茶屋 Seleiumeaves](../../stations/teahouse-forest-pavilion/README.md) | 沉浸式数字茶屋空间项目 | 开发中 |
+| [赛尼亚岛 Senia-Digital-Resort](https://github.com/ewanqian/Senia-Digital-Resort) | 基于 Minecraft 的空间感知体验实验 | 维护中 |
 
 ---
 
@@ -64,8 +64,8 @@
 
 | 作品 | 描述 | 状态 |
 |------|------|------|
-| [场景铸造（SceneForge）](https://github.com/ewanqian/SceneForge) | 沉浸式演出场景快速生成 / 迭代工具集 | 持续维护 |
-| [演出铸造（LiveForge）](https://github.com/ewanqian/LiveForge) | 实时音画演出工程化部署与调试工具 | 持续维护 |
+| [场景铸造（SceneForge）](https://github.com/ewanqian/SceneForge) | 网页端场景查看、预演与分享工具 | 持续维护 |
+| [演出铸造（LiveForge）](https://github.com/ewanqian/LiveForge) | 演出相关实时交互与部署工具 | 持续维护 |
 
 ---
 
@@ -77,7 +77,7 @@
 
 ### 智力装备
 
-知识网络是"存储态"，智力装备是"应用态"——困境触发的空投铠甲，按需组装，即时可用。
+知识网络偏向资料与方法沉淀，智力装备偏向按问题调用和组合。
 
 ---
 
@@ -86,7 +86,7 @@
 ### 核心成员
 | 成员 | 角色 | 个人仓库 |
 |------|------|----------|
-| 钱誉文 Ewan Qian | 视觉艺术/场景构成 | [Portfolio](https://github.com/ewanqian/portfolio) |
+| 钱誉文 Ewan Qian | 视觉 / 数字内容 | [Portfolio](https://github.com/ewanqian/portfolio) |
 | 徐昊 Hao Xu (@Xh) | 电子音乐 | - |
 | @极限虚构butterfly | 视觉艺术 | - |
 | @呆久布Mei you酱 | 人工智能生成艺术 | - |
@@ -103,4 +103,4 @@
 
 ---
 
-*团队作品集 - 持续更新中！*
+*团队作品目录 - 持续整理中*

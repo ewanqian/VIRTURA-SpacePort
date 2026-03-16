@@ -22,16 +22,16 @@
 |------|--------|
 | 艺术总监 | 沈轩（上海市多媒体行业协会副会长） |
 | 剧场导演 | 王家明（东乌西兔艺术中心、乂媒体表演工作室联合创始人） |
-| 数字艺术家 | 钱誉文 |
-| 表演艺术家 | 魏琴 |
-| 实验电子音乐人 | 徐昊 |
-| 交互艺术家 | 许思慧 |
+| 视觉 / 数字内容 | 钱誉文 |
+| 表演 | 魏琴 |
+| 电子音乐 | 徐昊 |
+| 交互装置 | 许思慧 |
 
 **English:**
 
 - **Curator, Art Director**: Shen Xuan (Vice President of Shanghai Multimedia Industry Association)
 - **Theater Director**: Wang Jiaming (Co-Founder of Corbie & Rabbit Art Center, Media X Performance Studio)
-- **Digital Artist**: Qian Yuwen
+- **Visual / Digital Content**: Qian Yuwen
 - **Performing Artist**: Wei Qin
 - **Experimental Electronic Musician**: Xu Hao
 - **Interactive Artist**: Xu Sihui
@@ -52,7 +52,7 @@ A dancer strays into a digital world wrapped in an information current. Amid the
 
 ## 2026 进化版（规划中）
 
-### 核心理念升级
+### 规划方向
 
 从"被动观看"到"主动探索"——观众不再是外部观察者，而是进入数字时空的参与者。
 
@@ -69,7 +69,7 @@ A dancer strays into a digital world wrapped in an information current. Amid the
 
 **多人协同交互**：
 - 观众可以在数字空间中自由移动
--与其他观众相遇、协作
+- 与其他观众相遇、协作
 - 共同探索滴流世界的每个角落
 
 ### 体验升级
