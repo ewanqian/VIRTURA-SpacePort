@@ -128,19 +128,18 @@
 | 2026-05-08 | Digital Library / Digital Stage 公开说明 03｜团队首页、资料库和活动入口，怎么接起来才不绕 | 线上公开说明 | [Luma](https://luma.com/8enbopn3) |
 | 2026-05-02 | 在制内容审计会 02｜网页、场景和版本，哪儿不顺我们就继续挑 | 小范围审计 / 结构复盘 | [Luma](https://luma.com/xjzg86gv) |
 | 2026-05-01 | MOVA 展映 02｜《观察与共生》这条线，怎么从扫描走到展览和工作坊 | 线上主题小展 | [Luma](https://luma.com/aofkfva3) |
-| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | [Luma](https://luma.com/l0ga9o3i) |
+| 2026-04-25 | VIRTURA 空间茶话会 Vol.4｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | [Luma](https://luma.com/l0ga9o3i) |
 | 2026-04-24 | Digital Library / Digital Stage 公开说明 02｜知识网络不是目录，怎么整理成别人真能用的入口 | 线上公开说明 | [Luma](https://luma.com/8qfq3vpr) |
 | 2026-04-18 | 太空气球 Session 02｜线上 live set 试放与视觉共演夜 | 线上音画实验夜 | [Luma](https://luma.com/wsafafy2) |
 | 2026-04-17 | 发布与观看入口开放 01｜Drop Flow 版本观看室开放 | 观看入口上线 | [Luma](https://luma.com/isjom11h) |
-| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | [Luma](https://luma.com/wqi71c4f) |
+| 2026-04-11 | VIRTURA 空间茶话会 Vol.3｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | [Luma](https://luma.com/wqi71c4f) |
 | 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜作品、过程和仓库，到底怎么整理才不会越积越乱 | 线上公开说明 | [Luma](https://luma.com/kjyluf41) |
 | 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 小范围审计 / 批评会 | [Luma](https://luma.com/3be89q8l) |
 | 2026-04-03 | MOVA 展映 01｜把 GitHub 里的东西真的排成一次能看的数字展览 | 线上展映开启 | [Luma](https://luma.com/kw41rtby) |
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | [Luma](https://luma.com/jy5fef4u) |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.2｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | [Luma](https://luma.com/jy5fef4u) |
 | 2026-03-21 | 太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set | 线上演出空间测试 / 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
 | 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | [Space Salon](./space-salon/vol-01-cloud-sequel/README.md) |
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | [Space Salon](./space-salon/vol-00-archive-and-distance/README.md) |
-| 待定 | VIRTURA 空间茶话会 Vol.2 | 系列筹备中 | [Space Salon](./space-salon/vol-02-planning/README.md) |
 
 ## 未来 8 周拟定主线
 
@@ -157,7 +156,7 @@
 
 | 日期 | 节点 | 线 | 说明 |
 |---|---|---|---|
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | Space Salon | 把“数字归档”这件事聊实 |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.2｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | Space Salon | 把“数字归档”这件事聊实 |
 | 2026-04-03 | MOVA 展映 01｜把 GitHub 里的东西真的排成一次能看的数字展览 | MOVA | 让线上展映成为真实发布线 |
 | 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 审计会 | 把问题直接拿上桌 |
 | 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜作品、过程和仓库，到底怎么整理才不会越积越乱 | 公开说明 | 讲清内容管理和仓库结构 |
