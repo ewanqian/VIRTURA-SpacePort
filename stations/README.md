@@ -100,6 +100,31 @@
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | [Space Salon](./space-salon/vol-00-archive-and-distance/README.md) |
 | 待定 | VIRTURA 空间茶话会 Vol.2 | 系列筹备中 | [Space Salon](./space-salon/vol-02-planning/README.md) |
 
+## 未来 8 周拟定主线
+
+接下来这段时间，`stations` 这一层会更明确地承接三类节点：
+
+- `Space Salon`：交流客厅、方法分享、嘉宾漫谈
+- `太空气球`：线上演出空间测试、音画实验、共测夜
+- `MOVA`：线上展映、观看室、轻量主题小展
+
+按当前主排期，未来 1-2 个月最重要的节点会是：
+
+| 日期 | 节点 | 线 | 说明 |
+|---|---|---|---|
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.3 | Space Salon | 先把交流客厅真正拉起来 |
+| 2026-04-03 | MOVA 开幕｜从库到展：VIRTURA 数字空间研究摘编 | MOVA | 让线上展映成为真实发布线 |
+| 2026-04-04 | Practice Night 01 | Practice | 把半成品、网页和空间测试拉到一起 |
+| 2026-04-17 | Release 01｜Drop Flow 版本观看室开放 | Release | 把作品版本发布真正接进时间线 |
+| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜从扫描到高斯 | Space Salon | 把扫描与空间记忆推到前台 |
+| 2026-05-09 | 太空气球 Beta 共测夜 | 太空气球 | 把 Alpha 的反馈推进到第二轮联调 |
+
+如果你更想按“接下来会发生什么”来跟进，而不是只看往期归档，建议同时查看：
+
+- [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
+- [VIRTURA-Collective / Planned](https://github.com/ewanqian/VIRTURA-Collective/tree/main/activities/planned)
+- [VIRTURA-Collective / 未来 8 周活动路线图](https://github.com/ewanqian/VIRTURA-Collective/blob/main/docs/eight-week-activity-roadmap-2026-03-16.md)
+
 ## 除了活动，还会继续出现什么
 
 后续这个时间线不只会加活动，也会逐步加入：
