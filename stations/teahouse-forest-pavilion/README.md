@@ -1,25 +1,22 @@
-# VIRTURA SPACE PORT | 林中茶屋 Seleiumeaves
+# 林中茶屋 Seleiumeaves
 
 ---
 
 ## 项目介绍
 
-**VIRTURA SPACE PORT | 林中茶屋 Seleiumeaves**
-
-**全名**：Spatial Computing Perception Experience Project
-空间感知体验项目
+林中茶屋是一条围绕茶屋场景、森林环境与空间感知体验展开的项目设想。
 
 ---
 
 ## 核心定位
 
-**定位**：高端影像写实化
+**定位**：高保真空间场景设想
 
-**目标**：Apple Vision Pro级别高保真demo
+**目标**：逐步验证适用于 Apple Vision Pro 的演示版本
 
 ---
 
-## 核心本质
+## 项目重点
 
 空间感知体验，让人在空间中移动的状态感到真实可信。
 
@@ -74,7 +71,7 @@
 
 ---
 
-## 核心价值
+## 项目说明
 
 像对待真实空间一样对待虚拟空间，让用户在空间中移动时获得完全可信的感知体验。
 
@@ -90,7 +87,7 @@
 
 ## 定位说明
 
-场景铸造SceneForge支持
+当前页以方向归档为主，后续如进入实际开发，将由 SceneForge 等工具线承接具体实现。
 
 ---
 
@@ -121,12 +118,12 @@
 ## 联系
 
 - **项目仓库**: VIRTURA-SpacePort
-- **主港仓库**: [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort)
+- **当前公开入口**: [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort)
 - **知识网络**: [VIRTURA-SpacePort knowledge-network](https://github.com/ewanqian/VIRTURA-SpacePort/tree/main/knowledge-network)
 
 ---
 
-*林中茶屋 Seleiumeaves - 像对待真实空间一样对待虚拟空间！*
+*林中茶屋 Seleiumeaves - 项目设想归档*
 
 ---
 
