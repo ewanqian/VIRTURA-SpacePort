@@ -634,8 +634,8 @@ VIRTURA 更像一个持续变化的协作结构，而不是一个从头到尾固
 
 ## 十五、相关文档
 
-- [滴流 Drop Flow 作品全脉络与版本归档](./滴流%20Drop%20Flow%20作品全脉络与版本归档.md)
-- [滴流 Drop Flow 自然语言叙述版](./滴流%20Drop%20Flow%20自然语言叙述版.md)
+- [滴流 Drop Flow 作品全脉络与版本归档](./滴流 Drop Flow 作品全脉络与版本归档.md)
+- [滴流 Drop Flow 自然语言叙述版](./滴流 Drop Flow 自然语言叙述版.md)
 - [滴流 Drop Flow 3.0 展演版](./drop-flow-3.0-roooooom719.md)
 - [滴流 Drop Flow（杭州双年展版）](./drop-flow-hangzhou.md)
 - [滴流 Drop Flow 2026](./drop-flow-2026.md)

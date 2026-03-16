@@ -1,6 +1,6 @@
 # Apple Vision Pro 快速上手指南 Quickstart Guide
 
-> 英文版本：[quickstart-en.md](quickstart-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 ---
 

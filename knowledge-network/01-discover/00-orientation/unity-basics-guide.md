@@ -1,6 +1,6 @@
 # Unity 轻量化实操指引 Unity Basics Guide
 
-> 英文版本：[unity-basics-guide-en.md](unity-basics-guide-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 重点强调"Unity实操门槛极低，无需复杂配置，全程拖拽+插件辅助即可完成第一个Demo"。
 
@@ -75,7 +75,7 @@ A: 检查预制体是否正确导入，尝试重新拖拽。
 
 完成基础操作后，继续制作你的第一个 Demo：
 
-[你的第一个 Demo →](../04-first-demo/exercises.md)
+你的第一个 Demo 练习页：待补
 
 ---
 

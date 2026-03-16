@@ -111,16 +111,16 @@ YYYYMMDD_项目名_地点_类型_序号.ext
 
 ## Markdown 里怎么嵌图
 
-直接用相对路径：
+直接用相对路径。比如把图片放进 `drop-flow-hangzhou/stage/` 后，再在文档里引用对应文件名。
 
 ```md
-![杭州双年展开幕式现场图](./assets/drop-flow-hangzhou/stage/20251019_dropflow-hangzhou_stage_vr_01.jpg)
+./drop-flow-hangzhou/stage/你的图片文件名.jpg
 ```
 
 如果图片就在当前 `assets/` 根目录下，也可以直接这样写：
 
 ```md
-![流光绘影海报](./assets/2025“流光绘影”光影科技艺术节海报.jpg)
+./2025“流光绘影”光影科技艺术节海报.jpg
 ```
 
 ---

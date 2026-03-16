@@ -6,9 +6,9 @@
 
 ## 📚 完整作品全脉络与版本归档
 
-请查看 **[滴流 Drop Flow 作品全脉络与版本归档](./滴流%20Drop%20Flow%20作品全脉络与版本归档.md)** 获取最系统、最完整的作品历史、创作背景、技术细节和各版本文档索引。
+请查看 **[滴流 Drop Flow 作品全脉络与版本归档](./滴流 Drop Flow 作品全脉络与版本归档.md)** 获取最系统、最完整的作品历史、创作背景、技术细节和各版本文档索引。
 
-如果你需要用于直播、分享或对外介绍的口语化版本，请查看 **[SpacePort 与《滴流 Drop Flow》项目脉络分享讲稿](./SpacePort%20与《滴流%20Drop%20Flow》项目脉络分享讲稿.md)**。
+如果你需要用于直播、分享或对外介绍的口语化版本，请查看 **[SpacePort 与《滴流 Drop Flow》项目脉络分享讲稿](./SpacePort 与《滴流 Drop Flow》项目脉络分享讲稿.md)**。
 
 如果你需要公开视频、官网与微信原文的核对清单，请查看 **[已核对外部链接与公开资料索引](./已核对外部链接与公开资料索引.md)**。
 
@@ -187,9 +187,9 @@
 
 ## 研究方向
 
-- [智力装备理论](../knowledge-network/our-theory/intellectual-equipment/README.md)
-- [数字情感容器理论](../knowledge-network/our-theory/digital-emotion-container/README.md)
-- [工程控制论](../knowledge-network/our-theory/engineering-cybernetics/README.md)
+- [智力装备理论](../../../knowledge-network/our-theory/intellectual-equipment/README.md)
+- [数字情感容器理论](../../../knowledge-network/our-theory/digital-emotion-container/README.md)
+- [工程控制论](../../../knowledge-network/our-theory/engineering-cybernetics/README.md)
 
 ---
 

@@ -141,8 +141,8 @@ https://www.bilibili.com/video/BV1PREczgEzC/
 
 ## 相关文档
 
-- [滴流 Drop Flow 作品全脉络与版本归档](./滴流%20Drop%20Flow%20作品全脉络与版本归档.md)
-- [滴流 Drop Flow 自然语言叙述版](./滴流%20Drop%20Flow%20自然语言叙述版.md)
+- [滴流 Drop Flow 作品全脉络与版本归档](./滴流 Drop Flow 作品全脉络与版本归档.md)
+- [滴流 Drop Flow 自然语言叙述版](./滴流 Drop Flow 自然语言叙述版.md)
 
 ---
 

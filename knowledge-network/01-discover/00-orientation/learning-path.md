@@ -1,6 +1,6 @@
 # 7天学习路径 7-Day Learning Path
 
-> 英文版本：[learning-path-en.md](learning-path-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 ---
 
@@ -30,7 +30,7 @@
 **参考文档**：
 - [什么是空间计算？](what-is-spatial-computing.md)
 - [名词速查表](glossary.md)
-- [01-history-and-origins.md](../01-foundations/01-history-and-origins.md)
+- 起源与发展基础页：待补
 
 ---
 
@@ -45,8 +45,8 @@
 - 头部相关传递函数
 
 **参考文档**：
-- [02-vision-perception.md](../01-foundations/02-vision-perception.md)
-- [03-audio-perception.md](../01-foundations/03-audio-perception.md)
+- 视觉感知基础页：待补
+- 听觉感知基础页：待补
 
 ---
 
@@ -62,7 +62,7 @@
 
 **参考文档**：
 - [Apple Vision Pro 快速上手指南](../02-spatial-experience/devices/apple-vision-pro/quickstart.md)
-- [Meta Quest 快速上手指南](../02-spatial-experience/devices/meta-quest/quickstart.md)
+- Meta Quest 快速上手指南：待补
 
 ---
 
@@ -77,8 +77,8 @@
 - 低保真原型设计
 
 **参考文档**：
-- [交互逻辑基础原则](../02-spatial-experience/interaction-logic/basic-principles.md)
-- [沉浸式 UX 设计原则](../02-spatial-experience/user-experience/ux-design-principles.md)
+- 交互逻辑基础原则：待补
+- 沉浸式 UX 设计原则：待补
 
 ---
 
@@ -93,9 +93,9 @@
 - Unity 3D 工作流基础
 
 **参考文档**：
-- [物体扫描基础操作](../03-3d-workflow/scanning/basic-operation.md)
-- [AI 生成 3D 工具指南](../03-3d-workflow/ai-generation/tool-guide.md)
-- [高斯场景转换工作流](../03-3d-workflow/gaussian-splatting/workflow.md)
+- 物体扫描基础操作：待补
+- AI 生成 3D 工具指南：待补
+- 高斯场景转换工作流：待补
 
 ---
 
@@ -112,7 +112,7 @@
 
 **参考文档**：
 - [Unity 轻量化实操指引](unity-basics-guide.md)
-- [练习作业](../04-first-demo/exercises.md)
+- 练习作业：待补
 
 ---
 
@@ -127,8 +127,8 @@
 - 了解 02-build 阶段内容
 
 **参考文档**：
-- [反馈模板](../04-first-demo/feedback-template.md)
-- [作品展示区](../04-first-demo/showcase.md)
+- 反馈模板：待补
+- 作品展示区：待补
 - [02-build 实现构建阶段](../../02-build/README.md)
 
 ---
