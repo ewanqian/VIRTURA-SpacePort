@@ -49,7 +49,7 @@
 
 ## 除了日历，还会从哪里收到更新
 
-- 小红书：搜索 `EWANCT前宇文`
+- 小红书：搜索 `Ewan CT 钱誉文`
 - 小红书：搜索 `VIRTURA`
 - 私信可进一步进入小红书群，群内也会同步活动链接与临时更新
 
@@ -64,7 +64,7 @@
 当前入口：
 
 - [太空气球 / Baloon Live Space 系列页](./baloon-live-space/README.md)
-- [太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set](https://luma.com/go6kxnnw)
+- [太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw)
 
 ### 2. Space Salon / 数字沙龙 / 交流客厅
 
@@ -136,7 +136,7 @@
 | 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 小范围审计 / 批评会 | [Luma](https://luma.com/3be89q8l) |
 | 2026-04-03 | MOVA 展映 01｜把 GitHub 里的东西真的排成一次能看的数字展览 | 线上展映开启 | [Luma](https://luma.com/kw41rtby) |
 | 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | [Luma](https://luma.com/jy5fef4u) |
-| 2026-03-21 | 太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set | 线上演出空间测试 / 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
+| 2026-03-21 | 太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set | 线上演出空间测试 / 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
 | 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | [Space Salon](./space-salon/vol-01-cloud-sequel/README.md) |
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | [Space Salon](./space-salon/vol-00-archive-and-distance/README.md) |
 | 待定 | VIRTURA 空间茶话会 Vol.2 | 系列筹备中 | [Space Salon](./space-salon/vol-02-planning/README.md) |

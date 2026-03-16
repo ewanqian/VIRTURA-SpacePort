@@ -1,4 +1,4 @@
-# 太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set
+# 太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set
 
 **活动系列**：Baloon Live Space Alpha  
 **日期**：2026-03-21  
@@ -28,7 +28,7 @@
 ## 本场 lineup
 
 - 音乐：`电子人`
-- 视觉：`E1`
+- 视觉：`Ew1（Ewan Qian 钱誉文）`
 
 这场 live set 的结构更接近一条试演中的线上舞台样稿：重点看实时视觉怎样跟随节拍、`BPM` 和音乐段落变化，而不是先做一套很重的社交壳。
 

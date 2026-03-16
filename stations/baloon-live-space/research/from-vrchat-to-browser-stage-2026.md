@@ -285,6 +285,6 @@
 ### 内部档案
 
 - [Baloon Live Space 系列总入口](../README.md)
-- [Alpha 测试档案](../alpha-electronman-e1-2026-03/README.md)
+- [Alpha 测试档案](../alpha-electronman-ew1-2026-03/README.md)
 - [Session 02 档案](../session-02-live-set-2026-04/README.md)
 - [Beta 共测夜档案](../beta-test-night-2026-05/README.md)
