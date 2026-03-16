@@ -40,6 +40,10 @@
 4. 面向音乐人、视觉创作者和旁听者的公开共测
 5. 后续更完整的线上演出空间联调
 
+## 研究入口
+
+- [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](./research/from-vrchat-to-browser-stage-2026.md)
+
 ## 这次 Alpha 在做什么
 
 这次公开的 `Alpha`，会先展示目前这一版线上数字舞台是怎么工作的。
@@ -74,8 +78,9 @@
 
 | 日期 | 节点 | 形式 | 入口 |
 |---|---|---|---|
-| 2026-04-18 | [太空气球 Session 02｜线上 live set 试放与视觉共演夜](https://luma.com/wsafafy2) | 第二次线上试演 / 音画实验夜 | [Luma](https://luma.com/wsafafy2) |
-| 2026-03-21 | [太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set](https://luma.com/go6kxnnw) | 第一轮公开测试 / 结构与观看反馈 | [Luma](https://luma.com/go6kxnnw) |
+| 2026-05-09 | [太空气球 Beta 共测夜｜把上一轮的问题接着修，看看这条线上台后稳不稳](https://luma.com/p7c1df8c) | 第二轮联调 / 公开共测 | [档案](./beta-test-night-2026-05/README.md) / [Luma](https://luma.com/p7c1df8c) |
+| 2026-04-18 | [太空气球 Session 02｜线上 live set 试放与视觉共演夜](https://luma.com/wsafafy2) | 第二次线上试演 / 音画实验夜 | [档案](./session-02-live-set-2026-04/README.md) / [Luma](https://luma.com/wsafafy2) |
+| 2026-03-21 | [太空气球 Baloon Live Space Alpha 测试｜电子人 × E1 线上数字舞台 live set](https://luma.com/go6kxnnw) | 第一轮公开测试 / 结构与观看反馈 | [档案](./alpha-electronman-e1-2026-03/README.md) / [Luma](https://luma.com/go6kxnnw) |
 | 2022 | VRChat 地图构想 | 早期线上演出空间设想 | 系列起点 |
 
 ## 这条线后面会怎么长
@@ -94,3 +99,4 @@
 - [Stations 总入口](../README.md)
 - [Space Salon](../space-salon/README.md)
 - [MOVA](../mova/README.md)
+- [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](./research/from-vrchat-to-browser-stage-2026.md)

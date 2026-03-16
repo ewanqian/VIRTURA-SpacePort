@@ -50,9 +50,9 @@ VIRTURA 空间茶话会系列档案入口。
 
 | 日期 | 节点 | 形式 | 状态 | 入口 |
 |---|---|---|---|---|
-| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | 已公开 | [Luma](https://luma.com/l0ga9o3i) |
-| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | 已公开 | [Luma](https://luma.com/wqi71c4f) |
-| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | 已公开 | [Luma](https://luma.com/jy5fef4u) |
+| 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | 已公开 | [档案](./vol-05-continue-the-unfinished/README.md) / [Luma](https://luma.com/l0ga9o3i) |
+| 2026-04-11 | VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊 | 交流客厅 / 一起放东西看 | 已公开 | [档案](./vol-04-shared-reference-night/README.md) / [Luma](https://luma.com/wqi71c4f) |
+| 2026-03-29 | VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾 | 交流客厅 / 小范围社群互动 | 已公开 | [档案](./vol-03-real-work-over-ai/README.md) / [Luma](https://luma.com/jy5fef4u) |
 | 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | 已归档 | [查看](./vol-01-cloud-sequel/README.md) |
 | 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | 已归档 | [查看](./vol-00-archive-and-distance/README.md) |
 | 待定 | VIRTURA 空间茶话会 Vol.2 | 待定 | 筹备中 | [查看](./vol-02-planning/README.md) |
@@ -86,11 +86,14 @@ VIRTURA 空间茶话会系列档案入口。
 3. `Vol.5`
    更偏把最近还没讲顺、还没做完的东西带来，继续拆、继续聊。
 
-## 已归档活动
+## 系列档案
 
 - [VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方](./vol-00-archive-and-distance/README.md)
 - [VIRTURA 空间茶话会 Vol.1｜云端续章，把创作的漫谈搬进线上客厅](./vol-01-cloud-sequel/README.md)
 - [VIRTURA 空间茶话会 Vol.2｜筹备中](./vol-02-planning/README.md)
+- [VIRTURA 空间茶话会 Vol.3｜别光聊 AI 了，聊聊作品、过程和仓库到底怎么收拾](./vol-03-real-work-over-ai/README.md)
+- [VIRTURA 空间茶话会 Vol.4｜带一个你最近反复在看的东西来，我们一起放、一块聊](./vol-04-shared-reference-night/README.md)
+- [VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊](./vol-05-continue-the-unfinished/README.md)
 
 ## 归档说明
 

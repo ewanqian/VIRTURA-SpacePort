@@ -8,13 +8,15 @@
 
 | 展映 | 类型 | 状态 | 入口 |
 |---|---|---|---|
+| Drop Flow 版本观看室｜把版本、现场和观看入口真正接起来 | 版本观看室 / 发布入口开放 | planned | [查看](./drop-flow-viewing-room-2026-04/README.md) |
 | 从库到展：VIRTURA 数字空间研究摘编 | 试运行展 / library 转展览 | open | [查看](./library-pilot-2026-03/README.md) |
+| 《观察与共生》：从扫描、展览到工作坊 | 主题小展 / 项目线展映 | planned | [查看](./observation-and-symbiosis-2026-05/README.md) |
 
 ## 后续会继续长出来的方向
 
 - `Drop Flow` 版本观看室
 - `TIMER` 时间结构观察室
-- `Observation and Symbiosis` 观察与扫描小展
+- `Observation and Symbiosis`：从扫描、展览到工作坊
 - 以单个研究关键词为核心的主题小展
 
 ## 一页展映至少应该包含什么

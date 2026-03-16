@@ -88,11 +88,19 @@
 
 它不是成果展示，也不是互相捧场，而是认真看问题到底出在哪。
 
+当前代表入口：
+
+- [在制内容审计会](./content-audit/README.md)
+
 ### 5. Digital Library / Digital Stage 公开说明
 
 这条线更偏围绕 GitHub 仓库、知识网络、归档结构、页面前台和 AI 时代的内容管理，做短而实用的公开说明。
 
 重点不是卖概念，而是讲明白一套真的能继续工作的组织方法。
+
+当前代表入口：
+
+- [Digital Library / Digital Stage](./digital-library-stage/README.md)
 
 ## 日历里会出现的常见节点
 
@@ -115,6 +123,10 @@
 
 | 日期 | 节点 | 类型 | 入口 |
 |---|---|---|---|
+| 2026-05-09 | 太空气球 Beta 共测夜｜把上一轮的问题接着修，看看这条线上台后稳不稳 | 小规模联调 / 公开共测 | [Luma](https://luma.com/p7c1df8c) |
+| 2026-05-08 | Digital Library / Digital Stage 公开说明 03｜团队首页、资料库和活动入口，怎么接起来才不绕 | 线上公开说明 | [Luma](https://luma.com/8enbopn3) |
+| 2026-05-02 | 在制内容审计会 02｜网页、场景和版本，哪儿不顺我们就继续挑 | 小范围审计 / 结构复盘 | [Luma](https://luma.com/xjzg86gv) |
+| 2026-05-01 | MOVA 展映 02｜《观察与共生》这条线，怎么从扫描走到展览和工作坊 | 线上主题小展 | [Luma](https://luma.com/aofkfva3) |
 | 2026-04-25 | VIRTURA 空间茶话会 Vol.5｜带一个还没讲顺的东西来，我们一起继续聊 | 交流客厅 / 轻量分享 | [Luma](https://luma.com/l0ga9o3i) |
 | 2026-04-24 | Digital Library / Digital Stage 公开说明 02｜知识网络不是目录，怎么整理成别人真能用的入口 | 线上公开说明 | [Luma](https://luma.com/8qfq3vpr) |
 | 2026-04-18 | 太空气球 Session 02｜线上 live set 试放与视觉共演夜 | 线上音画实验夜 | [Luma](https://luma.com/wsafafy2) |
@@ -149,7 +161,9 @@
 | 2026-04-04 | 在制内容审计会 01｜把最近做的东西摊开，我们认真挑问题 | 审计会 | 把问题直接拿上桌 |
 | 2026-04-10 | Digital Library / Digital Stage 公开说明 01｜作品、过程和仓库，到底怎么整理才不会越积越乱 | 公开说明 | 讲清内容管理和仓库结构 |
 | 2026-04-17 | [发布与观看入口开放 01｜Drop Flow 版本观看室开放](https://luma.com/isjom11h) | 发布 | 把作品版本公开线真正接进时间线 |
-| 2026-05-09 | 太空气球 Beta 共测夜 | 太空气球 | 把 Alpha 的反馈推进到第二轮联调 |
+| 2026-05-01 | [MOVA 展映 02｜《观察与共生》这条线，怎么从扫描走到展览和工作坊](https://luma.com/aofkfva3) | MOVA | 把展览、扫描和工作坊这条线接进线上展映 |
+| 2026-05-08 | [Digital Library / Digital Stage 公开说明 03｜团队首页、资料库和活动入口，怎么接起来才不绕](https://luma.com/8enbopn3) | 公开说明 | 继续把前台和资料库接成一套 |
+| 2026-05-09 | [太空气球 Beta 共测夜｜把上一轮的问题接着修，看看这条线上台后稳不稳](https://luma.com/p7c1df8c) | 太空气球 | 把 Alpha 的反馈推进到第二轮联调 |
 
 如果你更想按“接下来会发生什么”来跟进，而不是只看往期归档，建议同时查看：
 
@@ -174,5 +188,7 @@
 - [Space Salon](./space-salon/README.md)
 - [Baloon Live Space](./baloon-live-space/README.md)
 - [MOVA](./mova/README.md)
+- [Digital Library / Digital Stage](./digital-library-stage/README.md)
+- [在制内容审计会](./content-audit/README.md)
 - [Seleiumeaves](./seleiumeaves/README.md)
 - [Teahouse Forest Pavilion](./teahouse-forest-pavilion/README.md)
