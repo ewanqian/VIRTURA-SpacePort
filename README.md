@@ -25,6 +25,13 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - 找到活动、沙龙与公共交流记录
 - 理清团队、前台、发布仓和工具仓的分工
 
+## 现在可以直接看到什么
+
+- 已经整理好的项目档案入口：`Drop Flow`、`TIMER`、`Observation and Symbiosis`
+- 已经能直接使用的知识网络入口：`learning-paths`、`our-theory`、10 个知识领域导航
+- 已经开始形成连续感的公共活动入口：`Space Salon`
+- 已经明确的仓库分工：团队入口、前台、发布仓、工具仓各自做什么
+
 ## Start From Here
 
 按照你的目的，可以直接走下面几条路线:
