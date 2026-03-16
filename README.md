@@ -20,7 +20,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 | 团队是谁、有什么合作网络 | [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) | 团队介绍、艺术家档案、精选作品与合作入口 |
 | 详细项目档案与版本线索 | [organization/works](./organization/works/README.md) | 作品版本、展演记录、项目正文与资料索引 |
 | 方法、学习路线与知识结构 | [knowledge-network](./knowledge-network/README.md) | 10 个知识领域、学习路径与团队方法入口 |
-| 沙龙、活动与公共交流 | [stations/space-salon](./stations/space-salon/README.md) | 已归档活动、分享整理稿与后续入口 |
+| 沙龙、活动与公共交流 | [stations](./stations/README.md) | 官方活动日历入口、站点级活动线与系列归档 |
 | 工具与数字舞台实验 | [SceneForge](https://github.com/ewanqian/SceneForge) | 当前最明确的产品与工具主线 |
 | 项目复盘、公开文章与发布内容 | [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) | 文章、公告、复盘与媒体资料 |
 
@@ -38,7 +38,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - 如果你先从团队认识 VIRTURA，建议先看 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)，再回来看这里的档案与知识网络
 - 如果你是从作品或项目进入，通常会在 [organization/works](./organization/works/README.md) 停留更久
 - 如果你是研究同好、学习者或想一起建设方法的人，优先进入 [knowledge-network](./knowledge-network/README.md)
-- 如果你更适合从交流和现实场景认识团队，优先进入 [stations/space-salon](./stations/space-salon/README.md)
+- 如果你更适合从交流和现实场景认识团队，优先进入 [stations](./stations/README.md)
 
 ## 仓库分工
 

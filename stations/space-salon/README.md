@@ -17,6 +17,7 @@ VIRTURA 空间茶话会系列档案入口。
 - 某一期活动的公开介绍
 - 已经发生的分享整理稿
 - 后续补充的图文、链接与现场资料
+- 通过 Luma 对外发布的当前活动入口
 
 ## 适合谁看
 
@@ -32,8 +33,24 @@ VIRTURA 空间茶话会系列档案入口。
 2. 再看 `public-release.md` 了解对外版本
 3. 如果你需要完整上下文，再看 `internal-full-record.md`
 
+## Luma 公开入口
+
+- [Luma 公开主页](https://luma.com/user/usr-TS35aDrheI8Axqr)：当前公开活动会持续从这里对外发布，也是最简单的后续活动更新入口
+- [VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方](https://luma.com/iehkdjr0)
+- [太空气球线上演出空间 Alpha 测试](https://luma.com/go6kxnnw)
+
+## 系列时间线
+
+| 日期 | 节点 | 形式 | 状态 | 入口 |
+|---|---|---|---|---|
+| 2026-03-21 | 太空气球线上演出空间 Alpha 测试 | 线上演出空间测试 / 公开申请中 | 公开申请中 | [Luma](https://luma.com/go6kxnnw) |
+| 2026-03-14 | VIRTURA 空间茶话会 Vol.1｜云端续章 | 闭门线上分享 | 已归档 | [查看](./vol-01-cloud-sequel/README.md) |
+| 2026-01-31 | VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方 | 线下客厅沙龙 / 小规模聚会 | 已归档 | [查看](./vol-00-archive-and-distance/README.md) |
+| 待定 | VIRTURA 空间茶话会 Vol.2 | 待定 | 筹备中 | [查看](./vol-02-planning/README.md) |
+
 ## 已归档活动
 
+- [VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方](./vol-00-archive-and-distance/README.md)
 - [VIRTURA 空间茶话会 Vol.1｜云端续章，把创作的漫谈搬进线上客厅](./vol-01-cloud-sequel/README.md)
 - [VIRTURA 空间茶话会 Vol.2｜筹备中](./vol-02-planning/README.md)
 
