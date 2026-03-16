@@ -10,8 +10,18 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 - 已整理好的项目档案入口：`Drop Flow`、`TIMER`、`Observation and Symbiosis`
 - 已能直接使用的知识网络入口：`learning-paths`、`our-theory`、10 个知识领域导航
-- 已开始形成连续感的公共活动入口：`Space Salon`
+- 已开始形成连续感、可长期订阅的公共活动入口：`lu.ma/VIRTURA`
 - 已经比较清楚的公开层分工：团队入口、前厅、发布仓与工具仓各自做什么
+
+## 如果你想先保持联系
+
+很多第一次来到这里的人，并不是立刻要合作或加入，而只是想持续看看这个网络最近在做什么。
+
+对这种情况来说，最自然的入口不是先读完整个仓库，而是先订阅我们的官方活动日历：
+
+- [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
+
+我们会把空间茶话会、线上测试、公开分享和其他适合对外开放的活动优先放到这里。
 
 ## 从这里继续看
 
@@ -20,7 +30,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 | 团队是谁、有什么合作网络 | [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) | 团队介绍、艺术家档案、精选作品与合作入口 |
 | 详细项目档案与版本线索 | [organization/works](./organization/works/README.md) | 作品版本、展演记录、项目正文与资料索引 |
 | 方法、学习路线与知识结构 | [knowledge-network](./knowledge-network/README.md) | 10 个知识领域、学习路径与团队方法入口 |
-| 沙龙、活动与公共交流 | [stations](./stations/README.md) | 官方活动日历入口、站点级活动线与系列归档 |
+| 沙龙、活动与公共交流 | [stations](./stations/README.md) | 官方活动日历入口、站点级活动线、系列归档与订阅方式 |
 | 工具与数字舞台实验 | [SceneForge](https://github.com/ewanqian/SceneForge) | 当前最明确的产品与工具主线 |
 | 项目复盘、公开文章与发布内容 | [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) | 文章、公告、复盘与媒体资料 |
 
