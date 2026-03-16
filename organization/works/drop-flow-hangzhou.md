@@ -34,16 +34,16 @@
 |------|--------|
 | 策展人、艺术总监 | 沈轩（上海市多媒体行业协会副会长） |
 | 剧场导演 | 王家明（东乌西兔艺术中心、乂媒体表演工作室联合创始人） |
-| 数字艺术家 | 钱誉文 |
-| 表演艺术家 | 魏琴 |
-| 实验电子音乐人 | 徐昊 |
-| 交互艺术家 | 许思慧 |
+| 视觉 / 数字内容 | 钱誉文 |
+| 表演 | 魏琴 |
+| 电子音乐 | 徐昊 |
+| 交互装置 | 许思慧 |
 
 **English:**
 
 - **Curator, Art Director**: Shen Xuan (Vice President of Shanghai Multimedia Industry Association)
 - **Theater Director**: Wang Jiaming (Co-Founder of Corbie & Rabbit Art Center, Media X Performance Studio)
-- **Digital Artist**: Qian Yuwen
+- **Visual / Digital Content**: Qian Yuwen
 - **Performing Artist**: Wei Qin
 - **Experimental Electronic Musician**: Xu Hao
 - **Interactive Artist**: Xu Sihui
@@ -70,9 +70,9 @@ A dancer strays into a digital world wrapped in an information current. Amid the
 
 ---
 
-## 2026 进化版（规划中）
+## 2026 规划方向
 
-### 核心理念升级
+### 方向概述
 
 从"被动观看"到"主动探索"——观众不再是外部观察者，而是进入数字时空的参与者。
 
@@ -92,7 +92,7 @@ A dancer strays into a digital world wrapped in an information current. Amid the
 - 与其他观众相遇、协作
 - 共同探索滴流世界的每个角落
 
-### 体验升级
+### 预期体验
 
 - **空间漫游**：不是站在外面看，而是走进画面里
 - **实时响应**：每一步移动、每一次交互都有即时反馈
@@ -106,7 +106,7 @@ A dancer strays into a digital world wrapped in an information current. Amid the
 | 版本 | 年份 | 形态 | 特点 |
 |------|------|------|------|
 | 杭州双年展版 | 2025 | 视听现场演出 | 舞者与数字空间互动 |
-| UFO 内部版 | 2025 | 沉浸式音画互动 | 360°投影、实时互动 |
+| UFO 内部版 | 2025 | 实时视觉实验 / 音画现场 | 360°投影、实时互动 |
 | **进化版（规划）** | **2026** | **实时引擎 + VR** | **多人交互、空间漫游** |
 
 ---
