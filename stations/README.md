@@ -38,8 +38,21 @@
 
 ## 当前活动线
 
-- [Space Salon](./space-salon/README.md)：VIRTURA 持续进行中的数字沙龙 / 交流客厅系列
-- 太空气球相关线上演出空间：当前以公开测试和线上活动形式逐步放出
+### 1. 太空气球 / Baloon Live Space
+
+这条线承接线上演出空间、音乐与音画实验、公开测试以及后续更完整的线上线下演出节点。
+
+当前代表入口：
+
+- [太空气球线上演出空间 Alpha 测试](https://luma.com/go6kxnnw)
+
+### 2. Space Salon / 数字沙龙 / 交流客厅
+
+这条线承接线下分享会、线上漫谈、小规模交流、邀请制嘉宾分享与阶段性方法传播。
+
+当前代表入口：
+
+- [Space Salon](./space-salon/README.md)
 
 ## 当前时间线
 
