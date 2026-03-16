@@ -2,51 +2,59 @@
 
 VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
-它更像一个前厅与导航台: 帮助第一次进入的人快速建立方向感，也帮助外部访客找到项目、知识网络和公开档案的入口。
+你可以把它理解成一个会被反复访问的数字前厅：第一次来的人可以在这里建立方向感，已经认识我们的朋友也可以回来找知识网络、作品档案、沙龙活动和公开资料。
 
-## 如何使用这里
+## 如果朋友发给你这个链接
 
-你可以把这里理解成三层功能叠在一起:
-
-- 公共导览前台
-- 公开档案入口
-- 知识网络主宿主
+- 想先认识团队本体: 去 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
+- 想看作品档案和项目线索: 去 [organization/works](./organization/works/README.md)
+- 想看研究方向和知识网络: 去 [knowledge-network](./knowledge-network/README.md)
+- 想看沙龙、活动和公开交流记录: 去 [stations/space-salon](./stations/space-salon/README.md)
+- 想看项目复盘、公开文章和发布内容: 去 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
 如果你想先认识团队本体，请进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)。  
 如果你想看当前最明确的工具主线，请进入 [SceneForge](https://github.com/ewanqian/SceneForge)。  
 如果你想看项目文章、复盘与公告，请进入 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)。
 
+## 这里最适合干什么
+
+这里目前最有用的 4 件事是：
+
+- 看项目与站点级公开档案
+- 进入知识网络并按路线学习
+- 找到活动、沙龙与公共交流记录
+- 理清团队、前台、发布仓和工具仓的分工
+
 ## Start From Here
 
 按照你的目的，可以直接走下面几条路线:
 
-- 第一次进入: 先看仓库分工，再进入 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
+- 第一次进入: 先看 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)，再回来看这里的档案与知识网络
 - 想看作品与项目线索: 先看 [organization/works](./organization/works/README.md)
 - 想看方法与知识结构: 先看 [knowledge-network](./knowledge-network/README.md)
 - 想看活动、沙龙与公共交流记录: 先看 [stations/space-salon](./stations/space-salon/README.md)
 - 想看工具线: 直接去 [SceneForge](https://github.com/ewanqian/SceneForge)
 - 想看公开发布内容: 去 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
-## What Lives Here
+## 如果你只想花三分钟
 
-这里目前主要承接五类内容:
+按下面任一条路线走就够了：
 
-- 团队生态入口与仓库分工说明
+1. 团队与合作路线：
+   [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) → [organization/works](./organization/works/README.md) → [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
+2. 研究与知识路线：
+   [knowledge-network](./knowledge-network/README.md) → [learning-paths](./knowledge-network/learning-paths/README.md) → [our-theory](./knowledge-network/our-theory/README.md)
+3. 活动与进入路线：
+   [stations/space-salon](./stations/space-salon/README.md) → [VIRTURA-Collective / activities](https://github.com/ewanqian/VIRTURA-Collective/tree/main/activities)
+
+## 什么内容放在这里最合适
+
+这里目前主要承接四类内容:
+
 - 项目与站点级公开档案
 - `knowledge-network` 相关知识结构
 - 活动、沙龙与公共交流档案
-- 带叙事包装的公开门面材料
-
-## Suggested Reading Route
-
-如果你希望在最短时间内理解整个公开体系，建议按这个顺序阅读:
-
-1. [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
-2. [organization/works](./organization/works/README.md)
-3. [knowledge-network](./knowledge-network/README.md)
-4. [stations/space-salon](./stations/space-salon/README.md)
-5. [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
-6. [SceneForge](https://github.com/ewanqian/SceneForge)
+- 团队公开层的导航与分工说明
 
 ## 仓库分工
 
@@ -56,11 +64,19 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 |---|---|---|
 | [portfolio](https://github.com/ewanqian/portfolio) | 个人入口 | 个人身份、作品与对外展示 |
 | [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) | 团队主入口 | 团队、成员、作品、研究与合作入口 |
-| [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort) | 公共导览前台 | 公开入口、档案数据库、叙事门面 |
+| [VIRTURA-SpacePort](https://github.com/ewanqian/VIRTURA-SpacePort) | 公共导览前台 | 公开入口、档案、知识网络与活动入口 |
 | [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) | 发布出口 | 研究文章、项目复盘、公告与媒体资料 |
 | [SceneForge](https://github.com/ewanqian/SceneForge) | 核心产品 | 网页端场景查看器 / 舞台预演器 |
 | [RepoForge](https://github.com/ewanqian/RepoForge) | 公开治理工具壳 | 对外展示自动化运维能力 |
 | Forge | 私有内部治理仓 | 实际工作流、缓存、自动化配置 |
+
+## 知识网络怎么用
+
+如果你第一次进入 `knowledge-network`，不要从头硬读。更好的方式是：
+
+1. 先想清楚你是想做作品、补方法，还是找学习路径
+2. 再去 [knowledge-network](./knowledge-network/README.md) 里按目的选入口
+3. 第一次优先走 [learning-paths](./knowledge-network/learning-paths/README.md) 或 [our-theory](./knowledge-network/our-theory/README.md)
 
 ## Important Boundary
 
@@ -72,7 +88,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 ## Current Status
 
-当前版本处于公开维护中。重点不是扩张概念，而是让已有资料更易读、更易导航、更适合长期沉淀。
+当前版本处于公开维护中。重点不是继续扩张概念，而是把已有资料整理成真正可反复使用的入口。
 
 ## Recommended Entrances
 
@@ -85,4 +101,4 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 ## Note On Public Narrative
 
-这里仍然保留带有叙事性的表达，但叙事只服务于导览与公开档案，不替代真实的团队结构、项目状态和产品边界。
+这里保留一定的空间感和叙事感，但叙事只服务于导览，不替代真实的团队结构、项目状态和产品边界。

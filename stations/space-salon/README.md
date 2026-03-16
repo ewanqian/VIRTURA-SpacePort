@@ -2,11 +2,27 @@
 
 VIRTURA 空间茶话会系列档案入口。
 
+如果你是通过一次分享、朋友转发或活动海报来到这里，这里应该先让你知道：这个系列是什么、适合谁看、下一步该点哪里。
+
 这里存放：
 
 - 活动公告文案
 - 分享记录与整理稿
 - 后续补充的图文、链接与现场资料
+
+## 你可以在这里做什么
+
+- 看最近一期空间茶话会的对外介绍
+- 回看已经发生的分享与整理稿
+- 判断自己更适合旁听、交流还是后续参与
+
+## 第一次怎么进入
+
+如果你是第一次看这个系列，建议按下面顺序进入:
+
+1. 先看某一期的 `README.md`
+2. 再看 `public-release.md` 了解对外版本
+3. 最后再看 `internal-full-record.md` 理解完整整理稿
 
 ## Archive Rule
 
@@ -40,14 +56,6 @@ VIRTURA 空间茶话会系列档案入口。
 
 - [VIRTURA 空间茶话会 Vol.1｜云端续章，把创作的漫谈搬进线上客厅](./vol-01-cloud-sequel/README.md)
 - [VIRTURA 空间茶话会 Vol.2｜筹备中](./vol-02-planning/README.md)
-
-## Reading Advice
-
-如果你是第一次看这个系列，建议按下面顺序进入:
-
-1. 先看某一期的 `README.md`
-2. 再看 `public-release.md` 了解对外版本
-3. 最后再看 `internal-full-record.md` 理解完整整理稿
 
 ## Template
 
