@@ -1,6 +1,6 @@
 # 实现构建阶段 Build Phase
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 ---
 
@@ -33,26 +33,28 @@
 ## 核心模块
 
 ### 前端开发
-- [前端基础框架](front-end-development/basic-framework.md)
-- [沉浸式前端开发要点](front-end-development/immersive-frontend.md)
+- 前端基础框架：待补
+- 沉浸式前端开发要点：待补
 
 ### 后端开发
-- [后端基础架构](back-end-development/basic-architecture.md)
-- [数据管理](back-end-development/data-management.md)
+- 后端基础架构：待补
+- 数据管理：待补
 
 ### Unity 进阶
-- [Unity进阶实操](unity-advanced.md)
+- Unity进阶实操：待补
 
 ### 选题深化
-- [选题深化指引](topic-selection-advanced.md)
+- 选题深化指引：待补
 
 ### 工具联动
-- [SceneForge](sceneforge.md) - 场景构建工具
-- [LiveForge](liveforge.md) - 实时交互工具
+- [SceneForge](https://github.com/ewanqian/SceneForge) - 场景构建工具
+- LiveForge：待补
 
 ---
 
 ## 进阶指引
+
+当前本阶段细分页还在整理中；现阶段请先把这里当作阶段说明页使用。
 
 完成本阶段后，请进入：
 

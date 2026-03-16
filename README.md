@@ -29,7 +29,7 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 ## What Lives Here
 
-这里目前主要承接四类内容:
+这里目前主要承接五类内容:
 
 - 团队生态入口与仓库分工说明
 - 项目与站点级公开档案

@@ -1,6 +1,6 @@
 # 生产管线 Production Pipeline
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：完整的扫描→AI→高斯流程，工程化管理
 
@@ -19,18 +19,10 @@
 - 最短路径
 - 多种实现方法对比
 
-[进入 扫描→AI→高斯流程总览 →](./scan-ai-gaussian/README.md)
-
----
-
 ### 实时渲染工作流
 - **Blender→网页**工作流
 - 实时渲染技巧
 - 性能优化
-
-[进入 实时渲染工作流 →](./real-time-rendering/README.md)
-
----
 
 ### 跨软件联动
 - **Blender→Unity**
@@ -38,19 +30,11 @@
 - **Blender→LiveForge**
 - 实时信号传输：OSC/NDI/Syphon/Spout
 
-[进入 跨软件联动 →](./cross-software/README.md)
-
----
-
 ### 工程化管理 ⚠️ 课题
 - 文件管理
 - 版本控制
 - 资产整理
 - 大型舞台视觉/开场秀的管理
-
-[进入 工程化管理 →](./engineering-management/README.md)
-
----
 
 ## 课题
 
@@ -74,6 +58,8 @@
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

@@ -1,6 +1,6 @@
 # 我们的理论/后日谈 Our Theory / Reflections
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：记录我们的心得、体会、总结，以及对空间感知体验的独特诠释
 
@@ -160,7 +160,7 @@
 - 引入高斯点云技术
 - 开发独立入口
 
-[项目详情 →](../../stations/senia-digital-resort/README.md)
+项目详情：待补
 
 #### 雾中茶屋 Seleiumeaves 复盘
 

@@ -1,6 +1,6 @@
 # 3D重建/可视化 3D Reconstruction / Visualization
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：从扫描到AI生成到高斯点云
 
@@ -22,10 +22,6 @@
   - AI生成
 - **工具对比**：Scaniverse/Polycam/Reality Capture对比
 
-[进入 物体扫描 →](./object-scanning/README.md)
-
----
-
 ### AI生成3D
 - **最短路径**：图片→3D模型
 - **多种实现方法**：
@@ -34,10 +30,6 @@
   - DreamFusion
 - **AI效果对比**：中等偏下vs精益求精
 
-[进入 AI生成3D →](./ai-3d-generation/README.md)
-
----
-
 ### 高斯点云
 - **最短路径**：图片→Gaussian Splatting
 - **多种实现方法**：
@@ -45,10 +37,6 @@
   - ComfyUI Gaussian Splatting
   - COLMAP + 3DGS
 - **效果对比**：质量vs速度
-
-[进入 高斯点云 →](./gaussian-splatting/README.md)
-
----
 
 ## 特色内容
 
@@ -59,6 +47,8 @@
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

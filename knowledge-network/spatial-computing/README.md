@@ -1,6 +1,6 @@
 # 空间计算/设备 Spatial Computing / Devices
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：帮助零基础用户在30分钟内发布第一个Demo
 
@@ -23,10 +23,6 @@
 - **实战案例**：180°视频→Blender处理→导出双目→App独立运行
 - **困境预设** + 解决方案
 
-[进入 Apple Vision Pro →](./apple-vision-pro/README.md)
-
----
-
 ### Meta Quest
 目标：快速发布第一个Demo
 
@@ -36,18 +32,10 @@
 - **Unity VR Interaction Framework插件适配**
 - **困境预设** + 解决方案
 
-[进入 Meta Quest →](./meta-quest/README.md)
-
----
-
 ### 交互逻辑基础
 - 手势识别原理
 - 眼动跟踪原理
 - 多人交互方案
-
-[进入交互逻辑基础 →](./interaction-logic/README.md)
-
----
 
 ## 特色内容
 
@@ -58,6 +46,8 @@
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

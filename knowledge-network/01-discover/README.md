@@ -33,7 +33,7 @@
 - [名词速查表](00-orientation/glossary.md)
 - [7天学习路径](00-orientation/learning-path.md)
 - [Unity轻量化实操指引](00-orientation/unity-basics-guide.md)
-- [选题基础指引](00-orientation/topic-selection-basics.md)
+- 选题基础指引：待补
 
 ---
 

@@ -31,9 +31,9 @@ Before starting learning, please complete the preparatory stage:
 
 - [What is Spatial Computing?](00-orientation/what-is-spatial-computing-en.md)
 - [Glossary](00-orientation/glossary-en.md)
-- [7-Day Learning Path](00-orientation/learning-path-en.md)
-- [Unity Basics Guide](00-orientation/unity-basics-guide-en.md)
-- [Topic Selection Basics](00-orientation/topic-selection-basics-en.md)
+- [7-Day Learning Path (Chinese)](00-orientation/learning-path.md)
+- [Unity Basics Guide (Chinese)](00-orientation/unity-basics-guide.md)
+- Topic Selection Basics: pending
 
 ---
 
@@ -70,7 +70,7 @@ Unity operation threshold is extremely low, no complex configuration required, y
 
 After completing this phase, please proceed to:
 
-[02-build Build Phase →](../02-build/README-en.md)
+[02-build Build Phase (Chinese) →](../02-build/README.md)
 
 ---
 

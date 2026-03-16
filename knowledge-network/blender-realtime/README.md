@@ -1,6 +1,6 @@
 # Blender实时引擎 Blender Realtime Engine
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：把Blender当实时引擎用，Eevee渲染快
 
@@ -19,10 +19,6 @@ Blender实时引擎是我们的核心竞争力，Eevee渲染快，比Houdini生�
 - **多种实现方法**：Eevee/Cycles/eevee-next
 - **官方资源**：Blender 4.x Eevee文档
 
-[进入 Eevee快速渲染 →](./eevee-rendering/README.md)
-
----
-
 ### 几何节点
 - **最短路径**：基础几何节点上手
 - **多种实现方法**：
@@ -30,10 +26,6 @@ Blender实时引擎是我们的核心竞争力，Eevee渲染快，比Houdini生�
   - BPM分析驱动
   - MIDI信号驱动
 - **官方资源**：Blender Geometry Nodes文档
-
-[进入 几何节点 →](./geometry-nodes/README.md)
-
----
 
 ### 模拟节点 ⚠️ 特色内容
 - **最短路径**：粒子系统基础
@@ -44,18 +36,10 @@ Blender实时引擎是我们的核心竞争力，Eevee渲染快，比Houdini生�
 - **与音画互动交叉** → 特色内容
 - **官方资源**：Blender Physics文档
 
-[进入 模拟节点 →](./simulation-nodes/README.md)
-
----
-
 ### 光影/材质基础
 - 基础材质设置
 - 多种实现方法：principled BSDF/emit/glass
 - 光照方案：HDRI/区域光/体积光
-
-[进入 光影/材质基础 →](./lighting-materials/README.md)
-
----
 
 ## 特色内容
 
@@ -65,6 +49,8 @@ Blender实时引擎是我们的核心竞争力，Eevee渲染快，比Houdini生�
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

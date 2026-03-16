@@ -1,6 +1,6 @@
 # 网页端/发布 Web Publishing
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：快速网页Demo，性能优化
 
@@ -19,18 +19,10 @@
 - **能做什么/不能做什么**
 - 适用场景
 
-[进入 Spline →](./spline/README.md)
-
----
-
 ### Three.js/Babylon.js
 - **最短路径**
 - **Blender导出工作流**
 - 工具对比
-
-[进入 Three.js/Babylon.js →](./threejs-babylonjs/README.md)
-
----
 
 ### 网页端性能优化 ⚠️ 特色内容
 - **烘焙技巧**：模型/贴图→单张纹理
@@ -38,10 +30,6 @@
 - 光影烘焙到贴图
 - 减少读取图片数量
 - 场景效率提升
-
-[进入 网页端性能优化 →](./web-optimization/README.md)
-
----
 
 ## 特色内容
 
@@ -62,6 +50,8 @@
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

@@ -1,6 +1,6 @@
 # 长期创建计划 Long Term Plan
 
-> 英文版本：[LONG_TERM_PLAN-en.md](LONG_TERM_PLAN-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 ---
 

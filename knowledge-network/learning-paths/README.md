@@ -1,6 +1,6 @@
 # 学习路线 Learning Paths
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：最短路径 + 进阶路径 + 困境预设
 

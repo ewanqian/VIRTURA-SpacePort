@@ -155,7 +155,7 @@
 
 ## 相关理论
 
-- [数字情感容器理论](./digital-emotion-container/README.md)
+- [数字情感容器理论](../digital-emotion-container/README.md)
 
 ---
 

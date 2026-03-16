@@ -1,6 +1,6 @@
 # 音画互动 Audio-Visual
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：音频驱动视觉，与几何节点交叉（我们的特色）
 
@@ -22,10 +22,6 @@
   - MIDI信号→精确控制
 - **工具对比**：Blender/After Effects/TouchDesigner对比
 
-[进入 音频分析 →](./audio-analysis/README.md)
-
----
-
 ### 音频驱动视觉 ⚠️ 特色内容
 - **最短路径**：音频驱动几何节点
 - **多种实现方法**：
@@ -33,10 +29,6 @@
   - 节拍驱动旋转
   - 频率驱动颜色
 - **与几何节点交叉** → 特色内容
-
-[进入 音频驱动视觉 →](./audio-driven-visual/README.md)
-
----
 
 ### OSC/时间码同步
 - **最短路径**：OSC基础连接
@@ -46,10 +38,6 @@
   - 时间码同步（LTC/SMPTE）
 - **工具对比**：TouchDesigner/syphon/spout/ndi对比
 
-[进入 OSC/时间码同步 →](./osc-timecode/README.md)
-
----
-
 ## 特色内容
 
 ### 音频驱动视觉与几何节点交叉
@@ -58,6 +46,8 @@
 ---
 
 ## 最短路径（零基础）
+
+当前细分页还在整理中；现阶段请先结合本页提纲与 [learning-paths](../learning-paths/README.md) 进入。
 
 | 目标 | 预计时间 | 路径 |
 |-----|---------|------|

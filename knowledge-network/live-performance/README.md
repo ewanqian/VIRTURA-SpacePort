@@ -1,6 +1,6 @@
 # 现场表演/剧场艺术 Live Performance / Theater Arts
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 目标：收集剧场现场表演相关案例，具身理论，以及空间感知在演出中的应用
 

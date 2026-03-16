@@ -1,6 +1,6 @@
 # 数字情感容器 Digital Emotion Container
 
-> 英文版本：[README-en.md](README-en.md)
+> 英文版本待补，当前请先以中文版本为准。
 
 ---
 
@@ -216,11 +216,11 @@
 
 ## 七、与知识领域的关联
 
-- [3D重建/可视化](../3d-reconstruction/README.md) - 高斯点云技术基础
-- [空间计算/设备](../spatial-computing/README.md) - Apple Vision Pro适配
-- [Blender实时引擎](../blender-realtime/README.md) - 实时渲染
-- [现场表演/剧场艺术](../live-performance/README.md) - 空间感知
-- [音画互动](../audio-visual/README.md) - 情感增强
+- [3D重建/可视化](../../3d-reconstruction/README.md) - 高斯点云技术基础
+- [空间计算/设备](../../spatial-computing/README.md) - Apple Vision Pro适配
+- [Blender实时引擎](../../blender-realtime/README.md) - 实时渲染
+- [现场表演/剧场艺术](../../live-performance/README.md) - 空间感知
+- [音画互动](../../audio-visual/README.md) - 情感增强
 
 ---
 
