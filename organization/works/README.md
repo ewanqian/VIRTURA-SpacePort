@@ -45,7 +45,7 @@
 | 作品 | 描述 | 状态 |
 |------|------|------|
 | [MOVA美术馆](../../stations/mova/README.md) | 数字美术馆概念验证项目 | 概念验证 |
-| [林中茶屋 Seleiumeaves](../../stations/teahouse-forest-pavilion/README.md) | 沉浸式数字茶屋空间项目 | 开发中 |
+| [林中茶屋 Seleiumeaves](../../stations/teahouse-forest-pavilion/README.md) | 数字茶屋概念项目 | 开发中 |
 | [赛尼亚岛 Senia-Digital-Resort](https://github.com/ewanqian/Senia-Digital-Resort) | 基于 Minecraft 的空间感知体验实验 | 维护中 |
 
 ---
@@ -56,7 +56,7 @@
 |------|------|------|
 | VIRTURA-SpacePort | 知识网络主仓库 - 10 大知识领域 | 持续更新 |
 | 智力装备理论 | 从静态知识到动态网络的范式变革研究 | 已发布 |
-| 数字情感容器 | AI 时代的情感记忆空间化理论 | 已发布 |
+| 数字情感容器 | 空间化情感表达相关理论整理 | 已发布 |
 
 ---
 
