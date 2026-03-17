@@ -33,18 +33,18 @@
 | 角色 | 创作者 |
 |------|--------|
 | 策展人、艺术总监 | 沈轩（上海市多媒体行业协会副会长） |
-| 剧场导演 | 王家明（东乌西兔艺术中心、乂媒体表演工作室联合创始人） |
+| 剧场导演 | 王家明（东乌西兔艺术中心、乂媒体表演工作室联合创始人，指导老师/个人参与） |
 | 视觉 / 数字内容 | 钱誉文 |
-| 表演 | 魏琴 |
+| 表演 | 魏琴（指导老师/个人参与） |
 | 电子音乐 | 徐昊 |
 | 交互装置 | 许思慧 |
 
 **English:**
 
 - **Curator, Art Director**: Shen Xuan (Vice President of Shanghai Multimedia Industry Association)
-- **Theater Director**: Wang Jiaming (Co-Founder of Corbie & Rabbit Art Center, Media X Performance Studio)
+- **Theater Director**: Wang Jiaming (Co-Founder of Corbie & Rabbit Art Center, Media X Performance Studio, Instructor/Personal Participation)
 - **Visual / Digital Content**: Qian Yuwen
-- **Performing Artist**: Wei Qin
+- **Performing Artist**: Wei Qin (Instructor/Personal Participation)
 - **Experimental Electronic Musician**: Xu Hao
 - **Interactive Artist**: Xu Sihui
 
