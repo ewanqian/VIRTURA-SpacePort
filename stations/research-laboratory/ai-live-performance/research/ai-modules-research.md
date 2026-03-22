@@ -83,6 +83,65 @@ SceneForge viewer / previs
 
 ---
 
+## 最小可用部署方案（Windows）
+
+> 刻意收窄：先做**离线预分析 + OSC 回放**，不把 ComfyUI、生成画面、实时麦克风全塞进第一版。
+
+### 安装命令
+
+```bash
+conda create -n sceneforge-audio python=3.10 -y
+conda activate sceneforge-audio
+
+conda install -c conda-forge aubio librosa ffmpeg soundfile numpy scipy -y
+
+pip install python-osc
+pip install basic-pitch
+pip install demucs
+```
+
+`madmom` 因依赖 cython，放第二步再加。
+
+### 核心 OSC 地址（第一版）
+
+```
+/audio/time_sec     float   当前播放时间（秒）
+/audio/bpm          float   曲目标记 BPM
+/audio/rms          float   当前 RMS 能量（0-1）
+/audio/energy/low   float   低频能量（0-1）
+/audio/energy/mid   float   中频能量（0-1）
+/audio/energy/high  float   高频能量（0-1）
+/audio/beat         float   节拍触发（1 = 触发）
+```
+
+### 部署路线对比
+
+| 路线 | 适合 | 工具链 |
+|---|---|---|
+| **最快上手版** | 马上想用 | Demucs + librosa + python-osc |
+| **作者系统版** | 长期维护 | Essentia + Demucs + python-osc + state machine |
+| **ComfyUI 实验版** | 预演验证 | ComfyUI 社区节点（不作为主控中枢） |
+
+### kick/snare 务实现场
+
+**不要先在总轨里硬猜。先分 drums stem，再测。**
+
+链路：`MP3 → Demucs → drums.wav → onset+频段检测 → OSC`
+
+代码示例：[SceneForge/systems/offline/audio-analysis/](https://github.com/ewanqian/SceneForge/tree/main/systems/offline/audio-analysis)
+
+### ComfyUI 的正确位置
+
+适合：
+- 读取 JSON / stems 测试音画关系
+- 生成式视觉实验
+- 预演分析
+
+不适合：
+- 充当整套演出的唯一分析中枢
+
+---
+
 ## ComfyUI 角色定位
 
 **ComfyUI 更适合当"实验台"和"拼装台"，不适合直接当整套实时演出的核心分析中枢。**
