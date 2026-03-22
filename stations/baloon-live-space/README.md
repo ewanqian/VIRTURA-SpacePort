@@ -80,7 +80,7 @@
 |---|---|---|---|
 | 2026-05-09 | [太空气球 Beta 共测夜｜把上一轮的问题接着修，看看这条线上台后稳不稳](https://luma.com/p7c1df8c) | 第二轮联调 / 公开共测 | [档案](./beta-test-night-2026-05/README.md) / [Luma](https://luma.com/p7c1df8c) |
 | 2026-04-18 | [太空气球 Session 02｜线上 live set 试放与视觉共演夜](https://luma.com/wsafafy2) | 第二次线上试演 / 音画实验夜 | [档案](./session-02-live-set-2026-04/README.md) / [Luma](https://luma.com/wsafafy2) |
-| 2026-03-21 | [太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw) | 第一轮公开测试 / 结构与观看反馈 | [档案](./alpha-electronman-ew1-2026-03/README.md) / [Luma](https://luma.com/go6kxnnw) |
+| 2026-03-21 | [太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw) | 第一轮公开测试 / 结构与观看反馈 | [档案](./baloon-live-space-alpha/README.md) / [Luma](https://luma.com/go6kxnnw) |
 | 2022 | VRChat 地图构想 | 早期线上演出空间设想 | 系列起点 |
 
 ## 这条线后面会怎么长

@@ -14,6 +14,21 @@
 - [系列总入口](../README.md)
 - [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](../research/from-vrchat-to-browser-stage-2026.md)
 
+---
+
+## Alpha 文档体系 / Alpha Docs
+
+这个目录存放当前阶段有效的文档，是后续可继续引用、补充和扩展的 Alpha 档案层。
+
+| 文档 | 内容 |
+|---|---|
+| [01\_alpha\_overview.md](./01_alpha_overview.md) | 项目概览与 Alpha 测试目的 |
+| [02\_system\_and\_process.md](./02_system_and_process.md) | 实时系统链路与创作过程（核心文档） |
+| [03\_signal\_and\_performance\_logic.md](./03_signal_and_performance_logic.md) | 信号层词汇与表演逻辑说明 |
+| [04\_next\_steps\_and\_references.md](./04_next_steps_and_references.md) | 下一步开发方向与主要参考 |
+
+---
+
 ## 这场 Alpha 实际在验证什么
 
 这不是一场“正式上线”的发布会，而是 `Baloon Live Space` 第一轮对外可见的结构测试。
