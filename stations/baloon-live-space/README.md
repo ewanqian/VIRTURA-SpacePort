@@ -40,9 +40,17 @@
 4. 面向音乐人、视觉创作者和旁听者的公开共测
 5. 后续更完整的线上演出空间联调
 
-## 研究入口
+## 历史档案入口
 
+- [2022-2023 VRChat 世界记录](./history/2022-2023-vrchat/world-info.md)
 - [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](./research/from-vrchat-to-browser-stage-2026.md)
+
+## 当前阶段入口
+
+| 阶段 | 状态 | 说明 |
+|---|---|---|
+| [Alpha](./baloon-live-space-alpha/README.md) | 已完成 | 第一轮公开测试，验证链路 |
+| [Beta](./baloon-live-space-beta/README.md) | 进行中 | 修正形象、积累时长、优化手感 |
 
 ## 这次 Alpha 在做什么
 
