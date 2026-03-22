@@ -32,6 +32,24 @@ VIRTURA Research Laboratory 是一个致力于探索艺术、技术与认知科�
 
 ---
 
+### 1.5 AI 实时演出（AI Live Performance）
+
+**核心问题：** 如何让 AI 在演出现场理解音频、视觉与身体状态，并把这种理解转化为可感知的空间结构变化？
+
+**研究内容：**
+- 三层混合架构：硬实时层 → AI 语义层 → cue/state 决策层
+- AI 模块技术选型与实验方案
+- 与 SceneForge 和太空气球的协作落地
+
+**研究文档：**
+- [AI 实时演出研究主入口](./ai-live-performance/README.md)
+- [技术选型报告](./ai-live-performance/research/ai-modules-research.md)
+- [实验方案](./ai-live-performance/experiments/README.md)
+
+**相关项目：** SceneForge、AI 模块路线图、太空气球 Alpha/Beta
+
+---
+
 ### 2. 感知接口（Perceptual Interface）
 
 **核心问题：** 如何设计让用户在感知层面经历状态转移的"进入机制"？
@@ -57,6 +75,8 @@ VIRTURA Research Laboratory 是一个致力于探索艺术、技术与认知科�
 - 扫描生态与数字环境的生命感
 
 **相关理论：** 数字情感容器理论、空间创作框架
+
+---
 
 ---
 
@@ -87,6 +107,7 @@ VIRTURA Research Laboratory 是一个致力于探索艺术、技术与认知科�
 
 ### 正在进行
 
+- **AI 实时演出研究** - 三层混合架构 + 五个核心模块 + 三个优先实验
 - **ENTRY / 迁移实验 #01** - 感知迁移的可执行实验系统
 - **Drop Flow 2026** - 实时引擎与空间交互版本
 - **SceneForge** - 网页端场景查看器与舞台预演器
