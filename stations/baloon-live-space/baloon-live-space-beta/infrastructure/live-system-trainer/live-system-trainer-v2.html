@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live System Trainer · Chataigne / Arena / Blender / Unity</title>
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --panel: #121923;
+      --panel-2: #172130;
+      --line: #273246;
+      --text: #e7edf6;
+      --muted: #9ca9ba;
+      --accent: #78a7ff;
+      --accent-2: #8ee1c2;
+      --warn: #ffb86c;
+      --danger: #ff7b7b;
+      --ok: #8ee1c2;
+      --shadow: 0 12px 30px rgba(0,0,0,.35);
+      --radius: 18px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(120,167,255,.12), transparent 35%),
+        radial-gradient(circle at 80% 10%, rgba(142,225,194,.08), transparent 25%),
+        var(--bg);
+      color: var(--text);
+      overflow: hidden;
+    }
+
+    .app {
+      display: grid;
+      grid-template-columns: 300px 1fr 320px;
+      grid-template-rows: minmax(172px, auto) minmax(0, 1fr);
+      grid-template-areas:
+        "top top top"
+        "left center right";
+      height: 100vh;
+      min-height: 0;
+      gap: 14px;
+      padding: 14px;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)), var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      min-height: 0;
+    }
+
+    .topbar {
+      grid-area: top;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      align-items: start;
+      gap: 14px;
+    }
+
+    .top-card {
+      background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)), var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 14px 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 10px;
+      min-width: 0;
+      min-height: 0;
+    }
+
+    .left { grid-area: left; display: flex; flex-direction: column; }
+    .center { grid-area: center; position: relative; }
+    .right { grid-area: right; display: flex; flex-direction: column; }
+
+    .section-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .headline {
+      font-size: 20px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .subtle { color: var(--muted); font-size: 13px; line-height: 1.5; }
+    .tiny { color: var(--muted); font-size: 12px; }
+
+    .controls-row, .mini-grid {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .mini-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    button, .chip, .tag {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      color: var(--text);
+      border-radius: 12px;
+      padding: 8px 11px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: .16s ease;
+    }
+
+    button:hover, .chip:hover { transform: translateY(-1px); border-color: rgba(120,167,255,.55); }
+    button.primary { background: rgba(120,167,255,.14); border-color: rgba(120,167,255,.45); }
+    button.ok { background: rgba(142,225,194,.12); border-color: rgba(142,225,194,.35); }
+    button.warn { background: rgba(255,184,108,.12); border-color: rgba(255,184,108,.35); }
+    button.danger { background: rgba(255,123,123,.12); border-color: rgba(255,123,123,.4); }
+    button.active, .chip.active {
+      background: rgba(120,167,255,.16);
+      border-color: rgba(120,167,255,.5);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.02);
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: #78a7ff;
+    }
+
+    .transport-grid {
+      display: grid;
+      grid-template-columns: auto auto auto 1fr;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .top-card .controls-row {
+      row-gap: 8px;
+    }
+
+    .top-card .subtle {
+      margin: 0;
+    }
+
+    .value-bubble {
+      font-size: 12px;
+      color: var(--muted);
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .beat-strip {
+      height: 12px;
+      background: rgba(255,255,255,.04);
+      border-radius: 999px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      position: relative;
+    }
+
+    .beat-progress {
+      position: absolute;
+      inset: 0;
+      width: 0%;
+      background: linear-gradient(90deg, rgba(120,167,255,.22), rgba(142,225,194,.22));
+    }
+
+    .pulse-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+    }
+
+    .pulse {
+      height: 18px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      opacity: .55;
+      transition: .12s ease;
+    }
+
+    .pulse.hot {
+      background: rgba(120,167,255,.35);
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+
+    .levels-wrap {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      min-height: 0;
+    }
+
+    .levels-list {
+      overflow: auto;
+      padding: 0 14px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .level-card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.02);
+      border-radius: 16px;
+      padding: 12px;
+      cursor: pointer;
+      transition: .16s ease;
+    }
+
+    .level-card:hover { transform: translateY(-1px); }
+    .level-card.active {
+      border-color: rgba(120,167,255,.45);
+      background: rgba(120,167,255,.08);
+    }
+    .level-card.done {
+      border-color: rgba(142,225,194,.35);
+      background: rgba(142,225,194,.08);
+    }
+
+    .level-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 6px;
+    }
+
+    .level-num {
+      width: 28px; height: 28px; border-radius: 999px;
+      display: inline-flex; align-items: center; justify-content: flex-start;
+      font-weight: 700; font-size: 13px;
+      background: rgba(255,255,255,.06); border: 1px solid var(--line);
+    }
+
+    .desktop-shell {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.03), transparent),
+        linear-gradient(90deg, rgba(255,255,255,.015), transparent 1px),
+        linear-gradient(rgba(255,255,255,.015), transparent 1px),
+        #0d141f;
+      background-size: auto, 28px 28px, 28px 28px, auto;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+    }
+
+    .desktop-overlay {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: radial-gradient(circle at 50% 0%, rgba(120,167,255,.08), transparent 35%);
+    }
+
+    #connectionLayer {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    .connection {
+      stroke: rgba(120,167,255,.58);
+      stroke-width: 2.5;
+      fill: none;
+    }
+
+    .connection.clock { stroke: rgba(120,167,255,.72); }
+    .connection.osc { stroke: rgba(142,225,194,.72); }
+    .connection.video { stroke: rgba(255,184,108,.72); }
+    .connection.midi { stroke: rgba(255,123,123,.72); }
+
+    .window {
+      position: absolute;
+      width: 270px;
+      background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.02)), #101827;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      z-index: 3;
+      user-select: none;
+    }
+
+    .window.dragging { opacity: .93; box-shadow: 0 20px 40px rgba(0,0,0,.5); }
+
+    .window-header {
+      padding: 10px 12px;
+      background: rgba(255,255,255,.03);
+      border-bottom: 1px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      cursor: grab;
+    }
+
+    .window-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .dot {
+      width: 10px; height: 10px; border-radius: 50%;
+      background: rgba(120,167,255,.78);
+      box-shadow: 0 0 12px rgba(120,167,255,.35);
+    }
+
+    .window-body {
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .port-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .ports {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .port {
+      position: relative;
+      padding: 6px 9px;
+      border-radius: 999px;
+      font-size: 11px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .port.selected {
+      border-color: rgba(120,167,255,.6);
+      background: rgba(120,167,255,.16);
+    }
+
+    .port.out::after, .port.in::before {
+      content: "";
+      position: absolute;
+      top: 50%; transform: translateY(-50%);
+      width: 7px; height: 7px; border-radius: 999px;
+      background: currentColor;
+      opacity: .85;
+    }
+
+    .port.out::after { right: -4px; }
+    .port.in::before { left: -4px; }
+
+    .port.clock { color: #78a7ff; }
+    .port.osc { color: #8ee1c2; }
+    .port.video { color: #ffb86c; }
+    .port.midi { color: #ff7b7b; }
+    .port.state { color: #d2b8ff; }
+
+    .toggle-list {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 8px;
+    }
+
+    .toggle-item {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      font-size: 12px;
+    }
+
+    .toggle-item.on { border-color: rgba(120,167,255,.35); background: rgba(120,167,255,.08); }
+
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: 8px;
+    }
+
+    .status-pill {
+      padding: 9px 10px;
+      border-radius: 14px;
+      font-size: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+    }
+
+    .status-pill.hot { border-color: rgba(142,225,194,.38); background: rgba(142,225,194,.08); }
+    .status-pill.warn { border-color: rgba(255,184,108,.34); background: rgba(255,184,108,.08); }
+
+    .inspector {
+      padding: 14px;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      height: 100%;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.025);
+      border-radius: 16px;
+      padding: 12px;
+    }
+
+    .task-list, .log-list, .practice-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .task-item, .log-item, .practice-item {
+      padding: 9px 10px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      font-size: 12.5px;
+      line-height: 1.45;
+    }
+
+    .task-item.done { border-color: rgba(142,225,194,.35); background: rgba(142,225,194,.08); }
+    .log-item { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+
+    .score-bar {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      overflow: hidden;
+      border: 1px solid var(--line);
+    }
+
+    .score-fill {
+      height: 100%; width: 0;
+      background: linear-gradient(90deg, rgba(120,167,255,.75), rgba(142,225,194,.75));
+      transition: .2s ease;
+    }
+
+    .footer-note {
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .window[data-app="ableton"] { width: 320px; }
+    .window[data-app="chataigne"] { width: 390px; }
+    .window[data-app="arena"] { width: 455px; }
+    .window[data-app="unity"] { width: 320px; }
+    .window[data-app="touchdesigner"] { width: 360px; }
+    .window[data-app^="blender"] { width: 300px; }
+    .window[data-app="midi"] { width: 360px; }
+    .window[data-app="notes"] { width: 340px; }
+    .window[data-app="monitor"] { width: 300px; }
+
+    .mini-led {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      color: var(--muted);
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .mini-led::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.18);
+      box-shadow: 0 0 8px rgba(255,255,255,.08);
+    }
+    .mini-led.hot::before {
+      background: var(--ok);
+      box-shadow: 0 0 10px rgba(142,225,194,.45);
+    }
+
+    .fake-toolbar {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+    }
+
+    .app-block {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      padding: 10px;
+    }
+
+    .app-block-title {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .ableton-clips {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 8px;
+    }
+    .ableton-clip {
+      padding: 10px 8px;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      font-size: 12px;
+      text-align: center;
+      cursor: pointer;
+    }
+    .ableton-clip.active {
+      border-color: rgba(142,225,194,.4);
+      background: rgba(142,225,194,.12);
+    }
+
+    .chataigne-modules {
+      display:grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap:8px;
+    }
+    .module-card {
+      border:1px solid var(--line);
+      border-radius: 13px;
+      padding: 10px;
+      background: rgba(255,255,255,.035);
+      display:flex;
+      flex-direction:column;
+      gap:6px;
+      font-size: 12px;
+    }
+    .module-card.on {
+      border-color: rgba(120,167,255,.42);
+      background: rgba(120,167,255,.09);
+    }
+    .module-card .mod-name {
+      font-weight: 700;
+      display:flex;
+      justify-content:space-between;
+      gap:8px;
+    }
+    .module-card .toggle-item {
+      margin-top: auto;
+    }
+    .router-mini {
+      display:grid;
+      grid-template-columns: 1fr auto 1fr auto 1fr;
+      align-items:center;
+      gap:6px;
+      font-size: 11px;
+      color: var(--muted);
+    }
+    .router-box {
+      border:1px solid var(--line);
+      border-radius: 10px;
+      padding: 6px 8px;
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      text-align:center;
+    }
+    .router-arrow { color: var(--accent); font-weight: 700; }
+
+    .arena-shell {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .arena-top {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .arena-badges {
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+    .arena-badge {
+      font-size: 11px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+    }
+    .arena-main {
+      display:grid;
+      grid-template-columns: 1.3fr .9fr;
+      gap:10px;
+    }
+    .arena-grid {
+      border:1px solid var(--line);
+      border-radius: 14px;
+      overflow:hidden;
+      background: rgba(255,255,255,.03);
+    }
+    .arena-grid-header, .arena-layer-row {
+      display:grid;
+      grid-template-columns: 72px repeat(5, minmax(0,1fr));
+      gap:1px;
+      background: rgba(255,255,255,.03);
+    }
+    .arena-grid-header span, .arena-layer-label, .arena-clip {
+      min-height: 34px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:11px;
+      background:#101827;
+    }
+    .arena-layer-label {
+      color: var(--muted);
+      justify-content:flex-start;
+      padding-left:10px;
+      font-weight:600;
+    }
+    .arena-clip {
+      cursor:pointer;
+      border:0;
+      color: var(--text);
+    }
+    .arena-clip.active {
+      background: rgba(255,184,108,.16);
+      box-shadow: inset 0 0 0 1px rgba(255,184,108,.45);
+    }
+    .arena-clip.flash {
+      background: rgba(255,123,123,.14);
+    }
+    .arena-side {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .arena-param-row {
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:8px;
+      font-size:12px;
+    }
+    .band-row, .source-row {
+      display:flex;
+      gap:6px;
+      flex-wrap:wrap;
+    }
+    .mini-pill {
+      font-size: 11px;
+      padding: 5px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      cursor:pointer;
+    }
+    .mini-pill.active {
+      background: rgba(120,167,255,.16);
+      border-color: rgba(120,167,255,.45);
+    }
+
+    .preview-box {
+      height: 118px;
+      border-radius: 14px;
+      border:1px solid var(--line);
+      background:
+        radial-gradient(circle at 50% 40%, rgba(120,167,255,.22), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)),
+        #0f1724;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color: var(--muted);
+      font-size: 12px;
+      letter-spacing:.04em;
+    }
+    .preview-box.stage {
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.01)),
+        radial-gradient(circle at 50% 70%, rgba(142,225,194,.12), transparent 35%),
+        linear-gradient(180deg, #131e2d, #0d1521);
+    }
+
+    .akai-shell {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .akai-grid {
+      display:grid;
+      grid-template-columns: repeat(9, minmax(0,1fr));
+      gap: 6px;
+      align-items:end;
+    }
+    .akai-pads-wrap {
+      display:grid;
+      grid-template-columns: repeat(8, 1fr) 30px;
+      gap:6px;
+      align-items:start;
+    }
+    .akai-pad-grid {
+      display:grid;
+      grid-template-columns: repeat(8, minmax(0,1fr));
+      gap:6px;
+    }
+    .akai-pad {
+      width:100%;
+      aspect-ratio: 1 / 1;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 10px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:0;
+    }
+    .akai-pad.active {
+      background: rgba(255,123,123,.16);
+      border-color: rgba(255,123,123,.45);
+      color: var(--text);
+    }
+    .scene-col {
+      display:grid;
+      grid-template-rows: repeat(8, 1fr);
+      gap:6px;
+    }
+    .scene-btn {
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      color: var(--muted);
+      font-size: 10px;
+      min-height: 24px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor:pointer;
+    }
+    .fader-strip {
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      gap:6px;
+      font-size:10px;
+      color: var(--muted);
+    }
+    .fader-vertical {
+      -webkit-appearance: slider-vertical;
+      width: 18px;
+      height: 110px;
+      accent-color: #ff7b7b;
+      background: transparent;
+    }
+    .fader-readout {
+      font-size: 10px;
+      color: var(--text);
+    }
+
+    .notes-textarea {
+      width:100%;
+      min-height: 126px;
+      resize: vertical;
+      border-radius: 12px;
+      border: 1px solid var(--line);
+      background: rgba(6,10,16,.88);
+      color: var(--text);
+      padding: 10px;
+      font: 12px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    .notes-actions {
+      display:flex;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+
+    @media (max-width: 1280px) {
+      body { overflow: auto; }
+      .app {
+        height: auto;
+        min-height: 100vh;
+        grid-template-columns: 280px 1fr;
+        grid-template-rows: auto minmax(480px, 1fr) 320px;
+        grid-template-areas:
+          "top top"
+          "left center"
+          "right right";
+      }
+      .right { min-height: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="topbar">
+      <div class="top-card">
+        <div class="section-title">Live System Trainer</div>
+        <div class="headline">Chataigne / Arena / Blender / Unity 练习器</div>
+        <div class="subtle">目标不是 1:1 复刻软件，而是按真实功能逻辑去做<strong>近似模拟</strong>：先把 <strong>总控层、演出层、空间层、资产层</strong> 的角色感练出来，再迁移到真实工程里。</div>
+      </div>
+      <div class="top-card">
+        <div class="section-title">音乐模拟器</div>
+        <div class="transport-grid">
+          <button id="playBtn" class="primary">▶ 播放</button>
+          <button id="tapBtn">Tap</button>
+          <button id="peakBtn" class="warn">Peak</button>
+          <div class="value-bubble"><span>BPM</span><strong id="bpmValue">124</strong></div>
+        </div>
+        <input id="bpmSlider" type="range" min="70" max="170" value="124" />
+        <div class="controls-row">
+          <div class="value-bubble">Section <strong id="sectionValue">intro</strong></div>
+          <button class="chip section-btn active" data-section="intro">Intro</button>
+          <button class="chip section-btn" data-section="build">Build</button>
+          <button class="chip section-btn" data-section="peak">Peak</button>
+          <button class="chip section-btn" data-section="outro">Outro</button>
+        </div>
+        <div class="beat-strip"><div id="beatProgress" class="beat-progress"></div></div>
+        <div class="pulse-row" id="pulseRow">
+          <div class="pulse"></div><div class="pulse"></div><div class="pulse"></div><div class="pulse"></div>
+        </div>
+      </div>
+      <div class="top-card">
+        <div class="section-title">演出评分</div>
+        <div class="controls-row">
+          <div class="value-bubble">关卡 <strong id="levelNameTop">01 Clock</strong></div>
+          <div class="value-bubble">完成 <strong id="doneCount">0 / 10</strong></div>
+        </div>
+        <div class="score-bar"><div id="scoreFill" class="score-fill"></div></div>
+        <div class="controls-row">
+          <button id="checkBtn" class="ok">检查本关</button>
+          <button id="autoArrangeBtn">推荐布局</button>
+          <button id="resetBtn" class="danger">重置练习器</button>
+        </div>
+        <div class="tiny">提示：先拖动窗口，再连线，再开功能。每关通过后，右侧会告诉你现实世界里这一步对应什么排练动作。</div>
+      </div>
+    </div>
+
+    <div class="left panel">
+      <div class="levels-wrap">
+        <div style="padding:14px 14px 8px;">
+          <div class="section-title">10 个关卡</div>
+          <div class="subtle">从时钟同步，一直练到多艺人模板、失步救回和 20 分钟 rehearsal。</div>
+        </div>
+        <div id="levelsList" class="levels-list"></div>
+      </div>
+    </div>
+
+    <div class="center">
+      <div class="desktop-shell" id="desktop">
+        <svg id="connectionLayer"></svg>
+        <div class="desktop-overlay"></div>
+      </div>
+    </div>
+
+    <div class="right panel">
+      <div class="inspector">
+        <div class="card">
+          <div class="section-title">当前关卡</div>
+          <div id="levelTitle" class="headline" style="font-size:18px;">01 · 时钟上线</div>
+          <div id="levelSummary" class="subtle"></div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">本关任务</div>
+          <ul id="taskList" class="task-list"></ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">现实对应</div>
+          <div id="realWorldNote" class="subtle"></div>
+        </div>
+
+        <div class="card">
+          <div class="section-title">今天练什么</div>
+          <ul id="practiceList" class="practice-list"></ul>
+        </div>
+
+        <div class="card">
+          <div class="section-title">事件日志</div>
+          <ul id="logList" class="log-list"></ul>
+        </div>
+
+        <div class="footer-note">这个练习器把你的系统抽象成一套可练的“中间语言”：clock、section、energy、state、manual override、fail-safe。等你在网页里把它练顺了，再迁移到真实的 Chataigne / Arena / Unity / Blender 工程里。</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const levels = [
+      {
+        id: 1,
+        name: '01 Clock Online',
+        title: '01 · 时钟上线',
+        summary: '先让 Ableton 把节奏送进 Chataigne，再由 Chataigne 把时钟送到 Arena。你先练“谁是主时钟”。',
+        tasks: [
+          { text: '连接 Ableton 的 clock 输出到 Chataigne 的 clock 输入', check: s => hasConnection('ableton','clockOut','chataigne','clockIn') },
+          { text: '连接 Chataigne 的 clock 输出到 Arena 的 clock 输入', check: s => hasConnection('chataigne','clockOut','arena','clockIn') },
+          { text: '打开 Ableton 的发送时钟', check: s => state.apps.ableton.flags.sendClock },
+          { text: '打开 Chataigne 的 route clock', check: s => state.apps.chataigne.flags.routeClock },
+          { text: '打开 Arena 的 BPM sync', check: s => state.apps.arena.flags.bpmSync }
+        ],
+        realWorld: '真实排练里，这一步对应“先定主时钟，不要一上来就乱做视觉”。如果这一层不稳，后面的 clip、camera、爆闪都会漂。',
+        practice: ['练 5 分钟只看 beat / bar 是否稳。', '练 Tap 和手动改 BPM，感受 resync 的必要性。', '只用一个 clip，先把时钟感练出来。'],
+        arrange: { ableton:[60,70], chataigne:[360,70], arena:[670,110], unity:[820,350], blenderA:[360,360], blenderB:[650,360], blenderC:[930,100], midi:[60,320], monitor:[1050,420], notes:[1070,70] }
+      },
+      {
+        id: 2,
+        name: '02 Stage Control',
+        title: '02 · 舞台窗口接管',
+        summary: '让 Unity 变成舞台壳：它不负责所有内容，但要能听 clock、section、state。',
+        tasks: [
+          { text: '连接 Chataigne 的 OSC 到 Unity', check: s => hasConnection('chataigne','oscOut','unity','oscIn') },
+          { text: '打开 Chataigne 的 state machine', check: s => state.apps.chataigne.flags.stateMachine },
+          { text: '打开 Unity 的 stage mode', check: s => state.apps.unity.flags.stageMode },
+          { text: '把当前 section 切到 build 或 peak', check: s => ['build','peak'].includes(state.transport.section) }
+        ],
+        realWorld: '这一步对应“空间层只吃抽象控制，不直接承担所有分析工作”。也就是 Unity 吃 section、energy、manual override，而不是硬做全部 show control。',
+        practice: ['练 intro / build / peak / outro 四段切换。', '练空间灯光和雾只跟 section 走。', '观察视觉壳是否比内容切换更稳。'],
+        arrange: { ableton:[50,70], chataigne:[340,80], arena:[620,90], unity:[910,150], blenderA:[270,360], blenderB:[560,360], blenderC:[850,420], midi:[50,320], monitor:[1050,430], notes:[1030,70] }
+      },
+      {
+        id: 3,
+        name: '03 Blender Feed',
+        title: '03 · Blender 资产接入',
+        summary: '把一个 Blender 窗口当成资产源或可视化源，先接入 Arena，再让 Arena 成为演出层。',
+        tasks: [
+          { text: '连接 Blender A 的 video 输出到 Arena 的 video 输入', check: s => hasConnection('blenderA','videoOut','arena','videoIn') },
+          { text: '打开 Blender A 的 asset loaded', check: s => state.apps.blenderA.flags.assetLoaded },
+          { text: '打开 Arena 的 clip bank', check: s => state.apps.arena.flags.clipBank },
+          { text: '打开 Arena 的 audio reactive', check: s => state.apps.arena.flags.audioReactive }
+        ],
+        realWorld: '这一步对应“Blender 更适合当资产实验室，而 Arena 负责 live”。你先不要让 Blender 扛整场演出。',
+        practice: ['只接 1 个 Blender 源，别贪多。', '练持续播放 + 小幅反应。', '观察是 Arena 更稳还是 Blender 直接 live 更稳。'],
+        arrange: { ableton:[60,80], chataigne:[330,70], arena:[640,160], unity:[950,160], blenderA:[280,360], blenderB:[610,390], blenderC:[880,390], midi:[50,320], monitor:[1080,430], notes:[1040,70] }
+      },
+      {
+        id: 4,
+        name: '04 Multi Source',
+        title: '04 · 多源切换与兜底',
+        summary: '这关练两个 Blender 源，外加一个 fail-safe。关键不是炫，而是让你在出错时能回到安全画面。',
+        tasks: [
+          { text: '连接 Blender B 的 video 输出到 Arena', check: s => hasConnection('blenderB','videoOut','arena','videoIn') },
+          { text: '打开 Unity 的 blackout fallback', check: s => state.apps.unity.flags.blackoutFallback },
+          { text: '打开 Chataigne 的 panic 按钮', check: s => state.apps.chataigne.flags.panic },
+          { text: '触发一次 Peak 或手动 Peak', check: s => state.transport.peakCount > 0 }
+        ],
+        realWorld: '真实现场里，你不是输在“效果不够花”，而是输在“崩了救不回来”。所以这一关练的是 fail-safe。',
+        practice: ['练一个键回安全画面。', '练 peak 后马上退回背景态。', '练多源切换时不慌。'],
+        arrange: { ableton:[40,80], chataigne:[310,80], arena:[620,170], unity:[930,170], blenderA:[170,380], blenderB:[450,380], blenderC:[730,380], midi:[40,320], monitor:[1060,430], notes:[1030,70] }
+      },
+      {
+        id: 5,
+        name: '05 AKAI Mapping',
+        title: '05 · 控制器映射',
+        summary: '用 AKAI mini 这种逻辑去想：Pad 负责离散段落，Knob/Fader 负责连续质感。',
+        tasks: [
+          { text: '连接 MIDI Controller 到 Chataigne', check: s => hasConnection('midi','midiOut','chataigne','midiIn') },
+          { text: '打开 Chataigne 的 dashboard', check: s => state.apps.chataigne.flags.dashboard },
+          { text: '打开 MIDI 的 pad map', check: s => state.apps.midi.flags.padMap },
+          { text: '打开 MIDI 的 fader map', check: s => state.apps.midi.flags.faderMap }
+        ],
+        realWorld: '这一步对应你的手感训练。按钮控制 section / flash / blackout，旋钮控制 density / energy / camera / haze。',
+        practice: ['Pad 只绑离散切换。', '旋钮只绑连续参数。', '练同一段里手不要超过 3 个动作。'],
+        arrange: { ableton:[40,70], chataigne:[340,70], arena:[680,120], unity:[980,160], blenderA:[260,370], blenderB:[540,380], blenderC:[830,400], midi:[60,300], monitor:[1080,420], notes:[1030,70] }
+      },
+      {
+        id: 6,
+        name: '06 Section Language',
+        title: '06 · 把音乐翻成中间语言',
+        summary: '这关不是接更多音频，而是接“音乐语义”：section、energy、drop、accent。',
+        tasks: [
+          { text: '连接 Ableton macro 输出到 Chataigne 的 state 输入', check: s => hasConnection('ableton','stateOut','chataigne','stateIn') },
+          { text: '打开 Ableton 的 section markers', check: s => state.apps.ableton.flags.sectionMarkers },
+          { text: '打开 Chataigne 的 osc router', check: s => state.apps.chataigne.flags.oscRouter },
+          { text: '把 section 切到 peak', check: s => state.transport.section === 'peak' }
+        ],
+        realWorld: '和会 Ableton 的朋友合作时，不要只收原始音频，而是让他给你“时钟层 + 表演层”的抽象信号。',
+        practice: ['只练 4 个 section。', '把 drop hit 和 peak 区分开。', '练从“听歌”变成“听结构”。'],
+        arrange: { ableton:[60,80], chataigne:[370,80], arena:[700,150], unity:[980,170], blenderA:[250,380], blenderB:[520,380], blenderC:[790,380], midi:[70,320], monitor:[1080,430], notes:[1030,70] }
+      },
+      {
+        id: 7,
+        name: '07 Drift & Resync',
+        title: '07 · 失步与救回',
+        summary: '最像真实演出的关卡之一：不要求永远不漂，而要求你能在 1 个小节内救回来。',
+        tasks: [
+          { text: '打开 Arena 的 tap/resync', check: s => state.apps.arena.flags.tapResync },
+          { text: '打开 Chataigne 的 route clock', check: s => state.apps.chataigne.flags.routeClock },
+          { text: '触发至少 2 次 Tap', check: s => state.transport.tapCount >= 2 },
+          { text: '保持播放 8 秒以上', check: s => state.transport.elapsedMs > 8000 }
+        ],
+        realWorld: '这一步就是你每天都该练的“救场感”。很多系统不是死在没有效果，而是死在没有 resync 手感。',
+        practice: ['故意乱 Tap，再救回来。', '练峰值段落里 resync。', '练救回后不要急着加动作。'],
+        arrange: { ableton:[60,70], chataigne:[360,70], arena:[670,120], unity:[980,130], blenderA:[210,380], blenderB:[490,390], blenderC:[770,390], midi:[60,320], monitor:[1070,430], notes:[1040,70] }
+      },
+      {
+        id: 8,
+        name: '08 Artist A · Ambient',
+        title: '08 · 艺人模板 A：Ambient / 漂浮',
+        summary: '用更慢、更留白的系统思维处理艺人 A。重点不是爆点，而是持续能量和空间感。',
+        tasks: [
+          { text: '打开 Blender C 的 asset loaded', check: s => state.apps.blenderC.flags.assetLoaded },
+          { text: '连接 Blender C 到 Unity 的 video 输入', check: s => hasConnection('blenderC','videoOut','unity','videoIn') },
+          { text: '把 BPM 调到 70–100 之间', check: s => state.transport.bpm >= 70 && state.transport.bpm <= 100 },
+          { text: '当前 section 不在 peak', check: s => state.transport.section !== 'peak' }
+        ],
+        realWorld: '给 ambient、drone、实验电子做视觉时，不要老想着高潮大爆闪。先把空间、呼吸、慢变化练出来。',
+        practice: ['练 30 秒内只做 1 次动作。', '练 fog / haze / camera 微变化。', '练低频和持续能量。'],
+        arrange: { ableton:[60,80], chataigne:[340,80], arena:[650,140], unity:[930,170], blenderA:[180,380], blenderB:[450,390], blenderC:[730,360], midi:[70,320], monitor:[1080,430], notes:[1030,70] }
+      },
+      {
+        id: 9,
+        name: '09 Artist B · Club',
+        title: '09 · 艺人模板 B：Club / 俱乐部',
+        summary: '更接近你说的那种“十套生成视觉 + clip 切换 + 爆闪 + BPM”逻辑，但你要做得更系统。',
+        tasks: [
+          { text: '把 BPM 调到 120–140 之间', check: s => state.transport.bpm >= 120 && state.transport.bpm <= 140 },
+          { text: '打开 Arena 的 clip bank', check: s => state.apps.arena.flags.clipBank },
+          { text: '打开 Arena 的 tap/resync', check: s => state.apps.arena.flags.tapResync },
+          { text: '触发 1 次 Peak', check: s => state.transport.peakCount >= 1 }
+        ],
+        realWorld: '这一步对应你以后给 DJ / club live set 做一套能打的系统：BPM、clip、column、peak、resync 全都要顺手。',
+        practice: ['练 8 小节一个变化。', '练 peak 后 1 秒内退回可持续画面。', '练爆闪不是唯一高潮。'],
+        arrange: { ableton:[40,70], chataigne:[330,70], arena:[650,130], unity:[930,170], blenderA:[190,390], blenderB:[470,390], blenderC:[760,390], midi:[60,300], monitor:[1060,430], notes:[1030,70] }
+      },
+      {
+        id: 10,
+        name: '10 20-Minute Rehearsal',
+        title: '10 · 20 分钟排练模板',
+        summary: '最后一关：你不是证明你会点按钮，而是证明你已经有一套可 rehearsable、可迁移、可交付的 beta 系统。',
+        tasks: [
+          { text: 'Chataigne 已打开 route clock、state machine、dashboard', check: s => state.apps.chataigne.flags.routeClock && state.apps.chataigne.flags.stateMachine && state.apps.chataigne.flags.dashboard },
+          { text: 'Arena 已打开 bpmSync、clipBank、tapResync', check: s => state.apps.arena.flags.bpmSync && state.apps.arena.flags.clipBank && state.apps.arena.flags.tapResync },
+          { text: 'Unity 已打开 stageMode 和 blackoutFallback', check: s => state.apps.unity.flags.stageMode && state.apps.unity.flags.blackoutFallback },
+          { text: '已接通至少 6 条关键连接', check: s => state.connections.length >= 6 },
+          { text: '至少完成 6 个前置关卡', check: s => state.completed.size >= 6 }
+        ],
+        realWorld: '这一步对应你真正的 beta：一套母工程 + 几个风格包 + 一个统一控制语言。之后你面对不同艺人时，改的是内容包，不是重写系统。',
+        practice: ['练 20 分钟不断演。', '记录哪里总是手忙脚乱。', '每次排练都记 1 个 fail-safe 和 1 个可删动作。'],
+        arrange: { ableton:[40,70], chataigne:[330,70], arena:[650,120], unity:[950,150], blenderA:[160,380], blenderB:[440,390], blenderC:[720,370], midi:[60,300], monitor:[1050,420], notes:[1030,70] }
+      }
+    ];
+
+    const appSpecs = {
+      ableton: {
+        title: 'Ableton Live', color: '#8ee1c2', x: 60, y: 70,
+        ports: {
+          outputs: [
+            { id: 'clockOut', label: 'clock', type: 'clock' },
+            { id: 'stateOut', label: 'macro/state', type: 'state' }
+          ],
+          inputs: []
+        },
+        flags: [
+          ['sendClock', '发送时钟'],
+          ['sectionMarkers', 'section markers']
+        ],
+        ui: { selectedScene: 'intro' }
+      },
+      chataigne: {
+        title: 'Chataigne', color: '#78a7ff', x: 360, y: 70,
+        ports: {
+          outputs: [
+            { id: 'clockOut', label: 'clock', type: 'clock' },
+            { id: 'oscOut', label: 'OSC', type: 'osc' }
+          ],
+          inputs: [
+            { id: 'clockIn', label: 'clock', type: 'clock' },
+            { id: 'midiIn', label: 'MIDI', type: 'midi' },
+            { id: 'stateIn', label: 'state', type: 'state' }
+          ]
+        },
+        flags: [
+          ['routeClock', 'route clock'],
+          ['stateMachine', 'state machine'],
+          ['dashboard', 'dashboard'],
+          ['oscRouter', 'OSC router'],
+          ['panic', 'panic / fail-safe']
+        ],
+        ui: { page: 'router' }
+      },
+      arena: {
+        title: 'Resolume Arena', color: '#ffb86c', x: 670, y: 110,
+        ports: {
+          outputs: [],
+          inputs: [
+            { id: 'clockIn', label: 'clock', type: 'clock' },
+            { id: 'videoIn', label: 'video', type: 'video' }
+          ]
+        },
+        flags: [
+          ['bpmSync', 'BPM sync'],
+          ['clipBank', 'clip bank'],
+          ['audioReactive', 'audio reactive'],
+          ['tapResync', 'tap / resync']
+        ],
+        ui: { activeClips: [0, 1, 2, 3], fftBand: 'M', fftSource: 'external', gain: 72, fall: 46 }
+      },
+      touchdesigner: {
+        title: 'TouchDesigner /perform', color: '#6fd5ff', x: 880, y: 250,
+        ports: {
+          outputs: [{ id: 'videoOut', label: 'TOP out', type: 'video' }],
+          inputs: [{ id: 'oscIn', label: 'OSC', type: 'osc' }]
+        },
+        flags: [
+          ['designerMode', 'designer mode'],
+          ['performMode', 'perform mode'],
+          ['paramDialog', 'param dialog']
+        ],
+        ui: { selectedOp: 'null1' }
+      },
+      unity: {
+        title: 'Unity Stage', color: '#d2b8ff', x: 930, y: 170,
+        ports: {
+          outputs: [],
+          inputs: [
+            { id: 'oscIn', label: 'OSC', type: 'osc' },
+            { id: 'videoIn', label: 'video', type: 'video' }
+          ]
+        },
+        flags: [
+          ['stageMode', 'stage mode'],
+          ['blackoutFallback', 'blackout fallback']
+        ],
+        ui: { output: 'perform' }
+      },
+      blenderA: {
+        title: 'Blender A', color: '#78a7ff', x: 280, y: 360,
+        ports: { outputs: [{ id: 'videoOut', label: 'video', type: 'video' }], inputs: [] },
+        flags: [['assetLoaded', 'asset loaded']],
+        ui: { outputMode: 'spout', assetName: 'geo_nodes_loop' }
+      },
+      blenderB: {
+        title: 'Blender B', color: '#78a7ff', x: 560, y: 360,
+        ports: { outputs: [{ id: 'videoOut', label: 'video', type: 'video' }], inputs: [] },
+        flags: [['assetLoaded', 'asset loaded']],
+        ui: { outputMode: 'spout', assetName: 'pointcloud_pass' }
+      },
+      blenderC: {
+        title: 'Blender C', color: '#78a7ff', x: 840, y: 360,
+        ports: { outputs: [{ id: 'videoOut', label: 'video', type: 'video' }], inputs: [] },
+        flags: [['assetLoaded', 'asset loaded']],
+        ui: { outputMode: 'ndi', assetName: 'ambient_shell' }
+      },
+      midi: {
+        title: 'AKAI mini / APC-style MIDI', color: '#ff7b7b', x: 60, y: 300,
+        ports: { outputs: [{ id: 'midiOut', label: 'MIDI', type: 'midi' }], inputs: [] },
+        flags: [['padMap', 'pad map'], ['faderMap', 'fader map']],
+        ui: { faders: [120, 102, 94, 86, 74, 64, 54, 42, 127], pads: Array.from({length:64}, () => false), selectedScene: 0 }
+      },
+      monitor: {
+        title: 'OSC / Event Monitor', color: '#8ee1c2', x: 1050, y: 420,
+        ports: { outputs: [], inputs: [] },
+        flags: [],
+        ui: {}
+      },
+      notes: {
+        title: 'Ops Notes / Patch Notes', color: '#ffffff', x: 1030, y: 70,
+        ports: { outputs: [], inputs: [] },
+        flags: [],
+        ui: { text: '主时钟: Ableton -> Chataigne -> Arena\nFallback: Unity blackout + Chataigne panic\nSection 语言: intro / build / peak / outro\nArena FFT: External / L-M-H / Gain / Fall\n控制器: 顶排 Pad = 状态，Fader = Energy / Density / Camera / Haze' }
+      }
+    };
+
+    const state = {
+      currentLevel: 1,
+      completed: new Set(),
+      selectedPort: null,
+      connections: [],
+      z: 20,
+      transport: {
+        playing: false,
+        bpm: 124,
+        section: 'intro',
+        beat: 1,
+        barStep: 0,
+        lastTick: performance.now(),
+        elapsedMs: 0,
+        tapCount: 0,
+        peakCount: 0
+      },
+      apps: {},
+      logs: []
+    };
+
+    const desktop = document.getElementById('desktop');
+    const connectionLayer = document.getElementById('connectionLayer');
+    const levelListEl = document.getElementById('levelsList');
+    const levelTitleEl = document.getElementById('levelTitle');
+    const levelSummaryEl = document.getElementById('levelSummary');
+    const taskListEl = document.getElementById('taskList');
+    const practiceListEl = document.getElementById('practiceList');
+    const realWorldEl = document.getElementById('realWorldNote');
+    const logListEl = document.getElementById('logList');
+    const bpmSlider = document.getElementById('bpmSlider');
+    const bpmValue = document.getElementById('bpmValue');
+    const beatProgress = document.getElementById('beatProgress');
+    const sectionValue = document.getElementById('sectionValue');
+    const scoreFill = document.getElementById('scoreFill');
+    const doneCount = document.getElementById('doneCount');
+    const levelNameTop = document.getElementById('levelNameTop');
+
+    function clone(obj) { return JSON.parse(JSON.stringify(obj)); }
+
+    function initState() {
+      state.apps = {};
+      Object.entries(appSpecs).forEach(([id, spec]) => {
+        state.apps[id] = {
+          x: spec.x,
+          y: spec.y,
+          flags: Object.fromEntries((spec.flags || []).map(([key]) => [key, false])),
+          ui: clone(spec.ui || {})
+        };
+      });
+    }
+
+    function addLog(text) {
+      const stamp = new Date().toLocaleTimeString('zh-CN', { hour12:false });
+      state.logs.unshift(`[${stamp}] ${text}`);
+      state.logs = state.logs.slice(0, 14);
+      renderLogs();
+    }
+
+    function renderLogs() {
+      logListEl.innerHTML = '';
+      state.logs.forEach(line => {
+        const li = document.createElement('li');
+        li.className = 'log-item';
+        li.textContent = line;
+        logListEl.appendChild(li);
+      });
+    }
+
+    function renderLevels() {
+      levelListEl.innerHTML = '';
+      levels.forEach(level => {
+        const done = state.completed.has(level.id);
+        const card = document.createElement('div');
+        card.className = `level-card ${state.currentLevel===level.id ? 'active' : ''} ${done ? 'done' : ''}`;
+        card.innerHTML = `
+          <div class="level-top">
+            <div class="level-num">${String(level.id).padStart(2,'0')}</div>
+            <div class="tiny">${done ? '已过关' : '未完成'}</div>
+          </div>
+          <div style="font-weight:700; margin-bottom:4px;">${level.name}</div>
+          <div class="tiny">${level.summary}</div>
+        `;
+        card.addEventListener('click', () => {
+          state.currentLevel = level.id;
+          renderLevels();
+          renderLevelDetail();
+        });
+        levelListEl.appendChild(card);
+      });
+      doneCount.textContent = `${state.completed.size} / 10`;
+      scoreFill.style.width = `${(state.completed.size / 10) * 100}%`;
+    }
+
+    function renderLevelDetail() {
+      const level = levels.find(l => l.id === state.currentLevel);
+      levelTitleEl.textContent = level.title;
+      levelSummaryEl.textContent = level.summary;
+      realWorldEl.textContent = level.realWorld;
+      levelNameTop.textContent = level.name;
+
+      taskListEl.innerHTML = '';
+      level.tasks.forEach(task => {
+        const ok = task.check(state);
+        const li = document.createElement('li');
+        li.className = `task-item ${ok ? 'done' : ''}`;
+        li.textContent = `${ok ? '✓' : '○'} ${task.text}`;
+        taskListEl.appendChild(li);
+      });
+
+      practiceListEl.innerHTML = '';
+      level.practice.forEach(item => {
+        const li = document.createElement('li');
+        li.className = 'practice-item';
+        li.textContent = item;
+        practiceListEl.appendChild(li);
+      });
+    }
+
+
+    function renderWindowBody(id, spec, data, outHtml, inHtml, flagHtml) {
+      const portBlock = (spec.ports.outputs?.length || spec.ports.inputs?.length) ? `
+        <div class="port-row"><div class="tiny">Outputs</div><div class="ports">${outHtml || '<span class="tiny">—</span>'}</div></div>
+        <div class="port-row"><div class="tiny">Inputs</div><div class="ports">${inHtml || '<span class="tiny">—</span>'}</div></div>` : '';
+
+      if (id === 'ableton') {
+        const clips = ['Intro','Build','Peak','Outro'].map(key => `
+          <button class="ableton-clip ${state.transport.section === key.toLowerCase() ? 'active' : ''}" data-dashboard-section="${key.toLowerCase()}">${key}</button>
+        `).join('');
+        return `
+          <div class="fake-toolbar">
+            <div class="mini-led ${state.transport.playing ? 'hot' : ''}">Transport</div>
+            <div class="mini-led ${data.flags.sendClock ? 'hot' : ''}">Clock Send</div>
+            <div class="value-bubble">Scene <strong>${state.transport.section}</strong></div>
+          </div>
+          <div class="app-block">
+            <div class="app-block-title">Session / Scene Launch</div>
+            <div class="ableton-clips">${clips}</div>
+          </div>
+          <div class="toggle-list">${flagHtml}</div>
+          ${portBlock}
+        `;
+      }
+
+      if (id === 'chataigne') {
+        const mods = [
+          ['routeClock','Route Clock','把主时钟转成内部 transport'],
+          ['stateMachine','State Machine','管理 intro / build / peak / outro'],
+          ['dashboard','Dashboard','给演出时的手控 UI'],
+          ['oscRouter','Module Router','把 OSC / MIDI / State 转发出去'],
+          ['panic','Panic','一键安全模式 / blackout']
+        ].map(([key,name,desc]) => `
+          <div class="module-card ${data.flags[key] ? 'on' : ''}">
+            <div class="mod-name"><span>${name}</span><span>${data.flags[key] ? 'ON' : 'OFF'}</span></div>
+            <div class="tiny">${desc}</div>
+            <button class="toggle-item ${data.flags[key] ? 'on' : ''}" data-flag="${key}"><span>切换</span><strong>${data.flags[key] ? 'ON' : 'OFF'}</strong></button>
+          </div>
+        `).join('');
+        return `
+          <div class="fake-toolbar">
+            <div class="mini-led ${data.flags.routeClock ? 'hot' : ''}">Clock Router</div>
+            <div class="mini-led ${data.flags.stateMachine ? 'hot' : ''}">State</div>
+            <div class="mini-led ${data.flags.dashboard ? 'hot' : ''}">Dashboard</div>
+          </div>
+          <div class="chataigne-modules">${mods}</div>
+          <div class="app-block">
+            <div class="app-block-title">Module Router</div>
+            <div class="router-mini">
+              <div class="router-box">Ableton / MIDI</div>
+              <div class="router-arrow">→</div>
+              <div class="router-box">State / Variables</div>
+              <div class="router-arrow">→</div>
+              <div class="router-box">Arena / Unity / OSC</div>
+            </div>
+          </div>
+          <div class="app-block">
+            <div class="app-block-title">Dashboard Snapshot</div>
+            <div class="controls-row">
+              <button class="chip ${state.transport.section==='intro' ? 'active' : ''}" data-dashboard-section="intro">Intro</button>
+              <button class="chip ${state.transport.section==='build' ? 'active' : ''}" data-dashboard-section="build">Build</button>
+              <button class="chip ${state.transport.section==='peak' ? 'active' : ''}" data-dashboard-section="peak">Peak</button>
+              <button class="chip ${state.transport.section==='outro' ? 'active' : ''}" data-dashboard-section="outro">Outro</button>
+            </div>
+          </div>
+          ${portBlock}
+        `;
+      }
+
+      if (id === 'arena') {
+        const activeClips = data.ui.activeClips || [0,1,2,3];
+        const layers = ['Layer 1','Layer 2','Layer 3','Layer 4'];
+        const gridRows = layers.map((label,layer) => {
+          const cells = Array.from({length:5}, (_,col) => `
+            <button class="arena-clip ${activeClips[layer]===col ? 'active' : ''} ${col===4 ? 'flash' : ''}" data-layer="${layer}" data-col="${col}">
+              ${col===4 ? 'FX' : 'C'+(col+1)}
+            </button>
+          `).join('');
+          return `<div class="arena-layer-row"><div class="arena-layer-label">${label}</div>${cells}</div>`;
+        }).join('');
+        return `
+          <div class="arena-shell">
+            <div class="arena-top">
+              <div class="arena-badges">
+                <div class="arena-badge">BPM ${state.transport.bpm}</div>
+                <div class="arena-badge">Section ${state.transport.section}</div>
+                <div class="arena-badge">${state.connections.length} links</div>
+              </div>
+              <div class="controls-row">
+                <button class="toggle-item ${data.flags.bpmSync ? 'on' : ''}" data-flag="bpmSync"><span>BPM Sync</span><strong>${data.flags.bpmSync ? 'ON' : 'OFF'}</strong></button>
+                <button class="toggle-item ${data.flags.clipBank ? 'on' : ''}" data-flag="clipBank"><span>Clip Bank</span><strong>${data.flags.clipBank ? 'ON' : 'OFF'}</strong></button>
+              </div>
+            </div>
+            <div class="arena-main">
+              <div class="arena-grid">
+                <div class="arena-grid-header"><span></span><span>Col 1</span><span>Col 2</span><span>Col 3</span><span>Col 4</span><span>FX</span></div>
+                ${gridRows}
+              </div>
+              <div class="arena-side">
+                <div class="app-block">
+                  <div class="app-block-title">FFT / Audio Analysis</div>
+                  <div class="arena-param-row"><span>Source</span><div class="source-row">
+                    <button class="mini-pill ${data.ui.fftSource==='external' ? 'active' : ''}" data-ui-app="arena" data-ui-key="fftSource" data-ui-value="external">External</button>
+                    <button class="mini-pill ${data.ui.fftSource==='composition' ? 'active' : ''}" data-ui-app="arena" data-ui-key="fftSource" data-ui-value="composition">Composition</button>
+                  </div></div>
+                  <div class="arena-param-row"><span>Band</span><div class="band-row">
+                    <button class="mini-pill ${data.ui.fftBand==='L' ? 'active' : ''}" data-ui-app="arena" data-ui-key="fftBand" data-ui-value="L">L</button>
+                    <button class="mini-pill ${data.ui.fftBand==='M' ? 'active' : ''}" data-ui-app="arena" data-ui-key="fftBand" data-ui-value="M">M</button>
+                    <button class="mini-pill ${data.ui.fftBand==='H' ? 'active' : ''}" data-ui-app="arena" data-ui-key="fftBand" data-ui-value="H">H</button>
+                  </div></div>
+                  <div class="arena-param-row"><span>Gain</span><input class="ui-range" data-ui-app="arena" data-ui-key="gain" type="range" min="0" max="127" value="${data.ui.gain || 0}" /></div>
+                  <div class="arena-param-row"><span>Fall</span><input class="ui-range" data-ui-app="arena" data-ui-key="fall" type="range" min="0" max="127" value="${data.ui.fall || 0}" /></div>
+                  <div class="controls-row">
+                    <button class="toggle-item ${data.flags.audioReactive ? 'on' : ''}" data-flag="audioReactive"><span>Audio Reactive</span><strong>${data.flags.audioReactive ? 'ON' : 'OFF'}</strong></button>
+                    <button class="toggle-item ${data.flags.tapResync ? 'on' : ''}" data-flag="tapResync"><span>Tap / Resync</span><strong>${data.flags.tapResync ? 'ON' : 'OFF'}</strong></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            ${portBlock}
+          </div>
+        `;
+      }
+
+
+      if (id === 'touchdesigner') {
+        return `
+          <div class="fake-toolbar">
+            <div class="mini-led ${data.flags.designerMode ? 'hot' : ''}">Designer</div>
+            <div class="mini-led ${data.flags.performMode ? 'hot' : ''}">/perform</div>
+            <div class="mini-led ${data.flags.paramDialog ? 'hot' : ''}">Param Dialog</div>
+          </div>
+          <div class="app-block">
+            <div class="app-block-title">Network Editor + Parameter Dialog</div>
+            <div class="preview-box">TOP / CHOP / SOP / COMP → ${data.ui.selectedOp}</div>
+            <div class="controls-row" style="margin-top:8px;">
+              <button class="toggle-item ${data.flags.designerMode ? 'on' : ''}" data-flag="designerMode"><span>Designer Mode</span><strong>${data.flags.designerMode ? 'ON' : 'OFF'}</strong></button>
+              <button class="toggle-item ${data.flags.performMode ? 'on' : ''}" data-flag="performMode"><span>Perform Mode</span><strong>${data.flags.performMode ? 'ON' : 'OFF'}</strong></button>
+              <button class="toggle-item ${data.flags.paramDialog ? 'on' : ''}" data-flag="paramDialog"><span>Param Dialog</span><strong>${data.flags.paramDialog ? 'ON' : 'OFF'}</strong></button>
+            </div>
+          </div>
+          ${portBlock}
+        `;
+      }
+
+      if (id === 'unity') {
+        return `
+          <div class="preview-box stage">Unity Stage Shell /perform</div>
+          <div class="fake-toolbar">
+            <div class="mini-led ${data.flags.stageMode ? 'hot' : ''}">Perform Window</div>
+            <div class="mini-led ${data.flags.blackoutFallback ? 'hot' : ''}">Blackout Fallback</div>
+            <div class="value-bubble">Mode <strong>${data.ui.output || 'perform'}</strong></div>
+          </div>
+          <div class="toggle-list">${flagHtml}</div>
+          ${portBlock}
+        `;
+      }
+
+      if (id.startsWith('blender')) {
+        return `
+          <div class="preview-box">${spec.title} · Viewport</div>
+          <div class="app-block">
+            <div class="app-block-title">Asset / Output</div>
+            <div class="status-grid">
+              <div class="status-pill ${data.flags.assetLoaded ? 'hot' : ''}">Asset ${data.flags.assetLoaded ? data.ui.assetName : 'not loaded'}</div>
+              <div class="status-pill">Output ${data.ui.outputMode || 'spout'}</div>
+            </div>
+          </div>
+          <div class="controls-row">
+            <button class="toggle-item ${data.flags.assetLoaded ? 'on' : ''}" data-flag="assetLoaded"><span>Asset Loaded</span><strong>${data.flags.assetLoaded ? 'ON' : 'OFF'}</strong></button>
+            <button class="mini-pill ${data.ui.outputMode==='spout' ? 'active' : ''}" data-ui-app="${id}" data-ui-key="outputMode" data-ui-value="spout">Spout</button>
+            <button class="mini-pill ${data.ui.outputMode==='ndi' ? 'active' : ''}" data-ui-app="${id}" data-ui-key="outputMode" data-ui-value="ndi">NDI</button>
+          </div>
+          ${portBlock}
+        `;
+      }
+
+      if (id === 'midi') {
+        const firstRowLabels = ['I','B','P','O','F','X','R','S'];
+        const pads = Array.from({length:64}, (_,i) => {
+          const label = i < 8 ? firstRowLabels[i] : '';
+          return `<button class="akai-pad ${(data.ui.pads || [])[i] ? 'active' : ''}" data-midi-pad="${i}" title="Pad ${i+1}">${label}</button>`;
+        }).join('');
+        const scenes = Array.from({length:8}, (_,i) => `<button class="scene-btn" data-scene="${i}">S${i+1}</button>`).join('');
+        const faders = (data.ui.faders || []).map((val, idx) => `
+          <div class="fader-strip">
+            <input class="fader-vertical ui-range" data-ui-app="midi" data-ui-key="faders" data-ui-index="${idx}" type="range" min="0" max="127" value="${val}" />
+            <div>${idx === 8 ? 'M' : idx+1}</div>
+            <div class="fader-readout">${val}</div>
+          </div>
+        `).join('');
+        return `
+          <div class="akai-shell">
+            <div class="fake-toolbar">
+              <div class="mini-led hot">MIDI In</div>
+              <div class="mini-led ${data.flags.padMap ? 'hot' : ''}">Pad Map</div>
+              <div class="mini-led ${data.flags.faderMap ? 'hot' : ''}">Fader Map</div>
+            </div>
+            <div class="akai-pads-wrap">
+              <div class="akai-pad-grid">${pads}</div>
+              <div class="scene-col">${scenes}</div>
+            </div>
+            <div class="akai-grid">${faders}</div>
+            <div class="controls-row">
+              <button class="toggle-item ${data.flags.padMap ? 'on' : ''}" data-flag="padMap"><span>Pad Map</span><strong>${data.flags.padMap ? 'ON' : 'OFF'}</strong></button>
+              <button class="toggle-item ${data.flags.faderMap ? 'on' : ''}" data-flag="faderMap"><span>Fader Map</span><strong>${data.flags.faderMap ? 'ON' : 'OFF'}</strong></button>
+            </div>
+            ${portBlock}
+          </div>
+        `;
+      }
+
+      if (id === 'monitor') {
+        return `
+          <div class="status-grid">
+            <div class="status-pill ${state.transport.playing ? 'hot' : ''}">Transport ${state.transport.playing ? 'running' : 'stopped'}</div>
+            <div class="status-pill ${state.transport.section === 'peak' ? 'warn' : ''}">Section ${state.transport.section}</div>
+            <div class="status-pill">Beat ${state.transport.beat}</div>
+            <div class="status-pill">Connections ${state.connections.length}</div>
+          </div>
+          <div class="subtle">近似模拟 Resolume / Chataigne / Unity 的运行状态，不是原软件的状态回读。</div>
+        `;
+      }
+
+      if (id === 'notes') {
+        return `
+          <div class="notes-actions">
+            <button class="chip note-template" data-note-template="club">Club</button>
+            <button class="chip note-template" data-note-template="ambient">Ambient</button>
+            <button class="chip note-template" data-note-template="failsafe">Fail-safe</button>
+          </div>
+          <textarea class="notes-textarea" data-notes-input="1">${(data.ui.text || '').replace(/</g,'&lt;')}</textarea>
+          <div class="subtle">建议把这里当作演出 patch note：主时钟、fallback、section 语言、控制器映射、重置动作。</div>
+        `;
+      }
+
+      return `${flagHtml ? `<div class="toggle-list">${flagHtml}</div>` : ''}${portBlock}`;
+    }
+
+    function renderWindows() {
+      desktop.querySelectorAll('.window').forEach(w => w.remove());
+      Object.entries(appSpecs).forEach(([id, spec]) => {
+        const data = state.apps[id];
+        const win = document.createElement('div');
+        win.className = 'window';
+        win.dataset.app = id;
+        win.style.left = `${data.x}px`;
+        win.style.top = `${data.y}px`;
+        win.style.zIndex = ++state.z;
+
+        const flagHtml = (spec.flags || []).map(([key, label]) => {
+          const on = data.flags[key];
+          return `<button class="toggle-item ${on ? 'on' : ''}" data-flag="${key}"><span>${label}</span><strong>${on ? 'ON' : 'OFF'}</strong></button>`;
+        }).join('');
+
+        const outHtml = (spec.ports.outputs || []).map(port =>
+          `<button class="port out ${port.type}" data-app="${id}" data-port="${port.id}" data-kind="out" data-type="${port.type}">${port.label}</button>`
+        ).join('');
+
+        const inHtml = (spec.ports.inputs || []).map(port =>
+          `<button class="port in ${port.type}" data-app="${id}" data-port="${port.id}" data-kind="in" data-type="${port.type}">${port.label}</button>`
+        ).join('');
+
+        win.innerHTML = `
+          <div class="window-header">
+            <div class="window-title"><span class="dot" style="background:${spec.color}; box-shadow:0 0 12px ${spec.color}55"></span>${spec.title}</div>
+            <div class="tiny">drag</div>
+          </div>
+          <div class="window-body">
+            ${renderWindowBody(id, spec, data, outHtml, inHtml, flagHtml)}
+          </div>
+        `;
+
+        makeDraggable(win);
+        desktop.appendChild(win);
+      });
+      bindWindowEvents();
+      drawConnections();
+    }
+
+    function applyNoteTemplate(name) {
+      const presets = {
+        club: 'show: club / DJ\nclock: Ableton -> Chataigne -> Arena\nArena: BPM sync ON / Tap-Resync armed\ncontroller: top row pads = states / faders = layer energy\nfail-safe: blackout on easy button',
+        ambient: 'show: ambient / drone\nfocus: breathing, density, haze\nrule: 30 秒内尽量只做 1 次明确动作\nArena FFT: 用中低频，不靠大爆闪\nUnity: stage shell 保持空间连续',
+        failsafe: 'panic: Chataigne panic + Unity blackout fallback\nif drift: Tap / Resync within 1 bar\nif source lost: keep safe background + ignore column trigger layer\ncheck audio input + FFT source before opening'
+      };
+      state.apps.notes.ui.text = presets[name] || state.apps.notes.ui.text;
+      renderWindows();
+      addLog(`Notes template -> ${name}`);
+    }
+
+    function handleMidiPad(index) {
+      const pads = state.apps.midi.ui.pads;
+      pads[index] = !pads[index];
+      if (state.apps.midi.flags.padMap && index < 8) {
+        const actions = ['intro','build','peak','outro','flash','blackout','resync','safe'];
+        const action = actions[index];
+        if (action === 'intro' || action === 'build' || action === 'peak' || action === 'outro') {
+          state.transport.section = action;
+          if (action === 'peak') state.transport.peakCount += 1;
+          addLog(`AKAI pad -> section ${action}`);
+        } else if (action === 'flash') {
+          state.transport.peakCount += 1;
+          addLog('AKAI pad -> flash accent');
+        } else if (action === 'blackout') {
+          state.apps.unity.flags.blackoutFallback = true;
+          addLog('AKAI pad -> blackout fallback');
+        } else if (action === 'resync') {
+          state.transport.tapCount += 1;
+          addLog('AKAI pad -> resync tap');
+        } else if (action === 'safe') {
+          state.apps.chataigne.flags.panic = true;
+          state.apps.unity.flags.blackoutFallback = true;
+          addLog('AKAI pad -> safe mode / panic');
+        }
+      } else {
+        addLog(`AKAI pad ${index + 1} toggled`);
+      }
+      renderWindows();
+      renderLevelDetail();
+      updateTransportUI();
+    }
+
+    function handleArenaClip(layer, col) {
+      state.apps.arena.ui.activeClips[layer] = col;
+      addLog(`Arena trigger -> layer ${layer + 1} / column ${col + 1}`);
+      renderWindows();
+    }
+
+    function updateUiValue(app, key, value, index = null) {
+      if (!state.apps[app]) return;
+      if (index !== null) {
+        state.apps[app].ui[key][index] = Number(value);
+      } else {
+        state.apps[app].ui[key] = value;
+      }
+      renderWindows();
+      renderLevelDetail();
+    }
+
+
+
+    function bindWindowEvents() {
+      desktop.querySelectorAll('.toggle-item').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const app = btn.closest('.window').dataset.app;
+          const key = btn.dataset.flag;
+          if (!key) return;
+          state.apps[app].flags[key] = !state.apps[app].flags[key];
+          addLog(`${appSpecs[app].title} → ${key} ${state.apps[app].flags[key] ? 'ON' : 'OFF'}`);
+          renderWindows();
+          renderLevelDetail();
+        });
+      });
+
+      desktop.querySelectorAll('.port').forEach(btn => {
+        btn.addEventListener('click', () => handlePortClick(btn));
+      });
+
+      desktop.querySelectorAll('.dashboard-section').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.transport.section = btn.dataset.dashboardSection;
+          state.apps.ableton.ui.selectedScene = btn.dataset.dashboardSection;
+          addLog(`Section -> ${state.transport.section}`);
+          updateTransportUI();
+        });
+      });
+
+      desktop.querySelectorAll('.arena-clip').forEach(btn => {
+        btn.addEventListener('click', () => handleArenaClip(Number(btn.dataset.layer), Number(btn.dataset.col)));
+      });
+
+      desktop.querySelectorAll('.ui-range').forEach(input => {
+        input.addEventListener('input', e => {
+          const app = e.target.dataset.uiApp;
+          const key = e.target.dataset.uiKey;
+          const idx = e.target.dataset.uiIndex ?? null;
+          updateUiValue(app, key, e.target.value, idx !== null ? Number(idx) : null);
+        });
+      });
+
+      desktop.querySelectorAll('[data-ui-app][data-ui-value]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          updateUiValue(btn.dataset.uiApp, btn.dataset.uiKey, btn.dataset.uiValue);
+          addLog(`${appSpecs[btn.dataset.uiApp].title} → ${btn.dataset.uiKey} = ${btn.dataset.uiValue}`);
+        });
+      });
+
+      desktop.querySelectorAll('[data-midi-pad]').forEach(btn => {
+        btn.addEventListener('click', () => handleMidiPad(Number(btn.dataset.midiPad)));
+      });
+
+      desktop.querySelectorAll('.scene-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.apps.midi.ui.selectedScene = Number(btn.dataset.scene);
+          addLog(`AKAI scene launch -> S${Number(btn.dataset.scene) + 1}`);
+        });
+      });
+
+      const notesInput = desktop.querySelector('[data-notes-input]');
+      if (notesInput) {
+        notesInput.addEventListener('input', e => {
+          state.apps.notes.ui.text = e.target.value;
+        });
+      }
+
+      desktop.querySelectorAll('.note-template').forEach(btn => {
+        btn.addEventListener('click', () => applyNoteTemplate(btn.dataset.noteTemplate));
+      });
+    }
+
+
+    function handlePortClick(btn) {
+      const port = {
+        app: btn.dataset.app,
+        port: btn.dataset.port,
+        kind: btn.dataset.kind,
+        type: btn.dataset.type
+      };
+
+      desktop.querySelectorAll('.port').forEach(p => p.classList.remove('selected'));
+      if (!state.selectedPort) {
+        state.selectedPort = port;
+        btn.classList.add('selected');
+        addLog(`选择 ${appSpecs[port.app].title} → ${port.port}`);
+        return;
+      }
+
+      const first = state.selectedPort;
+      const second = port;
+      state.selectedPort = null;
+
+      if (first.app === second.app) {
+        addLog('同一窗口内不能自连。');
+        return;
+      }
+      if (first.kind === second.kind) {
+        addLog('连接失败：需要 output → input。');
+        return;
+      }
+      const out = first.kind === 'out' ? first : second;
+      const input = first.kind === 'in' ? first : second;
+      if (out.type !== input.type && !(out.type === 'state' && input.type === 'state')) {
+        addLog('连接失败：端口类型不一致。');
+        return;
+      }
+      const exists = state.connections.some(c => c.fromApp===out.app && c.fromPort===out.port && c.toApp===input.app && c.toPort===input.port);
+      if (exists) {
+        state.connections = state.connections.filter(c => !(c.fromApp===out.app && c.fromPort===out.port && c.toApp===input.app && c.toPort===input.port));
+        addLog(`断开 ${appSpecs[out.app].title} → ${appSpecs[input.app].title}`);
+      } else {
+        state.connections.push({ fromApp: out.app, fromPort: out.port, toApp: input.app, toPort: input.port, type: out.type });
+        addLog(`连接 ${appSpecs[out.app].title} → ${appSpecs[input.app].title} (${out.type})`);
+      }
+      renderWindows();
+      renderLevelDetail();
+    }
+
+    function hasConnection(fromApp, fromPort, toApp, toPort) {
+      return state.connections.some(c => c.fromApp===fromApp && c.fromPort===fromPort && c.toApp===toApp && c.toPort===toPort);
+    }
+
+    function getPortEl(appId, portId, kind) {
+      return desktop.querySelector(`.port[data-app="${appId}"][data-port="${portId}"][data-kind="${kind}"]`);
+    }
+
+    function portCenter(el) {
+      const desktopRect = desktop.getBoundingClientRect();
+      const rect = el.getBoundingClientRect();
+      return { x: rect.left - desktopRect.left + rect.width/2, y: rect.top - desktopRect.top + rect.height/2 };
+    }
+
+    function drawConnections() {
+      connectionLayer.innerHTML = '';
+      state.connections.forEach(conn => {
+        const from = getPortEl(conn.fromApp, conn.fromPort, 'out');
+        const to = getPortEl(conn.toApp, conn.toPort, 'in');
+        if (!from || !to) return;
+        const a = portCenter(from);
+        const b = portCenter(to);
+        const dx = Math.max(60, Math.abs(b.x - a.x) * 0.45);
+        const d = `M ${a.x} ${a.y} C ${a.x + dx} ${a.y}, ${b.x - dx} ${b.y}, ${b.x} ${b.y}`;
+        const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+        path.setAttribute('d', d);
+        path.setAttribute('class', `connection ${conn.type}`);
+        connectionLayer.appendChild(path);
+      });
+    }
+
+    function makeDraggable(win) {
+      const header = win.querySelector('.window-header');
+      let dragging = false;
+      let offsetX = 0;
+      let offsetY = 0;
+
+      const onMove = e => {
+        if (!dragging) return;
+        const rect = desktop.getBoundingClientRect();
+        const x = Math.min(rect.width - win.offsetWidth - 8, Math.max(8, e.clientX - rect.left - offsetX));
+        const y = Math.min(rect.height - win.offsetHeight - 8, Math.max(8, e.clientY - rect.top - offsetY));
+        const app = win.dataset.app;
+        state.apps[app].x = x;
+        state.apps[app].y = y;
+        win.style.left = `${x}px`;
+        win.style.top = `${y}px`;
+        drawConnections();
+      };
+
+      const stop = () => {
+        if (!dragging) return;
+        dragging = false;
+        win.classList.remove('dragging');
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', stop);
+      };
+
+      header.addEventListener('mousedown', e => {
+        dragging = true;
+        win.classList.add('dragging');
+        win.style.zIndex = ++state.z;
+        const rect = win.getBoundingClientRect();
+        offsetX = e.clientX - rect.left;
+        offsetY = e.clientY - rect.top;
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('mouseup', stop);
+      });
+    }
+
+    function arrangeLevel() {
+      const level = levels.find(l => l.id === state.currentLevel);
+      if (!level?.arrange) return;
+      Object.entries(level.arrange).forEach(([app, [x,y]]) => {
+        if (state.apps[app]) { state.apps[app].x = x; state.apps[app].y = y; }
+      });
+      renderWindows();
+      addLog(`应用关卡 ${level.id} 的推荐布局。`);
+    }
+
+    function checkLevel() {
+      const level = levels.find(l => l.id === state.currentLevel);
+      const passed = level.tasks.every(task => task.check(state));
+      renderLevelDetail();
+      if (passed) {
+        state.completed.add(level.id);
+        addLog(`关卡 ${String(level.id).padStart(2,'0')} 通过。`);
+      } else {
+        addLog(`关卡 ${String(level.id).padStart(2,'0')} 未通过，继续补线或开功能。`);
+      }
+      renderLevels();
+    }
+
+    function resetAll() {
+      state.currentLevel = 1;
+      state.completed = new Set();
+      state.connections = [];
+      state.selectedPort = null;
+      state.transport = {
+        playing: false,
+        bpm: 124,
+        section: 'intro',
+        beat: 1,
+        barStep: 0,
+        lastTick: performance.now(),
+        elapsedMs: 0,
+        tapCount: 0,
+        peakCount: 0
+      };
+      initState();
+      renderWindows();
+      renderLevels();
+      renderLevelDetail();
+      updateTransportUI();
+      addLog('系统已重置。');
+    }
+
+    function updateTransportUI() {
+      bpmValue.textContent = state.transport.bpm;
+      bpmSlider.value = state.transport.bpm;
+      sectionValue.textContent = state.transport.section;
+      document.querySelectorAll('.section-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.section === state.transport.section);
+      });
+      document.getElementById('playBtn').textContent = state.transport.playing ? '⏸ 暂停' : '▶ 播放';
+      document.querySelectorAll('#pulseRow .pulse').forEach((p, idx) => {
+        p.classList.toggle('hot', idx + 1 === state.transport.beat && state.transport.playing);
+      });
+      renderWindows();
+      renderLevelDetail();
+    }
+
+    function animate(now) {
+      const t = state.transport;
+      const dt = now - t.lastTick;
+      t.lastTick = now;
+      if (t.playing) {
+        t.elapsedMs += dt;
+        const beatLength = 60000 / t.bpm;
+        const cycle = t.elapsedMs % beatLength;
+        beatProgress.style.width = `${(cycle / beatLength) * 100}%`;
+        const nextBeat = Math.floor((t.elapsedMs / beatLength)) % 4 + 1;
+        if (nextBeat !== t.beat) {
+          t.beat = nextBeat;
+          if (hasConnection('ableton','clockOut','chataigne','clockIn') && state.apps.ableton.flags.sendClock && state.apps.chataigne.flags.routeClock) {
+            addConditionalBeatLog();
+          }
+        }
+      } else {
+        beatProgress.style.width = '0%';
+      }
+      updateBeatPulses();
+      requestAnimationFrame(animate);
+    }
+
+    let lastBeatLogged = 0;
+    function addConditionalBeatLog() {
+      const marker = `${Math.floor(state.transport.elapsedMs/1000)}-${state.transport.beat}`;
+      if (marker === lastBeatLogged) return;
+      lastBeatLogged = marker;
+      if (state.transport.beat === 1) {
+        addLog(`bar start · section ${state.transport.section}`);
+      }
+    }
+
+    function updateBeatPulses() {
+      document.querySelectorAll('#pulseRow .pulse').forEach((p, idx) => {
+        p.classList.toggle('hot', state.transport.playing && idx + 1 === state.transport.beat);
+      });
+    }
+
+    document.getElementById('playBtn').addEventListener('click', () => {
+      state.transport.playing = !state.transport.playing;
+      addLog(state.transport.playing ? 'Transport start' : 'Transport stop');
+      updateTransportUI();
+    });
+
+    document.getElementById('tapBtn').addEventListener('click', () => {
+      state.transport.tapCount += 1;
+      addLog(`Tap ${state.transport.tapCount}`);
+      if (state.apps.arena.flags.tapResync) addLog('Arena resync hit');
+      renderLevelDetail();
+    });
+
+    document.getElementById('peakBtn').addEventListener('click', () => {
+      state.transport.peakCount += 1;
+      state.transport.section = 'peak';
+      addLog('Manual peak trigger');
+      updateTransportUI();
+    });
+
+    bpmSlider.addEventListener('input', e => {
+      state.transport.bpm = Number(e.target.value);
+      addLog(`BPM -> ${state.transport.bpm}`);
+      updateTransportUI();
+    });
+
+    document.querySelectorAll('.section-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        state.transport.section = btn.dataset.section;
+        addLog(`Section -> ${state.transport.section}`);
+        updateTransportUI();
+      });
+    });
+
+    document.getElementById('checkBtn').addEventListener('click', checkLevel);
+    document.getElementById('autoArrangeBtn').addEventListener('click', arrangeLevel);
+    document.getElementById('resetBtn').addEventListener('click', resetAll);
+
+    window.addEventListener('resize', drawConnections);
+
+    initState();
+    renderWindows();
+    renderLevels();
+    renderLevelDetail();
+    updateTransportUI();
+    addLog('练习器已启动。先从 Level 01 开始。');
+    requestAnimationFrame(animate);
+  </script>
+</body>
+</html>

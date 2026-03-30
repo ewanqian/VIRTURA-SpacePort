@@ -52,6 +52,12 @@
 | [Alpha](./baloon-live-space-alpha/README.md) | 已完成 | 第一轮公开测试，验证链路 |
 | [Beta](./baloon-live-space-beta/README.md) | 进行中 | 修正形象、积累时长、优化手感 |
 
+## Beta 阶段训练工具
+
+| 工具 | 说明 | 链接 |
+|---|---|---|
+| Live System Trainer | 把 Chataigne / Arena / Unity / Blender 现场系统拆成十个训练关卡的 beta 练习器，用来练系统分层、时钟逻辑、fail-safe 和 rehearsal 手感 | [查看详情](./baloon-live-space-beta/infrastructure/live-system-trainer/README.md) |
+
 ## 这次 Alpha 在做什么
 
 这次公开的 `Alpha`，会先展示目前这一版线上数字舞台是怎么工作的。
