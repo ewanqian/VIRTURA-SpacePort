@@ -1,116 +1,34 @@
-# Baloon Live Space
+# Balloon Live Space
 
-`太空气球 / Baloon Live Space` 是 `VIRTURA` 当前的线上数字舞台与 live set 实验线。
+## What This Station Is For
+Balloon Live Space 用于承接现场演出、session、cue 结构、状态切换、排练复盘与 live practice accumulation。  
+它是面向"演出过程"与"现场实践积累"的工作站。
 
-它不是突然出现的一场活动，而是一条已经走了几年的项目线。现在公开活动里看到的 `Alpha`、`Session` 和后面的共测夜，都是这条线不同阶段的公开节点。
+## What It Does Not Do
+它不作为纯理论页，不承担团队总入口，也不替代产品仓或发布出口。  
+它更接近一个持续积累 live workflow 的实践站点。
 
-## 这条线是怎么开始的
+## Current Focus
+当前重点包括：
 
-最早的起点可以追到 `2022` 年。
+- live session 记录
+- set structure review
+- state / cue checklist
+- rehearsal recap
+- viewer / live workflow validation
 
-当时我们的设想更接近一个 `VRChat` 里的地图：观众进入同一个虚拟场景，用自己的虚拟形象在场内看直播、看演出、看别人的视觉和音乐内容。那个方向很迷人，也很符合当时线上演出的想象。
+## Related Skills
+- live-session-log
+- set-structure-review
+- state-cue-checklist
+- performance-recap-skill
 
-但很快就遇到一个现实问题：门槛太高。
+## Related Repositories
+- VIRTURA-SpacePort
+- SceneForge
+- VIRTURA-Newsroom
+- portfolio
 
-- 不是每个人都愿意先下载客户端
-- 不是每个人都熟悉 `VRCDN` 一类的接入方式
-- 一场本来应该先被看见、被听见、被感受的演出，往往会先变成“怎么进去”的问题
-
-所以我们没有把这条线停掉，而是先把它收回到一个更轻的版本。
-
-## 为什么现在先做成三维内容直播间
-
-现在这条线更像一个浏览器可进入的三维内容直播间。
-
-你不用先安装一个很重的客户端，也不用先完成整套虚拟身份配置，就可以先进入一个专门为线上数字舞台设计的空间，去看 live set、看视觉、看实时控制和音画之间的关系。
-
-这不是对早期方向的放弃，而是一次更实事求是的调整：
-
-- 先让更多人进得来
-- 先让演出本身成立
-- 再根据真实反馈慢慢把空间结构、互动方式和观看机制往前推
-
-## 这条线现在会出现什么
-
-`太空气球` 目前主要承接这几类节点：
-
-1. 线上数字舞台测试
-2. live set 与音画实验
-3. 视觉跟随节拍和 `BPM` 的实时控制展示
-4. 面向音乐人、视觉创作者和旁听者的公开共测
-5. 后续更完整的线上演出空间联调
-
-## 历史档案入口
-
-- [2022-2023 VRChat 世界记录](./history/2022-2023-vrchat/world-info.md)
-- [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](./research/from-vrchat-to-browser-stage-2026.md)
-
-## 当前阶段入口
-
-| 阶段 | 状态 | 说明 |
-|---|---|---|
-| [Alpha](./baloon-live-space-alpha/README.md) | 已完成 | 第一轮公开测试，验证链路 |
-| [Beta](./baloon-live-space-beta/README.md) | 进行中 | 修正形象、积累时长、优化手感 |
-
-## Beta 阶段训练工具
-
-| 工具 | 说明 | 链接 |
-|---|---|---|
-| Live System Trainer | 把 Chataigne / Arena / Unity / Blender 现场系统拆成十个训练关卡的 beta 练习器，用来练系统分层、时钟逻辑、fail-safe 和 rehearsal 手感 | [查看详情](./baloon-live-space-beta/infrastructure/live-system-trainer/README.md) |
-
-## 这次 Alpha 在做什么
-
-这次公开的 `Alpha`，会先展示目前这一版线上数字舞台是怎么工作的。
-
-当前 lineup 是：
-
-- 音乐：`电子人`
-- 视觉：`Ew1（Ewan Qian 钱誉文）`
-
-单场 live set 目前大致会落在 `30` 分钟到 `90` 分钟之间。重点不是一次性把所有东西都讲满，而是先把一条最基本的观看和反馈链路跑通：
-
-1. 你能不能顺利进入
-2. 画面和音乐能不能稳定同步
-3. 视觉跟节拍、`BPM` 的关系能不能被感知到
-4. 作为线上观看者，你到底会不会愿意停下来继续看
-
-## 如果你准备来
-
-- 建议直接用电脑进入，体验会更稳定
-- 如果方便，尽量戴耳机
-- 你不需要先会复杂软件，也不需要先有合作计划
-- 如果你是音乐人、视觉创作者、VJ、开发者，或者只是对线上数字舞台好奇，都可以来
-
-这条线很需要的，不只是掌声，而是真实反馈：
-
-- 哪个环节卡
-- 哪个画面有效
-- 哪个地方太复杂
-- 哪种进入方式最自然
-
-## 当前公开节点
-
-| 日期 | 节点 | 形式 | 入口 |
-|---|---|---|---|
-| 2026-05-09 | [太空气球 Beta 共测夜｜把上一轮的问题接着修，看看这条线上台后稳不稳](https://luma.com/p7c1df8c) | 第二轮联调 / 公开共测 | [档案](./beta-test-night-2026-05/README.md) / [Luma](https://luma.com/p7c1df8c) |
-| 2026-04-18 | [太空气球 Session 02｜线上 live set 试放与视觉共演夜](https://luma.com/wsafafy2) | 第二次线上试演 / 音画实验夜 | [档案](./session-02-live-set-2026-04/README.md) / [Luma](https://luma.com/wsafafy2) |
-| 2026-03-21 | [太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw) | 第一轮公开测试 / 结构与观看反馈 | [档案](./baloon-live-space-alpha/README.md) / [Luma](https://luma.com/go6kxnnw) |
-| 2022 | VRChat 地图构想 | 早期线上演出空间设想 | 系列起点 |
-
-## 这条线后面会怎么长
-
-如果 `Alpha` 和 `Session` 这几轮跑得顺，后面这条线会继续往 3 个方向长：
-
-1. 更稳定的线上数字舞台结构
-2. 更多音乐人与视觉创作者的共演
-3. 从测试走向真正可重复进入的线上演出入口
-
-也就是说，`太空气球` 不只是一个活动名字，它会逐渐长成一条真正的发布线。
-
-## 从这里继续往哪走
-
-- [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
-- [Stations 总入口](../README.md)
-- [Space Salon](../space-salon/README.md)
-- [MOVA](../mova/README.md)
-- [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](./research/from-vrchat-to-browser-stage-2026.md)
+## Current Status
+Status: Active  
+This station is gradually evolving into a practical accumulation space for live structures, performance review, and state-based coordination.

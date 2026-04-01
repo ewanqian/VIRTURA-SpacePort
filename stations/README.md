@@ -2,7 +2,58 @@
 
 这里整理 `VIRTURA` 当前公开可进入的活动站点、交流入口、展映发布线与相关时间线。
 
-`stations` 这一层更接近“发生现场”。它承接沙龙、交流客厅、线上实验、公开测试、线上展映，以及后续会继续生长出来的活动型与发布型入口。
+`stations` 这一层更接近"发生现场"。它承接沙龙、交流客厅、线上实验、公开测试、线上展映，以及后续会继续生长出来的活动型与发布型入口。
+
+---
+
+## Skill-Based Workflows / 技能化工作流
+
+在 VIRTURA 的 station 生态中，skills 并不是附属说明，而是逐步形成中的工作单元。  
+它们的作用不是替代创作者判断，而是把那些高频、重复、但必须做对的项目动作沉淀下来，使不同站点能够承接更稳定的流程。
+
+当前公开可见的 skill 方向包括：
+
+- **Submission Skills**  
+  处理征集、报名、作品投稿、材料检查与提交流程
+
+- **Curation Skills**  
+  处理展品分类、策展结构、展线组织与标签生成
+
+- **Archive Skills**  
+  处理项目归档、作品索引、版本线与公开页面整理
+
+- **Artist Profile Skills**  
+  处理艺术家简介、作品摘要、对外文案与入口页面
+
+- **Feedback Skills**  
+  处理留言、问卷、浏览反馈与展后摘要
+
+- **Exhibition Ops Skills**  
+  处理页面更新、作品替换、状态检查与待办推进
+
+- **Museum Research Skills**  
+  处理展品资料、背景研究、策展问题与文本生成
+
+- **ARG / Event Skills**  
+  处理线索提交、事件推进、分支触发与叙事节点组织
+
+每个 skill 都应尽量遵循统一模板：
+
+- Purpose
+- Best For
+- Not For
+- Inputs
+- Source of Truth
+- Process
+- Output
+- Failure Modes
+- Escalation
+
+Within the VIRTURA station ecosystem, skills are not side notes. They are gradually becoming reusable units of work.
+
+Their purpose is not to replace creative judgment, but to stabilize those frequent, repetitive, yet critical actions that recur across submissions, curation, archiving, research, exhibition operations, and event handling.
+
+---
 
 ## 先从哪里进入最自然
 

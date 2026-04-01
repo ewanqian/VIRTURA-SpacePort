@@ -1,97 +1,37 @@
-# MOVA美术馆 MOVA Art Museum
+# Museum of Virtual Arts / MOVA
 
-MOVA 是 VIRTURA 当前的线上展映与轻量展览入口。
+## What This Station Is For
+MOVA 是用于发展数字展览、线上专展、展品组织、策展文案、观众反馈与展后记录的工作站。  
+它不是单纯的"线上展览页面"，而是一个用于组织数字展览生产流程的 station。
 
-它不是一个夸张的大型虚拟美术馆承诺，而是一条很实际的公共发布线：帮助我们把 GitHub 里的作品、档案、研究和 library，整理成更容易观看、转发和继续进入的线上展览入口。
+## What It Does Not Do
+它不承担团队总入口、产品研发总仓或纯发布出口的角色。  
+它也不是一个一次性的展览壳，而应逐步形成可复用的数字展览模板。
 
-## MOVA 现在负责什么
+## Current Focus
+当前重点包括：
 
-目前更建议把 MOVA 当成这三类东西的宿主：
+- 数字展览策划
+- 展品组织与标签生成
+- 策展陈述与展线结构
+- 页面生成与浏览入口
+- 观众反馈收集
+- 展后数据记录与总结
 
-- 线上展映
-- 作品观看室
-- 从 library 到展览的快速转译
+## Related Skills
+- museum-exhibition-intake
+- museum-curation-outline
+- museum-item-labeling
+- museum-page-builder
+- museum-feedback-summary
+- museum-post-report
 
-对现在的 VIRTURA 来说，MOVA 最有价值的地方，不是先把空间做得多复杂，而是先把“什么值得被看见、怎样被组织成一次观看”这件事做清楚。
+## Related Repositories
+- VIRTURA-SpacePort
+- VIRTURA-Newsroom
+- portfolio
+- VIRTURA-Collective
 
-## 为什么它重要
-
-不是每个值得公开的节点都适合做成一次见面活动。
-
-有些内容更适合这样发布：
-
-- 给一个明确的开幕时间
-- 给一个清楚的观看入口
-- 给一个不太重的展览结构
-- 让读者可以从一个主题继续走到更深的项目页和知识页
-
-MOVA 就是为这种发布方式准备的。
-
-## 它会承接什么类型的内容
-
-### 1. 单作品观看室
-
-适合：
-
-- 某个项目系列的一个版本
-- 一次展映版本
-- 一次特别适合线上阅读的作品入口
-
-### 2. 主题小展
-
-适合：
-
-- 围绕一个关键词组织几条已有内容
-- 例如：存档、音画互动、数字情感容器、扫描与空间记忆
-
-### 3. 从库到展
-
-适合：
-
-- 把 GitHub 上已经整理好的 library、研究页和项目页，转成更像展览路线的入口
-- 这类内容最适合快速发布，也最适合作为 `lu.ma/VIRTURA` 的上线节点
-
-## MOVA 和 Luma 的关系
-
-`MOVA` 不是要取代活动日历，而是和活动日历配合：
-
-- `Luma` 负责开幕时间、观看窗口、订阅与提醒
-- `MOVA` 负责展映入口、观看路线与继续阅读
-
-所以后续如果有下面这些节点，都值得进入 `lu.ma/VIRTURA`：
-
-- 某个线上展映正式开启
-- 某个观看室开放访问
-- 某个从库到展的页面正式上线
-
-## 当前入口
-
-- [MOVA 展映索引](./exhibitions/README.md)
-- [Drop Flow 版本观看室｜把版本、现场和观看入口真正接起来](./exhibitions/drop-flow-viewing-room-2026-04/README.md)
-- [从库到展：VIRTURA 数字空间研究摘编（试运行展）](./exhibitions/library-pilot-2026-03/README.md)
-- [《观察与共生》：从扫描、展览到工作坊](./exhibitions/observation-and-symbiosis-2026-05/README.md)
-
-## 第一批最适合继续长出来的展映方向
-
-- `Drop Flow` 版本观看室
-- `TIMER` 时间结构观察室
-- `Observation and Symbiosis`：从扫描、展览到工作坊
-- `从库到展` 系列：把研究页和知识网络转成更容易进入的展览入口
-
-## 这条线最适合怎么用
-
-如果你是第一次来，建议这样进入：
-
-1. 先从一个主题展映页开始
-2. 再顺着页面里的入口去看项目页、研究页或知识网络
-3. 如果想跟着后续节点走，再回到 [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
-
-## 当前优先级
-
-MOVA 当前最重要的任务不是“做得很大”，而是：
-
-- 先做 1 到 2 个真的能看的展映样板
-- 先让 GitHub 里的内容能被组织成一次自然的观看过程
-- 先让线上展映也能变成日历里可订阅、可回访的一条公共线
-
-这件事一旦成立，后面再接更完整的空间和更复杂的前端，都有意义。
+## Current Status
+Status: Growing  
+MOVA is currently evolving from an exhibition direction into a reusable station for digital exhibition production and long-term curatorial workflows.

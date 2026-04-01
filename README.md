@@ -13,6 +13,33 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 - 已开始形成连续感、可长期订阅的公共活动入口：`lu.ma/VIRTURA`
 - 已经比较清楚的公开层分工：团队入口、前厅、发布仓与工具仓各自做什么
 
+## 当前正在长出来的东西 / What Is Growing Here Now
+
+VIRTURA-SpacePort 不再只是一个公开资料仓或静态目录，而正在逐步发展为一个由档案、知识网络、stations 与 skill-based workflows 共同构成的公共前厅。
+
+在这里，stations 正从"栏目"转向"工作站"：  
+它们不只是内容分类，而开始承担更具体的项目行为、研究任务与文化生产流程。
+
+同时，skills 也正在被整理为可复用的工作单元，用于处理提交、策展、归档、研究、展览运营与反馈整理等不同类型的任务，使项目不再每次都从零开始。
+
+当前优先成长中的站点包括：
+
+- **Museum of Virtual Arts / MOVA**  
+  用于承接数字展览策划、展品组织、页面生成、反馈收集与展后记录
+
+- **Research Laboratory**  
+  用于整理研究问题、模块试验、路线比较与方法沉淀
+
+- **Balloon Live Space**  
+  用于承接 live practice、状态切换、cue 结构、session 记录与现场复盘
+
+VIRTURA-SpacePort is no longer only a public archive or a static directory. It is gradually evolving into a public front hall composed of archives, knowledge networks, stations, and skill-based workflows.
+
+Here, stations are shifting from "sections" into "working stations":  
+they are no longer just containers of content, but increasingly carry concrete project behaviors, research tasks, and cultural production processes.
+
+At the same time, skills are being organized as reusable units for submission, curation, archiving, research, exhibition operations, and feedback handling, so that projects no longer need to start from zero every time.
+
 ## 如果你想先保持联系
 
 很多第一次来到这里的人，并不是立刻要合作或加入，而只是想持续看看这个网络最近在做什么。
