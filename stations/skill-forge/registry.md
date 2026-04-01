@@ -25,6 +25,8 @@
 | `doc-archive` | publishing / agent-ops | bootstrap | `skills/doc-archive/SKILL.md` | 把聊天、会议纪要、草稿整理成结构化归档 | archive-ready note |
 | `salon-publish` | publishing | bootstrap | `skills/salon-publish/SKILL.md` | 把 salon 记录拆成内部记录与公开摘要 | updated salon page + summary |
 | `project-checkpoint` | agent-ops / production | bootstrap | `skills/project-checkpoint/SKILL.md` | 保存阶段进度、版本差异与 handoff 状态 | checkpoint note |
+| `research-reader-builder` | reading | active | `stations/skill-forge/skills/research-reader-builder.md` | 把理论/研究块转成可进入阅读器结构 | reader structure |
+| `project-scenario-engine-builder` | scenario | active | `stations/skill-forge/skills/project-scenario-engine-builder.md` | 把项目逻辑转成推演器框架 | scenario framework |
 
 ---
 
@@ -36,10 +38,10 @@
 - `training-simulator-framework-builder`
 
 ### P1
-- `research-reader-builder`
-- `project-scenario-engine-builder`
 - `newsroom-publication-packager`
 - `repo-update-light`
+- `library-entry-builder`
+- `stage-scenario-packager`
 
 ---
 

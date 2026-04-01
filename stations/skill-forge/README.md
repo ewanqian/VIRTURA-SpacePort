@@ -124,3 +124,17 @@ stations/
 - 基础 memory / AGENTS 结构
 
 真正建起来。
+
+---
+
+## 当前已形成的应用化路径
+
+当前 Skill Forge 已形成两条更具体的应用化路径：
+
+1. **Research Reader**
+   - 让理论、归档、知识网络更适合被进入和阅读
+   - 相关 skill：`research-reader-builder`
+
+2. **Project Scenario Engine**
+   - 让项目逻辑、条件、风险和分支更适合被推演和比较
+   - 相关 skill：`project-scenario-engine-builder`
