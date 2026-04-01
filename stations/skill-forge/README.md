@@ -153,3 +153,10 @@ stations/
 2. **Project Scenario Engine**
    - 让项目逻辑、条件、风险和分支更适合被推演和比较
    - 相关 skill：`project-scenario-engine-builder`
+
+---
+
+## 更多阅读
+
+- [Skill Overview](./skill-overview.md) —— Skill Forge 整体介绍与当前状态
+- [Skill Tree](./skill-tree.md) —— 当前 Skill Forge 能力树、优先级和发展方向
