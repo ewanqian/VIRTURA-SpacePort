@@ -192,5 +192,6 @@
 - [Digital Library / Digital Stage](./digital-library-stage/README.md)
 - [在制内容审计会](./content-audit/README.md)
 - [Research Laboratory](./research-laboratory/README.md)
+- [Skill Forge](./skill-forge/README.md)
 - [Seleiumeaves](./seleiumeaves/README.md)
 - [Teahouse Forest Pavilion](./teahouse-forest-pavilion/README.md)

@@ -103,6 +103,12 @@ VIRTURA Research Laboratory 是一个致力于探索艺术、技术与认知科�
 
 - [进入阅读](./web-first-intellectual-equipment-roadmap/README.md)
 
+### Skill Forge
+
+承接 Research Laboratory 母本，把方法论、路线判断、工作流经验与高频动作整理成可调用、可发布、可维护的 skills。
+
+- [进入阅读](../skill-forge/README.md)
+
 ### Apple Vision Pro Demo Program
 
 一条仍然保留的空间计算实验入口，但已从“主路线”调整为“可选展示层 / 感知实验层”。
