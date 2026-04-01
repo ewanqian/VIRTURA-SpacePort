@@ -80,7 +80,7 @@ Skill Forge 是 `Web-first / MR-optional` 路线中的中间层。
 
 因此，Skill Forge 的职责是：
 
-**先把知识、路径和动作压成可调用单元，再决定哪些值得进入 SceneForge 等运行时层。**
+**先把知识、路径和动作压成可调用单元，再决定哪些值得进入 SceneForge 等运行时层。
 
 ---
 
@@ -114,13 +114,42 @@ stations/
 
 ## 当前状态
 
-当前版本处于 **bootstrap** 阶段。
+当前版本处于 **bootstrap** 阶段，但已建立第一批真正可调用的核心 skills。
 
 重点不是一次性堆很多 skill，而是先把：
 
 - registry
 - taxonomy
-- 3 个核心 skill
+- 3 个 P0 核心 skill
 - 基础 memory / AGENTS 结构
 
 真正建起来。
+
+---
+
+## 第一批 P0 核心 skills
+
+当前已建立的 3 个 P0 核心 skills 分别承担：
+
+1. **母本压缩** (`longform-to-skill-card`)
+   - 把长文母本、路线归档、理论笔记压成可执行的 skill card
+2. **路线同步** (`route-update-sync`)
+   - 把路线判断同步到不同仓库层（SpacePort / Newsroom / portfolio / Collective）
+3. **训练框架生成** (`training-simulator-framework-builder`)
+   - 把课程、工作流、知识网络转成 web-first 训练模拟器框架
+
+下一阶段才会进入更细的 reading / scenario / newsroom packaging 方向。
+
+---
+
+## 当前已形成的应用化路径
+
+当前 Skill Forge 已形成两条更具体的应用化路径：
+
+1. **Research Reader**
+   - 让理论、归档、知识网络更适合被进入和阅读
+   - 相关 skill：`research-reader-builder`
+
+2. **Project Scenario Engine**
+   - 让项目逻辑、条件、风险和分支更适合被推演和比较
+   - 相关 skill：`project-scenario-engine-builder`
