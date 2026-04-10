@@ -104,7 +104,7 @@ https://www.bilibili.com/video/BV1PREczgEzC/
 
 ### 创作溯源与启发
 
-这次《滴流 Drop Flow》第二幕的空间光影编排，核心受到了真锅大度个展（https://vsvs.jp/exhibitions/daito-manabe-new-installation/?fbclid=IwY2xjawRFmHVleHRuA2FlbQIxMABicmlkETF1ZWc5YzVJZ2VNTnJBZkVkc3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHuFcfmMtb82B6uihqlxSSz9h38HCRPaR99GT2WkVnA_Is4I91R6ofsgW_-VP_aem_2As1UWtXgSBDKQYjqXaDtw）作品的启发，他的设计巧思给了我非常大的震撼。
+这次《滴流 Drop Flow》第二幕的空间光影编排，核心受到了真锅大度个展（2024《連續共鳴 Continuum Resonance》大阪「VS.」）作品的启发，他的设计巧思给了我非常大的震撼。
 
 他在个展里用了一套 cave 类型的屏幕，正面是主投影画面，左右两块投影不承载独立叙事，也不显示独立的重要内容，只是对应主画面的透视关系，投射场景里的影子和高光。这个设计对我的启发在于，它不是补充画面内容，而是通过光影联动去建立现场空间感。
 
