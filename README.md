@@ -33,6 +33,12 @@ VIRTURA-SpacePort 不再只是一个公开资料仓或静态目录，而正在�
 - **Balloon Live Space**  
   用于承接 live practice、状态切换、cue 结构、session 记录与现场复盘
 
+同时，一项已经明确开做的基础工程是：
+
+- **SpacePort 网页化与 3D 升维准备**
+  把全部 `stations` 整理成统一可见的网页前台、文字界面和 tracker，并为后续 `3D frontstage` 准备同一套数据层。
+  详见：[SpacePort 网页化与 3D 升维准备路线图](./docs/spaceport-web-3d-preparation-roadmap.md)
+
 VIRTURA-SpacePort is no longer only a public archive or a static directory. It is gradually evolving into a public front hall composed of archives, knowledge networks, stations, and skill-based workflows.
 
 Here, stations are shifting from "sections" into "working stations":  

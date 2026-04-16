@@ -93,4 +93,4 @@
 ## 导航
 
 - [返回 AI 实时演出研究主入口](../README.md)
-- [AI 模块技术选型](./research/ai-modules-research.md)
+- [AI 模块技术选型](../research/ai-modules-research.md)

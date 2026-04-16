@@ -4,44 +4,52 @@
 
 ---
 
-## 这是什么
+## 当前状态
 
-Skill Forge 是 `VIRTURA-SpacePort` 中一个新的站点单元。
+- Station 状态：`生长中`
+- Web 状态：`md-only`
+- 3D 准备：`待准备`
 
-它的作用不是保存完整研究长文，而是把 `Research Laboratory` 中已经形成的方法论、路线判断、工作流经验与高频动作，压缩成可调用、可发布、可维护的 skills。
+当前版本仍处于 `bootstrap` 阶段，但已经建立起第一批真正可调用的核心 skills、prompts、checklists 和 registry。
+
+---
+
+## 这个 station 现在负责什么
+
+Skill Forge 不是保存完整研究长文的地方，而是把 `Research Laboratory` 里已经形成的方法、路线判断、工作流经验与高频动作压成可调用单元。
 
 一句话：
 
 **Research Laboratory 负责母本，Skill Forge 负责技能。**
 
----
+它当前主要承担四件事：
 
-## 它在生态里做什么
-
-Skill Forge 当前主要承担四件事：
-
-1. **托管 skills**  
-   把训练模拟器、交互出版物、智力装备包、项目推演器与高频运维动作整理成可执行 skill。
-
-2. **发布 skills**  
-   让 Agent 与协作者能清楚知道当前有哪些技能可用。
-
-3. **维护 skills**  
-   记录状态、优先级、source-of-truth、适用场景与失败模式。
-
-4. **分发给较弱模型 / 轻量 Agent**  
-   把高质量研究文本压成结构化 skill 卡、checklist 和 prompt pack，让能力较低的模型也能稳定完成更新与运维动作。
+1. 托管 skills
+2. 发布 skills
+3. 维护 skills
+4. 分发给较弱模型 / 轻量 Agent
 
 ---
 
-## 它不做什么
+## 最值得先看的入口
 
-Skill Forge 不承担：
+- [registry](./registry.md)
+- [taxonomy](./taxonomy.md)
+- [skill overview](./skill-overview.md)
+- [skill tree](./skill-tree.md)
+- [publishing protocol](./publishing-protocol.md)
+- [maintenance protocol](./maintenance-protocol.md)
 
-- 完整理论主文写作
-- 替代 Research Laboratory 的源文档角色
-- 直接成为重型运行时平台
-- 存放未经整理的 prompt 杂项
+---
+
+## Tracker
+
+| 维度 | 状态 | 说明 |
+|---|---|---|
+| Archive | `已建立` | registry、taxonomy、prompts、checklists、skills 已成形 |
+| Web | `md-only` | 很适合最早做成系统面板式网页界面 |
+| System | `生长中` | 当前仍处于 bootstrap 阶段 |
+| 3D | `待准备` | 优先级低于网页界面，但后续可接入信息城市式前台 |
 
 ---
 
@@ -80,13 +88,11 @@ Skill Forge 是 `Web-first / MR-optional` 路线中的中间层。
 
 因此，Skill Forge 的职责是：
 
-**先把知识、路径和动作压成可调用单元，再决定哪些值得进入 SceneForge 等运行时层。
+**先把知识、路径和动作压成可调用单元，再决定哪些值得进入 SceneForge 等运行时层。**
 
 ---
 
-## 目录建议
-
-当前建议结构：
+## 当前目录建议
 
 ```text
 stations/
@@ -109,21 +115,6 @@ stations/
 - [Research Laboratory](../research-laboratory/README.md)
 - [Digital Library / Digital Stage](../digital-library-stage/README.md)
 - [Stations 首页](../README.md)
-
----
-
-## 当前状态
-
-当前版本处于 **bootstrap** 阶段，但已建立第一批真正可调用的核心 skills。
-
-重点不是一次性堆很多 skill，而是先把：
-
-- registry
-- taxonomy
-- 3 个 P0 核心 skill
-- 基础 memory / AGENTS 结构
-
-真正建起来。
 
 ---
 

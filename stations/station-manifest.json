@@ -1,0 +1,426 @@
+{
+  "version": "2026-04-16",
+  "purpose": "stations 首页压缩后的结构化底稿。用于网页前台、tracker 面板与后续 3D frontstage 的统一数据层。",
+  "read_layers": {
+    "frontstage": "./README.md",
+    "sourcebook": "./stations-sourcebook.md",
+    "roadmap": "../docs/spaceport-web-3d-preparation-roadmap.md"
+  },
+  "stations": [
+    {
+      "order": 1,
+      "slug": "space-salon",
+      "display_name": "Space Salon / 空间茶话会",
+      "station_type": "public-conversation-series",
+      "current_status": "运行中",
+      "one_line_role": "持续进行中的交流客厅、系列活动与公共分享入口。",
+      "frontstage_unit": "series-index + session-pages",
+      "best_entry": "./space-salon/README.md",
+      "current_focus": [
+        "系列页和单期页保持统一结构",
+        "活动入口和归档入口互相接住",
+        "把公开活动回流到 station 级前台"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "Vol.0-Vol.4 已进入同一系列页"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "缺统一 station card 与 tracker panel"
+        },
+        "system": {
+          "status": "运行中",
+          "note": "系列机制已经稳定发生"
+        },
+        "three_d": {
+          "status": "待准备",
+          "note": "先统一字段和关系，再决定空间化界面"
+        }
+      },
+      "related_stations": [
+        "baloon-live-space",
+        "content-audit",
+        "digital-library-stage"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort"
+      ],
+      "source_of_truth": [
+        "./space-salon/README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "slug": "baloon-live-space",
+      "display_name": "Baloon Live Space / 太空气球",
+      "station_type": "live-stage-and-performance-lab",
+      "current_status": "运行中",
+      "one_line_role": "线上演出空间、音画实验、session 记录与 live workflow 积累站。",
+      "frontstage_unit": "station-page + session-pages + system-notes",
+      "best_entry": "./baloon-live-space/README.md",
+      "current_focus": [
+        "live session 记录",
+        "state / cue / rehearsal 结构整理",
+        "浏览器舞台与系统训练器积累"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "历史档案、Alpha、Session、Beta 与研究页都已出现"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "需要统一站点详情页和系统 tracker 视图"
+        },
+        "system": {
+          "status": "运行中",
+          "note": "演出测试和系统训练器都在推进"
+        },
+        "three_d": {
+          "status": "准备中",
+          "note": "和浏览器舞台、SceneForge、后续 3D frontstage 关系最直接"
+        }
+      },
+      "related_stations": [
+        "space-salon",
+        "research-laboratory",
+        "digital-library-stage"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "SceneForge",
+        "VIRTURA-Newsroom",
+        "portfolio"
+      ],
+      "source_of_truth": [
+        "./baloon-live-space/README.md",
+        "./baloon-live-space/alpha-beta-summary.md"
+      ]
+    },
+    {
+      "order": 3,
+      "slug": "mova",
+      "display_name": "MOVA / Museum of Virtual Arts",
+      "station_type": "digital-exhibition-line",
+      "current_status": "生长中",
+      "one_line_role": "线上展映、观看室、数字展览生产与观看入口组织站。",
+      "frontstage_unit": "exhibition-index + exhibition-pages",
+      "best_entry": "./mova/README.md",
+      "current_focus": [
+        "数字展览策划",
+        "观看路线与展映入口整理",
+        "展后反馈与长期策展模板"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "已有展映索引和多个单展页"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "需要展映卡片、观看路线和状态栏"
+        },
+        "system": {
+          "status": "生长中",
+          "note": "正从展映方向长成可复用的站点机制"
+        },
+        "three_d": {
+          "status": "准备中",
+          "note": "后续适合发展为观看室和空间化展映入口"
+        }
+      },
+      "related_stations": [
+        "digital-library-stage",
+        "content-audit",
+        "skill-forge"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "VIRTURA-Newsroom",
+        "VIRTURA-Collective",
+        "portfolio"
+      ],
+      "source_of_truth": [
+        "./mova/README.md",
+        "./mova/exhibitions/README.md"
+      ]
+    },
+    {
+      "order": 4,
+      "slug": "content-audit",
+      "display_name": "在制内容审计会",
+      "station_type": "critique-and-review-line",
+      "current_status": "运行中",
+      "one_line_role": "页面、场景、版本与前台结构的问题拆解线。",
+      "frontstage_unit": "series-index + issue-sessions",
+      "best_entry": "./content-audit/README.md",
+      "current_focus": [
+        "网页入口问题",
+        "前台与版本结构复盘",
+        "把问题继续收成可执行待办"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已开始",
+          "note": "当前已有 2 期公开节点"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "后续适合接成问题面板和修复状态面板"
+        },
+        "system": {
+          "status": "运行中",
+          "note": "已经承担前台审计和结构债整理功能"
+        },
+        "three_d": {
+          "status": "待准备",
+          "note": "目前先作为网页前台治理层，不急着空间化"
+        }
+      },
+      "related_stations": [
+        "digital-library-stage",
+        "mova",
+        "baloon-live-space"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort"
+      ],
+      "source_of_truth": [
+        "./content-audit/README.md"
+      ]
+    },
+    {
+      "order": 5,
+      "slug": "digital-library-stage",
+      "display_name": "Digital Library / Digital Stage",
+      "station_type": "publishing-and-frontstage-line",
+      "current_status": "运行中",
+      "one_line_role": "围绕仓库、归档、前台和内容分发持续展开的公开说明线。",
+      "frontstage_unit": "series-index + session-pages + research-entry",
+      "best_entry": "./digital-library-stage/README.md",
+      "current_focus": [
+        "把内容整理成库",
+        "把库整理成前台",
+        "解释 AI 在内容组织中的工作边界"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "已有 3 期公开说明和研究长文入口"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "是当前最需要先网页化的一条线之一"
+        },
+        "system": {
+          "status": "运行中",
+          "note": "已经承担前台结构说明与内容系统公开解释"
+        },
+        "three_d": {
+          "status": "准备中",
+          "note": "和 Digital Stage、DigitalStageViewer、后续空间界面关系最直接"
+        }
+      },
+      "related_stations": [
+        "mova",
+        "content-audit",
+        "research-laboratory",
+        "skill-forge"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort"
+      ],
+      "source_of_truth": [
+        "./digital-library-stage/README.md",
+        "./digital-library-stage/research/digital-library-stage-ai-era-study-2026.md"
+      ]
+    },
+    {
+      "order": 6,
+      "slug": "research-laboratory",
+      "display_name": "Research Laboratory",
+      "station_type": "research-base",
+      "current_status": "运行中",
+      "one_line_role": "研究问题、实验过程、路线比较和方法沉淀的基础层。",
+      "frontstage_unit": "lab-home + research-lines + support-pages",
+      "best_entry": "./research-laboratory/README.md",
+      "current_focus": [
+        "研究问题定义",
+        "模块试验记录",
+        "AI 与系统路线判断",
+        "方法文档沉淀"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "已有实验室主页、研究线、成员、阅读清单与 notes"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "需要把 profile / members / reading-list / research-threads 挂回主入口"
+        },
+        "system": {
+          "status": "运行中",
+          "note": "实验室已形成研究母本层"
+        },
+        "three_d": {
+          "status": "待准备",
+          "note": "先把研究节点和实验字段统一，再考虑空间化浏览"
+        }
+      },
+      "related_stations": [
+        "digital-library-stage",
+        "skill-forge",
+        "baloon-live-space"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "SceneForge",
+        "RepoForge",
+        "VIRTURA-Newsroom"
+      ],
+      "source_of_truth": [
+        "./research-laboratory/README.md",
+        "./research-laboratory/profile.md",
+        "./research-laboratory/research-threads.md",
+        "./research-laboratory/reading-list.md"
+      ]
+    },
+    {
+      "order": 7,
+      "slug": "skill-forge",
+      "display_name": "Skill Forge",
+      "station_type": "skill-system",
+      "current_status": "生长中",
+      "one_line_role": "把研究母本压成可调用、可发布、可维护 skill 的中间层。",
+      "frontstage_unit": "skill-home + registry + taxonomy + packs",
+      "best_entry": "./skill-forge/README.md",
+      "current_focus": [
+        "skill 托管与发布",
+        "source-of-truth 维护",
+        "给较弱模型和轻量 Agent 的压缩层"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "registry、taxonomy、prompts、checklists、skills 已成形"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "适合最早做成系统面板式网页界面"
+        },
+        "system": {
+          "status": "生长中",
+          "note": "当前仍处于 bootstrap 阶段"
+        },
+        "three_d": {
+          "status": "待准备",
+          "note": "优先级低于网页界面，但可以作为后续系统城市的一部分"
+        }
+      },
+      "related_stations": [
+        "research-laboratory",
+        "digital-library-stage",
+        "mova"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort"
+      ],
+      "source_of_truth": [
+        "./skill-forge/README.md",
+        "./skill-forge/registry.md",
+        "./skill-forge/taxonomy.md"
+      ]
+    },
+    {
+      "order": 8,
+      "slug": "seleiumeaves",
+      "display_name": "Seleiumeaves / 雾中茶屋",
+      "station_type": "archive-node",
+      "current_status": "归档保留",
+      "one_line_role": "较早期数字茶屋方向的站点档案保留页。",
+      "frontstage_unit": "archive-page",
+      "best_entry": "./seleiumeaves/README.md",
+      "current_focus": [
+        "保留旧方向入口",
+        "把读者导向更当前的茶屋方向",
+        "维持基础互链"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已保留",
+          "note": "当前作为旧方向档案节点存在"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "后续适合作为 archive card，而不是重型详情页"
+        },
+        "system": {
+          "status": "归档保留",
+          "note": "不作为当前主生长线"
+        },
+        "three_d": {
+          "status": "待准备",
+          "note": "更适合作为历史节点，而不是优先进入 3D"
+        }
+      },
+      "related_stations": [
+        "teahouse-forest-pavilion"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "Senia-Digital-Resort"
+      ],
+      "source_of_truth": [
+        "./seleiumeaves/README.md"
+      ]
+    },
+    {
+      "order": 9,
+      "slug": "teahouse-forest-pavilion",
+      "display_name": "Teahouse Forest Pavilion / 林中茶屋",
+      "station_type": "spatial-demo-direction",
+      "current_status": "生长中",
+      "one_line_role": "围绕高保真茶屋 demo、空间导出与观看路线整理展开的方向页。",
+      "frontstage_unit": "direction-page + demo-route",
+      "best_entry": "./teahouse-forest-pavilion/README.md",
+      "current_focus": [
+        "高保真场景 demo",
+        "屏幕动画与空间动画联动",
+        "FBX / USDZ / 视频导出准备"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已开始",
+          "note": "方向页已形成，但材料和 demo 仍在补"
+        },
+        "web": {
+          "status": "md-only",
+          "note": "后续适合先做观看路线页和进度 tracker"
+        },
+        "system": {
+          "status": "生长中",
+          "note": "当前处于方向收束与素材准备阶段"
+        },
+        "three_d": {
+          "status": "准备中",
+          "note": "是最适合直接往空间界面和 3D frontstage 继续翻的一类站点"
+        }
+      },
+      "related_stations": [
+        "seleiumeaves",
+        "mova",
+        "digital-library-stage"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "Senia-Digital-Resort"
+      ],
+      "source_of_truth": [
+        "./teahouse-forest-pavilion/README.md"
+      ]
+    }
+  ]
+}

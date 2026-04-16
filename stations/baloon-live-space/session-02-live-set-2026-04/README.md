@@ -12,7 +12,7 @@
 
 - [Luma 活动页](https://luma.com/wsafafy2)
 - [系列总入口](../README.md)
-- [Alpha 测试档案](../alpha-electronman-ew1-2026-03/README.md)
+- [Alpha 测试档案](../baloon-live-space-alpha/README.md)
 - [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](../research/from-vrchat-to-browser-stage-2026.md)
 
 ## 这一场和 Alpha 的区别

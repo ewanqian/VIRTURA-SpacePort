@@ -64,5 +64,5 @@ Balloon Live Space 太空气球 NOW ON AIR WITH MUSICAN˸DDAAAW․ NOW PLAYING �
 
 ## 导航
 
-- [返回太空气球总入口](../README.md)
-- [Alpha 档案](../baloon-live-space-alpha/README.md)
+- [返回太空气球总入口](../../README.md)
+- [Alpha 档案](../../baloon-live-space-alpha/README.md)

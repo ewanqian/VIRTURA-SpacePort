@@ -75,11 +75,11 @@
 
 | 理论名称 | 核心文档 | 关键概念 | 当前状态 |
 |---------|---------|----------|---------|
-| 数字情感容器理论 | [SpacePort/our-theory](../../../knowledge-network/our-theory/digital-emotion-container) | 空间作为情感载体 | 已建立 |
-| 智力装备理论 | [SpacePort/our-theory](../../../knowledge-network/our-theory/intellectual-equipment) | 知识转化为可部署工具 | 已建立 |
-| 工程控制论 | [SpacePort/our-theory](../../../knowledge-network/our-theory/engineering-cybernetics) | 无公式的工程思维 | 已建立 |
-| 空间创作框架 | [SpacePort/our-theory](../../../knowledge-network/our-theory/spatial-creative-framework) | 创作者的空间方法论 | 已建立 |
-| 感知迁移理论 | [Newsroom](../../../VIRTURA-Newsroom/01_Personal/ewan-qian/02-perceptual-migration-and-interface.md) | 意识在空间中的迁移 | 发展中 |
+| 数字情感容器理论 | [SpacePort/our-theory](../../knowledge-network/our-theory/digital-emotion-container) | 空间作为情感载体 | 已建立 |
+| 智力装备理论 | [SpacePort/our-theory](../../knowledge-network/our-theory/intellectual-equipment) | 知识转化为可部署工具 | 已建立 |
+| 工程控制论 | [SpacePort/our-theory](../../knowledge-network/our-theory/engineering-cybernetics) | 无公式的工程思维 | 已建立 |
+| 空间创作框架 | SpacePort / our-theory（具体入口待补） | 创作者的空间方法论 | 已建立 |
+| 感知迁移理论 | Newsroom（仓外文档，入口待补） | 意识在空间中的迁移 | 发展中 |
 
 ---
 
