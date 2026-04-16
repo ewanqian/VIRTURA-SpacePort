@@ -181,6 +181,7 @@
 
 - 给每个 `station` 补齐统一字段
 - 做一个可长期维护的 `station manifest`
+- 明确公众首页原型应直接读取 `stations/frontstage-manifest.json`，不长期维护第二份前台 station 数据
 - 把 `stations` 首页改成“总览 + 入口 + tracker 总图”
 - 为每个 `station` 提供一致的文字界面骨架
 - 整理 `station card` 需要的最小字段
@@ -208,6 +209,8 @@
 - 修掉了一个会影响 README 渲染的格式问题
 - 新增了 `stations/stations-sourcebook.md` 作为长文信息备份层
 - 新增了 `stations/station-manifest.json` 作为结构化底稿
+- 新增了 `stations/frontstage-manifest.json` 作为公众首页和 station 页面共享的正式前台数据层
+- 新增了 `docs/spaceport-frontstage-data-structure.md` 作为当前前端原型和仓库数据层之间的协作说明
 
 这部分不是终点，只是把后续网页化准备前最明显的低层问题先扫掉。
 

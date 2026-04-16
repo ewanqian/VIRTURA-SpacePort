@@ -29,6 +29,7 @@
 3. 转存优先放到：
    - `stations/stations-sourcebook.md`
    - `stations/station-manifest.json`
+   - `stations/frontstage-manifest.json`
    - 对应 station 的专门文档
 4. 只有在信息重复、过时、失真或误生成时，才允许直接删
 
@@ -82,6 +83,7 @@
 
 - [stations/README.md](../stations/README.md)
 - [stations/station-manifest.json](../stations/station-manifest.json)
+- [stations/frontstage-manifest.json](../stations/frontstage-manifest.json)
 - [stations/stations-sourcebook.md](../stations/stations-sourcebook.md)
 - [SpacePort 网页化与 3D 升维准备路线图](./spaceport-web-3d-preparation-roadmap.md)
 
@@ -101,6 +103,7 @@
 - 修链接
 - 统一字段
 - 整理 manifest
+- 整理 frontstage UI 数据
 - 下沉长文到 sourcebook
 - 小范围重写站点首页
 - 补 tracker 字段或 tracker 视图的底稿
@@ -113,6 +116,7 @@
 - 没有备份就大量删减长文
 - 只改措辞，不改善入口和结构
 - 引入一套和现有 manifest 不兼容的新字段
+- 在 `assets/` 或前端目录里长期手写维护第二份 station registry
 - 提前做太重的 `3D` 表层，而底层字段还没统一
 
 ---
@@ -130,6 +134,7 @@
 如果当天有改文档，优先保证这三层至少其中两层被同步：
 
 - 前台页
+- frontstage manifest
 - sourcebook
 - manifest
 
@@ -139,10 +144,10 @@
 
 后续自动化最适合每日做的是：
 
-1. 读 `stations/README.md`、`station-manifest.json`、`stations-sourcebook.md` 和路线图
+1. 读 `stations/README.md`、`station-manifest.json`、`frontstage-manifest.json`、`stations-sourcebook.md` 和路线图
 2. 选出一个最小但高价值的整理动作
 3. 优先处理入口、结构、字段或信息保全问题
-4. 如果压缩首页内容，先把信息写入 sourcebook 或 manifest
+4. 如果压缩首页或 station 页内容，先把信息写入 sourcebook、manifest 或 frontstage-manifest
 5. 完成后给出一份简短结果说明和下一步建议
 
 ---

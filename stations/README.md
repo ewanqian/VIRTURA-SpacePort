@@ -24,6 +24,7 @@
 | 层 | 作用 | 入口 |
 |---|---|---|
 | Frontstage | 快速看全站点、当前状态和进入路径 | [本页](./README.md) |
+| Frontstage Data | 给公众首页和 station 页面直接读取的 UI 数据层 | [frontstage-manifest.json](./frontstage-manifest.json) |
 | Sourcebook | 保留更长的说明、时间线和原始文字材料 | [stations-sourcebook.md](./stations-sourcebook.md) |
 | Manifest | 给网页前台、tracker 和后续 `3D` 用的结构化底稿 | [station-manifest.json](./station-manifest.json) |
 | Roadmap | 网页化、统一规范和 `3D` 升维准备路线 | [spaceport-web-3d-preparation-roadmap.md](../docs/spaceport-web-3d-preparation-roadmap.md) |
@@ -75,6 +76,6 @@
 ## 当前工作项
 
 - 继续把每个 `station` 收成统一的文字界面和 tracker
-- 补一版真正可被网页读取的 `station card` 数据层
+- 让公众首页原型直接回读 `frontstage-manifest.json`，而不是长期维护第二份 `station registry`
 - 让后续网页前台和 `3D frontstage` 共用同一份 `manifest`
 - 逐步把这页从“README 汇总”推进成真正的前台索引

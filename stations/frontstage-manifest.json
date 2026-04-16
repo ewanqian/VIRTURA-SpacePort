@@ -1,0 +1,597 @@
+{
+  "version": "2026-04-16",
+  "extends": "./station-manifest.json",
+  "purpose": "面向公众前台的 UI 数据层。给首页 dock 视图、station 卡片、station 独立主页与图文结构展示面使用。",
+  "governance": {
+    "canonical_role": "SpacePort 公众首页与 station 页面共享的正式前台数据层。",
+    "frontend_runtime_rule": "如果网页原型需要额外的 assets/*.json 运行时快照，应由本文件派生，不应长期手写维护第二份 station registry。",
+    "preserve_information_first": true
+  },
+  "path_rules": {
+    "repo_relative_paths": true,
+    "note": "本文件中的 href 和 src 统一使用仓库根目录相对路径，方便静态前台直接拼接。"
+  },
+  "site": {
+    "site_name": "VIRTURA SpacePort",
+    "public_title": "SpacePort / A Public Digital Harbor",
+    "public_subtitle": "一个面向公众的数字港口前台：先锋、基础设施、档案、stations 与后续 3D frontstage 的接口层。",
+    "hero": {
+      "eyebrow": "VIRTURA SpacePort",
+      "title": "A Public Digital Harbor for stations, archives, and digital infrastructure.",
+      "summary": [
+        "SpacePort 不是单一作品页，也不是只读文档仓。它更像一个正在继续建设的数字港口：公开活动、研究、展映、技能系统和空间方向都在这里接岸。",
+        "当前前台先以可点击的图文结构和 station dock 进入，后续再继续往 3D frontstage 升维。"
+      ],
+      "primary_actions": [
+        {
+          "label": "Browse All Stations",
+          "href": "stations/README.md"
+        },
+        {
+          "label": "Read The Roadmap",
+          "href": "docs/spaceport-web-3d-preparation-roadmap.md"
+        }
+      ]
+    },
+    "port_metrics": [
+      {
+        "label": "Station Docks",
+        "value": "9"
+      },
+      {
+        "label": "Public Layers",
+        "value": "Frontstage / Sourcebook / Manifest"
+      },
+      {
+        "label": "Current Mode",
+        "value": "Web-first, 3D-ready"
+      }
+    ],
+    "dock_groups": [
+      {
+        "slug": "public-programs",
+        "label": "Public Programs",
+        "description": "公共活动、展映、公开说明与问题拆解线。",
+        "station_slugs": [
+          "space-salon",
+          "baloon-live-space",
+          "mova",
+          "content-audit",
+          "digital-library-stage"
+        ]
+      },
+      {
+        "slug": "infrastructure-and-research",
+        "label": "Infrastructure",
+        "description": "研究母本、技能系统与后续运行时准备层。",
+        "station_slugs": [
+          "research-laboratory",
+          "skill-forge"
+        ]
+      },
+      {
+        "slug": "spatial-directions",
+        "label": "Spatial Directions",
+        "description": "空间方向、旧档案节点与未来更适合直接升维到 3D 的路径。",
+        "station_slugs": [
+          "teahouse-forest-pavilion",
+          "seleiumeaves"
+        ]
+      }
+    ],
+    "homepage_sections": [
+      "hero",
+      "dock-groups",
+      "tracker-strip",
+      "entry-routes",
+      "infrastructure-note"
+    ]
+  },
+  "station_pages": [
+    {
+      "slug": "space-salon",
+      "dock_group": "public-programs",
+      "dock_code": "DOCK-01",
+      "archive_file_count": 17,
+      "card": {
+        "eyebrow": "Public Programs",
+        "title": "Space Salon",
+        "summary": "持续进行中的交流客厅、系列活动与公共分享入口。",
+        "tags": [
+          "conversation",
+          "archive",
+          "public"
+        ],
+        "visual_mode": "typography-only"
+      },
+      "page": {
+        "hero_title": "Space Salon / 空间茶话会",
+        "hero_summary": "一个会反复开门的交流客厅：活动、归档、最近在做的事和后续进入路径都从这里继续展开。",
+        "public_role": "公共活动入口 / 系列档案页 / 交流型 dock",
+        "audience": [
+          "想先从交流活动认识这个网络的人",
+          "想跟着公共活动稳定进入的人",
+          "想看长期系列怎样留下档案的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/space-salon/README.md"
+          },
+          {
+            "label": "Latest Public Archive",
+            "href": "stations/space-salon/vol-04-continue-the-unfinished/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Vol.03 Shared Reference Night",
+            "href": "stations/space-salon/vol-03-shared-reference-night/README.md"
+          },
+          {
+            "label": "Official Calendar",
+            "href": "https://lu.ma/VIRTURA"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "type-led dock card"
+      }
+    },
+    {
+      "slug": "baloon-live-space",
+      "dock_group": "public-programs",
+      "dock_code": "DOCK-02",
+      "archive_file_count": 19,
+      "card": {
+        "eyebrow": "Public Programs",
+        "title": "Baloon Live Space",
+        "summary": "线上演出空间、音画实验、浏览器舞台与 live workflow 积累站。",
+        "tags": [
+          "live",
+          "browser-stage",
+          "performance"
+        ],
+        "visual_mode": "poster-image"
+      },
+      "page": {
+        "hero_title": "Baloon Live Space / 太空气球",
+        "hero_summary": "不是单场活动介绍，而是一条持续增长中的线上演出空间和浏览器舞台路线。",
+        "public_role": "线上演出 dock / 系统训练 dock / 3D 准备度较高的 station",
+        "audience": [
+          "想看 live set 和浏览器舞台怎样接起来的人",
+          "想看 state / cue / rehearsal 怎样沉淀的人",
+          "想看网页前台如何继续往 3D 舞台翻的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/baloon-live-space/README.md"
+          },
+          {
+            "label": "Alpha / Beta Summary",
+            "href": "stations/baloon-live-space/alpha-beta-summary.md"
+          },
+          {
+            "label": "Alpha Archive",
+            "href": "stations/baloon-live-space/baloon-live-space-alpha/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Session 02",
+            "href": "stations/baloon-live-space/session-02-live-set-2026-04/README.md"
+          },
+          {
+            "label": "VRChat History",
+            "href": "stations/baloon-live-space/history/2022-2023-vrchat/world-info.md"
+          },
+          {
+            "label": "Research Report",
+            "href": "stations/baloon-live-space/research/from-vrchat-to-browser-stage-2026.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": "organization/works/assets/20240822_ufo-loadingcamp_stage_01.jpg",
+        "poster_alt": "Baloon Live Space related stage image",
+        "fallback_style": "image-led performance dock"
+      }
+    },
+    {
+      "slug": "mova",
+      "dock_group": "public-programs",
+      "dock_code": "DOCK-03",
+      "archive_file_count": 5,
+      "card": {
+        "eyebrow": "Public Programs",
+        "title": "MOVA",
+        "summary": "线上展映、观看室、数字展览生产与观看入口组织站。",
+        "tags": [
+          "exhibition",
+          "viewing-room",
+          "curation"
+        ],
+        "visual_mode": "poster-image"
+      },
+      "page": {
+        "hero_title": "Museum of Virtual Arts / MOVA",
+        "hero_summary": "从单次线上展映继续长成可复用的数字展览生产线和观看路线组织层。",
+        "public_role": "展映 dock / 观看室 dock / 数字策展前台",
+        "audience": [
+          "想从作品和观看入口进入的人",
+          "想看 GitHub 里的内容怎么变成公共展映的人",
+          "想把线上展映做成系统的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/mova/README.md"
+          },
+          {
+            "label": "Exhibition Index",
+            "href": "stations/mova/exhibitions/README.md"
+          },
+          {
+            "label": "Drop Flow Viewing Room",
+            "href": "stations/mova/exhibitions/drop-flow-viewing-room-2026-04/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Library Pilot",
+            "href": "stations/mova/exhibitions/library-pilot-2026-03/README.md"
+          },
+          {
+            "label": "Observation and Symbiosis",
+            "href": "stations/mova/exhibitions/observation-and-symbiosis-2026-05/README.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": "organization/works/assets/20250407_dropflow-1.0_bilibili-cover_01.jpg",
+        "poster_alt": "Drop Flow related MOVA public image",
+        "fallback_style": "image-led exhibition dock"
+      }
+    },
+    {
+      "slug": "content-audit",
+      "dock_group": "public-programs",
+      "dock_code": "DOCK-04",
+      "archive_file_count": 3,
+      "card": {
+        "eyebrow": "Public Programs",
+        "title": "在制内容审计会",
+        "summary": "页面、场景、版本与前台结构的问题拆解线。",
+        "tags": [
+          "critique",
+          "review",
+          "structure"
+        ],
+        "visual_mode": "typography-only"
+      },
+      "page": {
+        "hero_title": "在制内容审计会",
+        "hero_summary": "把还没讲清、还没做顺、还没接好的部分公开拿出来继续拆。",
+        "public_role": "前台治理 dock / 结构债拆解 dock",
+        "audience": [
+          "想看前台和版本怎么被继续整理的人",
+          "想把问题拆细再继续做的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/content-audit/README.md"
+          },
+          {
+            "label": "Session 02",
+            "href": "stations/content-audit/session-02-frontstage-version-2026-05/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Session 01",
+            "href": "stations/content-audit/session-01-structure-critique-2026-04/README.md"
+          },
+          {
+            "label": "Roadmap",
+            "href": "docs/spaceport-web-3d-preparation-roadmap.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "terminal-like critique card"
+      }
+    },
+    {
+      "slug": "digital-library-stage",
+      "dock_group": "public-programs",
+      "dock_code": "DOCK-05",
+      "archive_file_count": 10,
+      "card": {
+        "eyebrow": "Public Programs",
+        "title": "Digital Library / Digital Stage",
+        "summary": "围绕仓库、归档、前台和内容分发持续展开的公开说明线。",
+        "tags": [
+          "library",
+          "frontstage",
+          "workflow"
+        ],
+        "visual_mode": "typography-led"
+      },
+      "page": {
+        "hero_title": "Digital Library / Digital Stage",
+        "hero_summary": "把内容整理成库，再把库整理成前台，是当前 SpacePort 最核心的公开说明层之一。",
+        "public_role": "前台说明 dock / 内容系统 dock / Digital Stage 过渡层",
+        "audience": [
+          "正在整理作品、资料和旧项目的人",
+          "想把 GitHub 做成工作台的人",
+          "想看网页怎样继续往 3D 前台翻的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/digital-library-stage/README.md"
+          },
+          {
+            "label": "Research Longform",
+            "href": "stations/digital-library-stage/research/digital-library-stage-ai-era-study-2026.md"
+          },
+          {
+            "label": "Session 03",
+            "href": "stations/digital-library-stage/session-03-frontstage-distribution-2026-05/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Session 02",
+            "href": "stations/digital-library-stage/session-02-knowledge-network-entry-2026-04/README.md"
+          },
+          {
+            "label": "Session 01",
+            "href": "stations/digital-library-stage/session-01-library-and-stage-2026-04/README.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "diagram-like frontstage card"
+      }
+    },
+    {
+      "slug": "research-laboratory",
+      "dock_group": "infrastructure-and-research",
+      "dock_code": "DOCK-06",
+      "archive_file_count": 13,
+      "card": {
+        "eyebrow": "Infrastructure",
+        "title": "Research Laboratory",
+        "summary": "研究问题、实验过程、路线比较和方法沉淀的基础层。",
+        "tags": [
+          "research",
+          "methods",
+          "systems"
+        ],
+        "visual_mode": "typography-led"
+      },
+      "page": {
+        "hero_title": "Research Laboratory",
+        "hero_summary": "研究母本层：承接实验、路线比较和模块判断，为其他 stations 提供长期有效的方法与判断。",
+        "public_role": "研究 dock / 母本 dock / 方法沉淀层",
+        "audience": [
+          "想看研究母本和方法沉淀的人",
+          "想看实验、路线与系统判断如何留下来的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/research-laboratory/README.md"
+          },
+          {
+            "label": "Lab Profile",
+            "href": "stations/research-laboratory/profile.md"
+          },
+          {
+            "label": "Research Threads",
+            "href": "stations/research-laboratory/research-threads.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "AI Live Performance",
+            "href": "stations/research-laboratory/ai-live-performance/README.md"
+          },
+          {
+            "label": "Reading List",
+            "href": "stations/research-laboratory/reading-list.md"
+          },
+          {
+            "label": "Members",
+            "href": "stations/research-laboratory/members.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": "organization/works/assets/20240926_timer_bilibili-cover_01.jpg",
+        "poster_alt": "Timer related visual used as research-laboratory public atmosphere image",
+        "fallback_style": "system card with optional poster"
+      }
+    },
+    {
+      "slug": "skill-forge",
+      "dock_group": "infrastructure-and-research",
+      "dock_code": "DOCK-07",
+      "archive_file_count": 21,
+      "card": {
+        "eyebrow": "Infrastructure",
+        "title": "Skill Forge",
+        "summary": "把研究母本压成可调用、可发布、可维护 skill 的中间层。",
+        "tags": [
+          "skills",
+          "ops",
+          "compression"
+        ],
+        "visual_mode": "typography-only"
+      },
+      "page": {
+        "hero_title": "Skill Forge",
+        "hero_summary": "给 Agent、协作者与后续运行时使用的技能托管与发布站点，是网页前台和系统运行时之间的重要中间层。",
+        "public_role": "技能系统 dock / 运维接口 dock / 信息城市基础设施层",
+        "audience": [
+          "想看研究如何被压成技能的人",
+          "想看后续系统面板和 Agent 接口如何长出来的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/skill-forge/README.md"
+          },
+          {
+            "label": "Registry",
+            "href": "stations/skill-forge/registry.md"
+          },
+          {
+            "label": "Taxonomy",
+            "href": "stations/skill-forge/taxonomy.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Skill Overview",
+            "href": "stations/skill-forge/skill-overview.md"
+          },
+          {
+            "label": "Skill Tree",
+            "href": "stations/skill-forge/skill-tree.md"
+          },
+          {
+            "label": "Publishing Protocol",
+            "href": "stations/skill-forge/publishing-protocol.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "control-panel card"
+      }
+    },
+    {
+      "slug": "teahouse-forest-pavilion",
+      "dock_group": "spatial-directions",
+      "dock_code": "DOCK-08",
+      "archive_file_count": 1,
+      "card": {
+        "eyebrow": "Spatial Directions",
+        "title": "Teahouse Forest Pavilion",
+        "summary": "高保真茶屋 demo、空间导出与观看路线整理方向页。",
+        "tags": [
+          "spatial-demo",
+          "teahouse",
+          "3d-ready"
+        ],
+        "visual_mode": "typography-led"
+      },
+      "page": {
+        "hero_title": "Teahouse Forest Pavilion / 林中茶屋",
+        "hero_summary": "围绕高保真空间 demo、屏幕与空间动画联动、以及 FBX / USDZ / 视频导出继续展开的空间方向。",
+        "public_role": "空间方向 dock / 更适合继续往 3D frontstage 翻的 station",
+        "audience": [
+          "想看网页和空间设备之间如何连接的人",
+          "想看高保真场景 demo 怎样慢慢成立的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/teahouse-forest-pavilion/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Related Archive Node",
+            "href": "stations/seleiumeaves/README.md"
+          },
+          {
+            "label": "3D Reconstruction",
+            "href": "knowledge-network/3d-reconstruction/README.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "spatial direction card"
+      }
+    },
+    {
+      "slug": "seleiumeaves",
+      "dock_group": "spatial-directions",
+      "dock_code": "DOCK-09",
+      "archive_file_count": 1,
+      "card": {
+        "eyebrow": "Spatial Directions",
+        "title": "Seleiumeaves",
+        "summary": "较早期数字茶屋方向的档案保留页。",
+        "tags": [
+          "archive-node",
+          "teahouse",
+          "legacy"
+        ],
+        "visual_mode": "typography-only"
+      },
+      "page": {
+        "hero_title": "Seleiumeaves / 雾中茶屋",
+        "hero_summary": "作为旧方向档案节点保留，并把读者导向更当前、更接近高保真空间 demo 的茶屋方向。",
+        "public_role": "旧档案 dock / 历史节点",
+        "audience": [
+          "想看茶屋方向早期档案的人",
+          "想理解旧方向如何接到当前方向的人"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/seleiumeaves/README.md"
+          },
+          {
+            "label": "Current Teahouse Direction",
+            "href": "stations/teahouse-forest-pavilion/README.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "Spatial Experience Research",
+            "href": "knowledge-network/01-discover/02-spatial-experience/README.md"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "archive dock"
+      }
+    }
+  ]
+}
