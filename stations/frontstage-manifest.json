@@ -14,7 +14,7 @@
   "site": {
     "site_name": "VIRTURA SpacePort",
     "public_title": "SpacePort",
-    "public_subtitle": "持续运行的数字太空实验室与公众基础设施。",
+    "public_subtitle": "持续运行的数字太空港与公众基础设施。",
     "calendar_url": "https://lu.ma/VIRTURA",
     "source_url": "https://github.com/ewanqian/VIRTURA-SpacePort",
     "hero_station_slug": "mova",
@@ -22,7 +22,7 @@
       "eyebrow": "VIRTURA",
       "title": "SpacePort",
       "summary": [
-        "持续运行的数字太空实验室与公众基础设施。"
+        "VIRTURA 的公众太空港：展映、演出、salon、空间样本与研究基础设施在这里持续接岸。"
       ],
       "primary_actions": [
         {
@@ -39,7 +39,7 @@
       "group_slug": "core-infrastructure",
       "eyebrow": "Core Infrastructure",
       "title": "Core Stations",
-      "description": "MOVA、Baloon Live Space、Space Salon、Teahouse Forest Pavilion 与 Research Laboratory 构成当前对外开放的核心设施。",
+      "description": "展映、演出、public salon、空间样本与研究实验室构成当前对外开放的核心设施。",
       "featured_station_slugs": [
         "mova",
         "baloon-live-space",
@@ -47,6 +47,11 @@
         "space-salon",
         "research-laboratory"
       ]
+    },
+    "signal_section": {
+      "eyebrow": "Port Signals",
+      "title": "Current Signals",
+      "description": "三组仍在驱动这座公众太空港气质的图像信号：演出、展映与研究。"
     },
     "network_section": {
       "eyebrow": "Operational Network",
@@ -102,6 +107,7 @@
     "homepage_sections": [
       "hero",
       "core-stations",
+      "current-signals",
       "operational-layers",
       "station-index",
       "operating-model"

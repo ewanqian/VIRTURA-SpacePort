@@ -19,6 +19,8 @@
 - event-driven station 已经有 `Current` 提示和更明确的首要入口
 - 首页开始把核心 stations 作为固定基础设施来展示，而不是把活动层误当成主体
 - 全部 station 页已经能以更稳定的公开语言与 references 结构完成演示
+- 首页已经开始拥有更明确的图像信号层，而不只是设施列表
+- type-led station 卡片开始具备更明显的视觉身份，而不再是空白占位
 
 当前不再属于“基础 demo 缺口”，但仍可继续提升的部分：
 
@@ -169,6 +171,8 @@
 - 把 `Space Salon`、`Teahouse Forest Pavilion` 与 `Research Laboratory` 拉回核心基础设施层
 - 把 station status、tracker status 与 references 命名进一步公众化
 - 做了桌面端首页、桌面端 MOVA、桌面端 Research、移动端首页、移动端 MOVA 和全站 station hash 的本地浏览器验证
+- 给首页补回 `Current Signals` 图像策展层
+- 把没有海报图的 featured station 收成 typography-led signal cards
 
 ## 10-Track Final Tasklist
 

@@ -263,6 +263,7 @@ function renderHomeView() {
   const site = state.frontstage?.site || {};
   const featuredStations = getFeaturedStations();
   const heroStation = getHeroStation(site, featuredStations);
+  const signalCards = getSignalCards();
   const networkGroups = getNetworkGroups(site);
 
   app.innerHTML = `
@@ -295,6 +296,8 @@ function renderHomeView() {
           ${renderFeaturedStations(featuredStations)}
         </div>
       </section>
+
+      ${renderSignalSection(site, signalCards)}
 
       <section class="section" id="network">
         <div class="section-head">
@@ -426,7 +429,7 @@ function renderFeaturedStations(featuredStations) {
     <article class="featured-card ${index < 2 ? "featured-card--wide" : "featured-card--compact"} ${station.posterUrl ? "featured-card--image" : "featured-card--type"}" style="--featured-accent:${escapeHtml(station.accent)};">
       ${station.posterUrl
         ? `<div class="featured-card__visual"><img src="${escapeHtml(station.posterUrl)}" alt="${escapeHtml(station.posterAlt)}" loading="lazy" /></div>`
-        : `<div class="featured-card__visual featured-card__visual--type"></div>`}
+        : renderTypeVisual(station)}
       <div class="featured-card__copy">
         <div class="featured-card__meta">
           <span>${escapeHtml(station.groupLabel)}</span>
@@ -441,6 +444,21 @@ function renderFeaturedStations(featuredStations) {
       </div>
     </article>
   `).join("");
+}
+
+function renderTypeVisual(station) {
+  const signalLabel = station.currentFeature?.eyebrow || station.groupLabel;
+  const signalTitle = station.currentFeature?.title || station.homeTitle;
+
+  return `
+    <div class="featured-card__visual featured-card__visual--type" data-code="${escapeHtml(station.dockCode)}">
+      <div class="featured-card__signal">
+        <span class="micro-label">${escapeHtml(signalLabel)}</span>
+        <strong>${escapeHtml(signalTitle)}</strong>
+        <span class="featured-card__signal-meta">${escapeHtml(station.groupLabel)}</span>
+      </div>
+    </div>
+  `;
 }
 
 function renderFeaturedEntry(station) {
@@ -473,6 +491,44 @@ function renderNetworkRows(groups) {
       </div>
     </article>
   `).join("");
+}
+
+function renderSignalSection(site, signalCards) {
+  if (signalCards.length === 0) {
+    return "";
+  }
+
+  return `
+    <section class="section" id="signals">
+      <div class="section-head">
+        <div class="eyebrow">${escapeHtml(site.signal_section?.eyebrow || "Port Signals")}</div>
+        <h2 class="section-title">${escapeHtml(site.signal_section?.title || "Current Signals")}</h2>
+        <p class="section-intro">${escapeHtml(site.signal_section?.description || "")}</p>
+      </div>
+      <div class="signal-grid">
+        ${signalCards.map(renderSignalCard).join("")}
+      </div>
+    </section>
+  `;
+}
+
+function renderSignalCard(signal) {
+  return `
+    <article class="signal-card">
+      <a class="signal-card__image" href="${escapeHtml(signal.stationUrl)}">
+        <img src="${escapeHtml(signal.image)}" alt="${escapeHtml(signal.alt || signal.title)}" loading="lazy" />
+      </a>
+      <div class="signal-card__body">
+        <div class="micro-label">${escapeHtml(signal.eyebrow || "Signal")}</div>
+        <h3>${escapeHtml(signal.title || signal.station?.homeTitle || "Signal")}</h3>
+        <p>${escapeHtml(signal.caption || "")}</p>
+        <div class="signal-card__actions">
+          <a class="button" href="${escapeHtml(signal.stationUrl)}">Open Station</a>
+          <a class="inline-link" href="${escapeHtml(signal.entryUrl)}" target="_blank" rel="noreferrer">${escapeHtml(signal.entryLabel)}</a>
+        </div>
+      </div>
+    </article>
+  `;
 }
 
 function renderStationView(station) {
@@ -733,6 +789,26 @@ function formatStationStatus(status) {
 
 function formatTrackerStatus(status) {
   return TRACKER_STATUS_LABELS[status] || status;
+}
+
+function getSignalCards() {
+  return safeList(state.visual?.signals)
+    .map((signal) => {
+      const station = state.stationMap.get(signal.station_slug);
+      if (!station) {
+        return null;
+      }
+
+      const entry = getPrimaryEntry(station);
+      return {
+        ...signal,
+        station,
+        stationUrl: station.stationUrl,
+        entryUrl: entry.resolvedUrl,
+        entryLabel: station.primaryActionLabel
+      };
+    })
+    .filter(Boolean);
 }
 
 function getReferenceTitle(path, station) {

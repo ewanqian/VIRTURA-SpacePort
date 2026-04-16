@@ -49,6 +49,10 @@
   - station references 开始优先从 frontstage route label 派生可读标题
   - 移动端首页与 station 页做了一轮长滚动和按钮节奏校正
   - `assets` 运行时层不再承担第二份 station registry，只保留视觉运行时字段
+- 第五轮开始进入下一阶段 polish
+  - 首页加入 `Current Signals` 图像信号层，让演出、展映与研究三条图像线显性出现
+  - typography-led 的 featured cards 不再是空白占位，而是改成带 dock code 和 current cue 的设计化 type 卡
+  - 首页副标题和 core section copy 再压缩了一轮，更接近公众太空港语气
 
 ## Current Usable State
 
@@ -83,6 +87,7 @@
 
 后续不再属于“基础 demo 缺口”，而属于下一阶段 polish：
 
+- 更强的首页图像策展节奏
 - 更强的图像策展策略
 - 更细的 brand-level 文案与 3D 前台衔接
 

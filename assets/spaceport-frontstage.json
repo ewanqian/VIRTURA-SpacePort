@@ -1,6 +1,6 @@
 {
   "repoBlobBase": "https://github.com/ewanqian/VIRTURA-SpacePort/blob/main/",
-  "purpose": "公众前台运行时视觉层。只保留视觉 token、框架层标签和表现层辅助数据。",
+  "purpose": "公众前台运行时视觉层。只保留视觉 token、框架层标签、图像信号与表现层辅助数据。",
   "layers": [
     {
       "eyebrow": "Layer 01",
@@ -16,6 +16,32 @@
       "eyebrow": "Layer 03",
       "title": "Production",
       "description": "Systems, workflows, and build layers."
+    }
+  ],
+  "signals": [
+    {
+      "eyebrow": "Performance Signal",
+      "title": "Baloon Live Space",
+      "caption": "舞台光、现场感和观众视角共同把 live 侧的气压带进首页。",
+      "image": "./organization/works/assets/20240822_ufo-loadingcamp_stage_01.jpg",
+      "alt": "Baloon Live Space stage signal image",
+      "station_slug": "baloon-live-space"
+    },
+    {
+      "eyebrow": "Exhibition Signal",
+      "title": "MOVA",
+      "caption": "展映图像把数字美术馆与观看路径变成可感知的公众入口。",
+      "image": "./organization/works/assets/20250407_dropflow-1.0_bilibili-cover_01.jpg",
+      "alt": "MOVA exhibition signal image",
+      "station_slug": "mova"
+    },
+    {
+      "eyebrow": "Research Signal",
+      "title": "Research Laboratory",
+      "caption": "研究信号让这座港口不会塌成纯展示壳，而继续保有判断和方法的地基。",
+      "image": "./organization/works/assets/20240926_timer_bilibili-cover_01.jpg",
+      "alt": "Research Laboratory signal image",
+      "station_slug": "research-laboratory"
     }
   ],
   "stationThemes": {

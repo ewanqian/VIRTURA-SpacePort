@@ -344,6 +344,24 @@ img {
     rgba(255, 255, 255, 0.02);
 }
 
+.featured-card__visual--type {
+  display: grid;
+  align-items: end;
+  min-height: 320px;
+  padding: 20px;
+}
+
+.featured-card__visual--type::before {
+  content: attr(data-code);
+  position: absolute;
+  inset: 16px auto auto 18px;
+  font-size: clamp(30px, 5vw, 46px);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: -0.08em;
+  color: rgba(255, 255, 255, 0.18);
+}
+
 .hero-accent__ambient::after,
 .featured-card__visual--type::after {
   content: "";
@@ -421,6 +439,27 @@ img {
   object-fit: cover;
 }
 
+.featured-card__signal {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  gap: 6px;
+  max-width: 22ch;
+}
+
+.featured-card__signal strong {
+  font-size: 18px;
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.featured-card__signal-meta {
+  color: var(--muted);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+}
+
 .featured-card__copy {
   display: grid;
   gap: 10px;
@@ -468,6 +507,57 @@ img {
   flex-wrap: wrap;
   gap: 10px 12px;
   padding-top: 4px;
+}
+
+.signal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 26px;
+}
+
+.signal-card {
+  display: grid;
+  gap: 14px;
+}
+
+.signal-card__image {
+  display: block;
+  min-height: 220px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.signal-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.signal-card__body {
+  display: grid;
+  gap: 8px;
+  max-width: 30ch;
+}
+
+.signal-card__body h3 {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.signal-card__body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.signal-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding-top: 6px;
 }
 
 .route-list,
@@ -665,7 +755,8 @@ img {
   .grid-3,
   .list-grid,
   .route-row,
-  .featured-grid {
+  .featured-grid,
+  .signal-grid {
     grid-template-columns: 1fr;
   }
 
@@ -735,9 +826,15 @@ img {
     min-height: 220px;
   }
 
+  .featured-card__visual--type,
+  .signal-card__image {
+    min-height: 220px;
+  }
+
   .hero-meta,
   .hero-note__actions,
-  .featured-card__actions {
+  .featured-card__actions,
+  .signal-card__actions {
     gap: 8px 10px;
   }
 
@@ -766,7 +863,8 @@ img {
   }
 
   .route-links,
-  .hero-cta {
+  .hero-cta,
+  .signal-card__actions {
     gap: 8px 10px;
   }
 }
