@@ -147,11 +147,15 @@
 
 ## 前端页面应该直接用哪些字段
 
+当前网页前台已经开始直接读取 `stations/frontstage-manifest.json` 作为公众层母本，`assets/spaceport-frontstage.json` 只继续承担视觉 token、框架层标签与运行时表现层辅助。
+
 ## 首页
 
 前端首页最适合直接读：
 
 - `site.hero`
+- `site.core_section`
+- `site.network_section`
 - `site.port_metrics`
 - `site.dock_groups`
 - `station_pages[].card`
@@ -164,10 +168,12 @@
 每个 station 页面最适合读：
 
 - `station_pages[].page`
+- `station_pages[].page.current_feature`
 - `station_pages[].routes`
 - `station-manifest.json` 中对应 station 的 `trackers`
 - `station-manifest.json` 中对应 station 的 `current_focus`
 - `station-manifest.json` 中对应 station 的 `related_stations`
+- `station-manifest.json` 中对应 station 的 `source_of_truth`
 
 这样页面既有公众文案，也不会丢掉结构信息。
 
@@ -191,6 +197,7 @@
 - dock code
 - card 文案
 - hero 文案
+- current feature / current route
 - 推荐入口
 - 推荐图像或图像策略
 
@@ -208,11 +215,13 @@
 如果另一个窗口要直接开始做静态前台，最适合的工作方式是：
 
 1. 首页用 `frontstage-manifest.json` 做 dock board
+   - 首页的展示顺序优先是 `Core Stations -> Operational Layers -> Station Index`
 2. station 页按 `slug` 读取 `frontstage-manifest + station-manifest`
 3. tracker 直接从 `station-manifest` 读
-4. 长文引用时跳回对应 README / sourcebook
+4. reference 标题优先从 `page.current_feature + routes.primary + routes.secondary` 派生，再回落到 source path
 5. 没有图的时候，不强行找图，用 typography-only 卡片
 6. 如果原型需要额外运行时 JSON，把它当派生快照，不再手写第二份长期 station 数据
+7. 对 event-driven station，在 `frontstage-manifest.json` 里优先给出 `page.current_feature`，让前台能直接告诉用户“现在先看这个”
 
 这样就不会：
 

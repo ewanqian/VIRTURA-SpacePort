@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIRTURA SpacePort</title>
+    <meta name="theme-color" content="#081015" />
+    <meta
+      name="description"
+      content="VIRTURA SpacePort 的公众入口。面向数字展映、演出空间、茶屋、公共 salon 与研究基础设施。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/spaceport.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <div class="topbar__inner">
+          <a class="brand" href="#/">
+            <span class="brand__eyebrow">VIRTURA</span>
+            <span class="brand__title">SpacePort</span>
+          </a>
+          <nav class="topnav" aria-label="Primary">
+            <a href="#core">Core</a>
+            <a href="#network">Network</a>
+            <a href="#dock">Stations</a>
+            <a href="https://github.com/ewanqian/VIRTURA-SpacePort" target="_blank" rel="noreferrer">Source</a>
+          </nav>
+        </div>
+      </header>
+
+      <main id="app">
+        <section class="loading-state">
+          <div class="loading-state__panel">
+            <span class="eyebrow">Loading</span>
+            <h1>VIRTURA SpacePort</h1>
+            <p>Preparing public entry.</p>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>VIRTURA SpacePort. Public infrastructure for the VIRTURA network.</p>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/spaceport.js"></script>
+  </body>
+</html>

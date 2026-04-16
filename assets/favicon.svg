@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-label="SpacePort">
+  <defs>
+    <linearGradient id="bg" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#79E4D5" />
+      <stop offset="100%" stop-color="#FF8A5D" />
+    </linearGradient>
+  </defs>
+  <rect width="96" height="96" rx="22" fill="#081015" />
+  <circle cx="48" cy="48" r="29" fill="none" stroke="url(#bg)" stroke-width="4" opacity="0.95" />
+  <circle cx="48" cy="48" r="11" fill="url(#bg)" opacity="0.92" />
+  <circle cx="21" cy="33" r="4" fill="#79E4D5" />
+  <circle cx="75" cy="31" r="4" fill="#FF8A5D" />
+  <circle cx="69" cy="73" r="4" fill="#C0FF5A" />
+</svg>

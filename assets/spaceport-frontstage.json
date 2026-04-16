@@ -1,0 +1,59 @@
+{
+  "repoBlobBase": "https://github.com/ewanqian/VIRTURA-SpacePort/blob/main/",
+  "purpose": "公众前台运行时视觉层。只保留视觉 token、框架层标签和表现层辅助数据。",
+  "layers": [
+    {
+      "eyebrow": "Layer 01",
+      "title": "Library",
+      "description": "Research, archive, and reusable knowledge."
+    },
+    {
+      "eyebrow": "Layer 02",
+      "title": "Stage",
+      "description": "Public pages, programs, and viewing paths."
+    },
+    {
+      "eyebrow": "Layer 03",
+      "title": "Production",
+      "description": "Systems, workflows, and build layers."
+    }
+  ],
+  "stationThemes": {
+    "space-salon": {
+      "zone": "Public Salon",
+      "accent": "#d8b46b"
+    },
+    "baloon-live-space": {
+      "zone": "Performance Space",
+      "accent": "#75f0e7"
+    },
+    "mova": {
+      "zone": "Museum",
+      "accent": "#ff8d5c"
+    },
+    "content-audit": {
+      "zone": "Review Layer",
+      "accent": "#f25f79"
+    },
+    "digital-library-stage": {
+      "zone": "Publishing Layer",
+      "accent": "#8fd1ff"
+    },
+    "research-laboratory": {
+      "zone": "Research Lab",
+      "accent": "#b7ff5f"
+    },
+    "skill-forge": {
+      "zone": "Protocol Layer",
+      "accent": "#ffd36f"
+    },
+    "teahouse-forest-pavilion": {
+      "zone": "Spatial Environment",
+      "accent": "#76d99e"
+    },
+    "seleiumeaves": {
+      "zone": "Archive Node",
+      "accent": "#8d8da4"
+    }
+  }
+}
