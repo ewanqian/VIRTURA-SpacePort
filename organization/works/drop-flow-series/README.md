@@ -4,6 +4,20 @@
 
 ---
 
+## Public Graph / 对象关系
+
+- `canonical_id`: `drop-flow`
+- `authorship_type`: `team_work`
+- `view_type`: `archive_view`
+- `personal_view`: [portfolio / Drop Flow](https://github.com/ewanqian/portfolio/tree/main/visual-arts/drop-flow-series)
+- `team_view`: [VIRTURA-Collective / Drop Flow](https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/drop-flow)
+- `publication_view`: [从资料档案库到文化基因节点网络](https://github.com/ewanqian/VIRTURA-Newsroom/blob/main/essays/from-archive-library-to-cultural-gene-node-network.md)
+- `graph_seed`: [docs/public-graph](../../../docs/public-graph/README.md)
+
+当前页面只承担完整档案源职责：版本、资料、公开证据和 source-of-truth。个人实践线、团队对外说明和文章评论不在这里重复维护。
+
+---
+
 ## 📚 完整作品全脉络与版本归档
 
 请查看 **[滴流 Drop Flow 作品全脉络与版本归档](./滴流 Drop Flow 作品全脉络与版本归档.md)** 获取最系统、最完整的作品历史、创作背景、技术细节和各版本文档索引。

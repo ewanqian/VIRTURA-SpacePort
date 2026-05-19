@@ -6,6 +6,12 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
 
 从作品档案到知识网络，再到沙龙与公开发布，这里的内容不是一组彼此分散的文件夹，而是一套仍在持续建设中的数字公共空间。
 
+## Public Role / 仓库职责
+
+这个仓库是 VIRTURA 公开系统里的**公共前台**：负责 stations、知识网络、深层项目档案、公开 tracker 与 source-of-truth 文档。团队身份入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担，文章与项目复盘由 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) 承担。
+
+Public graph seed 已放在 [docs/public-graph](./docs/public-graph/README.md)，用于防止同一作品、人物、station 和文章在多仓库里重复从零创作。
+
 ## 这里已经可以直接看到什么
 
 - 已整理好的项目档案入口：`Drop Flow`、`TIMER`、`Observation and Symbiosis`

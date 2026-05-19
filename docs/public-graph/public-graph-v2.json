@@ -1,0 +1,169 @@
+{
+  "schema": "virtura-public-graph-v2-seed",
+  "date": "2026-05-20",
+  "principles": {
+    "public_sentence": "VIRTURA is a decentralized art collective and research network centered on perceptual migration, spatial organization, and image generation.",
+    "evidence_order": ["works", "stations", "articles", "archive"],
+    "authorship_boundary": "VIRTURA does not claim ownership of all works. It provides a shared context where different practices intersect."
+  },
+  "repositories": {
+    "portfolio": {
+      "role": "personal_entry",
+      "url": "https://github.com/ewanqian/portfolio",
+      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/portfolio"
+    },
+    "collective": {
+      "role": "team_entry",
+      "url": "https://github.com/ewanqian/VIRTURA-Collective",
+      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo"
+    },
+    "spaceport": {
+      "role": "public_frontstage",
+      "url": "https://github.com/ewanqian/VIRTURA-SpacePort",
+      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort-github"
+    },
+    "newsroom": {
+      "role": "publication_outlet",
+      "url": "https://github.com/ewanqian/VIRTURA-Newsroom",
+      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom"
+    }
+  },
+  "works": [
+    {
+      "id": "drop-flow",
+      "title": "Drop Flow / 滴流",
+      "authorship_type": "team_work",
+      "summary": "Long-term spatial image and audiovisual series around real-time interaction, spatial transition, and digital-natural narration.",
+      "people": ["ewan-qian", "xu-hao", "sihui-xu", "xiaoyao-ma", "minxuan-huang", "jiaming-wang", "qin-wei"],
+      "views": {
+        "personal_view": "portfolio/visual-arts/drop-flow-series/README.md",
+        "team_view": "VIRTURA-Collective/repo/works/drop-flow/README.md",
+        "archive_view": "VIRTURA-SpacePort-github/organization/works/drop-flow-series/README.md",
+        "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=12"
+      },
+      "related_stations": ["mova", "baloon-live-space", "digital-library-stage"],
+      "related_articles": ["from-archive-library-to-cultural-gene-node-network", "system-ewanqian-perceptual-migration-review"]
+    },
+    {
+      "id": "timer",
+      "title": "TIMER / 控时者",
+      "authorship_type": "team_work",
+      "summary": "Audiovisual series centered on temporal structure, rhythm, frequency, and the internal relation between sound and image.",
+      "people": ["ewan-qian", "xu-hao", "sihui-xu"],
+      "views": {
+        "personal_view": "portfolio/visual-arts/timer-series/README.md",
+        "team_view": "VIRTURA-Collective/repo/works/timer/README.md",
+        "archive_view": "VIRTURA-SpacePort-github/organization/works/timer.md",
+        "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=11"
+      },
+      "related_stations": ["baloon-live-space", "digital-library-stage"],
+      "related_articles": ["system-ewanqian-perceptual-migration-review"]
+    },
+    {
+      "id": "observation-and-symbiosis",
+      "title": "Observation and Symbiosis / 观察与共生",
+      "authorship_type": "collaboration",
+      "summary": "Spatial and perceptual work line around observation, environment, body, and symbiotic relation.",
+      "people": ["xuan-shen", "ewan-qian"],
+      "views": {
+        "personal_view": "portfolio/visual-arts/perceptual-environments/README.md",
+        "team_view": "VIRTURA-Collective/repo/works/observation-and-symbiosis/README.md",
+        "archive_view": "VIRTURA-SpacePort-github/organization/works/观察与共生 Observation and Symbiosis.md"
+      },
+      "related_stations": ["mova", "research-laboratory"],
+      "related_articles": []
+    },
+    {
+      "id": "kashiwa-titan",
+      "title": "TITAN: A Holographic Sound Forest of Mechanical Photosynthesis",
+      "authorship_type": "collaboration",
+      "summary": "Audiovisual performance with KASHIWA Daisuke and Yuki Murata around fog, light, white spatial depth, ambient transition, and perceptual movement.",
+      "people": ["ewan-qian", "kashiwa-daisuke", "yuki-murata"],
+      "views": {
+        "personal_view": "portfolio/projects/kashiwa-titan-visual-2025.md",
+        "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=10"
+      },
+      "related_stations": ["baloon-live-space"],
+      "related_articles": []
+    },
+    {
+      "id": "control-uptime-protocol",
+      "title": "CONTROL: The Uptime Protocol",
+      "authorship_type": "member_independent_work",
+      "summary": "Unreal Engine machinima work by Murphy Nile exploring control as internalized structure through system logic and game-like perception.",
+      "people": ["murphy-nile"],
+      "views": {
+        "team_context_view": "VIRTURA-Collective/repo/artists/murphy-nile.md",
+        "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=7"
+      },
+      "related_stations": ["mova", "research-laboratory"],
+      "related_articles": ["virtura-article-curatorial-v4"]
+    },
+    {
+      "id": "desire-machining-center",
+      "title": "Desire Machining Center / 欲望加工中心",
+      "authorship_type": "member_independent_work",
+      "summary": "Interactive installation by Sihui Xu about low-desire culture, virtual compensation, and feedback loops of choice, projection, and value construction.",
+      "people": ["sihui-xu"],
+      "views": {
+        "team_context_view": "VIRTURA-Collective/repo/artists/sihui-xu.md",
+        "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=8"
+      },
+      "related_stations": ["mova", "research-laboratory"],
+      "related_articles": ["virtura-article-curatorial-v4"]
+    }
+  ],
+  "people": [
+    {"id": "ewan-qian", "name": "Ewan Qian / 钱誉文", "relationship_to_virtura": "co-founder, creative lead, member artist"},
+    {"id": "xuan-shen", "name": "Shen Xuan / 沈轩", "relationship_to_virtura": "co-founder, artistic director, XUAN spatial framework"},
+    {"id": "murphy-nile", "name": "Murphy Nile / 周子凌", "relationship_to_virtura": "member artist, curator, cross-media artist"},
+    {"id": "sihui-xu", "name": "Sihui Xu / 许思慧", "relationship_to_virtura": "member artist, spatial visuals and interaction design"},
+    {"id": "xu-hao", "name": "Xu Hao / 徐昊", "relationship_to_virtura": "sound and electronic music collaborator"},
+    {"id": "wu-yitong", "name": "WU-YITONG / 無", "relationship_to_virtura": "published creator and reviewed artist"}
+  ],
+  "stations": [
+    {"id": "mova", "title": "MOVA / Museum of Virtual Arts", "role": "digital exhibition and viewing room station", "repo": "spaceport"},
+    {"id": "research-laboratory", "title": "Research Laboratory", "role": "research threads, experiments, route comparison, method sedimentation", "repo": "spaceport"},
+    {"id": "baloon-live-space", "title": "Baloon Live Space", "role": "live practice, cue/state, session logs, performance review", "repo": "spaceport"},
+    {"id": "space-salon", "title": "Space Salon", "role": "public talks, salons, activities, archive loop", "repo": "spaceport"},
+    {"id": "digital-library-stage", "title": "Digital Library / Digital Stage", "role": "archive/frontstage structure, public explanation, session line", "repo": "spaceport"}
+  ],
+  "articles": [
+    {
+      "id": "from-archive-library-to-cultural-gene-node-network",
+      "title": "从资料档案库到文化基因节点网络",
+      "repo": "newsroom",
+      "path": "essays/from-archive-library-to-cultural-gene-node-network.md",
+      "date": "2026-04-11",
+      "related_works": ["drop-flow", "timer"],
+      "related_stations": ["digital-library-stage"]
+    },
+    {
+      "id": "skill-based-workflow-virtura-2026",
+      "title": "技能强，不是因为它像 AI 术语，而是因为它开始替我们稳定真正的工作",
+      "repo": "newsroom",
+      "path": "essays/skill-based-workflow-virtura-2026.md",
+      "date": "2026-04-02",
+      "related_works": [],
+      "related_stations": ["mova", "research-laboratory", "baloon-live-space"]
+    },
+    {
+      "id": "virtura-article-curatorial-v4",
+      "title": "把界面熬成感知，把噪声烹成现实",
+      "repo": "newsroom",
+      "path": "art-review/articles/virtura_article_curatorial_v4.md",
+      "date": "2026-03-20",
+      "related_works": ["drop-flow", "control-uptime-protocol", "desire-machining-center"],
+      "related_stations": ["mova"]
+    },
+    {
+      "id": "system-ewanqian-perceptual-migration-review",
+      "title": "从时间材料到感知迁移：SYSTEM 评钱誉文的实践线收束",
+      "repo": "newsroom",
+      "path": "art-review/articles/system_ewanqian_perceptual_migration_review.md",
+      "date": "2026-03-22",
+      "related_works": ["drop-flow", "timer"],
+      "related_stations": ["research-laboratory"]
+    }
+  ]
+}

@@ -4,6 +4,20 @@
 
 ---
 
+## Public Graph / 对象关系
+
+- `canonical_id`: `observation-and-symbiosis`
+- `authorship_type`: `collaboration`
+- `view_type`: `archive_view`
+- `personal_view`: [portfolio / Perceptual Environments](https://github.com/ewanqian/portfolio/tree/main/visual-arts/perceptual-environments)
+- `team_view`: [VIRTURA-Collective / Observation and Symbiosis](https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/observation-and-symbiosis)
+- `related_station`: [MOVA](../../stations/mova/README.md)
+- `graph_seed`: [docs/public-graph](../../docs/public-graph/README.md)
+
+当前页面只承担完整档案源职责：展览记录、创作者信息、作品说明与 source-of-truth。个人研究入口和团队公开入口不在这里重复维护。
+
+---
+
 ## 基础信息
 
 | 项目 | 内容 |

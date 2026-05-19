@@ -1,11 +1,66 @@
 # VIRTURA-SpacePort
 
+> Current English overview, updated 2026-05-20. The Chinese README is the fuller maintained version.
+> 中文版本：[README.md](README.md)
+
+VIRTURA-SpacePort is the public frontstage of VIRTURA.
+
+It is a digital front hall for people who need orientation: first-time visitors can understand where to go next, while returning collaborators can find project archives, the knowledge network, stations, activities, and public source materials.
+
+## Public Role
+
+This repository owns:
+
+- stations and station-level public pages
+- knowledge-network entry points
+- deep project archive and source-of-truth docs
+- public trackers and frontstage data
+- the route from web frontstage toward future 3D frontstage
+
+The public graph seed lives in [docs/public-graph](./docs/public-graph/README.md). It defines canonical object ids and cross-repo links so works, people, stations, and articles do not get recreated from zero in every repository.
+
+It does not own the main team identity or publication layer. Use [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) for the team entry and [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) for essays, reviews, recaps, and media materials.
+
+## Start Here
+
+| If you need | Go to | You will find |
+|---|---|---|
+| stations and public programs | [stations](./stations/README.md) | MOVA, Baloon Live Space, Research Laboratory, Space Salon, Skill Forge, and other station routes |
+| learning paths and method structure | [knowledge-network](./knowledge-network/README.md) | learning paths, theory, production pipeline, spatial computing, live performance, and web publishing |
+| detailed work archive | [organization/works](./organization/works/README.md) | project versions, exhibition records, source notes, and archive entries |
+| frontstage data model | [docs/spaceport-frontstage-data-structure.md](./docs/spaceport-frontstage-data-structure.md) | how station manifests and public UI data connect |
+| web and 3D roadmap | [docs/spaceport-web-3d-preparation-roadmap.md](./docs/spaceport-web-3d-preparation-roadmap.md) | how the 2D frontstage prepares the future 3D frontstage |
+
+## Current Direction
+
+SpacePort is no longer only a static archive. It is becoming a public frontstage made of archives, knowledge networks, stations, and skill-based workflows.
+
+Stations are shifting from content sections into working stations. They hold concrete project behavior, research tasks, session records, exhibition routes, public programs, and reusable workflows.
+
+The most important growth areas now are:
+
+- **MOVA / Museum of Virtual Arts**: digital exhibition curation, viewing rooms, feedback, and post-exhibition records.
+- **Research Laboratory**: research questions, experiments, route comparison, and method notes.
+- **Baloon Live Space**: live practice, cue/state structure, session logs, and performance review.
+- **Digital Library / Digital Stage**: archive/frontstage structure and public explanation.
+
+## Related Repositories
+
+- [portfolio](https://github.com/ewanqian/portfolio): Ewan Qian personal entry.
+- [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective): team entry.
+- [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom): publication outlet.
+- [SceneForge](https://github.com/ewanqian/SceneForge): digital-stage tool and viewer experiment line.
+
+---
+
+## Legacy Notes
+
+The following older English notes are kept for continuity. Some wording reflects the March 2026 system framing and should not override the current Chinese README or the current overview above.
+
 > **VIRTURA SpacePort** - Core immersive digital space under the VIRTURA SpacePort system
 > **Ecological Role**: Core content carrier of the ecosystem
 > **Core Positioning**: Core immersive digital space under the VIRTURA SpacePort system, open-source digital worldview setting collection, VRchat maps, immersive experience platform, carrying all performances, exhibitions, and narrative experiences
 > **Status**: Under preparation
-> 
-> 中文版本：[README.md](README.md)
 
 ---
 

@@ -2,6 +2,20 @@
 
 ---
 
+## Public Graph / 对象关系
+
+- `canonical_id`: `timer`
+- `authorship_type`: `team_work`
+- `view_type`: `archive_view`
+- `personal_view`: [portfolio / TIMER](https://github.com/ewanqian/portfolio/tree/main/visual-arts/timer-series)
+- `team_view`: [VIRTURA-Collective / TIMER](https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/timer)
+- `publication_view`: [SYSTEM 评钱誉文的实践线收束](https://github.com/ewanqian/VIRTURA-Newsroom/blob/main/art-review/articles/system_ewanqian_perceptual_migration_review.md)
+- `graph_seed`: [docs/public-graph](../../docs/public-graph/README.md)
+
+当前页面只承担完整档案源职责：版本、展演记录、团队信息和 source-of-truth。个人实践线、团队首页口径和评论文章不在这里重复维护。
+
+---
+
 ## TIMER 系列完整版本
 
 | 版本（可点击，带中英文开头） | 说明（完整正式） | 时间 |

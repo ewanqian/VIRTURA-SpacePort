@@ -8,6 +8,11 @@
 
 - 如果你想先认识团队、看精选作品入口、按艺术家了解协作网络：去 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
 - 如果你已经知道要看哪条项目线，想读更详细的版本档案：留在这里
+- 如果你要判断同一作品在不同仓库里的关系：看 [Public Graph](../../docs/public-graph/README.md)
+
+## Public Graph / 对象关系规则
+
+这里是 `archive_view`，负责保留版本、资料、公开证据和 source-of-truth。不要在这里重复维护个人简介、团队首页口径或文章评论；那些分别回到 `portfolio`、`VIRTURA-Collective` 和 `VIRTURA-Newsroom`。
 
 ## Featured Archives
 
