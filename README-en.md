@@ -25,7 +25,7 @@ It does not own the main team identity or publication layer. Use [VIRTURA-Collec
 
 | If you need | Go to | You will find |
 |---|---|---|
-| stations and public programs | [stations](./stations/README.md) | MOVA, Baloon Live Space, Research Laboratory, Space Salon, Skill Forge, and other station routes |
+| stations and public programs | [stations](./stations/README.md) | MOVA, Balloon Live Space, Research Laboratory, Space Salon, Skill Forge, and other station routes |
 | learning paths and method structure | [knowledge-network](./knowledge-network/README.md) | learning paths, theory, production pipeline, spatial computing, live performance, and web publishing |
 | detailed work archive | [organization/works](./organization/works/README.md) | project versions, exhibition records, source notes, and archive entries |
 | frontstage data model | [docs/spaceport-frontstage-data-structure.md](./docs/spaceport-frontstage-data-structure.md) | how station manifests and public UI data connect |
@@ -41,7 +41,7 @@ The most important growth areas now are:
 
 - **MOVA / Museum of Virtual Arts**: digital exhibition curation, viewing rooms, feedback, and post-exhibition records.
 - **Research Laboratory**: research questions, experiments, route comparison, and method notes.
-- **Baloon Live Space**: live practice, cue/state structure, session logs, and performance review.
+- **Balloon Live Space**: live practice, cue/state structure, session logs, and performance review.
 - **Digital Library / Digital Stage**: archive/frontstage structure and public explanation.
 
 ## Related Repositories

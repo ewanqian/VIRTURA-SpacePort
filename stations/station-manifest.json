@@ -40,7 +40,7 @@
         }
       },
       "related_stations": [
-        "baloon-live-space",
+        "balloon-live-space",
         "content-audit",
         "digital-library-stage"
       ],
@@ -53,13 +53,13 @@
     },
     {
       "order": 2,
-      "slug": "baloon-live-space",
-      "display_name": "Baloon Live Space / 太空气球",
+      "slug": "balloon-live-space",
+      "display_name": "Balloon Live Space / 太空气球",
       "station_type": "live-stage-and-performance-lab",
       "current_status": "运行中",
       "one_line_role": "线上演出空间、音画实验、session 记录与 live workflow 积累站。",
       "frontstage_unit": "station-page + session-pages + system-notes",
-      "best_entry": "./baloon-live-space/README.md",
+      "best_entry": "./balloon-live-space/README.md",
       "current_focus": [
         "live session 记录",
         "state / cue / rehearsal 结构整理",
@@ -95,8 +95,8 @@
         "portfolio"
       ],
       "source_of_truth": [
-        "./baloon-live-space/README.md",
-        "./baloon-live-space/alpha-beta-summary.md"
+        "./balloon-live-space/README.md",
+        "./balloon-live-space/alpha-beta-summary.md"
       ]
     },
     {
@@ -182,7 +182,7 @@
       "related_stations": [
         "digital-library-stage",
         "mova",
-        "baloon-live-space"
+        "balloon-live-space"
       ],
       "related_repositories": [
         "VIRTURA-SpacePort"
@@ -273,7 +273,7 @@
       "related_stations": [
         "digital-library-stage",
         "skill-forge",
-        "baloon-live-space"
+        "balloon-live-space"
       ],
       "related_repositories": [
         "VIRTURA-SpacePort",

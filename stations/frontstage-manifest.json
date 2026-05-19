@@ -42,7 +42,7 @@
       "description": "展映、演出、public salon、空间样本与研究实验室构成当前对外开放的核心设施。",
       "featured_station_slugs": [
         "mova",
-        "baloon-live-space",
+        "balloon-live-space",
         "teahouse-forest-pavilion",
         "space-salon",
         "research-laboratory"
@@ -79,7 +79,7 @@
         "description": "Museum, performance space, public salon, tea house, and research laboratory.",
         "station_slugs": [
           "mova",
-          "baloon-live-space",
+          "balloon-live-space",
           "space-salon",
           "teahouse-forest-pavilion",
           "research-laboratory"
@@ -176,13 +176,13 @@
       }
     },
     {
-      "slug": "baloon-live-space",
+      "slug": "balloon-live-space",
       "dock_group": "core-infrastructure",
       "dock_code": "DOCK-02",
       "archive_file_count": 19,
       "card": {
         "eyebrow": "Performance Space",
-        "title": "Baloon Live Space",
+        "title": "Balloon Live Space",
         "summary": "线上演出空间与浏览器舞台基础设施。",
         "tags": [
           "live",
@@ -192,7 +192,7 @@
         "visual_mode": "poster-image"
       },
       "page": {
-        "hero_title": "Baloon Live Space / 太空气球",
+        "hero_title": "Balloon Live Space / 太空气球",
         "hero_summary": "持续运行的线上演出空间与浏览器舞台基础设施。",
         "primary_action_label": "Open Session",
         "public_role": "线上演出 dock / 系统训练 dock / 3D 准备度较高的 station",
@@ -200,7 +200,7 @@
           "eyebrow": "Current Session",
           "title": "Session 02 / Live Set",
           "summary": "当前最适合公众进入的一次 live set 记录。",
-          "href": "stations/baloon-live-space/session-02-live-set-2026-04/README.md"
+          "href": "stations/balloon-live-space/session-02-live-set-2026-04/README.md"
         },
         "audience": [
           "想看 live set 和浏览器舞台怎样接起来的人",
@@ -212,35 +212,35 @@
         "primary": [
           {
             "label": "Station Home",
-            "href": "stations/baloon-live-space/README.md"
+            "href": "stations/balloon-live-space/README.md"
           },
           {
             "label": "Alpha / Beta Summary",
-            "href": "stations/baloon-live-space/alpha-beta-summary.md"
+            "href": "stations/balloon-live-space/alpha-beta-summary.md"
           },
           {
             "label": "Alpha Archive",
-            "href": "stations/baloon-live-space/baloon-live-space-alpha/README.md"
+            "href": "stations/balloon-live-space/balloon-live-space-alpha/README.md"
           }
         ],
         "secondary": [
           {
             "label": "Session 02",
-            "href": "stations/baloon-live-space/session-02-live-set-2026-04/README.md"
+            "href": "stations/balloon-live-space/session-02-live-set-2026-04/README.md"
           },
           {
             "label": "VRChat History",
-            "href": "stations/baloon-live-space/history/2022-2023-vrchat/world-info.md"
+            "href": "stations/balloon-live-space/history/2022-2023-vrchat/world-info.md"
           },
           {
             "label": "Research Report",
-            "href": "stations/baloon-live-space/research/from-vrchat-to-browser-stage-2026.md"
+            "href": "stations/balloon-live-space/research/from-vrchat-to-browser-stage-2026.md"
           }
         ]
       },
       "media": {
         "poster_src": "organization/works/assets/20240822_ufo-loadingcamp_stage_01.jpg",
-        "poster_alt": "Baloon Live Space related stage image",
+        "poster_alt": "Balloon Live Space related stage image",
         "fallback_style": "image-led performance dock"
       }
     },

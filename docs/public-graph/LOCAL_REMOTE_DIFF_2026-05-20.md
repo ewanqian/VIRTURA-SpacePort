@@ -43,7 +43,7 @@ Wave 1 links these objects across the four public repos:
 - `desire-machining-center`
 - `mova`
 - `research-laboratory`
-- `baloon-live-space`
+- `balloon-live-space`
 - `digital-library-stage`
 
 See [PUBLIC_LINK_MATRIX.csv](./PUBLIC_LINK_MATRIX.csv) for the exact view paths.

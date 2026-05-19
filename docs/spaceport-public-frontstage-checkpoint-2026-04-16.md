@@ -63,7 +63,7 @@
 - 通过首页 dock / card 进入任意 `station`
 - 每个 `station` 都有自己的独立详情视图
 - 首页已经具备更稳定的公众入口气质，而不只是目录页
-- 首页现在更明确地把 `MOVA`、`Baloon Live Space`、`Space Salon`、`Teahouse Forest Pavilion` 与 `Research Laboratory` 当作固定设施来展示
+- 首页现在更明确地把 `MOVA`、`Balloon Live Space`、`Space Salon`、`Teahouse Forest Pavilion` 与 `Research Laboratory` 当作固定设施来展示
 - 基础版全站 demo 已经成立，首页、所有 station 页和关键支持层都能完整演示
 - 详情页里可以看到：
   - 站点角色

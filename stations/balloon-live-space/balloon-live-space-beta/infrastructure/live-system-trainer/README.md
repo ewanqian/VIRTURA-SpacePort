@@ -2,7 +2,7 @@
 
 > 状态：`Beta / Prototype / Internal Training Tool`
 > 
-> 所属项目线：`stations/baloon-live-space/baloon-live-space-beta`
+> 所属项目线：`stations/balloon-live-space/balloon-live-space-beta`
 > 
 > 当前版本：`v2-realistic-ui`
 
@@ -23,20 +23,20 @@
 
 ---
 
-## 为什么它应该放在 baloon-live-space-beta 下面
+## 为什么它应该放在 balloon-live-space-beta 下面
 
-这个练习器更适合放在 `baloon-live-space-beta` 下，而不是 alpha 或独立仓库，原因有三个：
+这个练习器更适合放在 `balloon-live-space-beta` 下，而不是 alpha 或独立仓库，原因有三个：
 
 1. **它服务的是 Beta 阶段的核心任务**：修正形象、积累时长、优化手感。
-2. **它直接对应 baloon-live-space 的下一步**：state、timeline、MIDI、clips、BPM / tap / resync、多空间模板。
+2. **它直接对应 balloon-live-space 的下一步**：state、timeline、MIDI、clips、BPM / tap / resync、多空间模板。
 3. **它更像基础设施和练习系统**，不是一次性文档，也不是单场演出素材。
 
 推荐路径：
 
 ```text
 stations/
-└─ baloon-live-space/
-   └─ baloon-live-space-beta/
+└─ balloon-live-space/
+   └─ balloon-live-space-beta/
       └─ infrastructure/
          └─ live-system-trainer/
             ├─ README.md
@@ -127,7 +127,7 @@ v2 不是抽象色块版，而是改成了更接近真实工作流的 UI：
 
 建议把它作为：
 
-`Baloon Live Space Beta → infrastructure → live-system-trainer`
+`Balloon Live Space Beta → infrastructure → live-system-trainer`
 
 ### 对外描述
 

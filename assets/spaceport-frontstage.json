@@ -21,11 +21,11 @@
   "signals": [
     {
       "eyebrow": "Performance Signal",
-      "title": "Baloon Live Space",
+      "title": "Balloon Live Space",
       "caption": "舞台光、现场感和观众视角共同把 live 侧的气压带进首页。",
       "image": "./organization/works/assets/20240822_ufo-loadingcamp_stage_01.jpg",
-      "alt": "Baloon Live Space stage signal image",
-      "station_slug": "baloon-live-space"
+      "alt": "Balloon Live Space stage signal image",
+      "station_slug": "balloon-live-space"
     },
     {
       "eyebrow": "Exhibition Signal",
@@ -49,7 +49,7 @@
       "zone": "Public Salon",
       "accent": "#d8b46b"
     },
-    "baloon-live-space": {
+    "balloon-live-space": {
       "zone": "Performance Space",
       "accent": "#75f0e7"
     },

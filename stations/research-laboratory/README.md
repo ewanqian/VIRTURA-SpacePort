@@ -28,7 +28,7 @@
 
 1. 作为 `SpacePort` 的研究基础层，沉淀长期有效的方法与判断
 2. 承接实验、路线比较和模块决策，而不是直接承担产品前台
-3. 给 `Skill Forge`、`Baloon Live Space`、`Digital Library / Digital Stage` 等站点提供母本
+3. 给 `Skill Forge`、`Balloon Live Space`、`Digital Library / Digital Stage` 等站点提供母本
 
 ---
 
@@ -68,7 +68,7 @@
 
 - [Digital Library / Digital Stage](../digital-library-stage/README.md)
 - [Skill Forge](../skill-forge/README.md)
-- [Baloon Live Space](../baloon-live-space/README.md)
+- [Balloon Live Space](../balloon-live-space/README.md)
 
 ---
 

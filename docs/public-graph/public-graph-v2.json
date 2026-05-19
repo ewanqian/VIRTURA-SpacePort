@@ -41,7 +41,7 @@
         "archive_view": "VIRTURA-SpacePort/organization/works/drop-flow-series/README.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=12"
       },
-      "related_stations": ["mova", "baloon-live-space", "digital-library-stage"],
+      "related_stations": ["mova", "balloon-live-space", "digital-library-stage"],
       "related_articles": ["from-archive-library-to-cultural-gene-node-network", "system-ewanqian-perceptual-migration-review"]
     },
     {
@@ -56,7 +56,7 @@
         "archive_view": "VIRTURA-SpacePort/organization/works/timer.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=11"
       },
-      "related_stations": ["baloon-live-space", "digital-library-stage"],
+      "related_stations": ["balloon-live-space", "digital-library-stage"],
       "related_articles": ["system-ewanqian-perceptual-migration-review"]
     },
     {
@@ -83,7 +83,7 @@
         "personal_view": "portfolio/projects/kashiwa-titan-visual-2025.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=10"
       },
-      "related_stations": ["baloon-live-space"],
+      "related_stations": [],
       "related_articles": []
     },
     {
@@ -93,7 +93,8 @@
       "summary": "Unreal Engine machinima work by Murphy Nile exploring control as internalized structure through system logic and game-like perception.",
       "people": ["murphy-nile"],
       "views": {
-        "team_context_view": "VIRTURA-Collective/repo/artists/murphy-nile.md",
+        "member_work_view": "VIRTURA-Collective/repo/works/control-uptime-protocol/README.md",
+        "artist_context_view": "VIRTURA-Collective/repo/artists/murphy-nile.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=7"
       },
       "related_stations": ["mova", "research-laboratory"],
@@ -106,7 +107,8 @@
       "summary": "Interactive installation by Sihui Xu about low-desire culture, virtual compensation, and feedback loops of choice, projection, and value construction.",
       "people": ["sihui-xu"],
       "views": {
-        "team_context_view": "VIRTURA-Collective/repo/artists/sihui-xu.md",
+        "member_work_view": "VIRTURA-Collective/repo/works/desire-machining-center/README.md",
+        "artist_context_view": "VIRTURA-Collective/repo/artists/sihui-xu.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=8"
       },
       "related_stations": ["mova", "research-laboratory"],
@@ -124,7 +126,7 @@
   "stations": [
     {"id": "mova", "title": "MOVA / Museum of Virtual Arts", "role": "digital exhibition and viewing room station", "repo": "spaceport"},
     {"id": "research-laboratory", "title": "Research Laboratory", "role": "research threads, experiments, route comparison, method sedimentation", "repo": "spaceport"},
-    {"id": "baloon-live-space", "title": "Baloon Live Space", "role": "live practice, cue/state, session logs, performance review", "repo": "spaceport"},
+    {"id": "balloon-live-space", "title": "Balloon Live Space", "role": "live practice, cue/state, session logs, performance review", "repo": "spaceport"},
     {"id": "space-salon", "title": "Space Salon", "role": "public talks, salons, activities, archive loop", "repo": "spaceport"},
     {"id": "digital-library-stage", "title": "Digital Library / Digital Stage", "role": "archive/frontstage structure, public explanation, session line", "repo": "spaceport"}
   ],
@@ -145,7 +147,7 @@
       "path": "essays/skill-based-workflow-virtura-2026.md",
       "date": "2026-04-02",
       "related_works": [],
-      "related_stations": ["mova", "research-laboratory", "baloon-live-space"]
+      "related_stations": ["mova", "research-laboratory", "balloon-live-space"]
     },
     {
       "id": "virtura-article-curatorial-v4",

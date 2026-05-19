@@ -40,7 +40,20 @@ The same work can appear in multiple repos, but each appearance must state its v
 | `team_view` | collective context, collaborators, public team value |
 | `archive_view` | deep source, versions, venue, assets, project evidence |
 | `publication_view` | article, recap, criticism, public interpretation |
+| `member_work_view` | formal public page for a member's independent work, without claiming team ownership |
+| `artist_context_view` | artist/member page that explains relationship to the network |
 | `deck_view` | condensed partner-facing summary |
+
+## Minimum Public View Block
+
+Every repeated public object page should carry these fields near the top:
+
+- `object_id`: stable public id from [PUBLIC_LINK_MATRIX.csv](./PUBLIC_LINK_MATRIX.csv)
+- `view_type`: `personal_view`, `team_view`, `archive_view`, `publication_view`, `member_work_view`, `artist_context_view`, or `team_context_view`
+- `authorship_type`: `team_work`, `collaboration`, `member_independent_work`, `external_partner_work`, or `research_context`
+- `related_views`: links to the other public views when they exist
+
+This block is the anti-duplication guard. If a new page cannot name its `object_id` and `view_type`, it should not be created yet.
 
 ## Authorship Rule
 

@@ -161,7 +161,7 @@
 - 核心站点页的统一骨架化
 - 目录 README 和中间路由补齐
 - `Digital Library / Digital Stage` 的前台化
-- `Baloon Live Space` 与浏览器 / 3D 舞台准备
+- `Balloon Live Space` 与浏览器 / 3D 舞台准备
 - `MOVA` 的观看路线结构
 - `Skill Forge` 的系统面板化前台准备
 

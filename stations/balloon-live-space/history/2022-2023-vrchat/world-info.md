@@ -36,7 +36,7 @@ Balloon Live Space 太空气球 NOW ON AIR WITH MUSICAN˸DDAAAW․ NOW PLAYING �
 
 ## 历史脉络
 
-这个 VRChat 世界是 `Baloon Live Space` 项目的最早版本，起源于 2022-2023 年。
+这个 VRChat 世界是 `Balloon Live Space` 项目的最早版本，起源于 2022-2023 年。
 
 当时的方向更强调：
 - 虚拟化身
@@ -65,4 +65,4 @@ Balloon Live Space 太空气球 NOW ON AIR WITH MUSICAN˸DDAAAW․ NOW PLAYING �
 ## 导航
 
 - [返回太空气球总入口](../../README.md)
-- [Alpha 档案](../../baloon-live-space-alpha/README.md)
+- [Alpha 档案](../../balloon-live-space-alpha/README.md)

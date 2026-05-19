@@ -36,7 +36,7 @@
 | Station | 作用 | 当前状态 | 最佳入口 |
 |---|---|---|---|
 | `Space Salon` | 交流客厅、系列活动与公共分享入口 | `运行中` | [space-salon](./space-salon/README.md) |
-| `Baloon Live Space` | 线上演出空间、音画实验与 live workflow 积累站 | `运行中` | [baloon-live-space](./baloon-live-space/README.md) |
+| `Balloon Live Space` | 线上演出空间、音画实验与 live workflow 积累站 | `运行中` | [balloon-live-space](./balloon-live-space/README.md) |
 | `MOVA` | 线上展映、观看室、数字展览生产与观看入口组织站 | `生长中` | [mova](./mova/README.md) |
 | `在制内容审计会` | 页面、场景、版本与前台结构的问题拆解线 | `运行中` | [content-audit](./content-audit/README.md) |
 | `Digital Library / Digital Stage` | 仓库、归档、前台和内容分发的公开说明线 | `运行中` | [digital-library-stage](./digital-library-stage/README.md) |
@@ -52,7 +52,7 @@
 | Station | Archive | Web | System | 3D |
 |---|---|---|---|---|
 | `space-salon` | `已建立` | `md-only` | `运行中` | `待准备` |
-| `baloon-live-space` | `已建立` | `md-only` | `运行中` | `准备中` |
+| `balloon-live-space` | `已建立` | `md-only` | `运行中` | `准备中` |
 | `mova` | `已建立` | `md-only` | `生长中` | `准备中` |
 | `content-audit` | `已开始` | `md-only` | `运行中` | `待准备` |
 | `digital-library-stage` | `已建立` | `md-only` | `运行中` | `准备中` |
@@ -65,7 +65,7 @@
 
 ## 现在从哪里进入
 
-- 想先跟公共活动和现实发生：看 [Space Salon](./space-salon/README.md)、[Baloon Live Space](./baloon-live-space/README.md)、[在制内容审计会](./content-audit/README.md)
+- 想先跟公共活动和现实发生：看 [Space Salon](./space-salon/README.md)、[Balloon Live Space](./balloon-live-space/README.md)、[在制内容审计会](./content-audit/README.md)
 - 想先看线上展映和观看入口：看 [MOVA](./mova/README.md)
 - 想先看内容整理、前台结构和公开说明：看 [Digital Library / Digital Stage](./digital-library-stage/README.md)
 - 想先看研究母本和技能系统：看 [Research Laboratory](./research-laboratory/README.md)、[Skill Forge](./skill-forge/README.md)

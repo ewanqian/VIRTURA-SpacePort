@@ -1,9 +1,9 @@
-# 太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set
+# 太空气球 Balloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set
 
-**活动系列**：Baloon Live Space Alpha  
-**日期**：2026-03-21  
-**形式**：线上数字舞台测试 / live set  
-**状态**：已公开  
+**活动系列**：Balloon Live Space Alpha
+**日期**：2026-03-21
+**形式**：线上数字舞台测试 / live set
+**状态**：已公开
 **外部活动页**：[Luma](https://luma.com/go6kxnnw)
 
 ---
@@ -31,7 +31,7 @@
 
 ## 这场 Alpha 实际在验证什么
 
-这不是一场“正式上线”的发布会，而是 `Baloon Live Space` 第一轮对外可见的结构测试。
+这不是一场“正式上线”的发布会，而是 `Balloon Live Space` 第一轮对外可见的结构测试。
 
 这场活动最重要的，不是一次把所有互动功能讲满，而是先把一条最基本的线上观看链路跑通：
 
@@ -72,7 +72,7 @@
 
 ## 前情提要
 
-`Baloon Live Space` 最早可以追到 `2022` 年那一版 `VRChat` 地图构想。
+`Balloon Live Space` 最早可以追到 `2022` 年那一版 `VRChat` 地图构想。
 
 当时的方向更强调虚拟化身、在同一空间里看演出，以及更完整的虚拟场景临场感。那个方向没有被否定，但在真正对外测试之前，我们先遇到了一个很现实的问题：不是每个想来看演出的人，都愿意先下载客户端、配置环境，再学习一套新的进入方式。
 

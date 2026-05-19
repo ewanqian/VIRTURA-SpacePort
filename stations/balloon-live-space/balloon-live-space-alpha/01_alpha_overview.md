@@ -2,7 +2,7 @@
 
 ## What This Is / 这是什么
 
-**Baloon Live Space Alpha** 是"太空气球 / Baloon Live Space"系列的第一轮公开测试。
+**Balloon Live Space Alpha** 是"太空气球 / Balloon Live Space"系列的第一轮公开测试。
 
 它不是正式发布，而是一次线上数字舞台结构实验。这次测试的重点不是一次做满所有功能，而是先把最基本的观看链路跑通，确认一场基于实时音频驱动、空间视觉呈现和直播输出的 live set 是否成立。
 
@@ -16,7 +16,7 @@
 
 ## Why This Folder Exists / 为什么要有这个目录
 
-这个 `baloon-live-space-alpha` 目录不是为了放完整项目，而是为了存放**当前阶段有效的文档**。
+这个 `balloon-live-space-alpha` 目录不是为了放完整项目，而是为了存放**当前阶段有效的文档**。
 
 这里存的内容，都是后面还会继续引用、继续补充的基础材料。它更像一个阶段性档案层，帮助后续：
 

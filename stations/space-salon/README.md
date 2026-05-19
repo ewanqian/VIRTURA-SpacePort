@@ -43,8 +43,8 @@ VIRTURA 空间茶话会系列档案入口。
 
 - [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)：当前公开活动会持续从这里对外发布，也是最简单的后续活动更新入口
 - [VIRTURA 空间茶话会 Vol.0｜带上一段视觉，来客厅聊聊存档与远方](https://luma.com/iehkdjr0)
-- [太空气球 / Baloon Live Space 系列页](../baloon-live-space/README.md)
-- [太空气球 Baloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw)
+- [太空气球 / Balloon Live Space 系列页](../balloon-live-space/README.md)
+- [太空气球 Balloon Live Space Alpha 测试｜电子人 × Ew1（Ewan Qian 钱誉文）线上数字舞台 live set](https://luma.com/go6kxnnw)
 
 ## 系列时间线
 

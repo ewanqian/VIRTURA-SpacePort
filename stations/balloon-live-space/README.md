@@ -1,6 +1,6 @@
-# Baloon Live Space / 太空气球
+# Balloon Live Space / 太空气球
 
-这里是 `Baloon Live Space` 的站点总入口。
+这里是 `Balloon Live Space` 的站点总入口。
 
 它承接的不是单场活动介绍，而是一条持续增长中的线上演出空间与 live workflow 线：
 
@@ -24,7 +24,7 @@
 
 ## 这个 station 现在负责什么
 
-`Baloon Live Space` 当前主要负责四件事：
+`Balloon Live Space` 当前主要负责四件事：
 
 1. 把 live set 和公开测试收进同一条站点线
 2. 把演出过程里的 state / cue / section / rehearsal 继续整理出来
@@ -36,9 +36,9 @@
 ## 最值得先看的入口
 
 - [Alpha / Beta 阶段总结](./alpha-beta-summary.md)
-- [Alpha 测试档案](./baloon-live-space-alpha/README.md)
+- [Alpha 测试档案](./balloon-live-space-alpha/README.md)
 - [Session 02 档案](./session-02-live-set-2026-04/README.md)
-- [Beta 阶段入口](./baloon-live-space-beta/README.md)
+- [Beta 阶段入口](./balloon-live-space-beta/README.md)
 - [历史档案：2022-2023 VRChat 世界](./history/2022-2023-vrchat/world-info.md)
 - [研究报告：从 VRChat 地图到浏览器三维舞台](./research/from-vrchat-to-browser-stage-2026.md)
 

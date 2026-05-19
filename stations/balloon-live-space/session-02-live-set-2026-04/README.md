@@ -1,9 +1,9 @@
 # 太空气球 Session 02｜线上 live set 试放与视觉共演夜
 
-**活动系列**：Baloon Live Space Session 02  
-**日期**：2026-04-18  
-**形式**：线上音画实验夜 / 第二次试演  
-**状态**：已公开  
+**活动系列**：Balloon Live Space Session 02
+**日期**：2026-04-18
+**形式**：线上音画实验夜 / 第二次试演
+**状态**：已公开
 **外部活动页**：[Luma](https://luma.com/wsafafy2)
 
 ---
@@ -12,7 +12,7 @@
 
 - [Luma 活动页](https://luma.com/wsafafy2)
 - [系列总入口](../README.md)
-- [Alpha 测试档案](../baloon-live-space-alpha/README.md)
+- [Alpha 测试档案](../balloon-live-space-alpha/README.md)
 - [研究报告：从 VRChat 地图到浏览器三维舞台，线上数字演出空间该怎么继续做](../research/from-vrchat-to-browser-stage-2026.md)
 
 ## 这一场和 Alpha 的区别

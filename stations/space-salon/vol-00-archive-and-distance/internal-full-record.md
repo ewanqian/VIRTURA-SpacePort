@@ -9,7 +9,7 @@
 - 现场实际流程与时间线
 - 参与者反馈与讨论关键词
 - 设备体验环节的记录
-- 与 `Baloon Live Space`、`Segla`、存档实践相关的后续互链
+- 与 `Balloon Live Space`、`Segla`、存档实践相关的后续互链
 
 ## 已有公开入口
 

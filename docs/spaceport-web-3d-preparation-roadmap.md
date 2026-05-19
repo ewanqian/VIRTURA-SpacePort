@@ -89,7 +89,7 @@
 | Station | 当前主要职责 | 网页前台最小单位 | 应补 tracker |
 |---|---|---|---|
 | `Space Salon` | 交流客厅、系列活动、归档 | 系列首页 + 单期页 | 系列时间线 / 当前期数 / 下一入口 |
-| `Baloon Live Space` | live set、音画实验、演出测试 | 站点页 + session 页 | 演出状态 / 系统状态 / 下一轮测试 |
+| `Balloon Live Space` | live set、音画实验、演出测试 | 站点页 + session 页 | 演出状态 / 系统状态 / 下一轮测试 |
 | `MOVA` | 线上展映、观看室、数字展览 | 展映索引 + 单展页 | 展映状态 / 观看路线 / 后续入口 |
 | `在制内容审计会` | 结构批评、版本复盘、问题整理 | 系列页 + 问题项目页 | 问题状态 / 优先级 / 是否已修 |
 | `Digital Library / Digital Stage` | 归档结构、前台结构、公开说明 | 系列页 + session 页 | 路线状态 / 入口关系 / 补图补例进度 |
@@ -170,11 +170,11 @@
 
 - `stations/README.md` 目前更像活动说明页，还不是“所有 station 同时可见”的前台索引
 - `stations` 层还没有统一的 station registry / manifest
-- `Baloon / Balloon` 命名不统一，后续做网页会直接影响品牌与字段稳定性
+- `Balloon / Balloon` 命名不统一，后续做网页会直接影响品牌与字段稳定性
 - 多个站点首页还是模板式站点定义，没有进入“网页前台可读取”的结构
 - `station` 状态词混用 `Active / Growing / planned / open / 已公开 / 已归档`
 - 中间目录有些缺 README，结构上有内容，但没有路由页
-- `Baloon Live Space Beta` 的 README 里写了还不存在的目录和文件，文档结构与真实结构不一致
+- `Balloon Live Space Beta` 的 README 里写了还不存在的目录和文件，文档结构与真实结构不一致
 - `Research Laboratory` 虽然已经有 `profile / members / reading-list / research-threads`，但主入口还没把它们挂出来
 
 ### P1：网页化准备项
@@ -220,7 +220,7 @@
 
 1. 重写 `stations/README.md`，把它改成真正的 station 总览页
 2. 给每个 `station` 确定统一字段和统一状态
-3. 先把 `Baloon Live Space`、`MOVA`、`Research Laboratory` 这三个站点首页重写到可作为网页详情页的程度
+3. 先把 `Balloon Live Space`、`MOVA`、`Research Laboratory` 这三个站点首页重写到可作为网页详情页的程度
 4. 补齐中间目录 README，让网页层之后有稳定路由
 5. 整理一版 `station manifest`，让网页端和后续 `3D` 都能直接读取
 6. 基于同一套字段定义“网页怎么升成 3D”，避免后面做出两套互不相认的系统

@@ -1,4 +1,4 @@
-# Baloon Live Space Beta 阶段
+# Balloon Live Space Beta 阶段
 
 > 后日谈：从跑通链路到体面化的积累阶段
 
@@ -66,7 +66,7 @@
 ## 目录结构
 
 ```
-baloon-live-space-beta/
+balloon-live-space-beta/
 ├─ README.md                     # ← 本文件
 ├─ daily-practice/               # 日常练习记录
 │  └─ template.md                # 练习记录模板
@@ -82,6 +82,6 @@ baloon-live-space-beta/
 ## 导航
 
 - [返回系列总入口](../README.md)
-- [Alpha 档案](../baloon-live-space-alpha/README.md)
+- [Alpha 档案](../balloon-live-space-alpha/README.md)
 - [历史档案](../history/2022-2023-vrchat/world-info.md)
 - [Beta 共测夜档案](../beta-test-night-2026-05/README.md)
