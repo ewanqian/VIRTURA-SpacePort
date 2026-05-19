@@ -8,6 +8,7 @@ This folder holds cross-repo coordination docs for the VIRTURA public system. It
 
 - [PUBLIC_REPO_ROLE_CONTRACT.md](./PUBLIC_REPO_ROLE_CONTRACT.md): shared role contract for `portfolio`, `VIRTURA-Collective`, `VIRTURA-SpacePort`, and `VIRTURA-Newsroom`.
 - [LOCAL_REMOTE_DIFF_2026-05-20.md](./LOCAL_REMOTE_DIFF_2026-05-20.md): current status and boundary notes for the four public repos only.
+- [PUBLIC_GRAPH_MAINTENANCE_LOG_2026-05-20.md](./PUBLIC_GRAPH_MAINTENANCE_LOG_2026-05-20.md): latest pushed commit archive, quality checks, red-team notes, and remaining long-term fixes.
 - [public-graph-v2.json](./public-graph-v2.json): first object graph seed across works, people, stations, and articles.
 - [PUBLIC_LINK_MATRIX.csv](./PUBLIC_LINK_MATRIX.csv): object-level link matrix for the first migration wave.
 

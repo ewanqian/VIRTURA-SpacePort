@@ -15,10 +15,26 @@ It does not document internal repos, tool repos, tracker packs, data reservoirs,
 
 | Repo | Local path | Public role | Current state |
 |---|---|---|---|
-| `portfolio` | `/Users/ewanqian/Documents/Sync/Workspace/portfolio` | personal entry | clean; pushed through `23fa93f` |
-| `VIRTURA-Newsroom` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom` | publication outlet | clean; pushed through `2bdba23` |
-| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | public frontstage and deep archive | clean before this public-graph boundary pass |
-| `VIRTURA-Collective` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo` | team entry | clean; pushed through `406cee4` |
+| `portfolio` | `/Users/ewanqian/Documents/Sync/Workspace/portfolio` | personal entry | clean; pushed through `cc0c8ca` |
+| `VIRTURA-Newsroom` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom` | publication outlet | clean; pushed through `0433923` |
+| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | public frontstage and deep archive | clean; pushed through `8993bd5` |
+| `VIRTURA-Collective` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo` | team entry | clean; pushed through `3100da3` |
+
+## Latest Public Pushes
+
+| Repo | Latest public maintenance commit | What changed |
+|---|---:|---|
+| `portfolio` | `cc0c8ca` | normalized repeated work metadata with `object_id` and `personal_view` |
+| `VIRTURA-Newsroom` | `0433923` | corrected `Balloon` naming and kept a deprecated old recap slug as a compatibility page |
+| `VIRTURA-SpacePort` | `8993bd5` | corrected the `balloon-live-space` station slug and kept deprecated old station slug pages |
+| `VIRTURA-Collective` | `3100da3` | added formal member work pages for `control-uptime-protocol` and `desire-machining-center` |
+
+## Archive State
+
+- Canonical public graph archive: `VIRTURA-SpacePort/docs/public-graph/`
+- Local coordination copy, not public source of truth: `/Users/ewanqian/Documents/Sync/Workspace/docs/virtura-public-graph/`
+- Deprecated `baloon` URLs are preserved only as forwarding/compatibility pages. Canonical public spelling is `Balloon`.
+- `Kashiwa / TITAN` remains portfolio, deck, and external collaboration context only. It must not become a `VIRTURA-Collective` team work page.
 
 ## Repetition Handling
 
@@ -65,3 +81,5 @@ This four-repo wave is considered organized when:
 3. Public graph docs list only the first four public repos.
 4. Key objects have view-specific cross-links.
 5. Remaining duplicate content is marked as view-specific rather than silently merged.
+
+As of the latest scan, all five signals are true for the first public wave. The next work is quality maintenance, not basic rescue.
