@@ -20,7 +20,7 @@
     "spaceport": {
       "role": "public_frontstage",
       "url": "https://github.com/ewanqian/VIRTURA-SpacePort",
-      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort-github"
+      "local_path": "/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort"
     },
     "newsroom": {
       "role": "publication_outlet",
@@ -38,7 +38,7 @@
       "views": {
         "personal_view": "portfolio/visual-arts/drop-flow-series/README.md",
         "team_view": "VIRTURA-Collective/repo/works/drop-flow/README.md",
-        "archive_view": "VIRTURA-SpacePort-github/organization/works/drop-flow-series/README.md",
+        "archive_view": "VIRTURA-SpacePort/organization/works/drop-flow-series/README.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=12"
       },
       "related_stations": ["mova", "baloon-live-space", "digital-library-stage"],
@@ -53,7 +53,7 @@
       "views": {
         "personal_view": "portfolio/visual-arts/timer-series/README.md",
         "team_view": "VIRTURA-Collective/repo/works/timer/README.md",
-        "archive_view": "VIRTURA-SpacePort-github/organization/works/timer.md",
+        "archive_view": "VIRTURA-SpacePort/organization/works/timer.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=11"
       },
       "related_stations": ["baloon-live-space", "digital-library-stage"],
@@ -68,7 +68,7 @@
       "views": {
         "personal_view": "portfolio/visual-arts/perceptual-environments/README.md",
         "team_view": "VIRTURA-Collective/repo/works/observation-and-symbiosis/README.md",
-        "archive_view": "VIRTURA-SpacePort-github/organization/works/观察与共生 Observation and Symbiosis.md"
+        "archive_view": "VIRTURA-SpacePort/organization/works/观察与共生 Observation and Symbiosis.md"
       },
       "related_stations": ["mova", "research-laboratory"],
       "related_articles": []

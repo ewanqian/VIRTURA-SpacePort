@@ -10,21 +10,21 @@ This file records high-risk divergence before any cleanup or migration. It is a 
 |---|---|---|
 | `portfolio` | `/Users/ewanqian/Documents/Sync/Workspace/portfolio` | clean remote clone at `cefc8b3` |
 | `VIRTURA-Newsroom` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom` | clean remote clone at `06fd6b1` |
-| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort-github` | remote clone at `6d482f0`, plus one local iCloud conflict file |
+| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | canonical remote clone; local iCloud conflict duplicate removed |
 | `VIRTURA-Collective` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo` | fetched, not behind remote, but dirty working tree |
 
 ## Local Candidate Sources
 
 | Path | Candidate value | Merge caution |
 |---|---|---|
-| `/Users/ewanqian/Documents/Sync/Workspace/portfolio_github` | broader local portfolio content, generated bundle, local assets, `siteTaxonomy.js`, public writing guide | no commits on `master`; must snapshot before merge |
-| `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | extra AVP, Blender, VR training, MOVA viewing room, local SpacePort pages | not a git repo; treat as candidate source |
+| `/Users/ewanqian/Documents/Sync/Workspace/_workspace_candidates/portfolio-local-candidate-2026-05-20` | broader local portfolio content, generated bundle, local assets, `siteTaxonomy.js`, public writing guide | no commits on `master`; must snapshot before merge |
+| `/Users/ewanqian/Documents/Sync/Workspace/_workspace_candidates/VIRTURA-SpacePort-local-candidate-2026-05-20` | extra AVP, Blender, VR training, MOVA viewing room, local SpacePort pages | not a git repo; treat as candidate source |
 | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/local` | internal ops layer: agents, boards, inspectors, intake, issues, ops | do not merge into public repo wholesale |
 | `/Users/ewanqian/Documents/Sync/Workspace/virtura_content_system` | large asset/object reservoir | use as canonical data candidate, not public nav |
 
 ## Known Divergence
 
-### `portfolio` vs `portfolio_github`
+### `portfolio` vs `portfolio-local-candidate-2026-05-20`
 
 Local-only / changed areas:
 
@@ -42,7 +42,7 @@ Risk:
 - remote clone is cleaner, but local tree likely contains latest content work.
 - do not replace local tree with remote.
 
-### `VIRTURA-SpacePort-github` vs `VIRTURA-SpacePort`
+### `VIRTURA-SpacePort` vs `VIRTURA-SpacePort-local-candidate-2026-05-20`
 
 Local-only / changed areas:
 
@@ -52,7 +52,7 @@ Local-only / changed areas:
 - `spatial-computing/vr-practice-training-unity-openxr.md`
 - MOVA drop-flow viewing room `index.html`, `viewing-room.css`, `viewing-room.js`
 - station manifests and sourcebook differ
-- one iCloud conflict file exists in remote clone path
+- duplicate iCloud conflict file was identical to the tracked README and has been removed
 
 Risk:
 
