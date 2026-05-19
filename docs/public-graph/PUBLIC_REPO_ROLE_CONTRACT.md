@@ -16,8 +16,10 @@ VIRTURA 围绕感知迁移、空间组织与图景生成展开，通过现场演
 | `VIRTURA-Collective` | Team entry | VIRTURA identity, people, public works, programs, activities, collaboration routes | deep station archive, personal-only portfolio logic, internal ops |
 | `VIRTURA-SpacePort` | Public frontstage | stations, knowledge network, deep project archive, public trackers, source-of-truth docs | team identity as homepage, article publication outlet, private governance |
 | `VIRTURA-Newsroom` | Publication outlet | essays, art reviews, project recaps, announcements, media kit, public context around works and systems | main team homepage, archive source, product repo |
-| `SceneForge` | Tool and digital-stage experiment line | viewer, preview, scene system, product/workshop logic | team identity, publication layer |
-| `RepoForge / Forge` | Governance and automation layer | maintenance, automation, repo routing, private execution workflows | public narrative front door |
+
+## Out Of Scope For This Wave
+
+Tool, runtime, data, tracker, and private governance repos are intentionally excluded from this first public graph wave. They can be referenced from older articles when context requires it, but they are not part of the four-repo public navigation contract.
 
 ## Public Reading Order
 

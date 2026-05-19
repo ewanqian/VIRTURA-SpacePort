@@ -1,87 +1,67 @@
-# Local / Remote Diff Preservation Summary
+# Four Public Repo Status
 
 Date: 2026-05-20
 
-This file records high-risk divergence before any cleanup or migration. It is a preservation guard, not a merge decision.
+This file tracks only the first four public repositories:
 
-## Remote Clones
+- `portfolio`
+- `VIRTURA-Collective`
+- `VIRTURA-SpacePort`
+- `VIRTURA-Newsroom`
 
-| Repo | Path | State |
-|---|---|---|
-| `portfolio` | `/Users/ewanqian/Documents/Sync/Workspace/portfolio` | clean remote clone at `cefc8b3` |
-| `VIRTURA-Newsroom` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom` | clean remote clone at `06fd6b1` |
-| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | canonical remote clone; local iCloud conflict duplicate removed |
-| `VIRTURA-Collective` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo` | fetched, not behind remote, but dirty working tree |
+It does not document internal repos, tool repos, tracker packs, data reservoirs, or private governance workspaces.
 
-## Local Candidate Sources
+## Current Public Repo State
 
-| Path | Candidate value | Merge caution |
-|---|---|---|
-| `/Users/ewanqian/Documents/Sync/Workspace/_workspace_candidates/portfolio-local-candidate-2026-05-20` | broader local portfolio content, generated bundle, local assets, `siteTaxonomy.js`, public writing guide | no commits on `master`; must snapshot before merge |
-| `/Users/ewanqian/Documents/Sync/Workspace/_workspace_candidates/VIRTURA-SpacePort-local-candidate-2026-05-20` | extra AVP, Blender, VR training, MOVA viewing room, local SpacePort pages | not a git repo; treat as candidate source |
-| `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/local` | internal ops layer: agents, boards, inspectors, intake, issues, ops | do not merge into public repo wholesale |
-| `/Users/ewanqian/Documents/Sync/Workspace/virtura_content_system` | large asset/object reservoir | use as canonical data candidate, not public nav |
+| Repo | Local path | Public role | Current state |
+|---|---|---|---|
+| `portfolio` | `/Users/ewanqian/Documents/Sync/Workspace/portfolio` | personal entry | clean; pushed through `23fa93f` |
+| `VIRTURA-Newsroom` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Newsroom` | publication outlet | clean; pushed through `2bdba23` |
+| `VIRTURA-SpacePort` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-SpacePort` | public frontstage and deep archive | clean before this public-graph boundary pass |
+| `VIRTURA-Collective` | `/Users/ewanqian/Documents/Sync/Workspace/VIRTURA-Collective/repo` | team entry | clean; pushed through `406cee4` |
 
-## Known Divergence
+## Repetition Handling
 
-### `portfolio` vs `portfolio-local-candidate-2026-05-20`
+The same object can appear in more than one repo, but every appearance must act as a different view:
 
-Local-only / changed areas:
+- `portfolio`: personal proof and individual method.
+- `VIRTURA-Collective`: team, people, programs, activities, collaboration route.
+- `VIRTURA-SpacePort`: source, station, archive, version, deep evidence.
+- `VIRTURA-Newsroom`: article, recap, public explanation, review.
 
-- `AGENTS.md`
-- many `README` and about/support docs differ
-- `content/portfolio-public-writing-guide.md`
-- many `content/works`, `content/nodes`, `content/writings` JSON files differ
-- `database/*.json` differ
-- React UI/data files differ
-- local generated bundle differs
-- extra asset folder: `assets/yujiayun-45ping`
+Repeated text should be reduced only after the view is clear. Do not delete rich source material just because it appears in more than one place.
 
-Risk:
+## First Public Wave
 
-- remote clone is cleaner, but local tree likely contains latest content work.
-- do not replace local tree with remote.
+Wave 1 links these objects across the four public repos:
 
-### `VIRTURA-SpacePort` vs `VIRTURA-SpacePort-local-candidate-2026-05-20`
+- `drop-flow`
+- `timer`
+- `observation-and-symbiosis`
+- `kashiwa-titan`
+- `control-uptime-protocol`
+- `desire-machining-center`
+- `mova`
+- `research-laboratory`
+- `baloon-live-space`
+- `digital-library-stage`
 
-Local-only / changed areas:
+See [PUBLIC_LINK_MATRIX.csv](./PUBLIC_LINK_MATRIX.csv) for the exact view paths.
 
-- `knowledge-network/learning-paths/immersive-space-production-track.md`
-- `production-pipeline/codex-blender-mcp-asset-loop.md`
-- `spatial-computing/apple-vision-pro-codex-demo.md`
-- `spatial-computing/vr-practice-training-unity-openxr.md`
-- MOVA drop-flow viewing room `index.html`, `viewing-room.css`, `viewing-room.js`
-- station manifests and sourcebook differ
-- duplicate iCloud conflict file was identical to the tracked README and has been removed
+## Boundary Rules
 
-Risk:
+- Do not promote internal ops, tracker state, data reservoirs, private prompts, or working caches into public navigation.
+- Do not make `VIRTURA-Collective` absorb the deep archive role of `VIRTURA-SpacePort`.
+- Do not make `portfolio` carry team identity.
+- Do not make `VIRTURA-Newsroom` act as a homepage.
+- Keep source links instead of copying whole deep archives into every repo.
 
-- local SpacePort has valuable new applied docs and demo work.
-- remote clone has latest Git history.
+## Completion Signal
 
-### `VIRTURA-Collective/repo` vs `VIRTURA-Collective/local`
+This four-repo wave is considered organized when:
 
-Intentional split:
-
-- `repo`: public team content
-- `local`: internal operating system
-
-Risk:
-
-- merging `local` into `repo` would leak internal work.
-- public repo should only receive selected outputs, not ops machinery.
-
-## Safe Merge Order
-
-1. Snapshot local-only trees.
-2. Compare candidate docs by role, not by folder name.
-3. Promote only public-facing, source-safe content.
-4. Keep internal ops under `local` or a private repo.
-5. Add object ids before copying repeated text.
-
-## Do Not Do
-
-- do not run destructive reset.
-- do not mass copy local over remote.
-- do not delete duplicate text before mapping where it goes.
-- do not expose internal agents / boards / prompts in public front pages.
+1. All four repos are clean against `origin/main`.
+2. Each repo README states its public role.
+3. Public graph docs list only the first four public repos.
+4. Key objects have view-specific cross-links.
+5. Remaining duplicate content is marked as view-specific rather than silently merged.
