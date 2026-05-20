@@ -95,6 +95,9 @@
       "views": {
         "member_work_view": "VIRTURA-Collective/repo/works/control-uptime-protocol/README.md",
         "artist_context_view": "VIRTURA-Collective/repo/artists/murphy-nile.md",
+        "prototype_page": "VIRTURA-Collective/repo/prototype/works/control-uptime-protocol.html",
+        "source_notes": "VIRTURA-Collective/repo/works/control-uptime-protocol/source-notes.md",
+        "credits": "VIRTURA-Collective/repo/works/control-uptime-protocol/credits.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=7"
       },
       "related_stations": ["mova", "research-laboratory"],
@@ -109,6 +112,9 @@
       "views": {
         "member_work_view": "VIRTURA-Collective/repo/works/desire-machining-center/README.md",
         "artist_context_view": "VIRTURA-Collective/repo/artists/sihui-xu.md",
+        "prototype_page": "VIRTURA-Collective/repo/prototype/works/desire-machining-center.html",
+        "source_notes": "VIRTURA-Collective/repo/works/desire-machining-center/source-notes.md",
+        "credits": "VIRTURA-Collective/repo/works/desire-machining-center/credits.md",
         "deck_view": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=8"
       },
       "related_stations": ["mova", "research-laboratory"],

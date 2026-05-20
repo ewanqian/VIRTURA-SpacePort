@@ -43,7 +43,7 @@ The guardrail is the `object_id` plus `view_type` block. A new repeated public p
 ## Red Team Notes
 
 1. The public graph is structurally repaired, but some older roadmap and audit docs still describe earlier stages.
-2. `VIRTURA-Collective` now has public member work pages, but the next quality step is artist-confirmed source media for Murphy and Sihui.
+2. `VIRTURA-Collective` now has public member work pages, deck OCR notes, credits, portraits, and prototype pages for Murphy and Sihui. The next quality step is final artist confirmation.
 3. `Observation and Symbiosis` still needs a stronger Newsroom recap or MOVA exhibition route when public.
 4. `MOVA` and `Research Laboratory` have links, but need stronger visitor-facing entry copy.
 5. Deprecated `baloon` paths are useful for old links, but must stay clearly deprecated so the wrong spelling does not re-enter new content.
@@ -54,7 +54,7 @@ The guardrail is the `object_id` plus `view_type` block. A new repeated public p
 | Priority | Change | Why |
 |---|---|---|
 | P0 | Keep the four-repo public contract as the source of truth | prevents internal repos from leaking into public navigation |
-| P0 | Add source media and credits to Murphy / Sihui work pages | makes independent work pages real, not placeholder-like |
+| P0 | Confirm final artist statements for Murphy / Sihui work pages | source notes and credits are now recorded; final wording should be artist-approved |
 | P1 | Refresh old Collective audit/status docs with current-stage notes | prevents future agents from following stale `Stage 2.x` plans |
 | P1 | Add Newsroom route for `Observation and Symbiosis` when public | completes the object graph for that work |
 | P1 | Frontstage QA for the Collective prototype on desktop/mobile | content is organized; public experience still needs visual validation |
