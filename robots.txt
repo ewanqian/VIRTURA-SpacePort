@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ewanqian.github.io/VIRTURA-SpacePort/sitemap.xml
+Sitemap: https://spaceport.virtura.space/sitemap.xml

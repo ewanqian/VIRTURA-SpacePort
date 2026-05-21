@@ -10,18 +10,18 @@
     "newsroom.virtura.space"
   ],
   "surfaces": {
-    "personal": "https://ewanqian.github.io/portfolio/",
-    "collective": "https://ewanqian.github.io/VIRTURA-Collective/",
-    "spaceport": "https://ewanqian.github.io/VIRTURA-SpacePort/",
-    "newsroom": "https://ewanqian.github.io/VIRTURA-Newsroom/"
+    "personal": "https://ewanqian.site/",
+    "collective": "https://virtura.space/",
+    "spaceport": "https://spaceport.virtura.space/",
+    "newsroom": "https://newsroom.virtura.space/"
   },
   "endpoints": {
-    "works": "https://ewanqian.github.io/VIRTURA-SpacePort/api/works.json",
-    "entities": "https://ewanqian.github.io/VIRTURA-SpacePort/api/entities.json",
-    "articles": "https://ewanqian.github.io/VIRTURA-SpacePort/api/articles.json",
-    "stations": "https://ewanqian.github.io/VIRTURA-SpacePort/api/stations.json",
-    "media": "https://ewanqian.github.io/VIRTURA-SpacePort/api/media.json",
-    "authority": "https://ewanqian.github.io/VIRTURA-SpacePort/api/authority.json"
+    "works": "https://spaceport.virtura.space/api/works.json",
+    "entities": "https://spaceport.virtura.space/api/entities.json",
+    "articles": "https://spaceport.virtura.space/api/articles.json",
+    "stations": "https://spaceport.virtura.space/api/stations.json",
+    "media": "https://spaceport.virtura.space/api/media.json",
+    "authority": "https://spaceport.virtura.space/api/authority.json"
   },
   "content_contract": [
     "Public pages use complete reader-facing copy.",

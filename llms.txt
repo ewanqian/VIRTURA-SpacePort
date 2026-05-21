@@ -3,21 +3,21 @@
 VIRTURA SpacePort is the public archive, station index, and machine-readable layer for the VIRTURA network.
 
 Primary human entry:
-https://ewanqian.github.io/VIRTURA-SpacePort/
+https://spaceport.virtura.space/
 
 Public JSON:
-https://ewanqian.github.io/VIRTURA-SpacePort/api/manifest.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/works.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/entities.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/articles.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/stations.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/media.json
-https://ewanqian.github.io/VIRTURA-SpacePort/api/authority.json
+https://spaceport.virtura.space/api/manifest.json
+https://spaceport.virtura.space/api/works.json
+https://spaceport.virtura.space/api/entities.json
+https://spaceport.virtura.space/api/articles.json
+https://spaceport.virtura.space/api/stations.json
+https://spaceport.virtura.space/api/media.json
+https://spaceport.virtura.space/api/authority.json
 
 Related public surfaces:
-https://ewanqian.github.io/portfolio/ - Ewan Qian personal portfolio
-https://ewanqian.github.io/VIRTURA-Collective/ - VIRTURA Collective frontstage
-https://ewanqian.github.io/VIRTURA-Newsroom/ - essays, reviews, recaps, and media material
+https://ewanqian.site/ - Ewan Qian personal portfolio
+https://virtura.space/ - VIRTURA Collective frontstage
+https://newsroom.virtura.space/ - essays, reviews, recaps, and media material
 
 Authorship labels:
 - personal_work
