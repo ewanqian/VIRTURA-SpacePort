@@ -1,0 +1,81 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "stations",
+  "count": 5,
+  "items": [
+    {
+      "id": "mova",
+      "title": "MOVA / Museum of Virtual Arts",
+      "status": "concept",
+      "role": "digital exhibition and viewing room station",
+      "canonical_slug": "mova",
+      "links": {
+        "spaceport": "VIRTURA-SpacePort/stations/mova/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "research-laboratory",
+      "title": "Research Laboratory",
+      "status": "active",
+      "role": "research threads, experiments, path comparison, method sedimentation",
+      "canonical_slug": "research-laboratory",
+      "links": {
+        "spaceport": "VIRTURA-SpacePort/stations/research-laboratory/README.md",
+        "newsroom": "VIRTURA-Newsroom/creator-shares/research-laboratory-ai-live-performance-launch.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "VIRTURA-Newsroom/creator-shares/research-laboratory-ai-live-performance-launch.md"
+      ]
+    },
+    {
+      "id": "balloon-live-space",
+      "title": "Balloon Live Space",
+      "status": "active",
+      "role": "live practice, cue/state, session logs, performance review",
+      "canonical_slug": "balloon-live-space",
+      "deprecated_slugs": [
+        "baloon-live-space"
+      ],
+      "links": {
+        "spaceport": "VIRTURA-SpacePort/stations/balloon-live-space/README.md",
+        "newsroom": "VIRTURA-Newsroom/project-recaps/balloon-live-space-alpha-beta-report.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "VIRTURA-SpacePort/stations/balloon-live-space/README.md",
+        "VIRTURA-Newsroom/project-recaps/balloon-live-space-alpha-beta-report.md"
+      ]
+    },
+    {
+      "id": "space-salon",
+      "title": "Space Salon",
+      "status": "active",
+      "role": "public talks, salons, activities, archive loop",
+      "canonical_slug": "space-salon",
+      "links": {
+        "spaceport": "VIRTURA-SpacePort/stations/space-salon/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "digital-library-stage",
+      "title": "Digital Library / Digital Stage",
+      "status": "prototype",
+      "role": "archive/frontstage structure, public explanation, session line",
+      "canonical_slug": "digital-library-stage",
+      "links": {
+        "spaceport": "VIRTURA-SpacePort/stations/digital-library-stage/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    }
+  ]
+}

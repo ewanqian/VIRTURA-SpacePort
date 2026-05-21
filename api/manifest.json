@@ -1,0 +1,42 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "title": "VIRTURA SpacePort Public Manifest",
+  "purpose": "Public machine-readable index for VIRTURA works, stations, people, articles, media records, and authority notes.",
+  "domains": [
+    "ewanqian.site",
+    "virtura.space",
+    "spaceport.virtura.space",
+    "newsroom.virtura.space"
+  ],
+  "surfaces": {
+    "personal": "https://ewanqian.site/",
+    "collective": "https://virtura.space/",
+    "spaceport": "https://spaceport.virtura.space/",
+    "newsroom": "https://newsroom.virtura.space/"
+  },
+  "endpoints": {
+    "works": "https://spaceport.virtura.space/api/works.json",
+    "entities": "https://spaceport.virtura.space/api/entities.json",
+    "articles": "https://spaceport.virtura.space/api/articles.json",
+    "stations": "https://spaceport.virtura.space/api/stations.json",
+    "media": "https://spaceport.virtura.space/api/media.json",
+    "authority": "https://spaceport.virtura.space/api/authority.json"
+  },
+  "content_contract": [
+    "Public pages use complete reader-facing copy.",
+    "Team context and individual authorship remain explicit.",
+    "Kashiwa / TITAN is external collaboration context.",
+    "Murphy / Sihui independent works are artist-context entries until formal work pages are published.",
+    "Balloon is the canonical spelling.",
+    "Concept, prototype, active, published, archive, and deprecated status labels remain explicit."
+  ],
+  "counts": {
+    "works": 6,
+    "entities": 8,
+    "articles": 4,
+    "stations": 5,
+    "media": 4,
+    "authority": 3
+  }
+}

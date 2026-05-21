@@ -1,0 +1,13 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "manifest": "https://spaceport.virtura.space/api/manifest.json",
+  "endpoints": {
+    "works": "https://spaceport.virtura.space/api/works.json",
+    "entities": "https://spaceport.virtura.space/api/entities.json",
+    "articles": "https://spaceport.virtura.space/api/articles.json",
+    "stations": "https://spaceport.virtura.space/api/stations.json",
+    "media": "https://spaceport.virtura.space/api/media.json",
+    "authority": "https://spaceport.virtura.space/api/authority.json"
+  }
+}

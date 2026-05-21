@@ -1,0 +1,52 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "media",
+  "count": 4,
+  "items": [
+    {
+      "id": "drop-flow-hangzhou-scene",
+      "title": "Drop Flow Hangzhou Biennale Scene",
+      "media_type": "image",
+      "related_object_id": "drop-flow",
+      "approved_for_press": false,
+      "caption": "Drop Flow performance scene, Hangzhou.",
+      "credit": "Credit line to be confirmed before public download.",
+      "rights_note": "Draft media entry. Rights must be cleared before public download.",
+      "source_path": "portfolio/assets/home/featured-dropflow-hangzhou-biennale-scene.jpg"
+    },
+    {
+      "id": "timer-featured-main",
+      "title": "TIMER Featured Image",
+      "media_type": "image",
+      "related_object_id": "timer",
+      "approved_for_press": false,
+      "caption": "TIMER visual archive image.",
+      "credit": "Credit line to be confirmed before public download.",
+      "rights_note": "Draft media entry. Rights must be cleared before public download.",
+      "source_path": "portfolio/assets/home/featured-timer-main.jpg"
+    },
+    {
+      "id": "murphy-nile-portrait",
+      "title": "Murphy Nile Portrait",
+      "media_type": "image",
+      "related_object_id": "murphy-nile",
+      "approved_for_press": false,
+      "caption": "Murphy Nile portrait.",
+      "credit": "Credit line to be confirmed before public download.",
+      "rights_note": "Local portrait source. Confirm usage rights before publication.",
+      "source_path": "docs/site-upgrade/master-mode-demos/assets/murphy-nile-preview.jpg"
+    },
+    {
+      "id": "sihui-xu-portrait",
+      "title": "Sihui Xu Portrait",
+      "media_type": "image",
+      "related_object_id": "sihui-xu",
+      "approved_for_press": false,
+      "caption": "Sihui Xu portrait.",
+      "credit": "Credit line to be confirmed before public download.",
+      "rights_note": "Local portrait source. Confirm usage rights before publication.",
+      "source_path": "docs/site-upgrade/master-mode-demos/assets/sihui-xu-preview.jpg"
+    }
+  ]
+}

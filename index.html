@@ -4,11 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VIRTURA SpacePort</title>
+    <link rel="canonical" href="https://spaceport.virtura.space/" />
     <meta name="theme-color" content="#081015" />
     <meta
       name="description"
       content="VIRTURA SpacePort 的公众入口。面向数字展映、演出空间、茶屋、公共 salon 与研究基础设施。"
     />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VIRTURA SpacePort" />
+    <meta property="og:description" content="Archive, station index, public graph, and machine-readable layer for the VIRTURA network." />
+    <meta property="og:url" content="https://spaceport.virtura.space/" />
+    <meta property="og:image" content="https://ewanqian.site/assets/public-nodes/ufo-terminal.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="VIRTURA SpacePort" />
+    <meta name="twitter:description" content="Archive, station index, public graph, and machine-readable layer for the VIRTURA network." />
+    <meta name="twitter:image" content="https://ewanqian.site/assets/public-nodes/ufo-terminal.jpg" />
+    <link rel="alternate" type="application/json" href="./api/manifest.json" title="VIRTURA SpacePort Public Manifest" />
+    <link rel="alternate" type="text/plain" href="./llms.txt" title="VIRTURA SpacePort AI Reader Index" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,6 +42,11 @@
             <a href="#core">Core</a>
             <a href="#network">Network</a>
             <a href="#dock">Stations</a>
+            <a href="https://virtura.space/">Collective</a>
+            <a href="https://newsroom.virtura.space/">Newsroom</a>
+            <a href="https://ewanqian.site/">Portfolio</a>
+            <a href="./api/manifest.json">API</a>
+            <a href="./llms.txt">AI Index</a>
             <a href="https://github.com/ewanqian/VIRTURA-SpacePort" target="_blank" rel="noreferrer">Source</a>
           </nav>
         </div>
@@ -38,11 +55,21 @@
       <main id="app">
         <section class="loading-state">
           <div class="loading-state__panel">
-            <span class="eyebrow">Loading</span>
+            <span class="eyebrow">Archive / Stations / Public Graph</span>
             <h1>VIRTURA SpacePort</h1>
-            <p>Preparing public entry.</p>
+            <p>Public infrastructure for works, stations, research paths, media records, and machine-readable VIRTURA objects.</p>
           </div>
         </section>
+        <noscript>
+          <section class="section section--first">
+            <div class="section-head">
+              <p class="eyebrow">VIRTURA SpacePort</p>
+              <h2>Archive, stations, and public graph.</h2>
+              <p>Enter through works, stations, knowledge network, and public repository records.</p>
+              <p><a href="./api/manifest.json">Public Manifest</a> / <a href="./llms.txt">AI Reader Index</a></p>
+            </div>
+          </section>
+        </noscript>
       </main>
 
       <footer class="site-footer">

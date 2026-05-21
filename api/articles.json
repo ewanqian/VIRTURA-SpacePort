@@ -1,0 +1,107 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "articles",
+  "count": 4,
+  "items": [
+    {
+      "id": "from-archive-library-to-cultural-gene-node-network",
+      "title": "从资料档案库到文化基因节点网络",
+      "date": "2026-04-11",
+      "type": "essay",
+      "summary": "A system essay on turning scattered archives, project pages, works, activities, and collaboration records into a reusable node network.",
+      "author_entities": [
+        "virtura-collective"
+      ],
+      "related_works": [
+        "drop-flow",
+        "timer"
+      ],
+      "related_entities": [
+        "virtura-collective"
+      ],
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/essays/from-archive-library-to-cultural-gene-node-network.md",
+        "spaceport": "VIRTURA-SpacePort/docs/public-graph/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Newsroom/essays/from-archive-library-to-cultural-gene-node-network.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "skill-based-workflow-virtura-2026",
+      "title": "技能强，不是因为它像 AI 术语，而是因为它开始替我们稳定真正的工作",
+      "date": "2026-04-02",
+      "type": "essay",
+      "summary": "A VIRTURA system essay on reusable skill-based workflows and repository maintenance.",
+      "author_entities": [
+        "virtura-collective"
+      ],
+      "related_works": [],
+      "related_entities": [
+        "virtura-collective"
+      ],
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/essays/skill-based-workflow-virtura-2026.md",
+        "spaceport": "VIRTURA-SpacePort/stations/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Newsroom/essays/skill-based-workflow-virtura-2026.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "virtura-article-curatorial-v4",
+      "title": "把界面熬成感知，把噪声烹成现实",
+      "date": "2026-03-20",
+      "type": "review",
+      "summary": "A curatorial article by Murphy Nile connecting Sihui Xu, Ewan Qian, and Murphy Nile through technology, perception, and digital art practice.",
+      "author_entities": [
+        "murphy-nile"
+      ],
+      "related_works": [
+        "drop-flow",
+        "control-uptime-protocol",
+        "desire-machining-center"
+      ],
+      "related_entities": [
+        "murphy-nile",
+        "sihui-xu",
+        "ewan-qian"
+      ],
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/art-review/articles/virtura_article_curatorial_v4.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Newsroom/art-review/articles/virtura_article_curatorial_v4.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "system-ewanqian-perceptual-migration-review",
+      "title": "从时间材料到感知迁移：SYSTEM 评钱誉文的实践线收束",
+      "date": "2026-03-22",
+      "type": "review",
+      "summary": "A SYSTEM review of Ewan Qian's practice line around time material, spatial generation, and perceptual migration.",
+      "author_entities": [
+        "system"
+      ],
+      "related_works": [
+        "drop-flow",
+        "timer"
+      ],
+      "related_entities": [
+        "ewan-qian"
+      ],
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/art-review/articles/system_ewanqian_perceptual_migration_review.md",
+        "portfolio": "portfolio/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Newsroom/art-review/articles/system_ewanqian_perceptual_migration_review.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    }
+  ]
+}

@@ -89,6 +89,35 @@ Good output in this repo should be:
 - Do not overwrite historical notes without preserving the previous context.
 - Do not publish internal rough notes as public-facing text without cleaning structure.
 - Do not treat file storage as equivalent to knowledge organization.
+- Do not publish draft, proof, source-path, approval, TODO, or verification language inside final public pages.
+- Do not expose process phrases such as "if you want to read", "needs", "fix", "verify before publishing", or "not team-owned" in final public copy.
+- Do not use SpacePort public pages as a place for cache text. Put cache in `_workspace_cache/virtura-publication/` or `docs/site-upgrade/`.
+
+## Final Quality Gate
+
+Before a SpacePort page, public HTML, API-facing text, media kit text, or public demo is considered final, run:
+
+`python3 /Users/ewanqian/.codex/skills/virtura-final-quality-gate/scripts/final_quality_gate.py <paths>`
+
+SpacePort can store object IDs, authority records, and source relationships, but visible public pages must read as complete visitor-facing pages.
+
+Use final labels:
+
+- `Archive`
+- `Works`
+- `Entities`
+- `Media Kit`
+- `Public Graph`
+- `Coming Soon`
+
+Avoid final-page process labels:
+
+- `Draft`
+- `Proof`
+- `Source path`
+- `Needs review`
+- `Approval`
+- `TODO`
 
 ## Preferred style
 - Clear and direct

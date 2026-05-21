@@ -1,0 +1,139 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "entities",
+  "count": 8,
+  "items": [
+    {
+      "id": "virtura-collective",
+      "name": "VIRTURA Collective",
+      "entity_type": "collective",
+      "relationship_to_virtura": "public collective identity",
+      "boundary": "team",
+      "bio_short": "A decentralized art collective and research network centered on spatial, audiovisual, and perceptual systems.",
+      "links": {
+        "collective": "VIRTURA-Collective/repo/README.md",
+        "spaceport": "VIRTURA-SpacePort/README.md",
+        "newsroom": "VIRTURA-Newsroom/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Collective/repo/README.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "system",
+      "name": "SYSTEM",
+      "entity_type": "project_group",
+      "relationship_to_virtura": "autonomous publication and review voice used by VIRTURA Newsroom",
+      "boundary": "team",
+      "bio_short": "A structured review and translation voice for VIRTURA publication workflows.",
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/README.md"
+      },
+      "archive_refs": [
+        "VIRTURA-Newsroom/README.md"
+      ]
+    },
+    {
+      "id": "ewan-qian",
+      "name": "Ewan Qian / 钱誉文",
+      "entity_type": "person",
+      "relationship_to_virtura": "co-founder, creative lead, member artist",
+      "boundary": "personal",
+      "bio_short": "Visual artist and spatial experience researcher working across real-time systems, point clouds, and audiovisual structures.",
+      "links": {
+        "portfolio": "portfolio/README.md",
+        "collective": "VIRTURA-Collective/repo/artists/ewan-qian.md"
+      },
+      "archive_refs": [
+        "portfolio/README.md",
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json"
+      ]
+    },
+    {
+      "id": "xuan-shen",
+      "name": "Shen Xuan / 沈轩",
+      "entity_type": "person",
+      "relationship_to_virtura": "co-founder, artistic director, XUAN spatial framework",
+      "boundary": "team",
+      "bio_short": "Artist and curator focusing on spatial design and narrative environments across public and cultural projects.",
+      "links": {
+        "collective": "VIRTURA-Collective/repo/artists/xuan-shen.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "docs/site-upgrade/master-mode-demos/COLLECTIVE_OVERVIEW_2026_OCR_DRAFT.md"
+      ]
+    },
+    {
+      "id": "murphy-nile",
+      "name": "Murphy Nile / 周子凌",
+      "entity_type": "person",
+      "relationship_to_virtura": "member artist, curator, cross-media artist",
+      "boundary": "artist_context",
+      "bio_short": "Cross-media artist working across real-time 3D, machinima, and audiovisual systems.",
+      "references": [
+        {
+          "type": "external_link",
+          "label": "Murphy Nile official bio",
+          "source": "https://www.murphynile.com/bio",
+          "status": "verified"
+        }
+      ],
+      "links": {
+        "collective": "VIRTURA-Collective/repo/artists/murphy-nile.md",
+        "external": "https://www.murphynile.com/bio"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "docs/site-upgrade/master-mode-demos/COLLECTIVE_OVERVIEW_2026_OCR_DRAFT.md"
+      ]
+    },
+    {
+      "id": "sihui-xu",
+      "name": "Sihui Xu / 许思慧",
+      "entity_type": "person",
+      "relationship_to_virtura": "member artist, spatial visuals and interaction design",
+      "boundary": "artist_context",
+      "bio_short": "Spatial visuals and interaction design artist working through immersive installation, spatial storytelling, and 3D visual systems.",
+      "links": {
+        "collective": "VIRTURA-Collective/repo/artists/sihui-xu.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "docs/site-upgrade/master-mode-demos/COLLECTIVE_OVERVIEW_2026_OCR_DRAFT.md"
+      ]
+    },
+    {
+      "id": "xu-hao",
+      "name": "Xu Hao / 徐昊",
+      "entity_type": "person",
+      "relationship_to_virtura": "sound and electronic music collaborator",
+      "boundary": "artist_context",
+      "bio_short": "Electronic music and sound systems practitioner contributing to audiovisual works in spatial and theatrical contexts.",
+      "links": {
+        "collective": "VIRTURA-Collective/repo/artists/xu-hao.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "docs/site-upgrade/master-mode-demos/COLLECTIVE_OVERVIEW_2026_OCR_DRAFT.md"
+      ]
+    },
+    {
+      "id": "wu-yitong",
+      "name": "WU-YITONG / 無",
+      "entity_type": "person",
+      "relationship_to_virtura": "published creator and reviewed artist",
+      "boundary": "artist_context",
+      "bio_short": "Generative visuals and visual research artist working through structured imagery, memory, and abstract visual systems.",
+      "links": {
+        "newsroom": "VIRTURA-Newsroom/creator-shares/wu_yitong_system_perturbation.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "VIRTURA-Newsroom/creator-shares/wu_yitong_system_perturbation.md"
+      ]
+    }
+  ]
+}

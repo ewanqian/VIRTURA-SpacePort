@@ -1,0 +1,35 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "authority",
+  "count": 3,
+  "items": [
+    {
+      "id": "murphy-lumen-2025-finalist",
+      "claim": "Murphy Nile official bio states he was selected as a finalist for the Lumen Prize 2025 Experiential Award.",
+      "related_object_id": "murphy-nile",
+      "source_type": "official_site",
+      "source_url_or_path": "https://www.murphynile.com/bio",
+      "verification_status": "verified",
+      "checked_at": "2026-05-21"
+    },
+    {
+      "id": "murphy-unesco-city-of-media-arts-nomination",
+      "claim": "Murphy Nile official bio states he was nominated for the UNESCO City of Media Arts Award at IDIF Film Festival in Karlsruhe.",
+      "related_object_id": "murphy-nile",
+      "source_type": "official_site",
+      "source_url_or_path": "https://www.murphynile.com/bio",
+      "verification_status": "verified",
+      "checked_at": "2026-05-21"
+    },
+    {
+      "id": "collective-overview-2026-local-source",
+      "claim": "The 2026 Collective overview image contains role and bio source text for the initial people records.",
+      "related_object_id": "virtura-collective",
+      "source_type": "local_archive",
+      "source_url_or_path": "docs/site-upgrade/master-mode-demos/COLLECTIVE_OVERVIEW_2026_OCR_DRAFT.md",
+      "verification_status": "reference_only",
+      "checked_at": "2026-05-21"
+    }
+  ]
+}

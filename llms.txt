@@ -1,0 +1,33 @@
+# VIRTURA SpacePort
+
+VIRTURA SpacePort is the public archive, station index, and machine-readable layer for the VIRTURA network.
+
+Primary human entry:
+https://spaceport.virtura.space/
+
+Public JSON:
+https://spaceport.virtura.space/api/manifest.json
+https://spaceport.virtura.space/api/works.json
+https://spaceport.virtura.space/api/entities.json
+https://spaceport.virtura.space/api/articles.json
+https://spaceport.virtura.space/api/stations.json
+https://spaceport.virtura.space/api/media.json
+https://spaceport.virtura.space/api/authority.json
+
+Related public surfaces:
+https://ewanqian.site/ - Ewan Qian personal portfolio
+https://virtura.space/ - VIRTURA Collective frontstage
+https://newsroom.virtura.space/ - essays, reviews, recaps, and media material
+
+Authorship labels:
+- personal_work
+- team_work
+- external_collaboration
+- member_independent_work
+- artist_context
+
+Content boundary:
+Kashiwa / TITAN is external collaboration context.
+Murphy Nile and Sihui Xu independent works are artist-context entries until formal work pages are published.
+Balloon is canonical spelling.
+

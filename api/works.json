@@ -1,0 +1,345 @@
+{
+  "schema": "virtura-public-graph-v3",
+  "updated_at": "2026-05-21",
+  "collection": "works",
+  "count": 6,
+  "items": [
+    {
+      "id": "drop-flow",
+      "title": "Drop Flow / 滴流",
+      "year": "2025",
+      "status": "published",
+      "authorship_type": "team_work",
+      "format": [
+        "spatial image",
+        "performance",
+        "audiovisual series"
+      ],
+      "technology": [
+        "real-time visual system",
+        "projection",
+        "generative visuals"
+      ],
+      "summary": "Long-term spatial image and audiovisual series around real-time interaction, spatial transition, and digital-natural narration.",
+      "people": [
+        "ewan-qian",
+        "xu-hao",
+        "sihui-xu",
+        "xiaoyao-ma",
+        "minxuan-huang",
+        "jiaming-wang",
+        "qin-wei"
+      ],
+      "references": [
+        {
+          "type": "image",
+          "label": "Drop Flow Hangzhou Biennale scene",
+          "source": "portfolio/assets/home/featured-dropflow-hangzhou-biennale-scene.jpg",
+          "status": "verified"
+        },
+        {
+          "type": "repo",
+          "label": "Drop Flow series page",
+          "source": "portfolio/visual-arts/drop-flow-series/README.md",
+          "status": "verified"
+        }
+      ],
+      "credits": [
+        {
+          "role": "spatial visual system",
+          "name": "Ewan Qian"
+        }
+      ],
+      "links": {
+        "portfolio": "portfolio/visual-arts/drop-flow-series/README.md",
+        "collective": "VIRTURA-Collective/repo/works/drop-flow/README.md",
+        "spaceport": "VIRTURA-SpacePort/organization/works/drop-flow-series/README.md",
+        "newsroom": "VIRTURA-Newsroom/creator-shares/ewan-qian-perceptual-migration.md",
+        "media_kit": "VIRTURA-Newsroom/media-kit/drop-flow.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "portfolio/visual-arts/drop-flow-series/README.md"
+      ],
+      "rights_note": "Media download requires approved caption, credit, and rights clearance."
+    },
+    {
+      "id": "timer",
+      "title": "TIMER / 控时者",
+      "year": "2025",
+      "status": "published",
+      "authorship_type": "team_work",
+      "format": [
+        "audiovisual series",
+        "live visual",
+        "time-based image"
+      ],
+      "technology": [
+        "audio-reactive visuals",
+        "real-time image system"
+      ],
+      "summary": "Audiovisual series centered on temporal structure, rhythm, frequency, and the internal relation between sound and image.",
+      "people": [
+        "ewan-qian",
+        "xu-hao",
+        "sihui-xu"
+      ],
+      "references": [
+        {
+          "type": "image",
+          "label": "TIMER featured image",
+          "source": "portfolio/assets/home/featured-timer-main.jpg",
+          "status": "verified"
+        },
+        {
+          "type": "repo",
+          "label": "TIMER series page",
+          "source": "portfolio/visual-arts/timer-series/README.md",
+          "status": "verified"
+        }
+      ],
+      "credits": [
+        {
+          "role": "spatial visual system",
+          "name": "Ewan Qian"
+        },
+        {
+          "role": "sound context",
+          "name": "Xu Hao",
+          "note": "Credit detail needs project-level confirmation before media-kit release."
+        }
+      ],
+      "links": {
+        "portfolio": "portfolio/visual-arts/timer-series/README.md",
+        "collective": "VIRTURA-Collective/repo/works/timer/README.md",
+        "spaceport": "VIRTURA-SpacePort/organization/works/timer.md",
+        "newsroom": "VIRTURA-Newsroom/art-review/articles/system_ewanqian_perceptual_migration_review.md",
+        "media_kit": "VIRTURA-Newsroom/media-kit/timer.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "portfolio/visual-arts/timer-series/README.md"
+      ],
+      "rights_note": "Media download requires approved caption, credit, and rights clearance."
+    },
+    {
+      "id": "observation-and-symbiosis",
+      "title": "Observation and Symbiosis / 观察与共生",
+      "year": "2025",
+      "status": "published",
+      "authorship_type": "collaboration",
+      "format": [
+        "installation",
+        "spatial perception",
+        "environment"
+      ],
+      "technology": [
+        "3D visual system",
+        "spatial media"
+      ],
+      "summary": "Spatial and perceptual work line around observation, environment, body, and symbiotic relation.",
+      "people": [
+        "xuan-shen",
+        "ewan-qian"
+      ],
+      "references": [
+        {
+          "type": "image",
+          "label": "Observation and Symbiosis archive image",
+          "source": "portfolio/assets/home/archive-observation-clean.jpg",
+          "status": "verified"
+        },
+        {
+          "type": "repo",
+          "label": "Perceptual environments page",
+          "source": "portfolio/visual-arts/perceptual-environments/README.md",
+          "status": "verified"
+        }
+      ],
+      "credits": [
+        {
+          "role": "artist",
+          "name": "Xuan Shen"
+        },
+        {
+          "role": "spatial visual collaborator",
+          "name": "Ewan Qian"
+        }
+      ],
+      "links": {
+        "portfolio": "portfolio/visual-arts/perceptual-environments/README.md",
+        "collective": "VIRTURA-Collective/repo/works/observation-and-symbiosis/README.md",
+        "spaceport": "VIRTURA-SpacePort/organization/works/观察与共生 Observation and Symbiosis.md",
+        "media_kit": "VIRTURA-Newsroom/media-kit/observation-and-symbiosis.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "portfolio/visual-arts/perceptual-environments/README.md"
+      ],
+      "rights_note": "Media download requires approved caption, credit, and rights clearance."
+    },
+    {
+      "id": "kashiwa-titan",
+      "title": "TITAN: A Holographic Sound Forest of Mechanical Photosynthesis",
+      "year": "2025",
+      "status": "published",
+      "authorship_type": "external_collaboration",
+      "format": [
+        "audiovisual performance",
+        "stage visual",
+        "external collaboration"
+      ],
+      "technology": [
+        "holographic gauze",
+        "naked-eye 3D",
+        "projection",
+        "live visual system"
+      ],
+      "summary": "Audiovisual performance with KASHIWA Daisuke and Yuki Murata around fog, light, white spatial depth, ambient transition, and perceptual movement.",
+      "people": [
+        "ewan-qian",
+        "kashiwa-daisuke",
+        "yuki-murata"
+      ],
+      "references": [
+        {
+          "type": "image",
+          "label": "Kashiwa TITAN lead image",
+          "source": "portfolio/assets/home/featured-kashiwa-bolive-shenzhen.jpeg",
+          "status": "verified"
+        },
+        {
+          "type": "repo",
+          "label": "Kashiwa TITAN portfolio project",
+          "source": "portfolio/projects/kashiwa-titan-visual-2025.md",
+          "status": "verified"
+        }
+      ],
+      "credits": [
+        {
+          "role": "visual system",
+          "name": "Ewan Qian"
+        },
+        {
+          "role": "artist",
+          "name": "KASHIWA Daisuke"
+        },
+        {
+          "role": "artist",
+          "name": "Yuki Murata"
+        }
+      ],
+      "links": {
+        "portfolio": "portfolio/projects/kashiwa-titan-visual-2025.md",
+        "external": "https://mp.weixin.qq.com/s/yNjtixkMIF5zXrl03DyU1g"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "portfolio/projects/kashiwa-titan-visual-2025.md"
+      ],
+      "rights_note": "External collaboration. Collective team ownership: false."
+    },
+    {
+      "id": "control-uptime-protocol",
+      "title": "CONTROL: The Uptime Protocol",
+      "year": "2025",
+      "status": "prototype",
+      "authorship_type": "member_independent_work",
+      "format": [
+        "machinima",
+        "real-time 3D",
+        "cross-media work"
+      ],
+      "technology": [
+        "Unreal Engine",
+        "machinima",
+        "game-like perception"
+      ],
+      "summary": "Unreal Engine machinima work by Murphy Nile exploring control as internalized structure through system logic and game-like perception.",
+      "people": [
+        "murphy-nile"
+      ],
+      "references": [
+        {
+          "type": "repo",
+          "label": "CONTROL source notes",
+          "source": "VIRTURA-Collective/repo/works/control-uptime-protocol/source-notes.md",
+          "status": "reference_only"
+        },
+        {
+          "type": "deck",
+          "label": "Collective overview deck reference",
+          "source": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=7",
+          "status": "reference_only"
+        }
+      ],
+      "credits": [
+        {
+          "role": "artist",
+          "name": "Murphy Nile"
+        }
+      ],
+      "links": {
+        "collective": "VIRTURA-Collective/repo/works/control-uptime-protocol/README.md",
+        "media_kit": "VIRTURA-Newsroom/media-kit/control-uptime-protocol.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "VIRTURA-Collective/repo/works/control-uptime-protocol/source-notes.md",
+        "VIRTURA-Collective/repo/works/control-uptime-protocol/credits.md"
+      ],
+      "rights_note": "Member independent work. Public media use requires artist approval."
+    },
+    {
+      "id": "desire-machining-center",
+      "title": "Desire Machining Center / 欲望加工中心",
+      "year": "2025",
+      "status": "prototype",
+      "authorship_type": "member_independent_work",
+      "format": [
+        "interactive installation",
+        "spatial visual",
+        "feedback system"
+      ],
+      "technology": [
+        "interaction design",
+        "3D visual system",
+        "feedback loop"
+      ],
+      "summary": "Interactive installation by Sihui Xu about low-desire culture, virtual compensation, and feedback loops of choice, projection, and value construction.",
+      "people": [
+        "sihui-xu"
+      ],
+      "references": [
+        {
+          "type": "repo",
+          "label": "Desire Machining Center source notes",
+          "source": "VIRTURA-Collective/repo/works/desire-machining-center/source-notes.md",
+          "status": "reference_only"
+        },
+        {
+          "type": "deck",
+          "label": "Collective overview deck reference",
+          "source": "VIRTURA_Collective_Overview_2026 baked2.pdf#page=8",
+          "status": "reference_only"
+        }
+      ],
+      "credits": [
+        {
+          "role": "artist",
+          "name": "Sihui Xu"
+        }
+      ],
+      "links": {
+        "collective": "VIRTURA-Collective/repo/works/desire-machining-center/README.md",
+        "media_kit": "VIRTURA-Newsroom/media-kit/desire-machining-center.md"
+      },
+      "archive_refs": [
+        "VIRTURA-SpacePort/docs/public-graph/public-graph-v2.json",
+        "VIRTURA-Collective/repo/works/desire-machining-center/source-notes.md",
+        "VIRTURA-Collective/repo/works/desire-machining-center/credits.md"
+      ],
+      "rights_note": "Member independent work. Public media use requires artist approval."
+    }
+  ]
+}
