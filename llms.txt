@@ -3,21 +3,21 @@
 VIRTURA SpacePort is the public archive, station index, and machine-readable layer for the VIRTURA network.
 
 Primary human entry:
-https://spaceport.virtura.space/
+https://ewanqian.github.io/VIRTURA-SpacePort/
 
 Public JSON:
-https://spaceport.virtura.space/api/manifest.json
-https://spaceport.virtura.space/api/works.json
-https://spaceport.virtura.space/api/entities.json
-https://spaceport.virtura.space/api/articles.json
-https://spaceport.virtura.space/api/stations.json
-https://spaceport.virtura.space/api/media.json
-https://spaceport.virtura.space/api/authority.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/manifest.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/works.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/entities.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/articles.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/stations.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/media.json
+https://ewanqian.github.io/VIRTURA-SpacePort/api/authority.json
 
 Related public surfaces:
-https://ewanqian.site/ - Ewan Qian personal portfolio
-https://virtura.space/ - VIRTURA Collective frontstage
-https://newsroom.virtura.space/ - essays, reviews, recaps, and media material
+https://ewanqian.github.io/portfolio/ - Ewan Qian personal portfolio
+https://ewanqian.github.io/VIRTURA-Collective/ - VIRTURA Collective frontstage
+https://ewanqian.github.io/VIRTURA-Newsroom/ - essays, reviews, recaps, and media material
 
 Authorship labels:
 - personal_work
@@ -28,6 +28,5 @@ Authorship labels:
 
 Content boundary:
 Kashiwa / TITAN is external collaboration context.
-Murphy Nile and Sihui Xu independent works are artist-context entries until formal work pages are published.
+Murphy Nile and Sihui Xu independent works remain artist-context entries with formal public work pages.
 Balloon is canonical spelling.
-

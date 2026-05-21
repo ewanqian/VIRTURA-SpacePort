@@ -5,48 +5,136 @@
   "count": 4,
   "items": [
     {
+      "object_id": "drop-flow-hangzhou-scene",
+      "view_type": "media_asset_object",
+      "authorship_type": "media_context",
+      "related_views": [
+        {
+          "view_type": "related_object",
+          "object_id": "drop-flow"
+        }
+      ],
       "id": "drop-flow-hangzhou-scene",
       "title": "Drop Flow Hangzhou Biennale Scene",
       "media_type": "image",
       "related_object_id": "drop-flow",
       "approved_for_press": false,
+      "approval_contact": "qianewan@gmail.com",
       "caption": "Drop Flow performance scene, Hangzhou.",
-      "credit": "Credit line to be confirmed before public download.",
-      "rights_note": "Draft media entry. Rights must be cleared before public download.",
-      "source_path": "portfolio/assets/home/featured-dropflow-hangzhou-biennale-scene.jpg"
+      "credit_line": "VIRTURA / Ewan Qian",
+      "credit_status": "public_credit_line_available",
+      "rights_status": "permission_required",
+      "approved_uses": [
+        "press inquiry",
+        "project reference",
+        "education context"
+      ],
+      "prohibited_uses": [
+        "commercial reuse without permission",
+        "image alteration without permission",
+        "standalone download pack without credit"
+      ],
+      "rights_note": "Publication requires permission through VIRTURA contact.",
+      "archive_ref": "portfolio/assets/home/featured-dropflow-hangzhou-biennale-scene.jpg"
     },
     {
+      "object_id": "timer-featured-main",
+      "view_type": "media_asset_object",
+      "authorship_type": "media_context",
+      "related_views": [
+        {
+          "view_type": "related_object",
+          "object_id": "timer"
+        }
+      ],
       "id": "timer-featured-main",
       "title": "TIMER Featured Image",
       "media_type": "image",
       "related_object_id": "timer",
       "approved_for_press": false,
+      "approval_contact": "qianewan@gmail.com",
       "caption": "TIMER visual archive image.",
-      "credit": "Credit line to be confirmed before public download.",
-      "rights_note": "Draft media entry. Rights must be cleared before public download.",
-      "source_path": "portfolio/assets/home/featured-timer-main.jpg"
+      "credit_line": "VIRTURA / Ewan Qian",
+      "credit_status": "public_credit_line_available",
+      "rights_status": "permission_required",
+      "approved_uses": [
+        "press inquiry",
+        "project reference",
+        "education context"
+      ],
+      "prohibited_uses": [
+        "commercial reuse without permission",
+        "image alteration without permission",
+        "standalone download pack without credit"
+      ],
+      "rights_note": "Publication requires permission through VIRTURA contact.",
+      "archive_ref": "portfolio/assets/home/featured-timer-main.jpg"
     },
     {
+      "object_id": "murphy-nile-portrait",
+      "view_type": "media_asset_object",
+      "authorship_type": "media_context",
+      "related_views": [
+        {
+          "view_type": "related_object",
+          "object_id": "murphy-nile"
+        }
+      ],
       "id": "murphy-nile-portrait",
       "title": "Murphy Nile Portrait",
       "media_type": "image",
       "related_object_id": "murphy-nile",
       "approved_for_press": false,
+      "approval_contact": "qianewan@gmail.com",
       "caption": "Murphy Nile portrait.",
-      "credit": "Credit line to be confirmed before public download.",
-      "rights_note": "Local portrait source. Confirm usage rights before publication.",
-      "source_path": "docs/site-upgrade/master-mode-demos/assets/murphy-nile-preview.jpg"
+      "credit_line": "Murphy Nile / VIRTURA context",
+      "credit_status": "permission_required",
+      "rights_status": "permission_required",
+      "approved_uses": [
+        "press inquiry",
+        "project reference",
+        "education context"
+      ],
+      "prohibited_uses": [
+        "commercial reuse without permission",
+        "image alteration without permission",
+        "standalone download pack without credit"
+      ],
+      "rights_note": "Publication requires permission through VIRTURA contact.",
+      "archive_ref": "docs/site-upgrade/master-mode-demos/assets/murphy-nile-preview.jpg"
     },
     {
+      "object_id": "sihui-xu-portrait",
+      "view_type": "media_asset_object",
+      "authorship_type": "media_context",
+      "related_views": [
+        {
+          "view_type": "related_object",
+          "object_id": "sihui-xu"
+        }
+      ],
       "id": "sihui-xu-portrait",
       "title": "Sihui Xu Portrait",
       "media_type": "image",
       "related_object_id": "sihui-xu",
       "approved_for_press": false,
+      "approval_contact": "qianewan@gmail.com",
       "caption": "Sihui Xu portrait.",
-      "credit": "Credit line to be confirmed before public download.",
-      "rights_note": "Local portrait source. Confirm usage rights before publication.",
-      "source_path": "docs/site-upgrade/master-mode-demos/assets/sihui-xu-preview.jpg"
+      "credit_line": "Sihui Xu / VIRTURA context",
+      "credit_status": "permission_required",
+      "rights_status": "permission_required",
+      "approved_uses": [
+        "press inquiry",
+        "project reference",
+        "education context"
+      ],
+      "prohibited_uses": [
+        "commercial reuse without permission",
+        "image alteration without permission",
+        "standalone download pack without credit"
+      ],
+      "rights_note": "Publication requires permission through VIRTURA contact.",
+      "archive_ref": "docs/site-upgrade/master-mode-demos/assets/sihui-xu-preview.jpg"
     }
   ]
 }

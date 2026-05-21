@@ -5,6 +5,23 @@
   "count": 8,
   "items": [
     {
+      "object_id": "virtura-collective",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/README.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/README.md"
+        },
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/README.md"
+        }
+      ],
       "id": "virtura-collective",
       "name": "VIRTURA Collective",
       "entity_type": "collective",
@@ -22,6 +39,15 @@
       ]
     },
     {
+      "object_id": "system",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/README.md"
+        }
+      ],
       "id": "system",
       "name": "SYSTEM",
       "entity_type": "project_group",
@@ -36,6 +62,19 @@
       ]
     },
     {
+      "object_id": "ewan-qian",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/README.md"
+        },
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/artists/ewan-qian.md"
+        }
+      ],
       "id": "ewan-qian",
       "name": "Ewan Qian / 钱誉文",
       "entity_type": "person",
@@ -52,6 +91,15 @@
       ]
     },
     {
+      "object_id": "xuan-shen",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/artists/xuan-shen.md"
+        }
+      ],
       "id": "xuan-shen",
       "name": "Shen Xuan / 沈轩",
       "entity_type": "person",
@@ -67,6 +115,19 @@
       ]
     },
     {
+      "object_id": "murphy-nile",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/artists/murphy-nile.md"
+        },
+        {
+          "view_type": "external",
+          "href": "https://www.murphynile.com/bio"
+        }
+      ],
       "id": "murphy-nile",
       "name": "Murphy Nile / 周子凌",
       "entity_type": "person",
@@ -91,6 +152,15 @@
       ]
     },
     {
+      "object_id": "sihui-xu",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/artists/sihui-xu.md"
+        }
+      ],
       "id": "sihui-xu",
       "name": "Sihui Xu / 许思慧",
       "entity_type": "person",
@@ -106,6 +176,15 @@
       ]
     },
     {
+      "object_id": "xu-hao",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/artists/xu-hao.md"
+        }
+      ],
       "id": "xu-hao",
       "name": "Xu Hao / 徐昊",
       "entity_type": "person",
@@ -121,6 +200,15 @@
       ]
     },
     {
+      "object_id": "wu-yitong",
+      "view_type": "spaceport_entity_object",
+      "authorship_type": "entity_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/creator-shares/wu_yitong_system_perturbation.md"
+        }
+      ],
       "id": "wu-yitong",
       "name": "WU-YITONG / 無",
       "entity_type": "person",

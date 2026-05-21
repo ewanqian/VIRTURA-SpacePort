@@ -46,10 +46,6 @@ assets/
     stage/
     social/
     docs/
-  kashiwa-shenzhen/
-    stage/
-    hologram/
-    social/
   timer/
     stage/
     poster/
@@ -78,7 +74,6 @@ YYYYMMDD_项目名_地点_类型_序号.ext
 例如：
 
 ```text
-20251021_kashiwa-shenzhen_stage_wide_01.jpg
 20251019_dropflow-hangzhou_stage_vr_01.jpg
 20251108_dropflow-luminous_poster_01.jpg
 20250514_dropflow-ufo_social_wechat_01.jpg
@@ -167,8 +162,11 @@ YYYYMMDD_项目名_地点_类型_序号.ext
 - `drop-flow-hangzhou/stage/`
 - `drop-flow-hangzhou/rehearsal/`
 - `drop-flow-luminous/docs/`
-- `kashiwa-shenzhen/stage/`
 - `timer/stage/`
+
+## 外部合作素材边界
+
+Kashiwa / TITAN 属于外部合作项目，不放进 Drop Flow 系列素材树。相关文件保留在对应 portfolio 项目或独立外部合作档案中。
 
 你现在可以直接把图片先扔进 `_inbox/`，或者按项目扔进上面这些目录。
 

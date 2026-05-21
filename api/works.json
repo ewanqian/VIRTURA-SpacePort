@@ -5,11 +5,35 @@
   "count": 6,
   "items": [
     {
+      "object_id": "drop-flow",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "team_work",
+      "related_views": [
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/visual-arts/drop-flow-series/README.md"
+        },
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/works/drop-flow/README.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/organization/works/drop-flow-series/README.md"
+        },
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/creator-shares/ewan-qian-perceptual-migration.md"
+        },
+        {
+          "view_type": "media_kit",
+          "href": "VIRTURA-Newsroom/media-kit/drop-flow.md"
+        }
+      ],
       "id": "drop-flow",
       "title": "Drop Flow / 滴流",
       "year": "2025",
       "status": "published",
-      "authorship_type": "team_work",
       "format": [
         "spatial image",
         "performance",
@@ -64,11 +88,35 @@
       "rights_note": "Media download requires approved caption, credit, and rights clearance."
     },
     {
+      "object_id": "timer",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "team_work",
+      "related_views": [
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/visual-arts/timer-series/README.md"
+        },
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/works/timer/README.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/organization/works/timer.md"
+        },
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/art-review/articles/system_ewanqian_perceptual_migration_review.md"
+        },
+        {
+          "view_type": "media_kit",
+          "href": "VIRTURA-Newsroom/media-kit/timer.md"
+        }
+      ],
       "id": "timer",
       "title": "TIMER / 控时者",
       "year": "2025",
       "status": "published",
-      "authorship_type": "team_work",
       "format": [
         "audiovisual series",
         "live visual",
@@ -123,11 +171,31 @@
       "rights_note": "Media download requires approved caption, credit, and rights clearance."
     },
     {
+      "object_id": "observation-and-symbiosis",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "collaboration",
+      "related_views": [
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/visual-arts/perceptual-environments/README.md"
+        },
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/works/observation-and-symbiosis/README.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/organization/works/观察与共生 Observation and Symbiosis.md"
+        },
+        {
+          "view_type": "media_kit",
+          "href": "VIRTURA-Newsroom/media-kit/observation-and-symbiosis.md"
+        }
+      ],
       "id": "observation-and-symbiosis",
       "title": "Observation and Symbiosis / 观察与共生",
       "year": "2025",
       "status": "published",
-      "authorship_type": "collaboration",
       "format": [
         "installation",
         "spatial perception",
@@ -179,11 +247,23 @@
       "rights_note": "Media download requires approved caption, credit, and rights clearance."
     },
     {
+      "object_id": "kashiwa-titan",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "external_collaboration",
+      "related_views": [
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/projects/kashiwa-titan-visual-2025.md"
+        },
+        {
+          "view_type": "external",
+          "href": "https://mp.weixin.qq.com/s/yNjtixkMIF5zXrl03DyU1g"
+        }
+      ],
       "id": "kashiwa-titan",
       "title": "TITAN: A Holographic Sound Forest of Mechanical Photosynthesis",
       "year": "2025",
       "status": "published",
-      "authorship_type": "external_collaboration",
       "format": [
         "audiovisual performance",
         "stage visual",
@@ -240,11 +320,23 @@
       "rights_note": "External collaboration. Collective team ownership: false."
     },
     {
+      "object_id": "control-uptime-protocol",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "member_independent_work",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/works/control-uptime-protocol/README.md"
+        },
+        {
+          "view_type": "media_kit",
+          "href": "VIRTURA-Newsroom/media-kit/control-uptime-protocol.md"
+        }
+      ],
       "id": "control-uptime-protocol",
       "title": "CONTROL: The Uptime Protocol",
       "year": "2025",
-      "status": "prototype",
-      "authorship_type": "member_independent_work",
+      "status": "artist_public_context",
       "format": [
         "machinima",
         "real-time 3D",
@@ -291,11 +383,23 @@
       "rights_note": "Member independent work. Public media use requires artist approval."
     },
     {
+      "object_id": "desire-machining-center",
+      "view_type": "spaceport_work_object",
+      "authorship_type": "member_independent_work",
+      "related_views": [
+        {
+          "view_type": "collective",
+          "href": "VIRTURA-Collective/repo/works/desire-machining-center/README.md"
+        },
+        {
+          "view_type": "media_kit",
+          "href": "VIRTURA-Newsroom/media-kit/desire-machining-center.md"
+        }
+      ],
       "id": "desire-machining-center",
       "title": "Desire Machining Center / 欲望加工中心",
-      "year": "2025",
-      "status": "prototype",
-      "authorship_type": "member_independent_work",
+      "year": "2022",
+      "status": "artist_public_context",
       "format": [
         "interactive installation",
         "spatial visual",

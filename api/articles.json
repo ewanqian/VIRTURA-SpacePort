@@ -5,6 +5,19 @@
   "count": 4,
   "items": [
     {
+      "object_id": "from-archive-library-to-cultural-gene-node-network",
+      "view_type": "newsroom_article_object",
+      "authorship_type": "editorial_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/essays/from-archive-library-to-cultural-gene-node-network.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/docs/public-graph/README.md"
+        }
+      ],
       "id": "from-archive-library-to-cultural-gene-node-network",
       "title": "从资料档案库到文化基因节点网络",
       "date": "2026-04-11",
@@ -30,6 +43,19 @@
       ]
     },
     {
+      "object_id": "skill-based-workflow-virtura-2026",
+      "view_type": "newsroom_article_object",
+      "authorship_type": "editorial_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/essays/skill-based-workflow-virtura-2026.md"
+        },
+        {
+          "view_type": "spaceport",
+          "href": "VIRTURA-SpacePort/stations/README.md"
+        }
+      ],
       "id": "skill-based-workflow-virtura-2026",
       "title": "技能强，不是因为它像 AI 术语，而是因为它开始替我们稳定真正的工作",
       "date": "2026-04-02",
@@ -52,6 +78,15 @@
       ]
     },
     {
+      "object_id": "virtura-article-curatorial-v4",
+      "view_type": "newsroom_article_object",
+      "authorship_type": "editorial_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/art-review/articles/virtura_article_curatorial_v4.md"
+        }
+      ],
       "id": "virtura-article-curatorial-v4",
       "title": "把界面熬成感知，把噪声烹成现实",
       "date": "2026-03-20",
@@ -79,6 +114,19 @@
       ]
     },
     {
+      "object_id": "system-ewanqian-perceptual-migration-review",
+      "view_type": "newsroom_article_object",
+      "authorship_type": "editorial_context",
+      "related_views": [
+        {
+          "view_type": "newsroom",
+          "href": "VIRTURA-Newsroom/art-review/articles/system_ewanqian_perceptual_migration_review.md"
+        },
+        {
+          "view_type": "portfolio",
+          "href": "portfolio/README.md"
+        }
+      ],
       "id": "system-ewanqian-perceptual-migration-review",
       "title": "从时间材料到感知迁移：SYSTEM 评钱誉文的实践线收束",
       "date": "2026-03-22",
