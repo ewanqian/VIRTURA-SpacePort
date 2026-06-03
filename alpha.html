@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="zh-CN" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VIRTURA SpacePort Light Frontstage</title>
+    <link rel="canonical" href="https://spaceport.virtura.space/alpha.html" />
+    <meta name="theme-color" content="#f7f8fa" />
+    <meta
+      name="description"
+      content="VIRTURA SpacePort 的 light spatial frontstage。以端口、现场信号、访客路径与公共档案组织创作、研究、展映和连接。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="VIRTURA SpacePort Light Frontstage" />
+    <meta
+      property="og:description"
+      content="一个面向创作、研究、展映与连接的空间服务前台。"
+    />
+    <meta property="og:url" content="https://spaceport.virtura.space/alpha.html" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./assets/spaceport-alpha.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#ports">跳到端口</a>
+    <div class="alpha-shell" data-frontstage-root data-lenis-ready="true" data-gsap-scope="spaceport-frontstage">
+      <header class="top-orb" aria-label="SpacePort primary navigation">
+        <a class="brand-lockup" href="./alpha.html" aria-label="VIRTURA SpacePort">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-name">
+            <strong>VIRTURA</strong>
+            <span>SPACEPORT</span>
+          </span>
+        </a>
+        <nav class="main-tabs" aria-label="主要区域">
+          <a href="#ports" data-nav-item>端口</a>
+          <a href="#labs" data-nav-item>实验室</a>
+          <a href="#network" data-nav-item>网络</a>
+          <a href="#archives" data-nav-item>档案</a>
+          <a href="#about" data-nav-item>关于</a>
+        </nav>
+        <div class="nav-tools" aria-label="工具">
+          <a class="tool-button" href="./api/manifest.json" aria-label="搜索公共清单">⌕</a>
+          <a class="tool-button" href="./signal-log/" aria-label="查看信号">◌</a>
+          <a class="tool-button tool-button--avatar" href="./pass/" aria-label="进入 pass">A</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero-window" id="about" data-motion-stage="arrival">
+          <div class="hero-copy">
+            <p class="section-kicker">SPACEPORT / 空间前台</p>
+            <h1>SpacePort 是<br />空间界面。</h1>
+            <p class="hero-lede">
+              它把 VIRTURA 的创作、研究、展映、档案和公共连接整理成可以进入的 Station Network。
+              第一次来的人获得方向感，熟悉的人直接打开需要的服务。
+            </p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#ports">探索端口 <span aria-hidden="true">→</span></a>
+              <a class="round-action" href="#paths" aria-label="查看访客路径">路径</a>
+            </div>
+            <div class="status-row" aria-label="系统状态">
+              <span class="status-dot"></span>
+              <span>系统在线</span>
+              <span>5 个 Station 可进入</span>
+            </div>
+          </div>
+
+          <div class="hero-spatial-map" aria-label="SpacePort relationship map">
+            <div class="map-core"></div>
+            <span class="map-label map-label--research">研究</span>
+            <span class="map-label map-label--creation">创作</span>
+            <span class="map-label map-label--archive">档案</span>
+            <span class="map-label map-label--exchange">连接</span>
+          </div>
+
+          <aside class="arrival-card" aria-label="访客进入顺序">
+            <h2>你进入后</h2>
+            <ol>
+              <li><span>抵达</span><small>建立方向</small></li>
+              <li><span>选择</span><small>打开端口</small></li>
+              <li><span>理解</span><small>读取上下文</small></li>
+              <li><span>合作</span><small>留下连接</small></li>
+            </ol>
+          </aside>
+        </section>
+
+        <section class="panel-section" id="ports" data-motion-stage="ports">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">PORTS / 应用入口</p>
+              <h2>五个 Station 像应用一样打开。</h2>
+            </div>
+            <a class="quiet-link" href="./stations/">全部 Stations <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="ports-grid" aria-label="Featured ports">
+            <a class="port-card port-card--tea" href="./stations/teahouse-forest-pavilion/" data-port-card>
+              <span class="port-visual">
+                <span class="tea-room" aria-hidden="true"></span>
+              </span>
+              <span class="app-badge">茶</span>
+              <h3>Tea House in the Woods</h3>
+              <p>安静对话、茶会、环境记录与慢速连接。</p>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="port-card port-card--balloon" href="./stations/balloon-live-space/" data-port-card>
+              <span class="port-visual">
+                <span class="balloon-form" aria-hidden="true"></span>
+              </span>
+              <span class="app-badge">空</span>
+              <h3>Space Balloon</h3>
+              <p>现场实践、信号飞行、活动路径与视角上升。</p>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="port-card port-card--mova" href="./stations/mova/" data-port-card>
+              <span class="port-visual">
+                <span class="white-gallery" aria-hidden="true"></span>
+              </span>
+              <span class="app-badge">馆</span>
+              <h3>MOVA</h3>
+              <p>数字展览、艺术家、展品档案与驻留计划。</p>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="port-card port-card--lab" href="./stations/research-laboratory/" data-port-card>
+              <span class="port-visual">
+                <span class="radar-plate" aria-hidden="true"></span>
+              </span>
+              <span class="app-badge">研</span>
+              <h3>Research Lab</h3>
+              <p>观察、分析、实验、系统笔记与方法沉淀。</p>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </a>
+            <a class="port-card port-card--network" href="./knowledge-network/" data-port-card>
+              <span class="port-visual">
+                <span class="network-web" aria-hidden="true"></span>
+              </span>
+              <span class="app-badge">网</span>
+              <h3>Knowledge Network</h3>
+              <p>学习路径、知识节点、参考资料与共同理解。</p>
+              <span class="card-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="happening-window" id="labs" data-motion-stage="signals">
+          <div class="section-heading section-heading--compact">
+            <div>
+              <p class="section-kicker">WHAT'S HAPPENING / 正在发生</p>
+              <h2>现场、展览、研究和网络同步到同一个前台。</h2>
+            </div>
+            <a class="quiet-link" href="./signal-log/">查看信号 <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="event-strip" aria-label="Live events">
+            <article class="event-card">
+              <span class="event-thumb event-thumb--tea"></span>
+              <div>
+                <p>森林茶屋</p>
+                <h3>Evening Tea & Reflection</h3>
+                <span>今日 20:30 · 开放席位</span>
+              </div>
+              <strong>Live</strong>
+            </article>
+            <article class="event-card">
+              <span class="event-thumb event-thumb--mova"></span>
+              <div>
+                <p>MOVA</p>
+                <h3>Light Forms Exhibition</h3>
+                <span>展期进行中 · 展品索引可读</span>
+              </div>
+              <strong>New</strong>
+            </article>
+            <article class="event-card">
+              <span class="event-thumb event-thumb--lab"></span>
+              <div>
+                <p>Research Lab</p>
+                <h3>Signal Analysis Briefing</h3>
+                <span>每周更新 · 方法笔记</span>
+              </div>
+              <strong>Update</strong>
+            </article>
+            <article class="event-card">
+              <span class="event-thumb event-thumb--network"></span>
+              <div>
+                <p>Knowledge Network</p>
+                <h3>Network Sync</h3>
+                <span>学习路径 · 共同索引</span>
+              </div>
+              <strong>Live</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="signal-console" data-motion-stage="pulse" aria-label="Live signals">
+          <div class="section-heading section-heading--compact">
+            <div>
+              <p class="section-kicker">LIVE SIGNALS / 实时状态</p>
+              <h2>SpacePort 的公共活动在这里变成可扫读的信号。</h2>
+            </div>
+            <a class="quiet-link" href="./api/releases.json">公共数据 <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="signal-grid">
+            <article class="signal-pill">
+              <span class="signal-avatar signal-avatar--tea"></span>
+              <div><b>Tea House</b><small>28 人关注 · 安静开放</small></div>
+              <span class="spark spark--green"></span>
+            </article>
+            <article class="signal-pill">
+              <span class="signal-avatar signal-avatar--balloon"></span>
+              <div><b>Space Balloon</b><small>76 个 session · 上升中</small></div>
+              <span class="spark spark--blue"></span>
+            </article>
+            <article class="signal-pill">
+              <span class="signal-avatar signal-avatar--mova"></span>
+              <div><b>MOVA</b><small>342 次访问 · 展览在线</small></div>
+              <span class="spark"></span>
+            </article>
+            <article class="signal-pill">
+              <span class="signal-avatar signal-avatar--lab"></span>
+              <div><b>Research Lab</b><small>5 个活跃信号 · 监测中</small></div>
+              <span class="spark spark--dark"></span>
+            </article>
+            <article class="signal-pill">
+              <span class="signal-avatar signal-avatar--network"></span>
+              <div><b>Knowledge Network</b><small>276 个节点 · 同步中</small></div>
+              <span class="spark spark--blue"></span>
+            </article>
+          </div>
+        </section>
+
+        <section class="dual-window" id="archives" data-motion-stage="archive">
+          <article class="info-window">
+            <p class="section-kicker">ARCHIVES / 档案</p>
+            <h2>档案不是文件夹，是可以回到现场的上下文。</h2>
+            <p>
+              SpacePort 把作品版本、活动记录、知识节点和发布物件放入同一套公共图谱。
+              访客不需要理解仓库结构，也能找到真实项目和可继续合作的位置。
+            </p>
+            <div class="mini-row">
+              <a href="./archive/">时间线 <span>→</span></a>
+              <a href="./supply-dock/">物件舱 <span>→</span></a>
+              <a href="./connection-nodes/">连接节点 <span>→</span></a>
+            </div>
+          </article>
+          <article class="relationship-window" id="network">
+            <p class="section-kicker">NETWORK / 关系</p>
+            <h2>端口之间保持轻量连接。</h2>
+            <div class="relationship-map" aria-label="Station relationship map">
+              <span class="node node--center">SP</span>
+              <span class="node node--tea">茶屋</span>
+              <span class="node node--mova">MOVA</span>
+              <span class="node node--lab">研究</span>
+              <span class="node node--balloon">气球</span>
+              <span class="node node--net">网络</span>
+            </div>
+          </article>
+        </section>
+
+        <section class="paths-window" id="paths" data-motion-stage="paths">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">SERVICE PATHS / 访客路径</p>
+              <h2>同一个首页，对不同来访者给出不同的第一步。</h2>
+            </div>
+          </div>
+          <div class="path-grid">
+            <article class="path-card">
+              <span>01</span>
+              <h3>合作方</h3>
+              <p>先进入端口总览，再看活动、档案和可协作的公开资料。</p>
+            </article>
+            <article class="path-card">
+              <span>02</span>
+              <h3>艺术家</h3>
+              <p>从 MOVA、Tea House 与 Balloon 进入作品、驻留和现场实践。</p>
+            </article>
+            <article class="path-card">
+              <span>03</span>
+              <h3>研究者</h3>
+              <p>从 Research Lab 与 Knowledge Network 读取方法、引用和系统笔记。</p>
+            </article>
+            <article class="path-card">
+              <span>04</span>
+              <h3>观众</h3>
+              <p>从正在发生的活动进入，再慢慢展开档案、展览与人物关系。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="motion-window" data-motion-stage="motion">
+          <div>
+            <p class="section-kicker">MOTION / 递进逻辑</p>
+            <h2>滚动不是翻页，是空间层级的打开。</h2>
+          </div>
+          <div class="motion-steps" aria-label="Motion system">
+            <article>
+              <span>01</span>
+              <h3>抵达</h3>
+              <p>首屏保持稳定，先让用户知道 SpacePort 是什么。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>聚焦</h3>
+              <p>端口卡轻微抬升，像选择应用窗口，不抢走阅读中心。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>展开</h3>
+              <p>信号、档案和路径按层级浮出，形成导览节奏。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="alpha-footer">
+        <a class="footer-brand" href="./">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>VIRTURA SpacePort</span>
+        </a>
+        <nav aria-label="Footer">
+          <a href="./api/manifest.json">Manifest</a>
+          <a href="./llms.txt">AI Index</a>
+          <a href="https://virtura.space/">Collective</a>
+          <a href="https://newsroom.virtura.space/">Newsroom</a>
+        </nav>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/spaceport-alpha.js"></script>
+  </body>
+</html>

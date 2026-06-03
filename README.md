@@ -1,20 +1,25 @@
 # VIRTURA-SpacePort
 
-VIRTURA-SpacePort 是 VIRTURA 的公共导览前台。
+VIRTURA-SpacePort 是 VIRTURA 的公共导览前台、主题发布终端与机器可读档案层。
 
 你可以把它理解成一个会被反复访问的数字前厅：第一次来的人可以在这里建立方向感，已经认识我们的朋友也可以回来找作品档案、知识网络、沙龙活动和公开资料。
 
-从作品档案到知识网络，再到沙龙与公开发布，这里的内容不是一组彼此分散的文件夹，而是一套仍在持续建设中的数字公共空间。
+从主题发布、作品档案到知识网络，再到沙龙与公开记录，这里的内容不是一组彼此分散的文件夹，而是一套仍在持续建设中的数字公共空间。
 
 ## Public Role / 仓库职责
 
-这个仓库是 VIRTURA 公开系统里的**公共前台**：负责 stations、知识网络、深层项目档案、公开 tracker 与 source-of-truth 文档。团队身份入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担，文章与项目复盘由 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) 承担。
+这个仓库是 VIRTURA 公开系统里的**公共前台**：负责 Connection Nodes、stations、知识网络、深层项目档案、公开 tracker 与 source-of-truth 文档。团队身份入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担，文章与项目复盘由 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) 承担。
 
 Public graph seed 已放在 [docs/public-graph](./docs/public-graph/README.md)，用于防止同一作品、人物、station 和文章在多仓库里重复从零创作。
 
 ## 这里已经可以直接看到什么
 
 - 已整理好的项目档案入口：`Drop Flow`、`TIMER`、`Observation and Symbiosis`
+- 已打开的主题发布入口：[`Connection Network 001: July Live Set`](./connection-nodes/cn001/)
+- 已建立的发布物件区：[`物件舱`](./supply-dock/)、[`Network Pass`](./pass/)、[`信号日志`](./signal-log/)
+- 已加入的 light spatial frontstage：[`alpha.html`](./alpha.html)
+- 已建立的长期 app-frontstage 目标：[`docs/design/spaceport-long-term-goal-2026-06-02.md`](./docs/design/spaceport-long-term-goal-2026-06-02.md)
+- 已开始的数据骨架：`mini-apps`、`guided-paths`、`media-packages`、`material-packs`、`presentation-tours`
 - 已能直接使用的知识网络入口：`learning-paths`、`our-theory`、10 个知识领域导航
 - 已开始形成连续感、可长期订阅的公共活动入口：`lu.ma/VIRTURA`
 - 已经比较清楚的公开层分工：团队入口、前厅、发布仓与工具仓各自做什么
@@ -52,19 +57,17 @@ they are no longer just containers of content, but increasingly carry concrete p
 
 At the same time, skills are being organized as reusable units for submission, curation, archiving, research, exhibition operations, and feedback handling, so that projects no longer need to start from zero every time.
 
-## 如果你想先保持联系
+## 持续关注
 
-很多第一次来到这里的人，并不是立刻要合作或加入，而只是想持续看看这个网络最近在做什么。
-
-对这种情况来说，最自然的入口不是先读完整个仓库，而是先订阅我们的官方活动日历：
+VIRTURA 的公开活动、线上测试、公开分享和适合外部参与的节点，会持续放在官方活动日历：
 
 - [VIRTURA 官方活动日历](https://lu.ma/VIRTURA)
 
-我们会把空间茶话会、线上测试、公开分享和其他适合对外开放的活动优先放到这里。
+SpacePort 负责保存活动背后的站点、档案、知识网络与公共记录。
 
-## 从这里继续看
+## Public Dock / 公开入口
 
-| 如果你更关心 | 建议入口 | 你会先看到什么 |
+| 读者目标 | 入口 | 内容 |
 |---|---|---|
 | 团队是谁、有什么合作网络 | [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) | 团队介绍、艺术家档案、精选作品与合作入口 |
 | 详细项目档案与版本线索 | [organization/works](./organization/works/README.md) | 作品版本、展演记录、项目正文与资料索引 |
@@ -82,12 +85,13 @@ At the same time, skills are being organized as reusable units for submission, c
 - 活动、沙龙与公共交流档案
 - 团队公开层的导航与分工说明
 
-## 这套前台是怎样连起来的
+## Public Frontstage Map
 
-- 如果你先从团队认识 VIRTURA，建议先看 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)，再回来看这里的档案与知识网络
-- 如果你是从作品或项目进入，通常会在 [organization/works](./organization/works/README.md) 停留更久
-- 如果你是研究同好、学习者或想一起建设方法的人，优先进入 [knowledge-network](./knowledge-network/README.md)
-- 如果你更适合从交流和现实场景认识团队，优先进入 [stations](./stations/README.md)
+- 团队身份与合作网络：[VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective)
+- 作品档案与版本线索：[organization/works](./organization/works/README.md)
+- 方法、学习路线与知识结构：[knowledge-network](./knowledge-network/README.md)
+- 沙龙、活动与公共交流：[stations](./stations/README.md)
+- 项目复盘、公开文章与媒体资料：[VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom)
 
 ## 仓库分工
 
@@ -103,13 +107,13 @@ At the same time, skills are being organized as reusable units for submission, c
 | [RepoForge](https://github.com/ewanqian/RepoForge) | 公开治理工具壳 | 对外展示自动化运维能力 |
 | Forge | 私有内部治理仓 | 实际工作流、缓存、自动化配置 |
 
-## 知识网络怎么进入
+## 知识网络入口
 
-如果你第一次进入 `knowledge-network`，不要从头硬读。更好的方式是：
+`knowledge-network` 按目的进入更清楚：
 
-1. 先想清楚你是想做作品、补方法，还是找学习路径
-2. 再去 [knowledge-network](./knowledge-network/README.md) 里按目的选入口
-3. 第一次优先走 [learning-paths](./knowledge-network/learning-paths/README.md) 或 [our-theory](./knowledge-network/our-theory/README.md)
+1. 做作品：进入相关知识领域与案例路径。
+2. 补方法：进入 [our-theory](./knowledge-network/our-theory/README.md)。
+3. 找学习路径：进入 [learning-paths](./knowledge-network/learning-paths/README.md)。
 
 ## 边界
 

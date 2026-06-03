@@ -2,15 +2,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://spaceport.virtura.space/</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/alpha.html</loc>
+    <lastmod>2026-06-03</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/system-log-2026.html</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/connection-nodes/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/connection-nodes/cn001/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/supply-dock/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/pass/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/signal-log/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/archive/</loc>
+    <lastmod>2026-06-02</lastmod>
   </url>
   <url>
     <loc>https://spaceport.virtura.space/llms.txt</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-06-02</lastmod>
   </url>
   <url>
     <loc>https://spaceport.virtura.space/api/manifest.json</loc>
-    <lastmod>2026-05-21</lastmod>
+    <lastmod>2026-06-02</lastmod>
   </url>
   <url>
     <loc>https://spaceport.virtura.space/api/works.json</loc>
@@ -19,5 +51,53 @@
   <url>
     <loc>https://spaceport.virtura.space/api/entities.json</loc>
     <lastmod>2026-05-21</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/releases.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/objects.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/app-frontstage-roadmap.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/mini-apps.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/guided-paths.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/media-packages.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/material-packs.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/presentation-tours.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/collective-artists.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/api/collective-works.json</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/docs/design/</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+  <url>
+    <loc>https://spaceport.virtura.space/docs/app-frontstage/</loc>
+    <lastmod>2026-06-02</lastmod>
   </url>
 </urlset>

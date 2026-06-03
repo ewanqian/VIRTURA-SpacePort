@@ -1,9 +1,13 @@
 # VIRTURA SpacePort
 
-VIRTURA SpacePort is the public archive, station index, and machine-readable layer for the VIRTURA network.
+VIRTURA SpacePort is the auto-guided app frontstage, themed release layer, station index, material-pack surface, and machine-readable layer for the VIRTURA network.
+
+Long-term direction:
+SpacePort is being developed as an auto-guided app frontstage for VIRTURA Creation Network. It should open mini apps, guided paths, release objects, material packs, media packages, and presentation tours instead of behaving like a flat website directory.
 
 Primary human entry:
 https://spaceport.virtura.space/
+https://spaceport.virtura.space/alpha.html
 
 Public JSON:
 https://spaceport.virtura.space/api/manifest.json
@@ -12,7 +16,30 @@ https://spaceport.virtura.space/api/entities.json
 https://spaceport.virtura.space/api/articles.json
 https://spaceport.virtura.space/api/stations.json
 https://spaceport.virtura.space/api/media.json
+https://spaceport.virtura.space/api/releases.json
+https://spaceport.virtura.space/api/objects.json
+https://spaceport.virtura.space/api/app-frontstage-roadmap.json
+https://spaceport.virtura.space/api/mini-apps.json
+https://spaceport.virtura.space/api/guided-paths.json
+https://spaceport.virtura.space/api/media-packages.json
+https://spaceport.virtura.space/api/material-packs.json
+https://spaceport.virtura.space/api/visionpro-content-system.json
+https://spaceport.virtura.space/api/presentation-tours.json
+https://spaceport.virtura.space/api/collective-artists.json
+https://spaceport.virtura.space/api/collective-works.json
 https://spaceport.virtura.space/api/authority.json
+
+Architecture docs:
+https://spaceport.virtura.space/docs/design/
+https://spaceport.virtura.space/docs/app-frontstage/
+
+Current release entries:
+https://spaceport.virtura.space/connection-nodes/
+https://spaceport.virtura.space/connection-nodes/cn001/
+https://spaceport.virtura.space/supply-dock/
+https://spaceport.virtura.space/pass/
+https://spaceport.virtura.space/signal-log/
+https://spaceport.virtura.space/archive/
 
 Related public surfaces:
 https://ewanqian.site/ - Ewan Qian personal portfolio
