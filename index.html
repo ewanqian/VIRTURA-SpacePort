@@ -3,98 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIRTURA SpacePort</title>
+    <meta http-equiv="refresh" content="0; url=./alpha.html" />
+    <title>VIRTURA 空间港</title>
     <link rel="canonical" href="https://spaceport.virtura.space/" />
-    <meta name="theme-color" content="#081015" />
+    <meta name="theme-color" content="#f7f8fa" />
     <meta
       name="description"
-      content="VIRTURA SpacePort 的公众入口。面向数字展映、演出空间、茶屋、公共 salon 与研究基础设施。"
+      content="VIRTURA 空间港的公开入口，连接站点、档案、知识网络和研究基础设施。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="VIRTURA SpacePort" />
-    <meta property="og:description" content="VIRTURA 的自动导览前台、mini app network、素材舱与机器可读档案层。" />
+    <meta property="og:title" content="VIRTURA 空间港" />
+    <meta property="og:description" content="进入 VIRTURA 空间港的公开站点前台。" />
     <meta property="og:url" content="https://spaceport.virtura.space/" />
-    <meta property="og:image" content="https://virtura.space/prototype/assets/works/drop-flow-main-clean.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="VIRTURA SpacePort" />
-    <meta name="twitter:description" content="VIRTURA 的自动导览前台、mini app network、素材舱与机器可读档案层。" />
-    <meta name="twitter:image" content="https://virtura.space/prototype/assets/works/drop-flow-main-clean.jpg" />
-    <link rel="alternate" type="application/json" href="./api/manifest.json" title="VIRTURA SpacePort Public Manifest" />
-    <link rel="alternate" type="text/plain" href="./llms.txt" title="VIRTURA SpacePort AI Reader Index" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./assets/spaceport.css" />
+    <link rel="icon" href="./assets/virtura-mark.png" type="image/png" />
+    <style>
+      :root {
+        color: #111;
+        background: #f7f8fa;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(520px, calc(100vw - 48px));
+        padding: 36px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: 0 24px 80px rgba(20, 24, 32, 0.08);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(32px, 6vw, 54px);
+        font-weight: 500;
+        letter-spacing: 0;
+      }
+
+      p {
+        margin: 0 0 24px;
+        color: #62666d;
+        line-height: 1.7;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        color: #fff;
+        text-decoration: none;
+        background: #111;
+      }
+    </style>
   </head>
   <body>
-    <div class="site-shell">
-      <header class="topbar">
-        <div class="topbar__inner">
-          <a class="brand" href="#/">
-            <span class="brand__eyebrow">VIRTURA</span>
-            <span class="brand__title">SpacePort</span>
-          </a>
-          <nav class="topnav" aria-label="Primary">
-            <a href="#apps">Apps</a>
-            <a href="./alpha.html">Light Frontstage</a>
-            <a href="#connection-nodes">CN001</a>
-            <a href="#visionpro-content">VisionPro</a>
-            <a href="#supply-dock">物件舱</a>
-            <a href="./pass/">Pass</a>
-            <a href="./signal-log/">信号日志</a>
-            <a href="#dock">Stations</a>
-            <a href="https://virtura.space/">Collective</a>
-            <a href="https://newsroom.virtura.space/">Newsroom</a>
-            <a href="https://ewanqian.site/">Portfolio</a>
-            <a href="./api/manifest.json">API</a>
-            <a href="./llms.txt">AI Index</a>
-          </nav>
-        </div>
-      </header>
-
-      <a class="system-notice" href="./system-log-2026.html">
-        系统日志 · 发布节点、档案、Stations 与 AI 辅助维护
-      </a>
-
-      <main id="app">
-        <section class="loading-state">
-          <div class="loading-state__panel">
-            <span class="eyebrow">App Frontstage / Releases / Public Graph</span>
-            <h1>VIRTURA SpacePort</h1>
-            <p>VIRTURA 的自动导览前台，打开 mini apps、发布节点、素材舱、stations 与机器可读对象。</p>
-            <div class="loading-state__links" aria-label="SpacePort public entry links">
-              <a href="./connection-nodes/cn001/">CN001</a>
-              <a href="./alpha.html">Light Frontstage</a>
-              <a href="./supply-dock/">物件舱</a>
-              <a href="./pass/">Pass</a>
-              <a href="./signal-log/">信号日志</a>
-              <a href="./api/works.json">Works JSON</a>
-              <a href="./api/manifest.json">Manifest</a>
-              <a href="./llms.txt">AI Index</a>
-            </div>
-          </div>
-        </section>
-        <noscript>
-          <section class="section section--first">
-            <div class="section-head">
-              <p class="eyebrow">VIRTURA SpacePort</p>
-              <h2>Archive, stations, and public graph.</h2>
-              <p>从作品、stations、知识网络、公开记录与 app-frontstage 进入。</p>
-              <p><a href="./api/manifest.json">Public Manifest</a> / <a href="./llms.txt">AI Reader Index</a></p>
-            </div>
-          </section>
-        </noscript>
-      </main>
-
-      <footer class="site-footer">
-        <p>VIRTURA SpacePort. Public infrastructure for the VIRTURA network.</p>
-      </footer>
-    </div>
-
-    <script type="module" src="./assets/spaceport.js"></script>
+    <main>
+      <h1>VIRTURA 空间港</h1>
+      <p>公开入口已指向空间港首页。这里连接站点、档案、知识网络和研究基础设施。</p>
+      <a class="button" href="./alpha.html">进入空间港 <span aria-hidden="true">→</span></a>
+    </main>
   </body>
 </html>

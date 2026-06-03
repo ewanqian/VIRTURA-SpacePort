@@ -1,107 +1,38 @@
 <!doctype html>
-<html lang="zh-CN" class="no-js">
+<html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIRTURA 暗空间入口</title>
-    <link rel="canonical" href="https://spaceport.virtura.space/darkspace.html" />
+    <meta http-equiv="refresh" content="0; url=./alpha.html" />
+    <title>VIRTURA 空间港</title>
+    <link rel="canonical" href="https://spaceport.virtura.space/alpha.html" />
     <meta name="theme-color" content="#f7f8fa" />
-    <meta
-      name="description"
-      content="VIRTURA 暗空间入口连接团队前台与空间港站点界面。"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="VIRTURA 暗空间入口" />
-    <meta
-      property="og:description"
-      content="选择进入团队前台或空间港站点界面。"
-    />
-    <meta property="og:url" content="https://spaceport.virtura.space/darkspace.html" />
+    <meta name="description" content="进入 VIRTURA 空间港的公开站点前台。" />
     <link rel="icon" href="./assets/virtura-mark.png" type="image/png" />
-    <link rel="stylesheet" href="./assets/spaceport-gateway.css" />
+    <style>
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        color: #111;
+        background: #f7f8fa;
+        font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", sans-serif;
+      }
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        padding: 0 18px;
+        border-radius: 999px;
+        color: #fff;
+        text-decoration: none;
+        background: #111;
+      }
+    </style>
   </head>
   <body>
-    <div class="gateway-shell">
-      <header class="gateway-topbar" aria-label="VIRTURA 导航">
-        <a class="brand-lockup" href="./darkspace.html" aria-label="VIRTURA 暗空间">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span class="brand-name"><strong>VIRTURA</strong><span>暗空间</span></span>
-        </a>
-        <nav aria-label="主导航">
-          <a href="https://virtura.space/">团队前台</a>
-          <a href="./alpha.html">空间港</a>
-          <a href="#domains">域名</a>
-        </nav>
-      </header>
-
-      <main>
-        <section class="gateway-hero">
-          <div class="hero-copy">
-            <p class="section-kicker">VIRTURA 公共界面</p>
-            <h1>按你的目的选择进入界面。</h1>
-            <p>
-              团队前台负责身份、成员、作品与合作；空间港负责站点、档案、知识网络与导览入口。
-            </p>
-          </div>
-          <div class="hero-map" aria-label="VIRTURA 关系图">
-            <span class="map-node map-node--core">界</span>
-            <span class="map-node map-node--collective">团队前台</span>
-            <span class="map-node map-node--spaceport">空间港</span>
-            <span class="map-line map-line--collective"></span>
-            <span class="map-line map-line--spaceport"></span>
-          </div>
-        </section>
-
-        <section class="gateway-grid" aria-label="入口选择">
-          <article class="gateway-card gateway-card--collective">
-            <div class="card-visual" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="card-copy">
-              <p class="section-kicker">团队前台</p>
-              <h2>VIRTURA 团队前台</h2>
-              <p>团队身份、艺术家、精选作品、项目计划与合作入口。</p>
-            </div>
-            <div class="route-list" aria-label="团队前台入口">
-              <a href="https://virtura.space/">团队首页 <span>→</span></a>
-              <a href="https://virtura.space/people.html">成员 <span>→</span></a>
-              <a href="https://virtura.space/works.html">作品 <span>→</span></a>
-              <a href="https://virtura.space/programs.html">项目 <span>→</span></a>
-              <a href="https://virtura.space/creation-network.html">创作网络 <span>→</span></a>
-            </div>
-          </article>
-
-          <article class="gateway-card gateway-card--spaceport">
-            <div class="card-visual" aria-hidden="true">
-              <span></span><span></span><span></span>
-            </div>
-            <div class="card-copy">
-              <p class="section-kicker">空间港</p>
-              <h2>VIRTURA 空间港</h2>
-              <p>站点应用、档案界面、知识网络与公共导览入口。</p>
-            </div>
-            <div class="route-list" aria-label="空间港入口">
-              <a href="./alpha.html">空间港首页 <span>→</span></a>
-              <a href="./stations/teahouse-forest-pavilion/index.html">森林茶屋 <span>→</span></a>
-              <a href="./stations/balloon-live-space/index.html">信号气球 <span>→</span></a>
-              <a href="./stations/mova/index.html">虚拟艺术馆 <span>→</span></a>
-              <a href="./stations/research-laboratory/index.html">研究实验室 <span>→</span></a>
-              <a href="./knowledge-network/index.html">知识网络 <span>→</span></a>
-            </div>
-          </article>
-        </section>
-
-        <section class="domain-window" id="domains" aria-label="域名分工">
-          <div>
-            <p class="section-kicker">域名分工</p>
-            <h2>同一个网络，两种公共界面。</h2>
-          </div>
-          <div class="domain-list">
-            <a href="https://virtura.space/"><strong>virtura.space</strong><span>团队前台</span></a>
-            <a href="https://spaceport.virtura.space/alpha.html"><strong>spaceport.virtura.space</strong><span>空间港站点界面</span></a>
-          </div>
-        </section>
-      </main>
-    </div>
+    <a href="./alpha.html">进入 VIRTURA 空间港 →</a>
   </body>
 </html>
