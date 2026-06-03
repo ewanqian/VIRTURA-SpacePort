@@ -21,3 +21,4 @@ Thumbs.db
 
 # Browser / preview
 .playwright-cli/
+_workspace_cache/

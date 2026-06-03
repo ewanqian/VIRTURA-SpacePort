@@ -3,21 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIRTURA SpacePort Light Frontstage</title>
+    <title>VIRTURA SpacePort Frontstage</title>
     <link rel="canonical" href="https://spaceport.virtura.space/alpha.html" />
     <meta name="theme-color" content="#f7f8fa" />
     <meta
       name="description"
-      content="VIRTURA SpacePort 的 light spatial frontstage。以端口、现场信号、访客路径与公共档案组织创作、研究、展映和连接。"
+      content="VIRTURA SpacePort 的空间服务前台。以端口、访客路径与公共档案组织创作、研究、展映和连接。"
     />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="VIRTURA SpacePort Light Frontstage" />
+    <meta property="og:title" content="VIRTURA SpacePort Frontstage" />
     <meta
       property="og:description"
       content="一个面向创作、研究、展映与连接的空间服务前台。"
     />
     <meta property="og:url" content="https://spaceport.virtura.space/alpha.html" />
-    <link rel="icon" href="./assets/spaceport-logo.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/virtura-mark.png" type="image/png" />
     <link rel="stylesheet" href="./assets/spaceport-alpha.css" />
   </head>
   <body>
@@ -60,8 +60,8 @@
             </div>
             <div class="status-row" aria-label="系统状态">
               <span class="status-dot"></span>
-              <span>System Status</span>
-              <span>All systems operational</span>
+              <span>Public Frontstage</span>
+              <span>Stations and archives available</span>
             </div>
           </div>
 
@@ -145,83 +145,83 @@
         <section class="happening-window" id="labs" data-motion-stage="signals">
           <div class="section-heading section-heading--compact">
             <div>
-              <p class="section-kicker">WHAT'S HAPPENING / 正在发生</p>
-              <h2>Live sessions, exhibitions, and conversations across the SpacePort.</h2>
+              <p class="section-kicker">STATION STRUCTURE / 站点结构</p>
+              <h2>Every port opens as a readable service surface.</h2>
             </div>
-            <a class="quiet-link" href="./signal-log/index.html">查看信号 <span aria-hidden="true">→</span></a>
+            <a class="quiet-link" href="./stations/README.md">站点索引 <span aria-hidden="true">→</span></a>
           </div>
-          <div class="event-strip" aria-label="Live events">
-            <article class="event-card">
+          <div class="event-strip" aria-label="Station structure">
+            <a class="event-card" href="./stations/teahouse-forest-pavilion/index.html">
               <span class="event-thumb event-thumb--tea"></span>
               <div>
-                <p>森林茶屋</p>
+                <p>Tea House</p>
                 <h3>Evening Tea & Reflection</h3>
-                <span>今日 20:30 · 开放席位</span>
+                <span>会客、对话、环境档案</span>
               </div>
-              <strong>Live</strong>
-            </article>
-            <article class="event-card">
+              <strong>进入</strong>
+            </a>
+            <a class="event-card" href="./stations/mova/index.html">
               <span class="event-thumb event-thumb--mova"></span>
               <div>
                 <p>MOVA</p>
                 <h3>Light Forms Exhibition</h3>
-                <span>展期进行中 · 展品索引可读</span>
+                <span>展览索引、艺术家与出版</span>
               </div>
-              <strong>New</strong>
-            </article>
-            <article class="event-card">
+              <strong>阅读</strong>
+            </a>
+            <a class="event-card" href="./stations/research-laboratory/index.html">
               <span class="event-thumb event-thumb--lab"></span>
               <div>
                 <p>Research Lab</p>
                 <h3>Signal Analysis Briefing</h3>
-                <span>每周更新 · 方法笔记</span>
+                <span>方法、案例与系统笔记</span>
               </div>
-              <strong>Update</strong>
-            </article>
-            <article class="event-card">
+              <strong>进入</strong>
+            </a>
+            <a class="event-card" href="./knowledge-network/index.html">
               <span class="event-thumb event-thumb--network"></span>
               <div>
                 <p>Knowledge Network</p>
                 <h3>Network Sync</h3>
-                <span>学习路径 · 共同索引</span>
+                <span>学习路径、参考资料与关系</span>
               </div>
-              <strong>Live</strong>
-            </article>
+              <strong>进入</strong>
+            </a>
           </div>
         </section>
 
-        <section class="signal-console" data-motion-stage="pulse" aria-label="Live signals">
+        <section class="signal-console" data-motion-stage="pulse" aria-label="Service index">
           <div class="section-heading section-heading--compact">
             <div>
-              <p class="section-kicker">LIVE SIGNALS / 实时状态</p>
-              <h2>Real-time activity across the SpacePort.</h2>
+              <p class="section-kicker">SERVICE INDEX / 服务路径</p>
+              <h2>Choose a station by what you need to do.</h2>
             </div>
             <a class="quiet-link" href="./api/releases.json">公共数据 <span aria-hidden="true">→</span></a>
           </div>
           <div class="signal-grid">
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--tea"></span>
-              <div><b>Tea House</b><small>28 人关注 · 安静开放</small></div>
+              <div><b>Tea House</b><small>茶会结构 · 对话记录 · 环境档案</small></div>
               <span class="spark spark--green"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--balloon"></span>
-              <div><b>Space Balloon</b><small>76 个 session · 上升中</small></div>
+              <div><b>Space Balloon</b><small>现场实践 · 路径导览 · 视觉航行</small></div>
               <span class="spark spark--blue"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--mova"></span>
-              <div><b>MOVA</b><small>342 次访问 · 展览在线</small></div>
+              <div><b>MOVA</b><small>展览结构 · 艺术家 · 出版档案</small></div>
               <span class="spark"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--lab"></span>
-              <div><b>Research Lab</b><small>5 个活跃信号 · 监测中</small></div>
+              <div><b>Research Lab</b><small>研究问题 · 实验方法 · 系统笔记</small></div>
               <span class="spark spark--dark"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--network"></span>
-              <div><b>Knowledge Network</b><small>276 个节点 · 同步中</small></div>
+              <div><b>Knowledge Network</b><small>学习路径 · 参考资料 · 关系图谱</small></div>
               <span class="spark spark--blue"></span>
             </article>
           </div>
@@ -286,29 +286,6 @@
           </div>
         </section>
 
-        <section class="motion-window" data-motion-stage="motion">
-          <div>
-            <p class="section-kicker">MOTION / 递进逻辑</p>
-            <h2>Scrolling opens spatial layers.</h2>
-          </div>
-          <div class="motion-steps" aria-label="Motion system">
-            <article>
-              <span>01</span>
-              <h3>抵达</h3>
-              <p>首屏保持稳定，先让用户知道 SpacePort 是什么。</p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>聚焦</h3>
-              <p>端口卡轻微抬升，像选择应用窗口，不抢走阅读中心。</p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>展开</h3>
-              <p>信号、档案和路径按层级浮出，形成导览节奏。</p>
-            </article>
-          </div>
-        </section>
       </main>
 
       <footer class="alpha-footer">
@@ -317,6 +294,7 @@
           <span>VIRTURA SpacePort</span>
         </a>
         <nav aria-label="Footer">
+          <a href="./darkspace.html">Darkspace</a>
           <a href="./api/manifest.json">Manifest</a>
           <a href="./llms.txt">AI Index</a>
           <a href="https://virtura.space/">Collective</a>

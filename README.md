@@ -17,7 +17,8 @@ Public graph seed 已放在 [docs/public-graph](./docs/public-graph/README.md)�
 - 已整理好的项目档案入口：`Drop Flow`、`TIMER`、`Observation and Symbiosis`
 - 已打开的主题发布入口：[`Connection Network 001: July Live Set`](./connection-nodes/cn001/)
 - 已建立的发布物件区：[`物件舱`](./supply-dock/)、[`Network Pass`](./pass/)、[`信号日志`](./signal-log/)
-- 已加入的 light spatial frontstage：[`alpha.html`](./alpha.html)
+- 已加入的 SpacePort app frontstage：[`alpha.html`](./alpha.html)
+- 已加入的 VIRTURA 双入口分流页：[`darkspace.html`](./darkspace.html)
 - 已建立的长期 app-frontstage 目标：[`docs/design/spaceport-long-term-goal-2026-06-02.md`](./docs/design/spaceport-long-term-goal-2026-06-02.md)
 - 已开始的数据骨架：`mini-apps`、`guided-paths`、`media-packages`、`material-packs`、`presentation-tours`
 - 已能直接使用的知识网络入口：`learning-paths`、`our-theory`、10 个知识领域导航

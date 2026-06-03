@@ -112,7 +112,7 @@ a {
   height: 42px;
   border-radius: 50%;
   display: inline-block;
-  background: url("./spaceport-logo.svg") center / contain no-repeat;
+  background: url("./virtura-mark.png") center / contain no-repeat;
   box-shadow: 0 10px 22px rgba(17, 17, 17, 0.08);
 }
 
@@ -535,6 +535,16 @@ main {
   inset: 0 0 112px;
   overflow: hidden;
   border-bottom: 1px solid rgba(18, 24, 32, 0.06);
+  background-position: center;
+  background-size: cover;
+}
+
+.port-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 44%, rgba(255, 255, 255, 0.78));
+  pointer-events: none;
 }
 
 .app-badge,
@@ -575,6 +585,10 @@ main {
   position: absolute;
   inset: 0;
   display: block;
+}
+
+.port-visual > span {
+  display: none;
 }
 
 .tea-room {
@@ -712,6 +726,27 @@ main {
   opacity: 0.8;
 }
 
+.port-card--tea .port-visual {
+  background-image: url("./visuals/station-tea-house.jpg");
+}
+
+.port-card--balloon .port-visual {
+  background-image: url("./visuals/station-balloon.jpg");
+  background-position: center 42%;
+}
+
+.port-card--mova .port-visual {
+  background-image: url("./visuals/station-mova.jpg");
+}
+
+.port-card--lab .port-visual {
+  background-image: url("./visuals/station-research-lab.jpg");
+}
+
+.port-card--network .port-visual {
+  background-image: url("./visuals/station-knowledge-network.jpg");
+}
+
 .event-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -743,6 +778,8 @@ main {
   display: block;
   border-radius: 16px;
   background: var(--blue-soft);
+  background-position: center;
+  background-size: cover;
 }
 
 .event-thumb {
@@ -783,31 +820,22 @@ main {
 
 .event-thumb--tea,
 .signal-avatar--tea {
-  background:
-    radial-gradient(circle at 28% 26%, rgba(245, 218, 164, 0.72), transparent 22%),
-    linear-gradient(90deg, rgba(86, 116, 91, 0.28) 0 1px, transparent 1px 12px),
-    linear-gradient(180deg, #edf5ef, #ffffff);
+  background-image: url("./visuals/station-tea-house.jpg");
 }
 
 .event-thumb--mova,
 .signal-avatar--mova {
-  background: linear-gradient(145deg, #fff, #e9edf2);
+  background-image: url("./visuals/station-mova.jpg");
 }
 
 .event-thumb--lab,
 .signal-avatar--lab {
-  background:
-    repeating-radial-gradient(circle, rgba(107, 159, 219, 0.38) 0 1px, transparent 1px 11px),
-    radial-gradient(circle, #223149, #111827);
+  background-image: url("./visuals/station-research-lab.jpg");
 }
 
 .event-thumb--network,
 .signal-avatar--network {
-  background:
-    radial-gradient(circle at 28% 44%, #2e75bd 0 3px, transparent 4px),
-    radial-gradient(circle at 68% 34%, #79b6e8 0 3px, transparent 4px),
-    radial-gradient(circle at 46% 70%, #294f84 0 3px, transparent 4px),
-    #f3f8ff;
+  background-image: url("./visuals/station-knowledge-network.jpg");
 }
 
 .signal-grid {

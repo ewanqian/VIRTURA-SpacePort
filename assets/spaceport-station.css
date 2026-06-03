@@ -118,7 +118,7 @@ a {
   height: 42px;
   display: inline-block;
   border-radius: 50%;
-  background: url("./spaceport-logo.svg") center / contain no-repeat;
+  background: url("./virtura-mark.png") center / contain no-repeat;
   box-shadow: 0 10px 22px rgba(17, 17, 17, 0.08);
 }
 
@@ -329,8 +329,16 @@ main {
   border: 1px solid rgba(18, 24, 32, 0.08);
   border-radius: 28px;
   background: var(--surface-strong);
+  background-position: center;
+  background-size: cover;
   box-shadow: var(--shadow-small);
   overflow: hidden;
+}
+
+.scene-block::before,
+.scene-block::after {
+  content: none !important;
+  display: none !important;
 }
 
 .scene-card {
@@ -419,6 +427,8 @@ main {
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.74);
   box-shadow: 0 10px 24px rgba(32, 42, 55, 0.06);
+  color: inherit;
+  text-decoration: none;
 }
 
 .dock-icon {
@@ -673,10 +683,9 @@ main {
   border-radius: 0;
   border: 0;
   background:
-    linear-gradient(90deg, rgba(255, 255, 255, 0.72), transparent 28%),
-    radial-gradient(circle at 46% 20%, rgba(255, 232, 181, 0.74), transparent 18%),
-    linear-gradient(90deg, rgba(45, 58, 49, 0.2) 0 2px, transparent 2px 16px),
-    linear-gradient(180deg, rgba(182, 202, 179, 0.72), rgba(245, 249, 246, 0.88));
+    linear-gradient(90deg, rgba(255, 255, 255, 0.74), transparent 30%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(15, 18, 14, 0.12)),
+    url("./visuals/station-tea-house.jpg") center / cover no-repeat;
   box-shadow: none;
 }
 
@@ -796,7 +805,9 @@ main {
 }
 
 .ambient-player button,
-.archive-strip button {
+.ambient-player .ambient-link,
+.archive-strip button,
+.archive-strip a {
   display: grid;
   place-items: center;
   width: 46px;
@@ -807,6 +818,7 @@ main {
   box-shadow: 0 12px 24px rgba(30, 38, 48, 0.12);
   color: var(--ink);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .ambient-player strong {
@@ -875,7 +887,8 @@ main {
 
 .archive-strip h3,
 .archive-strip p,
-.archive-strip button {
+.archive-strip button,
+.archive-strip a {
   position: relative;
   z-index: 1;
 }
@@ -895,7 +908,8 @@ main {
   font-size: 12px;
 }
 
-.archive-strip button {
+.archive-strip button,
+.archive-strip a {
   position: absolute;
   right: 12px;
   top: 50%;
@@ -904,8 +918,8 @@ main {
 
 .scene--balloon {
   background:
-    radial-gradient(circle at 50% 82%, rgba(255, 255, 255, 0.9), transparent 34%),
-    linear-gradient(180deg, #eef6ff, #ffffff 62%, #f0f4f8);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.66), transparent 34%),
+    url("./visuals/station-balloon.jpg") center / cover no-repeat;
 }
 
 .scene--balloon::before {
@@ -938,9 +952,8 @@ main {
 
 .scene--mova {
   background:
-    radial-gradient(circle at 54% 30%, rgba(255, 255, 255, 1) 0 16%, transparent 17%),
-    linear-gradient(90deg, transparent 0 17%, rgba(187, 199, 212, 0.24) 17% 18%, transparent 18% 36%, rgba(187, 199, 212, 0.2) 36% 37%, transparent 37% 55%, rgba(187, 199, 212, 0.18) 55% 56%, transparent 56%),
-    linear-gradient(180deg, #ffffff, #edf1f5);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), transparent 34%),
+    url("./visuals/station-mova.jpg") center / cover no-repeat;
 }
 
 .scene--mova::before {
@@ -972,11 +985,8 @@ main {
 
 .scene--lab {
   background:
-    radial-gradient(circle, rgba(97, 156, 225, 0.9) 0 2px, transparent 3px),
-    repeating-radial-gradient(circle, rgba(136, 174, 220, 0.24) 0 1px, transparent 1px 30px),
-    linear-gradient(90deg, transparent 49.5%, rgba(136, 174, 220, 0.2) 50%, transparent 50.5%),
-    linear-gradient(0deg, transparent 49.5%, rgba(136, 174, 220, 0.2) 50%, transparent 50.5%),
-    radial-gradient(circle, #253042, #111826);
+    linear-gradient(90deg, rgba(255, 255, 255, 0.72), transparent 34%),
+    url("./visuals/station-research-lab.jpg") center / cover no-repeat;
 }
 
 .scene--lab::before {
@@ -990,15 +1000,8 @@ main {
 
 .scene--network {
   background:
-    radial-gradient(circle at 30% 36%, #2f71b9 0 4px, transparent 5px),
-    radial-gradient(circle at 58% 18%, #76b1e8 0 4px, transparent 5px),
-    radial-gradient(circle at 72% 56%, #294f84 0 5px, transparent 6px),
-    radial-gradient(circle at 42% 72%, #67a8dd 0 4px, transparent 5px),
-    linear-gradient(24deg, transparent 0 22%, rgba(70, 140, 205, 0.18) 22% 23%, transparent 23%),
-    linear-gradient(152deg, transparent 0 38%, rgba(70, 140, 205, 0.16) 38% 39%, transparent 39%),
-    linear-gradient(70deg, transparent 0 46%, rgba(70, 140, 205, 0.16) 46% 47%, transparent 47%),
-    radial-gradient(circle at 50% 45%, rgba(92, 156, 225, 0.12), transparent 42%),
-    #f5f9ff;
+    linear-gradient(90deg, rgba(255, 255, 255, 0.76), transparent 34%),
+    url("./visuals/station-knowledge-network.jpg") center / cover no-repeat;
 }
 
 .scene--network::after {
@@ -1011,36 +1014,23 @@ main {
 }
 
 .thumb--tea {
-  background:
-    radial-gradient(circle at 30% 28%, rgba(245, 218, 164, 0.72), transparent 24%),
-    linear-gradient(90deg, rgba(86, 116, 91, 0.28) 0 1px, transparent 1px 12px),
-    linear-gradient(180deg, #edf5ef, #ffffff);
+  background: url("./visuals/station-tea-house.jpg") center / cover no-repeat;
 }
 
 .thumb--balloon {
-  background:
-    radial-gradient(circle at 50% 35%, #5a75c1 0 20%, transparent 21%),
-    linear-gradient(180deg, #eaf4ff, #fff);
+  background: url("./visuals/station-balloon.jpg") center / cover no-repeat;
 }
 
 .thumb--mova {
-  background:
-    radial-gradient(circle at 50% 48%, #fff 0 22%, transparent 23%),
-    linear-gradient(180deg, #fff, #e8edf3);
+  background: url("./visuals/station-mova.jpg") center / cover no-repeat;
 }
 
 .thumb--lab {
-  background:
-    repeating-radial-gradient(circle, rgba(107, 159, 219, 0.38) 0 1px, transparent 1px 11px),
-    radial-gradient(circle, #223149, #111827);
+  background: url("./visuals/station-research-lab.jpg") center / cover no-repeat;
 }
 
 .thumb--network {
-  background:
-    radial-gradient(circle at 28% 44%, #2e75bd 0 3px, transparent 4px),
-    radial-gradient(circle at 68% 34%, #79b6e8 0 3px, transparent 4px),
-    radial-gradient(circle at 46% 70%, #294f84 0 3px, transparent 4px),
-    #f3f8ff;
+  background: url("./visuals/station-knowledge-network.jpg") center / cover no-repeat;
 }
 
 .js [data-reveal],

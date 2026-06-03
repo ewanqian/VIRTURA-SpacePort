@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
-  <title>VIRTURA SpacePort logo</title>
-  <circle cx="128" cy="128" r="126" fill="#111111"/>
-  <path
-    fill="#ffffff"
-    d="M128 37 183 92v64l-63 63H78L30 171l25-25 42 42h28l40-40v-39l-55-55 18-17Z"
-  />
-</svg>
