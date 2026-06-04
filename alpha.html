@@ -8,20 +8,20 @@
     <meta name="theme-color" content="#f7f8fa" />
     <meta
       name="description"
-      content="VIRTURA 空间港的空间服务前台。以端口、访客路径与公共档案组织创作、研究、展映和连接。"
+      content="VIRTURA 空间港连接数字空间、真实空间、展览、现场演出、研究档案与创作者协作。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="VIRTURA 空间港" />
     <meta
       property="og:description"
-      content="一个面向创作、研究、展映与连接的空间服务前台。"
+      content="连接展览、演出、研究、档案与创作者协作的空间文化前台。"
     />
     <meta property="og:url" content="https://virtura.space/alpha.html" />
     <link rel="icon" href="./assets/virtura-mark.png" type="image/png" />
     <link rel="stylesheet" href="./assets/spaceport-alpha.css" />
   </head>
   <body>
-    <a class="skip-link" href="#ports">跳到端口</a>
+    <a class="skip-link" href="#ports">跳到站点</a>
     <div class="alpha-shell" data-frontstage-root data-lenis-ready="true" data-gsap-scope="spaceport-frontstage">
       <header class="top-orb" aria-label="空间港主导航">
         <a class="brand-lockup" href="./alpha.html" aria-label="VIRTURA 空间港">
@@ -32,8 +32,8 @@
           </span>
         </a>
         <nav class="main-tabs" aria-label="主要区域">
-          <a href="#ports" data-nav-item>端口</a>
-          <a href="#labs" data-nav-item>实验室</a>
+          <a href="#ports" data-nav-item>站点</a>
+          <a href="#labs" data-nav-item>动态</a>
           <a href="#network" data-nav-item>网络</a>
           <a href="#archives" data-nav-item>档案</a>
           <a href="#about" data-nav-item>关于</a>
@@ -48,19 +48,19 @@
       <main>
         <section class="hero-window" id="about" data-motion-stage="arrival">
           <div class="hero-copy">
-            <p class="section-kicker">空间港 / 空间界面</p>
-            <h1>空间港是一套<br />空间界面。</h1>
+            <p class="section-kicker">VIRTURA Spaceport / 空间文化前台</p>
+            <h1>VIRTURA<br />空间港。</h1>
             <p class="hero-lede">
-              它把创作、研究、档案与合作整理成可以进入的公共界面，让不同来访者先建立方向，再选择合适的端口。
+              连接展览、演出、研究、档案与创作者协作的空间文化前台。用户可以像使用一组应用一样进入不同站点，查看正在发生的项目，参与活动，阅读研究，访问档案。
             </p>
             <div class="hero-actions">
-              <a class="primary-action" href="#ports">探索端口 <span aria-hidden="true">→</span></a>
+              <a class="primary-action" href="#ports">进入空间港 <span aria-hidden="true">→</span></a>
               <a class="round-action" href="#paths" aria-label="查看访客路径">路径</a>
             </div>
             <div class="status-row" aria-label="系统状态">
               <span class="status-dot"></span>
-              <span>公共前台</span>
-              <span>端口与档案已可进入</span>
+              <span>系统在线</span>
+              <span>站点、档案与知识路径已开放</span>
             </div>
           </div>
 
@@ -73,12 +73,12 @@
           </div>
 
           <aside class="arrival-card" aria-label="访客进入顺序">
-            <h2>你进入后</h2>
+            <h2>进入顺序</h2>
             <ol>
-              <li><span>抵达</span><small>建立方向</small></li>
-              <li><span>选择</span><small>打开端口</small></li>
-              <li><span>理解</span><small>读取上下文</small></li>
-              <li><span>合作</span><small>留下连接</small></li>
+              <li><span>理解</span><small>先看空间港本体</small></li>
+              <li><span>打开</span><small>选择一个站点应用</small></li>
+              <li><span>使用</span><small>进入活动、档案或资料</small></li>
+              <li><span>连接</span><small>转到团队与合作入口</small></li>
             </ol>
           </aside>
         </section>
@@ -86,20 +86,21 @@
         <section class="panel-section" id="ports" data-motion-stage="ports">
           <div class="section-heading">
             <div>
-              <p class="section-kicker">核心端口</p>
-              <h2>从真实站点进入空间港。</h2>
+              <p class="section-kicker">核心站点</p>
+              <h2>五个站点，像应用一样打开。</h2>
             </div>
             <a class="quiet-link" href="./stations/README.md">全部站点 <span aria-hidden="true">→</span></a>
           </div>
 
-          <div class="ports-grid" aria-label="核心端口">
+          <div class="ports-grid" aria-label="核心站点">
             <a class="port-card port-card--tea" href="./stations/teahouse-forest-pavilion/index.html" data-port-card>
               <span class="port-visual">
                 <span class="tea-room" aria-hidden="true"></span>
               </span>
               <span class="app-badge">茶</span>
               <h3>林中茶屋</h3>
-              <p>茶屋、森林环境与高保真空间 demo 的站点档案。</p>
+              <p>进入茶、环境声与高保真空间体验。</p>
+              <span class="port-action">开始茶会</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </a>
             <a class="port-card port-card--balloon" href="./stations/balloon-live-space/index.html" data-port-card>
@@ -108,7 +109,8 @@
               </span>
               <span class="app-badge">空</span>
               <h3>太空气球</h3>
-              <p>线上演出空间、音画实验与 live workflow 积累站。</p>
+              <p>查看现场演出、广播、演出计划与回放档案。</p>
+              <span class="port-action">进入节目</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </a>
             <a class="port-card port-card--mova" href="./stations/mova/index.html" data-port-card>
@@ -116,8 +118,9 @@
                 <span class="white-gallery" aria-hidden="true"></span>
               </span>
               <span class="app-badge">馆</span>
-              <h3>MOVA 美术馆</h3>
-              <p>数字展映、观看室组织与展览归档生产线。</p>
+              <h3>MOVA</h3>
+              <p>虚拟艺术、数字影像、展览、出版与艺术家研究。</p>
+              <span class="port-action">观看展映</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </a>
             <a class="port-card port-card--lab" href="./stations/research-laboratory/index.html" data-port-card>
@@ -125,8 +128,9 @@
                 <span class="radar-plate" aria-hidden="true"></span>
               </span>
               <span class="app-badge">研</span>
-              <h3>研究实验室</h3>
-              <p>研究问题定义、实验过程记录、路线比较与方法沉淀。</p>
+              <h3>Research Lab<span class="station-local-name">研究实验室</span></h3>
+              <p>空间计算、AI 工作流、现场系统与研究原型。</p>
+              <span class="port-action">读研究</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </a>
             <a class="port-card port-card--network" href="./knowledge-network/index.html" data-port-card>
@@ -134,8 +138,9 @@
                 <span class="network-web" aria-hidden="true"></span>
               </span>
               <span class="app-badge">网</span>
-              <h3>知识网络</h3>
-              <p>10 个知识领域、学习路径与团队方法入口。</p>
+              <h3>Knowledge Network<span class="station-local-name">知识网络</span></h3>
+              <p>技能包、学习路径、工具下载与知识整理。</p>
+              <span class="port-action">选路径</span>
               <span class="card-arrow" aria-hidden="true">→</span>
             </a>
           </div>
@@ -144,47 +149,56 @@
         <section class="happening-window" id="labs" data-motion-stage="signals">
           <div class="section-heading section-heading--compact">
             <div>
-              <p class="section-kicker">站点结构</p>
-              <h2>每个端口都以可阅读、可进入的服务面展开。</h2>
+              <p class="section-kicker">当前可用</p>
+              <h2>从当前可执行的第一步进入。</h2>
             </div>
-            <a class="quiet-link" href="./stations/README.md">站点索引 <span aria-hidden="true">→</span></a>
+            <a class="quiet-link" href="./archive/index.html">查看档案 <span aria-hidden="true">→</span></a>
           </div>
-          <div class="event-strip" aria-label="站点结构">
+          <div class="event-strip" aria-label="当前可用服务">
             <a class="event-card" href="./stations/teahouse-forest-pavilion/index.html">
               <span class="event-thumb event-thumb--tea"></span>
               <div>
                 <p>林中茶屋</p>
-                <h3>高保真空间 demo</h3>
-                <span>茶屋场景、森林环境、空间观看格式</span>
+                <h3>10 分钟茶会入口</h3>
+                <span>环境声、茶时计、结束反思</span>
               </div>
-              <strong>进入</strong>
+              <strong>开始</strong>
+            </a>
+            <a class="event-card" href="./stations/balloon-live-space/index.html">
+              <span class="event-thumb event-thumb--balloon"></span>
+              <div>
+                <p>太空气球</p>
+                <h3>本周节目框架</h3>
+                <span>现场演出、广播、城市节点、回放</span>
+              </div>
+              <strong>查看</strong>
             </a>
             <a class="event-card" href="./stations/mova/index.html">
               <span class="event-thumb event-thumb--mova"></span>
               <div>
-                <p>MOVA 美术馆</p>
-                <h3>展映索引与观看室</h3>
+                <p>MOVA</p>
+                <h3>Drop Flow 观看室</h3>
                 <span>Drop Flow、从库到展、观察与共生</span>
               </div>
-              <strong>阅读</strong>
+              <strong>观看</strong>
             </a>
             <a class="event-card" href="./stations/research-laboratory/index.html">
               <span class="event-thumb event-thumb--lab"></span>
               <div>
-                <p>研究实验室</p>
-                <h3>研究母本层</h3>
-                <span>研究问题、模块判断、方法文档</span>
+              <p>Research Lab｜研究实验室</p>
+                <h3>研究对象索引</h3>
+                <span>简报、方法、原型、提示包</span>
               </div>
-              <strong>进入</strong>
+              <strong>阅读</strong>
             </a>
             <a class="event-card" href="./knowledge-network/index.html">
               <span class="event-thumb event-thumb--network"></span>
               <div>
-                <p>知识网络</p>
-                <h3>10 个知识领域</h3>
-                <span>空间计算、音画互动、网页发布</span>
+              <p>Knowledge Network｜知识网络</p>
+                <h3>分级学习路径</h3>
+                <span>0 级、入门、进阶、熟练、共建</span>
               </div>
-              <strong>进入</strong>
+              <strong>选择</strong>
             </a>
           </div>
         </section>
@@ -193,34 +207,34 @@
           <div class="section-heading section-heading--compact">
             <div>
               <p class="section-kicker">服务索引</p>
-              <h2>按你的来访目的选择合适的站点。</h2>
+              <h2>每个站点都有明确的任务和带走物。</h2>
             </div>
             <a class="quiet-link" href="./api/releases.json">公共数据 <span aria-hidden="true">→</span></a>
           </div>
           <div class="signal-grid">
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--tea"></span>
-              <div><b>林中茶屋</b><small>VRChat 原型 · 高保真 demo · Apple Vision Pro 延伸</small></div>
+              <div><b>林中茶屋</b><small>茶会模板 · 环境声 · 高保真空间体验</small></div>
               <span class="spark spark--green"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--balloon"></span>
-              <div><b>太空气球</b><small>live set · state / cue · 浏览器三维舞台</small></div>
+              <div><b>太空气球</b><small>现场演出 · 状态提示 · 浏览器三维舞台</small></div>
               <span class="spark spark--blue"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--mova"></span>
-              <div><b>MOVA 美术馆</b><small>展映索引 · 观看室 · 展览归档</small></div>
+              <div><b>MOVA</b><small>展映索引 · 观看室 · 展览归档</small></div>
               <span class="spark"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--lab"></span>
-              <div><b>研究实验室</b><small>感知迁移 · 人工智能实时演出 · 模块判断</small></div>
+              <div><b>Research Lab｜研究实验室</b><small>研究笔记 · 提示包 · 案例分析 · 原型索引</small></div>
               <span class="spark spark--dark"></span>
             </article>
             <article class="signal-pill">
               <span class="signal-avatar signal-avatar--network"></span>
-              <div><b>知识网络</b><small>10 个知识领域 · 学习路径 · 团队方法</small></div>
+              <div><b>Knowledge Network｜知识网络</b><small>学习路径 · 技能包 · 工具下载 · 案例复盘</small></div>
               <span class="spark spark--blue"></span>
             </article>
           </div>
@@ -229,9 +243,9 @@
         <section class="dual-window" id="archives" data-motion-stage="archive">
           <article class="info-window">
             <p class="section-kicker">档案</p>
-            <h2>档案让上下文持续可读。</h2>
+            <h2>档案让现场继续可读。</h2>
             <p>
-              空间港把作品记录、站点活动、知识节点与发布对象连接成一张公共关系图。它保留现场之后的线索，也让新的来访者更快理解从哪里开始。
+              空间港把作品记录、站点活动、知识节点与发布对象连接成公共关系图。一次展演、一次研究、一次对话，都能在结束后继续被打开。
             </p>
             <div class="mini-row">
               <a href="./archive/index.html">时间线 <span>→</span></a>
@@ -241,7 +255,7 @@
           </article>
           <article class="relationship-window" id="network">
             <p class="section-kicker">关系</p>
-            <h2>每个站点都保持连接。</h2>
+            <h2>站点之间保持连接。</h2>
             <div class="relationship-map" aria-label="站点关系图">
               <span class="node node--center">港</span>
               <span class="node node--tea">茶屋</span>
@@ -251,6 +265,33 @@
               <span class="node node--net">网络</span>
             </div>
           </article>
+        </section>
+
+        <section class="about-window" data-motion-stage="about">
+          <div class="section-heading">
+            <div>
+              <p class="section-kicker">关于空间港</p>
+              <h2>从世界构型实验，转向可使用的公共前台。</h2>
+            </div>
+            <a class="quiet-link" href="https://collective.virtura.space/">进入 Collective <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="about-grid">
+            <article>
+              <span>01</span>
+              <h3>公共导览前台</h3>
+              <p>空间港以网页和数字前台为入口，持续组织展览、演出、公共项目、知识网络与跨媒介体验。</p>
+            </article>
+            <article>
+              <span>02</span>
+              <h3>空间文化基础设施</h3>
+              <p>一次活动可以形成线上档案，一次演出可以形成回放与广播，一次艺术家计划可以发展为研究文本和后续合作路径。</p>
+            </article>
+            <article>
+              <span>03</span>
+              <h3>可持续更新的站点</h3>
+              <p>每个站点都是一个可访问、可更新、可运营的空间应用单元，对应一个空间、一个功能和一种参与方式。</p>
+            </article>
+          </div>
         </section>
 
         <section class="paths-window" id="paths" data-motion-stage="paths">
@@ -264,22 +305,22 @@
             <article class="path-card">
               <span>01</span>
               <h3>合作方</h3>
-              <p>先进入端口总览，再看活动、档案和可协作的公开资料。</p>
+              <p>先看站点总览，再进入可协作的公开资料、案例和团队入口。</p>
             </article>
             <article class="path-card">
               <span>02</span>
               <h3>艺术家</h3>
-              <p>从 MOVA 美术馆、林中茶屋与太空气球进入作品、展映和现场实践。</p>
+              <p>从 MOVA、林中茶屋与太空气球进入作品、展映和现场实践。</p>
             </article>
             <article class="path-card">
               <span>03</span>
               <h3>研究者</h3>
-              <p>从研究实验室与知识网络读取方法、引用和系统笔记。</p>
+              <p>从 Research Lab 与 Knowledge Network 读取方法、引用和系统笔记。</p>
             </article>
             <article class="path-card">
               <span>04</span>
               <h3>观众</h3>
-              <p>从正在发生的活动进入，再慢慢展开档案、展览与人物关系。</p>
+              <p>从茶会、展映、广播或学习路径进入，再展开档案与人物关系。</p>
             </article>
           </div>
         </section>

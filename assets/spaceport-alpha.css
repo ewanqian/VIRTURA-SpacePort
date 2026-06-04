@@ -242,6 +242,15 @@ main {
   z-index: 1;
 }
 
+.hero-copy,
+.section-heading > div,
+.port-card,
+.event-card,
+.signal-pill,
+.path-card {
+  min-width: 0;
+}
+
 .section-kicker {
   margin: 0 0 14px;
   color: var(--blue);
@@ -262,6 +271,7 @@ main {
   color: var(--ink-soft);
   font-size: 21px;
   line-height: 1.58;
+  overflow-wrap: break-word;
 }
 
 .hero-actions {
@@ -490,12 +500,12 @@ main {
 
 .port-card {
   position: relative;
-  min-height: 358px;
+  min-height: 392px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   overflow: hidden;
-  padding: 20px;
+  padding: 20px 20px 62px;
   border: 1px solid rgba(18, 24, 32, 0.08);
   border-radius: var(--radius-card);
   background: rgba(255, 255, 255, 0.8);
@@ -518,21 +528,33 @@ main {
   position: relative;
   z-index: 1;
   margin: 18px 48px 8px 0;
-  font-size: 20px;
-  line-height: 1.18;
+  font-size: 18px;
+  line-height: 1.14;
+}
+
+.station-local-name {
+  display: block;
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.2;
 }
 
 .port-card p {
   position: relative;
   z-index: 1;
-  min-height: 48px;
+  min-height: 58px;
   margin: 0;
   color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.38;
 }
 
 .port-visual {
   position: absolute;
-  inset: 0 0 112px;
+  inset: 0 0 152px;
   overflow: hidden;
   border-bottom: 1px solid rgba(18, 24, 32, 0.06);
   background-position: center;
@@ -548,19 +570,24 @@ main {
 }
 
 .app-badge,
-.card-arrow {
+.card-arrow,
+.port-action {
   position: absolute;
   z-index: 2;
-  display: grid;
-  place-items: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.86);
   box-shadow: 0 12px 26px rgba(30, 38, 48, 0.12);
 }
 
+.app-badge,
+.card-arrow {
+  display: grid;
+  place-items: center;
+}
+
 .app-badge {
   left: 18px;
-  bottom: 112px;
+  bottom: 152px;
   width: 44px;
   height: 44px;
   border: 1px solid rgba(18, 24, 32, 0.06);
@@ -575,6 +602,21 @@ main {
   height: 40px;
   color: var(--ink);
   font-size: 20px;
+}
+
+.port-action {
+  left: 20px;
+  bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  max-width: calc(100% - 76px);
+  padding: 0 12px;
+  border: 1px solid rgba(18, 24, 32, 0.08);
+  border-radius: 999px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .tea-room,
@@ -749,7 +791,7 @@ main {
 
 .event-strip {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 12px;
 }
 
@@ -821,6 +863,11 @@ main {
 .event-thumb--tea,
 .signal-avatar--tea {
   background-image: url("./visuals/station-tea-house.jpg");
+}
+
+.event-thumb--balloon,
+.signal-avatar--balloon {
+  background-image: url("./visuals/station-balloon.jpg");
 }
 
 .event-thumb--mova,
@@ -1010,6 +1057,49 @@ main {
   gap: 14px;
 }
 
+.about-window {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid rgba(18, 24, 32, 0.08);
+  border-radius: var(--radius-window);
+  background:
+    radial-gradient(circle at 82% 12%, rgba(61, 127, 212, 0.11), transparent 34%),
+    rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-card);
+  backdrop-filter: blur(18px) saturate(140%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.about-grid article {
+  min-height: 190px;
+  padding: 22px;
+  border: 1px solid rgba(18, 24, 32, 0.08);
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.68);
+  box-shadow: 0 10px 24px rgba(32, 42, 55, 0.06);
+}
+
+.about-grid span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.about-grid h3 {
+  margin: 16px 0 8px;
+  font-size: 21px;
+}
+
+.about-grid p {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
 .path-card {
   min-height: 168px;
   padding: 22px;
@@ -1114,6 +1204,7 @@ main {
 
   .event-strip,
   .signal-grid,
+  .about-grid,
   .path-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1184,6 +1275,7 @@ main {
   .panel-section,
   .happening-window,
   .signal-console,
+  .about-window,
   .paths-window,
   .motion-window,
   .info-window,
@@ -1247,11 +1339,18 @@ main {
 
   .hero-spatial-map {
     position: absolute;
-    right: -32px;
+    right: -18px;
     bottom: 12px;
     z-index: 0;
-    width: 214px;
+    width: 196px;
     opacity: 0.52;
+  }
+
+  .section-heading h2,
+  .info-window h2,
+  .relationship-window h2,
+  .motion-window h2 {
+    font-size: 26px;
   }
 
   .arrival-card {
@@ -1272,13 +1371,14 @@ main {
   .ports-grid,
   .event-strip,
   .signal-grid,
+  .about-grid,
   .path-grid,
   .mini-row {
     grid-template-columns: 1fr;
   }
 
   .port-card {
-    min-height: 330px;
+    min-height: 382px;
   }
 
   .event-card,
