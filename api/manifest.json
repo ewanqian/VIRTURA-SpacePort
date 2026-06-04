@@ -1,35 +1,34 @@
 {
   "schema": "virtura-public-graph-v3",
-  "updated_at": "2026-05-21",
-  "title": "VIRTURA SpacePort Public Manifest",
-  "purpose": "Public machine-readable index for VIRTURA works, stations, people, articles, media records, and authority notes.",
+  "updated_at": "2026-06-05",
+  "title": "VIRTURA Spaceport Public Manifest",
+  "purpose": "Public machine-readable index for VIRTURA Spaceport works, stations, people, articles, media records, and authority notes.",
   "domains": [
     "ewanqian.site",
     "virtura.space",
-    "spaceport.virtura.space",
+    "collective.virtura.space",
     "newsroom.virtura.space"
   ],
   "surfaces": {
     "personal": "https://ewanqian.site/",
-    "collective": "https://virtura.space/",
-    "spaceport": "https://spaceport.virtura.space/",
+    "spaceport": "https://virtura.space/",
+    "collective": "https://collective.virtura.space/",
     "newsroom": "https://newsroom.virtura.space/"
   },
   "endpoints": {
-    "works": "https://spaceport.virtura.space/api/works.json",
-    "entities": "https://spaceport.virtura.space/api/entities.json",
-    "articles": "https://spaceport.virtura.space/api/articles.json",
-    "stations": "https://spaceport.virtura.space/api/stations.json",
-    "media": "https://spaceport.virtura.space/api/media.json",
-    "authority": "https://spaceport.virtura.space/api/authority.json"
+    "works": "https://virtura.space/api/works.json",
+    "entities": "https://virtura.space/api/entities.json",
+    "articles": "https://virtura.space/api/articles.json",
+    "stations": "https://virtura.space/api/stations.json",
+    "media": "https://virtura.space/api/media.json",
+    "authority": "https://virtura.space/api/authority.json"
   },
   "content_contract": [
     "Public pages use complete reader-facing copy.",
-    "Team context and individual authorship remain explicit.",
-    "Kashiwa / TITAN is external collaboration context.",
-    "Murphy / Sihui independent works remain artist-context entries with formal public work pages.",
-    "Balloon is the canonical spelling.",
-    "Concept, prototype, active, published, archive, and deprecated status labels remain explicit."
+    "VIRTURA Spaceport is the public frontstage at https://virtura.space/.",
+    "VIRTURA Collective remains a separate creation network at https://collective.virtura.space/.",
+    "Station names and status labels remain explicit.",
+    "Balloon is the canonical spelling."
   ],
   "counts": {
     "works": 6,

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://spaceport.virtura.space/sitemap.xml
+Sitemap: https://virtura.space/sitemap.xml

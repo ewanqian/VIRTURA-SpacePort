@@ -1,60 +1,51 @@
-# VIRTURA SpacePort
+# VIRTURA Spaceport
 
-VIRTURA SpacePort is the auto-guided app frontstage, themed release layer, station index, material-pack surface, and machine-readable layer for the VIRTURA network.
-
-Long-term direction:
-SpacePort is being developed as an auto-guided app frontstage for VIRTURA Creation Network. It should open mini apps, guided paths, release objects, material packs, media packages, and presentation tours instead of behaving like a flat website directory.
+VIRTURA Spaceport is the public frontstage for VIRTURA 空间港. It connects exhibitions, live programs, research notes, archives, learning paths, and creator collaboration.
 
 Primary human entry:
-https://spaceport.virtura.space/
-https://spaceport.virtura.space/alpha.html
-https://spaceport.virtura.space/darkspace.html
+https://virtura.space/
+
+Public station entries:
+https://virtura.space/stations/
+https://virtura.space/stations/mova/
+https://virtura.space/stations/balloon-live-space/
+https://virtura.space/stations/teahouse-forest-pavilion/
+https://virtura.space/stations/research-laboratory/
+https://virtura.space/knowledge-network/
+
+Current public object pages:
+https://virtura.space/stations/mova/exhibitions/
+https://virtura.space/stations/mova/exhibitions/drop-flow-viewing-room-2026-04/
+https://virtura.space/stations/balloon-live-space/weekly-program/
+https://virtura.space/stations/balloon-live-space/replay-archive/
+https://virtura.space/stations/teahouse-forest-pavilion/ten-minute-tea/
+https://virtura.space/stations/teahouse-forest-pavilion/ambient-archive/
+https://virtura.space/stations/research-laboratory/weekly-brief/
+https://virtura.space/stations/research-laboratory/method-pack/
+https://virtura.space/knowledge-network/level-zero/
+https://virtura.space/knowledge-network/learning-paths/
 
 Public JSON:
-https://spaceport.virtura.space/api/manifest.json
-https://spaceport.virtura.space/api/works.json
-https://spaceport.virtura.space/api/entities.json
-https://spaceport.virtura.space/api/articles.json
-https://spaceport.virtura.space/api/stations.json
-https://spaceport.virtura.space/api/media.json
-https://spaceport.virtura.space/api/releases.json
-https://spaceport.virtura.space/api/objects.json
-https://spaceport.virtura.space/api/app-frontstage-roadmap.json
-https://spaceport.virtura.space/api/mini-apps.json
-https://spaceport.virtura.space/api/guided-paths.json
-https://spaceport.virtura.space/api/media-packages.json
-https://spaceport.virtura.space/api/material-packs.json
-https://spaceport.virtura.space/api/visionpro-content-system.json
-https://spaceport.virtura.space/api/presentation-tours.json
-https://spaceport.virtura.space/api/collective-artists.json
-https://spaceport.virtura.space/api/collective-works.json
-https://spaceport.virtura.space/api/authority.json
-
-Architecture docs:
-https://spaceport.virtura.space/docs/design/
-https://spaceport.virtura.space/docs/app-frontstage/
-
-Current release entries:
-https://spaceport.virtura.space/connection-nodes/
-https://spaceport.virtura.space/connection-nodes/cn001/
-https://spaceport.virtura.space/supply-dock/
-https://spaceport.virtura.space/pass/
-https://spaceport.virtura.space/signal-log/
-https://spaceport.virtura.space/archive/
+https://virtura.space/api/manifest.json
+https://virtura.space/api/index.json
+https://virtura.space/api/works.json
+https://virtura.space/api/entities.json
+https://virtura.space/api/articles.json
+https://virtura.space/api/stations.json
+https://virtura.space/api/media.json
+https://virtura.space/api/authority.json
 
 Related public surfaces:
+https://collective.virtura.space/ - VIRTURA Collective creation network
+https://newsroom.virtura.space/ - essays, recaps, reviews, and public articles
 https://ewanqian.site/ - Ewan Qian personal portfolio
-https://virtura.space/ - VIRTURA Collective frontstage
-https://newsroom.virtura.space/ - essays, reviews, recaps, and media material
 
-Authorship labels:
-- personal_work
-- team_work
-- external_collaboration
-- member_independent_work
-- artist_context
+Naming:
+- Public brand: VIRTURA 空间港
+- English brand: VIRTURA Spaceport
+- Chinese extension: 纬图空间港
+- Cultural district term: VIRTURA 空间文化区, used only in About and long-form institutional context
+- Core stations: MOVA, 太空气球, 林中茶屋, VIRTURA Research Lab, VIRTURA Knowledge Network
 
-Content boundary:
-Kashiwa / TITAN is external collaboration context.
-Murphy Nile and Sihui Xu independent works remain artist-context entries with formal public work pages.
-Balloon is canonical spelling.
+Boundary:
+VIRTURA Collective is a separate creation network. VIRTURA Spaceport is the public frontstage and station system at virtura.space.
