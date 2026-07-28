@@ -1,410 +1,426 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VIRTURA — Experience Design + Spatial Media</title>
-    <link rel="canonical" href="https://virtura.space/" />
-    <meta name="theme-color" content="#0a0a0a" />
-    <meta
-      name="description"
-      content="VIRTURA is a Shanghai-based experience design and spatial media studio working across brand, culture, public space and digital entertainment."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="VIRTURA — Experience Design + Spatial Media" />
-    <meta
-      property="og:description"
-      content="空间体验设计、空间媒体、互动装置、实时系统与技术集成。进入 VIRTURA Collective 查看项目、能力与合作方式。"
-    />
-    <meta property="og:url" content="https://virtura.space/" />
-    <link rel="icon" href="./assets/virtura-mark.png" type="image/png" />
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #090909;
-        --fg: #f2f2ee;
-        --muted: rgba(242, 242, 238, 0.56);
-        --line: rgba(242, 242, 238, 0.16);
-        --soft: rgba(242, 242, 238, 0.08);
-        --ease: cubic-bezier(0.22, 1, 0.36, 1);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIRTURA — Experience Design + Spatial Media</title>
+  <link rel="canonical" href="https://virtura.space/" />
+  <meta name="theme-color" content="#090909" />
+  <meta name="description" content="VIRTURA is a Shanghai-based experience design and spatial media studio working across brand, culture, public space and digital entertainment." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="VIRTURA — Experience Design + Spatial Media" />
+  <meta property="og:description" content="空间体验设计、空间媒体、互动装置、实时系统与技术整合。进入 VIRTURA Collective 查看项目、能力与合作方式。" />
+  <meta property="og:url" content="https://virtura.space/" />
+  <link rel="icon" href="./assets/virtura-wordmark.svg" type="image/svg+xml" />
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080808;
+      --fg: #f3f3ef;
+      --muted: rgba(243,243,239,.56);
+      --line: rgba(243,243,239,.15);
+      --panel: rgba(255,255,255,.025);
+      --ease: cubic-bezier(.22,1,.36,1);
+      --mx: 0px;
+      --my: 0px;
+    }
 
-      * {
-        box-sizing: border-box;
-      }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-width: 320px; min-height: 100%; background: var(--bg); }
+    body {
+      min-height: 100svh;
+      overflow-x: hidden;
+      color: var(--fg);
+      font-family: Inter, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background:
+        radial-gradient(circle at calc(72% + var(--mx)) calc(24% + var(--my)), rgba(255,255,255,.075), transparent 28rem),
+        var(--bg);
+    }
 
-      html {
-        background: var(--bg);
-        scroll-behavior: smooth;
-      }
+    a { color: inherit; text-decoration: none; }
 
-      body {
-        min-width: 320px;
-        min-height: 100svh;
-        margin: 0;
-        overflow-x: hidden;
-        background:
-          radial-gradient(circle at 78% 30%, rgba(255, 255, 255, 0.075), transparent 28rem),
-          var(--bg);
-        color: var(--fg);
-        font-family: Inter, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
-        -webkit-font-smoothing: antialiased;
-      }
+    .noise,
+    .grid,
+    .scan,
+    .orbit,
+    .ghost-logo { position: fixed; pointer-events: none; }
 
-      body::before {
-        position: fixed;
-        inset: 0;
-        z-index: -2;
-        content: "";
-        pointer-events: none;
-        background-image:
-          linear-gradient(to right, transparent calc(100% - 1px), rgba(255, 255, 255, 0.045) 1px),
-          linear-gradient(to bottom, transparent calc(100% - 1px), rgba(255, 255, 255, 0.045) 1px);
-        background-size: min(12vw, 160px) min(12vw, 160px);
-        mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.72), transparent 76%);
-      }
+    .noise {
+      inset: 0;
+      z-index: 7;
+      opacity: .06;
+      mix-blend-mode: soft-light;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.92' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.34'/%3E%3C/svg%3E");
+    }
 
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
+    .grid {
+      inset: 0;
+      z-index: 0;
+      background-image:
+        linear-gradient(to right, transparent calc(100% - 1px), rgba(255,255,255,.048) 1px),
+        linear-gradient(to bottom, transparent calc(100% - 1px), rgba(255,255,255,.048) 1px);
+      background-size: min(12.5vw, 176px) min(12.5vw, 176px);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.45) 72%, transparent);
+    }
 
-      .shell {
-        position: relative;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        min-height: 100svh;
-        padding: 24px 30px 26px;
-      }
+    .scan {
+      inset: 0 auto 0 0;
+      z-index: 1;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent 5%, rgba(255,255,255,.4) 35%, transparent 78%);
+      box-shadow: 0 0 28px rgba(255,255,255,.15);
+      animation: scan 11s linear infinite;
+      opacity: .42;
+    }
 
-      .topbar,
-      .footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-      }
+    @keyframes scan { from { transform: translateX(-1px); } to { transform: translateX(100vw); } }
 
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 12px;
-        font-size: 13px;
-        font-weight: 650;
-        letter-spacing: 0.13em;
-      }
+    .orbit {
+      top: 10vh;
+      right: -7vw;
+      z-index: 0;
+      width: min(46vw, 720px);
+      aspect-ratio: 1;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 50%;
+      transform: translate3d(calc(var(--mx) * .25), calc(var(--my) * .25), 0);
+      transition: transform 1s var(--ease);
+    }
 
-      .brand-mark {
-        position: relative;
-        width: 24px;
-        height: 24px;
-        border: 1px solid var(--fg);
-        border-radius: 50%;
-      }
+    .orbit::before,
+    .orbit::after {
+      position: absolute;
+      inset: 16%;
+      content: "";
+      border: 1px solid rgba(255,255,255,.075);
+      border-radius: 50%;
+    }
+    .orbit::after { inset: 34%; }
 
-      .brand-mark::before,
-      .brand-mark::after {
-        position: absolute;
-        content: "";
-        background: var(--fg);
-      }
+    .ghost-logo {
+      left: 2.2vw;
+      bottom: 6.5vh;
+      z-index: 0;
+      width: min(78vw, 1150px);
+      opacity: .035;
+      filter: blur(.15px);
+      transform: translate3d(calc(var(--mx) * -.12), calc(var(--my) * -.12), 0);
+      transition: transform 1s var(--ease);
+    }
 
-      .brand-mark::before {
-        top: 50%;
-        left: 4px;
-        width: 14px;
-        height: 1px;
-      }
+    .shell {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      min-height: 100svh;
+      padding: 24px 30px 25px;
+    }
 
-      .brand-mark::after {
-        top: 4px;
-        left: 50%;
-        width: 1px;
-        height: 14px;
-      }
+    .topbar,
+    .footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-      .location {
-        color: var(--muted);
-        font-size: 11px;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-      }
+    .brand { display: inline-flex; align-items: center; }
+    .brand img { display: block; width: clamp(132px, 10.8vw, 174px); height: auto; }
 
-      main {
-        display: grid;
-        grid-template-columns: minmax(0, 1.55fr) minmax(260px, 0.45fr);
-        align-items: end;
-        gap: 8vw;
-        padding: clamp(92px, 15vh, 180px) 0 clamp(72px, 10vh, 120px);
-      }
+    .system-labels {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+    .system-labels span:first-child::before {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      margin-right: 9px;
+      border-radius: 50%;
+      background: var(--fg);
+      content: "";
+      box-shadow: 0 0 10px rgba(255,255,255,.55);
+      vertical-align: 1px;
+    }
 
-      .eyebrow {
-        margin: 0 0 22px;
-        color: var(--muted);
-        font-size: 11px;
-        letter-spacing: 0.16em;
-        line-height: 1.4;
-        text-transform: uppercase;
-      }
+    main {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      align-items: end;
+      gap: 18px;
+      padding: clamp(82px, 12vh, 150px) 0 clamp(52px, 8vh, 90px);
+    }
 
-      h1 {
-        max-width: 1040px;
-        margin: 0;
-        font-size: clamp(58px, 9.3vw, 154px);
-        font-weight: 520;
-        letter-spacing: -0.066em;
-        line-height: 0.84;
-      }
+    .hero {
+      grid-column: 1 / span 8;
+      align-self: center;
+      max-width: 1050px;
+    }
 
-      h1 span {
-        display: block;
-        color: transparent;
-        -webkit-text-stroke: 1px rgba(242, 242, 238, 0.55);
-      }
+    .eyebrow,
+    .entry-index,
+    .entry-type {
+      margin: 0;
+      font-size: 10px;
+      letter-spacing: .15em;
+      line-height: 1.5;
+      text-transform: uppercase;
+    }
 
-      .intro {
-        align-self: end;
-        padding-bottom: 4px;
-      }
+    .eyebrow { margin-bottom: 23px; color: var(--muted); }
 
-      .intro p {
-        max-width: 420px;
-        margin: 0 0 30px;
-        color: rgba(242, 242, 238, 0.76);
-        font-size: clamp(15px, 1.15vw, 18px);
-        line-height: 1.72;
-      }
+    h1 {
+      margin: 0;
+      max-width: 1050px;
+      font-size: clamp(64px, 9.4vw, 154px);
+      font-weight: 470;
+      letter-spacing: -.07em;
+      line-height: .84;
+    }
 
-      .actions {
-        display: grid;
-        gap: 12px;
-      }
+    h1 .outline {
+      display: block;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(243,243,239,.58);
+    }
 
-      .primary-action {
-        position: relative;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        min-height: 62px;
-        padding: 0 20px;
-        overflow: hidden;
-        border: 1px solid var(--fg);
-        background: var(--fg);
-        color: var(--bg);
-        font-size: 13px;
-        font-weight: 650;
-        letter-spacing: 0.035em;
-        transition: color 420ms var(--ease), background 420ms var(--ease);
-      }
+    .statement {
+      display: grid;
+      grid-template-columns: minmax(250px, 430px) minmax(180px, 290px);
+      gap: 36px;
+      margin-top: clamp(36px, 5.2vh, 64px);
+      border-top: 1px solid var(--line);
+      padding-top: 20px;
+    }
 
-      .primary-action::before {
-        position: absolute;
-        inset: 0;
-        content: "";
-        background: var(--bg);
-        transform: translateX(-101%);
-        transition: transform 520ms var(--ease);
-      }
+    .statement p { margin: 0; }
+    .statement .cn {
+      color: rgba(243,243,239,.83);
+      font-size: clamp(14px, 1.05vw, 17px);
+      line-height: 1.72;
+    }
+    .statement .en {
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.65;
+    }
 
-      .primary-action span {
-        position: relative;
-        z-index: 1;
-      }
+    .entries {
+      grid-column: 9 / -1;
+      display: grid;
+      gap: 12px;
+      align-self: end;
+    }
 
-      .primary-action .arrow {
-        font-size: 19px;
-        font-weight: 400;
-        transition: transform 420ms var(--ease);
-      }
+    .entries-heading {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
 
-      .primary-action:hover,
-      .primary-action:focus-visible {
-        color: var(--fg);
-      }
+    .entry {
+      position: relative;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 18px;
+      min-height: 156px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 20px;
+      transition: border-color 420ms var(--ease), background 420ms var(--ease), transform 420ms var(--ease);
+    }
 
-      .primary-action:hover::before,
-      .primary-action:focus-visible::before {
-        transform: translateX(0);
-      }
+    .entry::before {
+      position: absolute;
+      inset: 0;
+      content: "";
+      background: var(--fg);
+      transform: translateY(101%);
+      transition: transform 520ms var(--ease);
+    }
 
-      .primary-action:hover .arrow,
-      .primary-action:focus-visible .arrow {
-        transform: translateX(5px);
-      }
+    .entry > * { position: relative; z-index: 1; }
+    .entry-index { color: var(--muted); }
+    .entry-copy { align-self: end; }
+    .entry-type { margin-bottom: 9px; color: var(--muted); }
+    .entry h2 {
+      margin: 0;
+      font-size: clamp(20px, 1.65vw, 28px);
+      font-weight: 530;
+      letter-spacing: -.035em;
+      line-height: 1.05;
+    }
+    .entry p {
+      max-width: 310px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.55;
+    }
+    .entry .arrow {
+      font-size: 22px;
+      line-height: 1;
+      transition: transform 420ms var(--ease);
+    }
 
-      .secondary-action {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 20px;
-        min-height: 50px;
-        padding: 0 2px;
-        border-bottom: 1px solid var(--line);
-        color: var(--muted);
-        font-size: 12px;
-        transition: color 300ms ease, border-color 300ms ease;
-      }
+    .entry:hover,
+    .entry:focus-visible {
+      border-color: var(--fg);
+      color: var(--bg);
+      transform: translateY(-3px);
+      outline: none;
+    }
+    .entry:hover::before,
+    .entry:focus-visible::before { transform: translateY(0); }
+    .entry:hover .entry-index,
+    .entry:hover .entry-type,
+    .entry:hover p,
+    .entry:focus-visible .entry-index,
+    .entry:focus-visible .entry-type,
+    .entry:focus-visible p { color: rgba(8,8,8,.62); }
+    .entry:hover .arrow,
+    .entry:focus-visible .arrow { transform: translate(4px, -4px); }
 
-      .secondary-action:hover,
-      .secondary-action:focus-visible {
-        border-color: var(--fg);
-        color: var(--fg);
-      }
+    .entry--primary { min-height: 188px; }
+    .entry--secondary { min-height: 132px; }
 
-      .footer {
-        align-items: flex-end;
-        border-top: 1px solid var(--line);
-        padding-top: 18px;
-        color: var(--muted);
-        font-size: 10px;
-        letter-spacing: 0.06em;
-        line-height: 1.55;
-        text-transform: uppercase;
-      }
+    .footer {
+      align-items: flex-end;
+      border-top: 1px solid var(--line);
+      padding-top: 17px;
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: .08em;
+      line-height: 1.55;
+      text-transform: uppercase;
+    }
+    .footer p { margin: 0; }
+    .footer-links { display: flex; gap: 25px; }
+    .footer a { transition: color 250ms ease; }
+    .footer a:hover, .footer a:focus-visible { color: var(--fg); }
 
-      .footer p {
-        max-width: 620px;
-        margin: 0;
-      }
+    @media (max-width: 980px) {
+      .shell { padding: 20px; }
+      main { grid-template-columns: 1fr; gap: 64px; padding-top: 100px; }
+      .hero, .entries { grid-column: auto; }
+      .hero { align-self: end; }
+      .entries { grid-template-columns: 1fr 1fr; }
+      .entries-heading { grid-column: 1 / -1; }
+      .entry--primary, .entry--secondary { min-height: 170px; }
+      .orbit { width: 76vw; right: -32vw; }
+      .ghost-logo { width: 110vw; bottom: 12vh; }
+    }
 
-      .footer a {
-        white-space: nowrap;
-        transition: color 250ms ease;
-      }
+    @media (max-width: 640px) {
+      .system-labels span:first-child { display: none; }
+      .system-labels { gap: 0; }
+      .brand img { width: 132px; }
+      main { gap: 48px; padding: 92px 0 52px; }
+      h1 { font-size: clamp(56px, 18vw, 96px); line-height: .88; }
+      .statement { grid-template-columns: 1fr; gap: 15px; margin-top: 34px; }
+      .statement .en { max-width: 330px; }
+      .entries { grid-template-columns: 1fr; }
+      .entry--primary, .entry--secondary { min-height: 148px; }
+      .footer { display: grid; gap: 13px; }
+      .footer-links { justify-content: space-between; width: 100%; }
+      .orbit { top: 17vh; width: 105vw; right: -64vw; }
+      .ghost-logo { left: -3vw; bottom: 25vh; width: 146vw; }
+    }
 
-      .footer a:hover,
-      .footer a:focus-visible {
-        color: var(--fg);
-      }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grid" aria-hidden="true"></div>
+  <div class="scan" aria-hidden="true"></div>
+  <div class="orbit" aria-hidden="true"></div>
+  <img class="ghost-logo" src="./assets/virtura-wordmark.svg" alt="" aria-hidden="true" />
+  <div class="noise" aria-hidden="true"></div>
 
-      .orb {
-        position: fixed;
-        top: 16%;
-        right: -10vw;
-        z-index: -1;
-        width: min(44vw, 720px);
-        aspect-ratio: 1;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        background:
-          radial-gradient(circle at 34% 30%, rgba(255, 255, 255, 0.13), transparent 18%),
-          radial-gradient(circle at 48% 52%, rgba(255, 255, 255, 0.05), transparent 62%);
-        box-shadow: inset 0 0 80px rgba(255, 255, 255, 0.03);
-        animation: drift 13s ease-in-out infinite alternate;
-      }
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="https://collective.virtura.space/" aria-label="进入 VIRTURA Collective">
+        <img src="./assets/virtura-wordmark.svg" alt="VIRTURA" />
+      </a>
+      <div class="system-labels" aria-label="站点信息">
+        <span>Gateway 01</span>
+        <span>Shanghai · Global</span>
+      </div>
+    </header>
 
-      .orb::before,
-      .orb::after {
-        position: absolute;
-        inset: 13%;
-        content: "";
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        border-radius: 50%;
-      }
+    <main>
+      <section class="hero" aria-labelledby="gateway-title">
+        <p class="eyebrow">Experience Design + Spatial Media Studio</p>
+        <h1 id="gateway-title">Spaces that<br><span class="outline">sense.</span></h1>
+        <div class="statement">
+          <p class="cn">VIRTURA 为品牌、文化机构、公共空间与娱乐现场提供空间体验设计、空间媒体、互动装置、实时系统与技术整合。</p>
+          <p class="en">We create responsive spatial experiences across brand, culture, public space and digital entertainment.</p>
+        </div>
+      </section>
 
-      .orb::after {
-        inset: 28%;
-      }
+      <nav class="entries" aria-label="VIRTURA 站点入口">
+        <div class="entries-heading"><span>Select destination</span><span>02 routes</span></div>
 
-      @keyframes drift {
-        from { transform: translate3d(0, -8px, 0) rotate(0deg); }
-        to { transform: translate3d(-24px, 16px, 0) rotate(7deg); }
-      }
-
-      @media (max-width: 920px) {
-        .shell {
-          padding: 20px;
-        }
-
-        main {
-          grid-template-columns: 1fr;
-          align-items: end;
-          gap: 54px;
-          padding-top: 105px;
-        }
-
-        .intro {
-          max-width: 540px;
-        }
-
-        .orb {
-          top: 20%;
-          right: -28vw;
-          width: 82vw;
-        }
-      }
-
-      @media (max-width: 560px) {
-        .location {
-          font-size: 9px;
-        }
-
-        h1 {
-          font-size: clamp(52px, 18vw, 92px);
-          line-height: 0.88;
-        }
-
-        .footer {
-          display: grid;
-          gap: 14px;
-        }
-      }
-
-      @media (prefers-reduced-motion: reduce) {
-        *,
-        *::before,
-        *::after {
-          scroll-behavior: auto !important;
-          animation-duration: 0.01ms !important;
-          animation-iteration-count: 1 !important;
-          transition-duration: 0.01ms !important;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="orb" aria-hidden="true"></div>
-
-    <div class="shell">
-      <header class="topbar">
-        <a class="brand" href="https://collective.virtura.space/" aria-label="进入 VIRTURA Collective">
-          <span class="brand-mark" aria-hidden="true"></span>
-          <span>VIRTURA</span>
+        <a class="entry entry--primary" href="https://collective.virtura.space/">
+          <span class="entry-index">01</span>
+          <span class="entry-copy">
+            <span class="entry-type">Primary studio site</span>
+            <h2>VIRTURA<br>Collective</h2>
+            <p>项目案例、商业能力、六类交付体系与合作入口。</p>
+          </span>
+          <span class="arrow" aria-hidden="true">↗</span>
         </a>
-        <span class="location">Shanghai · Global</span>
-      </header>
 
-      <main>
-        <section aria-labelledby="gateway-title">
-          <p class="eyebrow">Experience Design + Spatial Media Studio</p>
-          <h1 id="gateway-title">Spaces that<br /><span>sense.</span></h1>
-        </section>
+        <a class="entry entry--secondary" href="./stations/index.html">
+          <span class="entry-index">02</span>
+          <span class="entry-copy">
+            <span class="entry-type">Research layer</span>
+            <h2>VIRTURA<br>Spaceport</h2>
+            <p>研究、档案、实验原型与文化项目。</p>
+          </span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </nav>
+    </main>
 
-        <section class="intro" aria-label="VIRTURA 入口">
-          <p>
-            VIRTURA 为品牌、文化机构、公共空间与娱乐现场提供空间体验设计、空间媒体、互动装置、实时系统与技术整合。
-          </p>
-          <div class="actions">
-            <a class="primary-action" href="https://collective.virtura.space/">
-              <span>进入 VIRTURA Collective</span>
-              <span class="arrow" aria-hidden="true">↗</span>
-            </a>
-            <a class="secondary-action" href="./stations/index.html">
-              <span>Spaceport · Archive & Research</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <p>
-          Collective is our primary studio site for selected work, commercial capabilities and collaboration.
-          <br />Collective 是 VIRTURA 的项目、专业能力与商业合作主入口。
-        </p>
+    <footer class="footer">
+      <p>VIRTURA © 2026<br>Experience Design + Spatial Media</p>
+      <div class="footer-links">
         <a href="mailto:hello@virtura.space">hello@virtura.space</a>
-      </footer>
-    </div>
-  </body>
+        <a href="https://collective.virtura.space/">Enter studio ↗</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    const root = document.documentElement;
+    let tx = 0, ty = 0, cx = 0, cy = 0;
+    window.addEventListener('pointermove', (event) => {
+      tx = (event.clientX / innerWidth - .5) * 24;
+      ty = (event.clientY / innerHeight - .5) * 24;
+    }, { passive: true });
+    function tick() {
+      cx += (tx - cx) * .055;
+      cy += (ty - cy) * .055;
+      root.style.setProperty('--mx', `${cx}px`);
+      root.style.setProperty('--my', `${cy}px`);
+      requestAnimationFrame(tick);
+    }
+    tick();
+  </script>
+</body>
 </html>
