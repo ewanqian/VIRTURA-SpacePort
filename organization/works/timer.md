@@ -1,125 +1,20 @@
-# TIMER 控时者 / 时间操纵者
+# TIMER / 控时者 — Legacy Archive Entry
 
----
+> **Archived compatibility path.** 这个文件保留用于兼容旧 Public Graph、API 与历史引用，不再维护第二份 TIMER 正文。
 
-## Public Graph / 对象关系
+## Canonical archive
 
-- `canonical_id`: `timer`
-- `authorship_type`: `team_work`
-- `view_type`: `archive_view`
-- `personal_view`: [portfolio / TIMER](https://github.com/ewanqian/portfolio/tree/main/visual-arts/timer-series)
-- `team_view`: [VIRTURA-Collective / TIMER](https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/timer)
-- `publication_view`: [SYSTEM 评钱誉文的实践线收束](https://github.com/ewanqian/VIRTURA-Newsroom/blob/main/art-review/articles/system_ewanqian_perceptual_migration_review.md)
-- `graph_seed`: [docs/public-graph](../../docs/public-graph/README.md)
+- [TIMER Series / 系列档案](./timer-series/README.md)
+- [TIMER 主档案](./timer-series/timer.md)
+- [ChinaGraph 2024 记录](./timer-series/timer-chinagraph-2024.md)
+- [2026 规划版本](./timer-series/timer-2026.md)
 
-当前页面只承担完整档案源职责：版本、展演记录、团队信息和 source-of-truth。个人实践线、团队首页口径和评论文章不在这里重复维护。
+## Other views
 
----
+- [Ewan Qian / TIMER 个人视图](https://github.com/ewanqian/portfolio/tree/main/visual-arts/timer-series)
+- [Ewan Knowledge Map](https://github.com/ewanqian/portfolio/blob/main/docs/encyclopedia/KNOWLEDGE-MAP.md)
+- [VIRTURA-Collective / TIMER 团队视图](https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/timer)
 
-## TIMER 系列完整版本
+`canonical_path = organization/works/timer-series/README.md`
 
-| 版本（可点击，带中英文开头） | 说明（完整正式） | 时间 |
-|---------------------------|--------------|------|
-| [TIMER 控时者 2026（规划中）](./timer-2026.md) | Apple Vision Pro 双目立体空间版本（规划中），继续测试环绕观看与进入路径 | 2026 |
-| [TIMER 控时者 影像环形版](./timer.md) | UFO Terminal「加载… 权限 2」展览单元 - 环形屏幕音画互动影像作品 | 2024.11–12 |
-| [TIMER 控时者 学术获奖版](./timer.md) | Chinagraph 2024 电子剧场优秀音乐作品二等奖 | 2024.10 |
-| [TIMER 控时者 杭州首演影像版](./timer.md) | 21:9 宽屏 Audio-visual 影像（7'21''）- 杭州国际电子音乐节 2024 官方展演 | 2024.09 |
-| [TIMER 控时者 创作营实验版](./timer.md) | UFO Terminal「加载… 创作营」实验原型 | 2024.08–09 |
-
-[返回主目录](./README.md)
-
----
-
-## 基础信息
-
-| 项目 | 内容 |
-|------|------|
-| **作品名称** | TIMER 控时者 / 时间操纵者 |
-| **核心意象** | 指缝中流出时间的沙粒 |
-
----
-
-## 创作团队（VIRTURA）
-
-| 角色 | 创作者 |
-|------|--------|
-| 电子音乐 | 徐昊 |
-| 视觉 / 场景 / 实时演出 | 钱誉文 |
-| 交互艺术 | 许思慧 |
-
----
-
-## 作品介绍
-
-### 核心意象
-
-《控时者》以 **"指缝中流出时间的沙粒"** 为核心意象，围绕时间的混乱、有序、加速、暂停、倒转与减速组织音画结构。
-
-### 音乐设计
-
-音乐采用对称式结构，融合金属，水声，电子音色，以发条声响贯穿时间主题。
-
-### 视觉设计
-
-视觉基于 Blender 实时渲染与点云系统，由音频分析驱动流动效果，形成如时间沙砾般的视听语言。
-
----
-
-## 2026 规划方向
-
-### 规划重点
-
-《TIMER 控时者》2026 规划版继续围绕 **"时间的具身体验"** 展开，重点测试环形时间场域在空间计算媒介中的观看方式。
-
-### 空间设想
-
-- **空间形态**：环形屏幕不再对应平面时钟，而转成围绕观看者的圆柱形空间
-- **观众位置**：观众位于场域中央
-- **时间刻度**：十二道垂直刻度继续作为分割时间的视觉结构
-
-### 版本目标
-
-这一版不是继续扩大叙事，而是测试观看者转身、停留和视角变化时，时间刻度与点云结构是否仍然成立。
-
-### 音乐设计
-
-以音乐为时间的操控者，借由类似 TENET 的往复张力，让声音在秩序与混沌之间来回拉扯：
-- 没有固定的线性叙事
-- 发条声贯穿始终的牵引
-- 金属的凛冽，水声的绵长、电子音的诡谲交织
-- 多元形态：时而加速奔涌，时而停滞沉淀，时而倒转回溯
-
-### 视觉结构
-
-- **点云为时间载体**：随音乐的往复而聚散、疾缓
-- **实时渲染技术**：让点的流动如沙砾穿指
-- **光线勾勒**：与垂直刻度呼应，形成流动的时间纹理
-- **观看关系**：让在场者同时成为时间的参与者与观察者
-
-### 技术载体
-
-**Apple Vision Pro 双目空间** - 作为下一阶段的测试方向
-
----
-
-## 作品定位
-
-这条系列目前保留为 2024 现场版本与 2026 规划版本的归档入口。
-
----
-
-## TIMER 系列完整版本
-
-| 版本（可点击，带中英文开头） | 说明（完整正式） | 时间 |
-|---------------------------|--------------|------|
-| [TIMER 控时者 2026（规划中）](./timer-2026.md) | Apple Vision Pro 双目立体空间版本（规划中），继续测试环绕观看与进入路径 | 2026 |
-| [TIMER 控时者 影像环形版](./timer.md) | UFO Terminal「加载… 权限 2」展览单元 - 环形屏幕音画互动影像作品 | 2024.11–12 |
-| [TIMER 控时者 学术获奖版](./timer.md) | Chinagraph 2024 电子剧场优秀音乐作品二等奖 | 2024.10 |
-| [TIMER 控时者 杭州首演影像版](./timer.md) | 21:9 宽屏 Audio-visual 影像（7'21''）- 杭州国际电子音乐节 2024 官方展演 | 2024.09 |
-| [TIMER 控时者 创作营实验版](./timer.md) | UFO Terminal「加载… 创作营」实验原型 | 2024.08–09 |
-
-[返回主目录](./README.md)
-
----
-
-*归档日期：2024 / 规划：2026*
+旧链接可继续访问，但新的内容、版本、奖项与证据只在 `timer-series/` 维护。
