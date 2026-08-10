@@ -1,6 +1,6 @@
 {
   "schema": "virtura-public-graph-v3",
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-08-10",
   "manifest": "https://virtura.space/api/manifest.json",
   "endpoints": {
     "works": "https://virtura.space/api/works.json",
@@ -8,6 +8,11 @@
     "articles": "https://virtura.space/api/articles.json",
     "stations": "https://virtura.space/api/stations.json",
     "media": "https://virtura.space/api/media.json",
-    "authority": "https://virtura.space/api/authority.json"
+    "authority": "https://virtura.space/api/authority.json",
+    "ewan_portfolio_bridge": "https://virtura.space/api/ewan-portfolio-bridge.json"
+  },
+  "personal_fact_layer": {
+    "knowledge_map": "https://github.com/ewanqian/portfolio/blob/main/docs/encyclopedia/KNOWLEDGE-MAP.md",
+    "encyclopedia_json": "https://github.com/ewanqian/portfolio/blob/main/public/data/ewan-encyclopedia.json"
   }
 }
