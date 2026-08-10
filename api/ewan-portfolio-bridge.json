@@ -1,0 +1,52 @@
+{
+  "schema": "virtura-personal-bridge-v1",
+  "updated_at": "2026-08-10",
+  "person": {
+    "id": "ewan-qian",
+    "name_zh": "钱誉文",
+    "name_en": "Ewan Qian",
+    "portfolio": "https://github.com/ewanqian/portfolio",
+    "knowledge_map": "https://github.com/ewanqian/portfolio/blob/main/docs/encyclopedia/KNOWLEDGE-MAP.md",
+    "encyclopedia": "https://github.com/ewanqian/portfolio/blob/main/public/data/ewan-encyclopedia.json",
+    "media_index": "https://github.com/ewanqian/portfolio/blob/main/public/data/ewan-media-index.json"
+  },
+  "objects": [
+    {
+      "spaceport_object_id": "timer",
+      "encyclopedia_id": "series-timer",
+      "personal_view": "https://github.com/ewanqian/portfolio/tree/main/visual-arts/timer-series",
+      "team_view": "https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/timer",
+      "archive_view": "https://github.com/ewanqian/VIRTURA-SpacePort/tree/main/organization/works/timer-series",
+      "related_ids": ["award-chinagraph-2024", "research-timer-to-drop-flow"]
+    },
+    {
+      "spaceport_object_id": "drop-flow",
+      "encyclopedia_id": "series-drop-flow",
+      "personal_view": "https://github.com/ewanqian/portfolio/tree/main/visual-arts/drop-flow-series",
+      "team_view": "https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/drop-flow",
+      "archive_view": "https://github.com/ewanqian/VIRTURA-SpacePort/tree/main/organization/works/drop-flow-series",
+      "related_ids": ["research-timer-to-drop-flow"]
+    },
+    {
+      "spaceport_object_id": "observation-and-symbiosis",
+      "encyclopedia_id": "work-observation-and-symbiosis",
+      "personal_view": "https://github.com/ewanqian/portfolio/tree/main/visual-arts/perceptual-environments",
+      "team_view": "https://github.com/ewanqian/VIRTURA-Collective/tree/main/works/observation-and-symbiosis",
+      "archive_view": "https://github.com/ewanqian/VIRTURA-SpacePort/blob/main/organization/works/%E8%A7%82%E5%AF%9F%E4%B8%8E%E5%85%B1%E7%94%9F%20Observation%20and%20Symbiosis.md"
+    },
+    {
+      "spaceport_object_id": "kashiwa-titan",
+      "encyclopedia_id": "performance-titan-bolive-2025",
+      "personal_view": "https://github.com/ewanqian/portfolio/tree/main/visual-arts/kashiwa-daisuke",
+      "archive_view": "https://github.com/ewanqian/VIRTURA-SpacePort/blob/main/api/works.json",
+      "boundary": "external collaboration; do not treat as VIRTURA-owned work"
+    }
+  ],
+  "rules": [
+    "Use portfolio encyclopedia for Ewan personal facts and public biography generation.",
+    "Use VIRTURA-Collective for team context and collaborator network.",
+    "Use VIRTURA-SpacePort for version history and archive evidence.",
+    "Do not infer Ewan authorship from team-repository presence alone.",
+    "Do not promote needs-source or proposal records into verified public facts."
+  ]
+}
