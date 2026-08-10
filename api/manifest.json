@@ -1,8 +1,8 @@
 {
   "schema": "virtura-public-graph-v3",
-  "updated_at": "2026-06-05",
+  "updated_at": "2026-08-10",
   "title": "VIRTURA Spaceport Public Manifest",
-  "purpose": "Public machine-readable index for VIRTURA Spaceport works, stations, people, articles, media records, and authority notes.",
+  "purpose": "Public machine-readable index for VIRTURA Spaceport works, stations, people, articles, media records, authority notes, and personal-view bridges.",
   "domains": [
     "ewanqian.site",
     "virtura.space",
@@ -21,12 +21,19 @@
     "articles": "https://virtura.space/api/articles.json",
     "stations": "https://virtura.space/api/stations.json",
     "media": "https://virtura.space/api/media.json",
-    "authority": "https://virtura.space/api/authority.json"
+    "authority": "https://virtura.space/api/authority.json",
+    "ewan_portfolio_bridge": "https://virtura.space/api/ewan-portfolio-bridge.json"
+  },
+  "personal_fact_layer": {
+    "knowledge_map": "https://github.com/ewanqian/portfolio/blob/main/docs/encyclopedia/KNOWLEDGE-MAP.md",
+    "encyclopedia_json": "https://github.com/ewanqian/portfolio/blob/main/public/data/ewan-encyclopedia.json",
+    "media_index": "https://github.com/ewanqian/portfolio/blob/main/public/data/ewan-media-index.json"
   },
   "content_contract": [
     "Public pages use complete reader-facing copy.",
     "VIRTURA Spaceport is the public frontstage at https://virtura.space/.",
     "VIRTURA Collective remains a separate creation network at https://collective.virtura.space/.",
+    "Personal biography and Ewan-specific facts resolve through the portfolio encyclopedia rather than team-page inference.",
     "Station names and status labels remain explicit.",
     "Balloon is the canonical spelling."
   ],
@@ -36,6 +43,7 @@
     "articles": 4,
     "stations": 5,
     "media": 4,
-    "authority": 3
+    "authority": 3,
+    "personal_bridges": 1
   }
 }
