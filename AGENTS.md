@@ -18,6 +18,39 @@ Its purpose is not only to store files, but to preserve working context, checkpo
   - related links
   - next-step hints when possible
 
+
+## Canonical preflight for spatial work
+
+Before planning, generating, modeling, coding, or publishing any new Spaceport Station, 3D scene, XR experience, route, architectural concept, or spatial infrastructure, read in this order:
+
+1. `docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.1.md`
+2. `docs/world-bible/VIRTURA-SPACEPORT-ARCHITECTURE-BIBLE-v1.0.md`
+3. `docs/world-bible/VIRTURA-SPACEPORT-PRODUCTION-BIBLE-v1.0.md`
+4. `stations/station-manifest.json` and `stations/frontstage-manifest.json`
+5. the target Station README, manifest, Build Card, and relevant historical archive
+
+Treat these documents as constraints, not inspiration.
+
+A new spatial proposal must not silently:
+- redefine the current world;
+- make VIRTURA2114 / Collapse Era the default present;
+- create a new coordinate or docking system;
+- replace SceneForge without an explicit architectural decision;
+- duplicate an existing Station under a new name;
+- bypass a Build Card for major spatial work;
+- introduce recurring paid infrastructure without documenting purpose, cost class, and exit path.
+
+For major spatial work, follow:
+
+```
+/PLAN
+→ /BUILD
+→ /REVIEW
+→ /PUBLISH
+```
+
+The human owner retains final authority over canon, Station identity, architecture, and irreversible world changes.
+
 ## Repository working model
 This repository operates in three layers:
 
