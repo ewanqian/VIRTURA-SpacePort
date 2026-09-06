@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-16",
+  "version": "2026-09-06",
   "extends": "./station-manifest.json",
   "purpose": "面向公众前台的 UI 数据层。给首页 dock 视图、station 卡片、station 独立主页与图文结构展示面使用。",
   "governance": {
@@ -17,7 +17,7 @@
     "public_subtitle": "持续运行的数字太空港与公众基础设施。",
     "calendar_url": "https://lu.ma/VIRTURA",
     "source_url": "https://github.com/ewanqian/VIRTURA-SpacePort",
-    "hero_station_slug": "mova",
+    "hero_station_slug": "orbital-arrival-terminal",
     "hero": {
       "eyebrow": "VIRTURA",
       "title": "SpacePort",
@@ -41,6 +41,7 @@
       "title": "Core Stations",
       "description": "展映、演出、public salon、空间样本与研究实验室构成当前对外开放的核心设施。",
       "featured_station_slugs": [
+        "orbital-arrival-terminal",
         "mova",
         "balloon-live-space",
         "teahouse-forest-pavilion",
@@ -61,7 +62,7 @@
     "port_metrics": [
       {
         "label": "Core Stations",
-        "value": "5"
+        "value": "6"
       },
       {
         "label": "Support Nodes",
@@ -78,6 +79,7 @@
         "label": "Core Infrastructure",
         "description": "Museum, performance space, public salon, tea house, and research laboratory.",
         "station_slugs": [
+          "orbital-arrival-terminal",
           "mova",
           "balloon-live-space",
           "space-salon",
@@ -114,6 +116,71 @@
     ]
   },
   "station_pages": [
+    {
+      "slug": "orbital-arrival-terminal",
+      "dock_group": "core-infrastructure",
+      "dock_code": "DOCK-00",
+      "archive_file_count": 3,
+      "card": {
+        "eyebrow": "Arrival Infrastructure",
+        "title": "Orbital Arrival Terminal",
+        "summary": "Spaceport 的公共到达、导览、路线选择与 3D / XR 入口。",
+        "tags": [
+          "arrival",
+          "routing",
+          "3d-entry"
+        ],
+        "visual_mode": "spatial-map"
+      },
+      "page": {
+        "hero_title": "Orbital Arrival Terminal / 轨道到达港",
+        "hero_summary": "Spaceport 2026 重建后的第一空间节点，用同一套路线数据连接网页、3D 与后续 XR。",
+        "primary_action_label": "Enter A00",
+        "public_role": "arrival dock / route console / spatial front door",
+        "current_feature": {
+          "eyebrow": "Commissioning Build",
+          "title": "A00 v0.1 / Arrival Hall",
+          "summary": "第一版可交互程序化灰盒。",
+          "href": "arrival-terminal-v0.1.html"
+        },
+        "audience": [
+          "第一次进入 VIRTURA 的访客",
+          "需要快速前往展览、演出或会议的人",
+          "准备进入 WebXR 的空间访客"
+        ]
+      },
+      "routes": {
+        "primary": [
+          {
+            "label": "Station Home",
+            "href": "stations/orbital-arrival-terminal/README.md"
+          },
+          {
+            "label": "Interactive Prototype",
+            "href": "arrival-terminal-v0.1.html"
+          },
+          {
+            "label": "Build Card",
+            "href": "stations/orbital-arrival-terminal/build-card-v0.1.md"
+          }
+        ],
+        "secondary": [
+          {
+            "label": "World Bible",
+            "href": "docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.0.md"
+          },
+          {
+            "label": "Masterplan Demo",
+            "href": "world-bible-v1.html"
+          }
+        ]
+      },
+      "media": {
+        "poster_src": null,
+        "poster_alt": null,
+        "fallback_style": "spatial arrival map"
+      }
+    },
     {
       "slug": "space-salon",
       "dock_group": "core-infrastructure",
