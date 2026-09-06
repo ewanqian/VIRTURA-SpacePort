@@ -1,0 +1,67 @@
+version: "1.0"
+canonical_runtime: "SceneForge"
+unit: meter
+coordinate_system:
+  up: "+Y"
+  east: "+X"
+  north: "-Z"
+  rotation_step_degrees: 60
+
+module_classes:
+  H24:
+    radius_m: 24
+    role: micro
+  H48:
+    radius_m: 48
+    role: standard
+  H96:
+    radius_m: 96
+    role: major
+
+port_types:
+  WALK-06:
+    clear_width_m: 6
+  PUBLIC-12:
+    clear_width_m: 12
+  LOGISTICS-18:
+    clear_width_m: 18
+  MEDIA:
+    clear_width_m: null
+
+canonical_stations:
+  - id: A00
+    slug: orbital-arrival-terminal
+    class: H96
+    role: arrival
+  - id: A01
+    slug: mova
+    class: H48
+    role: museum
+  - id: A02
+    slug: balloon-live-space
+    class: H96
+    role: live
+  - id: A03
+    slug: t-house-forest-pavilion
+    class: H48
+    role: rest
+  - id: A04
+    slug: senia-gardens
+    class: H96
+    role: garden
+  - id: A05
+    slug: perceptual-engine-lab
+    class: H48
+    role: research
+  - id: A06
+    slug: digital-memory-archive
+    class: H48
+    role: archive
+  - id: A07
+    slug: orbital-forum
+    class: H48
+    role: meeting
+  - id: F00
+    slug: fabrication-ring
+    class: H96
+    role: fabrication
