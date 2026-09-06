@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VIRTURA A00 — Arrival Terminal v0.1</title>
+<meta name="theme-color" content="#eef1f3">
+<style>
+:root{--ink:#121518;--muted:#6e7680;--line:rgba(18,21,24,.12);--glass:rgba(250,251,252,.82)}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#e9edf0;color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","PingFang SC",sans-serif}
+canvas{display:block}.ui{position:fixed;inset:0;pointer-events:none;padding:18px}.top{display:flex;justify-content:space-between;align-items:flex-start}.card{pointer-events:auto;background:var(--glass);border:1px solid rgba(255,255,255,.9);backdrop-filter:blur(20px) saturate(130%);box-shadow:0 20px 70px rgba(40,51,62,.13);border-radius:20px}.brand{padding:16px 18px;min-width:270px}.k{font:700 9px/1.2 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em;color:var(--muted);text-transform:uppercase}.brand h1{margin:7px 0 5px;font-size:22px;line-height:1;letter-spacing:-.045em}.brand p{margin:0;color:var(--muted);font-size:11px}
+.state{padding:13px 15px;text-align:right}.state b{display:block;font:700 11px ui-monospace,monospace}.state small{font-size:10px;color:var(--muted)}
+.routes{position:absolute;left:18px;bottom:18px;width:min(380px,calc(100vw - 36px));padding:10px}.route{display:grid;grid-template-columns:36px 1fr auto;align-items:center;gap:10px;padding:9px;border-radius:13px;cursor:pointer;pointer-events:auto}.route:hover,.route.active{background:#fff}.route .id{width:34px;height:34px;display:grid;place-items:center;border:1px solid var(--line);border-radius:10px;font:700 9px ui-monospace,monospace}.route b{display:block;font-size:11px}.route small{display:block;color:var(--muted);font-size:9px;margin-top:1px}.route .go{font:700 9px ui-monospace,monospace}
+.detail{position:absolute;right:18px;bottom:18px;width:310px;padding:18px;pointer-events:auto}.detail h2{font-size:24px;line-height:.95;margin:8px 0 10px;letter-spacing:-.05em}.detail p{font-size:11px;line-height:1.55;color:#525b64}.metrics{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:14px 0}.metrics div{background:rgba(255,255,255,.9);padding:9px}.metrics small{display:block;font-size:8px;color:var(--muted);text-transform:uppercase}.metrics b{font-size:10px}.buttons{display:flex;gap:7px}.buttons button{border:1px solid var(--line);background:white;border-radius:999px;padding:9px 12px;font:700 9px ui-monospace,monospace;cursor:pointer}.buttons button:hover{background:#111;color:#fff}
+.hint{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font:700 9px ui-monospace,monospace;color:rgba(30,36,42,.46);letter-spacing:.14em;pointer-events:none}
+.loading{position:fixed;inset:0;background:#e9edf0;display:grid;place-items:center;z-index:5;transition:opacity .45s}.loading.hide{opacity:0;pointer-events:none}.loading span{font:700 10px ui-monospace,monospace;letter-spacing:.14em}
+@media(max-width:800px){.detail{right:12px;bottom:12px;width:min(270px,70vw)}.routes{left:12px;bottom:12px;width:min(290px,70vw)}.brand{min-width:0}.brand p{display:none}.state{display:none}}
+</style>
+</head>
+<body>
+<div id="mount"></div>
+<div class="loading" id="loading"><span>A00 / COMMISSIONING BUILD 0.1</span></div>
+<div class="ui">
+  <div class="top">
+    <section class="card brand"><div class="k">VIRTURA SPACEPORT / A00</div><h1>Orbital Arrival Terminal</h1><p>进入、识别方向、选择目的地。3D 不替代网页，而是同一套路线系统的空间界面。</p></section>
+    <section class="card state"><b>FOUNDATION / H96</b><small>SceneForge-compatible greybox protocol</small></section>
+  </div>
+  <section class="card routes" id="routes"></section>
+  <section class="card detail">
+    <div class="k" id="code">P0 / PUBLIC-12</div>
+    <h2 id="title">MOVA</h2>
+    <p id="copy">虚拟艺术、展映、观看室与长期策展入口。</p>
+    <div class="metrics">
+      <div><small>Preload</small><b id="preload">SHELL</b></div>
+      <div><small>Mode</small><b id="mode">VISIT</b></div>
+      <div><small>Gate</small><b id="gate">P0</b></div>
+      <div><small>Status</small><b>ROUTE TEST</b></div>
+    </div>
+    <div class="buttons"><button id="focus">FOCUS GATE</button><button id="reset">RESET HALL</button></div>
+  </section>
+  <div class="hint">DRAG TO LOOK · WHEEL TO MOVE · CLICK A GATE</div>
+</div>
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.185.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.185.0/examples/jsm/"}}</script>
+<script type="module">
+import * as THREE from "three";
+import {OrbitControls} from "three/addons/controls/OrbitControls.js";
+
+const data=[
+{id:"P0",station:"A01",name:"MOVA",mode:"VISIT",copy:"虚拟艺术、展映、观看室与长期策展入口。",angle:0},
+{id:"P1",station:"A02",name:"Balloon Live Space",mode:"LIVE",copy:"现场 AV、DJ、广播、排练与回放。高能量公共站点。",angle:60},
+{id:"P2",station:"A04",name:"Senia Gardens",mode:"GARDEN",copy:"温室、扫描自然、Gaussian 材料与数字度假景观。",angle:120},
+{id:"P3",station:"A03",name:"T-House",mode:"REST",copy:"茶、光、水、森林与慢速高保真空间体验。",angle:180},
+{id:"P4",station:"A05",name:"Perceptual Engine Lab",mode:"RESEARCH",copy:"SceneForge、WebXR、点云、高斯与空间媒体研究设施。",angle:240},
+{id:"P5",station:"A06",name:"Memory Archive",mode:"ARCHIVE",copy:"项目、事件、版本、场景、录音、扫描与长期档案。",angle:300}
+];
+
+const mount=document.getElementById("mount");
+const scene=new THREE.Scene();scene.background=new THREE.Color(0xe9edf0);scene.fog=new THREE.Fog(0xe9edf0,55,145);
+const camera=new THREE.PerspectiveCamera(55,innerWidth/innerHeight,.1,250);camera.position.set(0,10,32);
+const renderer=new THREE.WebGLRenderer({antialias:true});renderer.setSize(innerWidth,innerHeight);renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;mount.appendChild(renderer.domElement);
+const controls=new OrbitControls(camera,renderer.domElement);controls.enableDamping=true;controls.target.set(0,5,0);controls.minDistance=11;controls.maxDistance=70;controls.maxPolarAngle=Math.PI*.49;
+
+scene.add(new THREE.HemisphereLight(0xffffff,0x87929b,2.4));
+const key=new THREE.DirectionalLight(0xffffff,4);key.position.set(-28,42,12);scene.add(key);
+const warm=new THREE.PointLight(0xfff0d8,50,48,2);warm.position.set(0,8,0);scene.add(warm);
+
+const world=new THREE.Group();scene.add(world);
+const pale=new THREE.MeshStandardMaterial({color:0xf3f4f3,roughness:.5,metalness:.12});
+const metal=new THREE.MeshStandardMaterial({color:0xbec5ca,roughness:.3,metalness:.65});
+const dark=new THREE.MeshStandardMaterial({color:0x24292d,roughness:.5,metalness:.35});
+const glass=new THREE.MeshPhysicalMaterial({color:0xeaf3f7,roughness:.12,metalness:0,transmission:.5,transparent:true,opacity:.55,thickness:.3});
+const accent=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.28,metalness:.2,emissive:0xffffff,emissiveIntensity:.05});
+
+const floor=new THREE.Mesh(new THREE.CylinderGeometry(23,23,1,6,1,false,Math.PI/6),pale);floor.position.y=-.5;world.add(floor);
+const inset=new THREE.Mesh(new THREE.CylinderGeometry(10,10,.16,64),new THREE.MeshStandardMaterial({color:0xd8dde0,roughness:.8}));inset.position.y=.08;world.add(inset);
+for(let i=0;i<6;i++){
+ const a=THREE.MathUtils.degToRad(i*60);
+ const beam=new THREE.Mesh(new THREE.BoxGeometry(.7,15,.7),metal);beam.position.set(Math.sin(a)*17,7.5,Math.cos(a)*17);world.add(beam);
+ const roofBeam=new THREE.Mesh(new THREE.BoxGeometry(1,1,18),metal);roofBeam.position.set(Math.sin(a)*8,15,Math.cos(a)*8);roofBeam.rotation.y=a;world.add(roofBeam);
+}
+const roofRing=new THREE.Mesh(new THREE.TorusGeometry(11,.55,12,72),metal);roofRing.rotation.x=Math.PI/2;roofRing.position.y=15;world.add(roofRing);
+const skylight=new THREE.Mesh(new THREE.CylinderGeometry(10.2,10.2,.12,64),glass);skylight.position.y=15;world.add(skylight);
+
+const routeTable=new THREE.Group();const table=new THREE.Mesh(new THREE.CylinderGeometry(4.4,4.8,1.05,32),dark);table.position.y=1.1;routeTable.add(table);const top=new THREE.Mesh(new THREE.CylinderGeometry(4,4,.12,32),glass);top.position.y=1.7;routeTable.add(top);world.add(routeTable);
+
+const gateHits=[];
+data.forEach((d,i)=>{
+ const a=THREE.MathUtils.degToRad(d.angle);
+ const g=new THREE.Group();g.position.set(Math.sin(a)*20,0,Math.cos(a)*20);g.rotation.y=a;
+ const frame=new THREE.Mesh(new THREE.BoxGeometry(7.3,7.8,.6),metal);frame.position.y=4.1;g.add(frame);
+ const opening=new THREE.Mesh(new THREE.BoxGeometry(5.7,6.6,.75),new THREE.MeshStandardMaterial({color:0xf7f8f8,roughness:.38,metalness:.2,emissive:0xffffff,emissiveIntensity:.08}));opening.position.set(0,3.9,-.38);g.add(opening);opening.userData=d;gateHits.push(opening);
+ const canopy=new THREE.Mesh(new THREE.BoxGeometry(8.6,.55,3.4),pale);canopy.position.set(0,8.3,-1.2);g.add(canopy);
+ const sign=document.createElement("div");sign.textContent=d.id+"  "+d.station+" / "+d.name;sign.style.cssText="position:fixed;font:700 9px ui-monospace,monospace;color:#31383e;white-space:nowrap;pointer-events:none;background:rgba(255,255,255,.72);border:1px solid rgba(0,0,0,.08);padding:5px 7px;border-radius:999px;backdrop-filter:blur(8px)";document.body.appendChild(sign);d.label=sign;d.group=g;
+ world.add(g);
+ const lineGeo=new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,.15,0),new THREE.Vector3(Math.sin(a)*14,.15,Math.cos(a)*14)]);world.add(new THREE.Line(lineGeo,new THREE.LineBasicMaterial({color:0xaeb6bc})));
+});
+
+const benches=[];
+for(let i=0;i<6;i++){const a=THREE.MathUtils.degToRad(i*60+30);const b=new THREE.Mesh(new THREE.BoxGeometry(4,.55,1.1),new THREE.MeshStandardMaterial({color:0x706d66,roughness:.9}));b.position.set(Math.sin(a)*11,.65,Math.cos(a)*11);b.rotation.y=a;world.add(b);benches.push(b)}
+
+const list=document.getElementById("routes");let current=data[0];
+data.forEach((d,i)=>{const e=document.createElement("div");e.className="route"+(i===0?" active":"");e.innerHTML='<span class="id">'+d.id+'</span><span><b>'+d.name+'</b><small>'+d.station+' · '+d.mode+'</small></span><span class="go">→</span>';e.onclick=()=>select(d,true);list.appendChild(e);d.row=e});
+
+function select(d,focus){
+ current.row.classList.remove("active");current=d;current.row.classList.add("active");
+ code.textContent=d.id+" / PUBLIC-12";title.textContent=d.name;copy.textContent=d.copy;mode.textContent=d.mode;gate.textContent=d.id;preload.textContent=d.mode==="LIVE"?"MEDIA+SHELL":"SHELL";
+ if(focus)focusGate();
+}
+function focusGate(){
+ const p=current.group.position.clone();controls.target.copy(p.clone().add(new THREE.Vector3(0,4,0)));
+ const outward=p.clone().normalize().multiplyScalar(10);camera.position.copy(p.clone().sub(outward).add(new THREE.Vector3(0,5,0)));controls.update();
+}
+document.getElementById("focus").onclick=focusGate;
+document.getElementById("reset").onclick=()=>{camera.position.set(0,10,32);controls.target.set(0,5,0);controls.update()};
+
+const ray=new THREE.Raycaster(),mouse=new THREE.Vector2();renderer.domElement.addEventListener("pointerdown",e=>{mouse.x=e.clientX/innerWidth*2-1;mouse.y=-(e.clientY/innerHeight)*2+1;ray.setFromCamera(mouse,camera);const h=ray.intersectObjects(gateHits,false)[0];if(h)select(h.object.userData,true)});
+
+function loop(){requestAnimationFrame(loop);controls.update();data.forEach(d=>{const p=new THREE.Vector3();d.group.getWorldPosition(p);p.y=9.5;p.project(camera);d.label.style.left=((p.x*.5+.5)*innerWidth)+"px";d.label.style.top=((-p.y*.5+.5)*innerHeight)+"px";d.label.style.transform="translate(-50%,-50%)"});renderer.render(scene,camera)}
+loop();select(data[0],false);setTimeout(()=>loading.classList.add("hide"),450);
+addEventListener("resize",()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight)});
+</script>
+</body>
+</html>
