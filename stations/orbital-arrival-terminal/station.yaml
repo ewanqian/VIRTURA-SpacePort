@@ -1,0 +1,46 @@
+id: A00
+slug: orbital-arrival-terminal
+name: Orbital Arrival Terminal
+local_name: 轨道到达港
+class: H96
+status: foundation
+runtime: sceneforge
+role: arrival
+
+capabilities:
+  web2d: true
+  web3d: true
+  webxr: planned
+  multiplayer: planned
+  live_media: planned
+  gaussian: false
+
+ports:
+  P0:
+    type: PUBLIC-12
+    destination: mova
+  P1:
+    type: PUBLIC-12
+    destination: balloon-live-space
+  P2:
+    type: PUBLIC-12
+    destination: senia-gardens
+  P3:
+    type: PUBLIC-12
+    destination: teahouse-forest-pavilion
+  P4:
+    type: PUBLIC-12
+    destination: research-laboratory
+  P5:
+    type: PUBLIC-12
+    destination: digital-memory-archive
+
+quality:
+  web: target
+  xr: planned
+  vrchat: derivative
+
+source_of_truth:
+  - README.md
+  - build-card-v0.1.md
+  - ../../docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.0.md
