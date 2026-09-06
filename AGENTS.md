@@ -26,8 +26,9 @@ Before planning, generating, modeling, coding, or publishing any new Spaceport S
 1. `docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.1.md`
 2. `docs/world-bible/VIRTURA-SPACEPORT-ARCHITECTURE-BIBLE-v1.0.md`
 3. `docs/world-bible/VIRTURA-SPACEPORT-PRODUCTION-BIBLE-v1.0.md`
-4. `stations/station-manifest.json` and `stations/frontstage-manifest.json`
-5. the target Station README, manifest, Build Card, and relevant historical archive
+4. `docs/world-bible/VIRTURA-SPACEPORT-STATION-BIBLE-v1.0.md`
+5. `stations/station-manifest.json` and `stations/frontstage-manifest.json`
+6. the target Station README, manifest, Build Card, and relevant historical archive
 
 Treat these documents as constraints, not inspiration.
 
