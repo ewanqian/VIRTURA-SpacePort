@@ -6,6 +6,18 @@ VIRTURA-SpacePort 是 VIRTURA 的公共导览前台、主题发布终端与机�
 
 从主题发布、作品档案到知识网络，再到沙龙与公开记录，这里的内容不是一组彼此分散的文件夹，而是一套仍在持续建设中的数字公共空间。
 
+
+## 2026 Spaceport Canon / 当前母规范
+
+SpacePort 的 2026 重建已经进入正式规范化阶段。新的空间、3D 原型、XR 实验与 AI/Harness 生产任务，应先读取以下三份母规范：
+
+- [World Bible v1.1](./docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.1.md) — 世界定义、Station 网络、虚拟航线、核心设施、2114 历史关系
+- [Architecture Bible v1.0](./docs/world-bible/VIRTURA-SPACEPORT-ARCHITECTURE-BIBLE-v1.0.md) — 空间尺度、Port、建筑、材质、灯光、人尺度、XR 与建筑 QA
+- [Production Bible v1.0](./docs/world-bible/VIRTURA-SPACEPORT-PRODUCTION-BIBLE-v1.0.md) — SceneForge、资产管线、AI/Harness、性能、版本、发布与成本控制
+- [Canonical Bible Index](./docs/world-bible/README.md) — 当前规范入口与阅读顺序
+
+当前原则：**先定义、再建造；先 Station、再场景；先 source-of-truth、再衍生前台。**
+
 ## Public Role / 仓库职责
 
 这个仓库是 VIRTURA 公开系统里的**公共前台**：负责 Connection Nodes、stations、知识网络、深层项目档案、公开 tracker 与 source-of-truth 文档。团队身份入口由 [VIRTURA-Collective](https://github.com/ewanqian/VIRTURA-Collective) 承担，文章与项目复盘由 [VIRTURA-Newsroom](https://github.com/ewanqian/VIRTURA-Newsroom) 承担。
