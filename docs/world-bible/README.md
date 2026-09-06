@@ -15,6 +15,9 @@ This directory contains the current foundational specifications for the 2026 Spa
 3. [PRODUCTION BIBLE v1.0](./VIRTURA-SPACEPORT-PRODUCTION-BIBLE-v1.0.md)  
    Defines runtime, repository roles, asset pipeline, AI/Harness governance, performance, release, archive, and cost control.
 
+4. [STATION BIBLE v1.0](./VIRTURA-SPACEPORT-STATION-BIBLE-v1.0.md)  
+   Defines A00–A07 and F00–F07 as a canonical facility catalogue: roles, users, spatial programs, relationships, capabilities, and build priorities.
+
 ## Supporting machine-readable standard
 
 - [spaceport-standard-v1.yaml](./spaceport-standard-v1.yaml)
@@ -31,6 +34,7 @@ For new collaborators or AI agents:
 WORLD BIBLE
 → ARCHITECTURE BIBLE
 → PRODUCTION BIBLE
+→ STATION BIBLE
 → station manifest
 → station Build Card
 → source assets / runtime
