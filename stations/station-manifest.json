@@ -1,5 +1,5 @@
 {
-  "version": "2026-04-16",
+  "version": "2026-09-06",
   "purpose": "stations 首页压缩后的结构化底稿。用于网页前台、tracker 面板与后续 3D frontstage 的统一数据层。",
   "read_layers": {
     "frontstage": "./README.md",
@@ -7,6 +7,56 @@
     "roadmap": "../docs/spaceport-web-3d-preparation-roadmap.md"
   },
   "stations": [
+    {
+      "order": 0,
+      "slug": "orbital-arrival-terminal",
+      "display_name": "Orbital Arrival Terminal / 轨道到达港",
+      "station_type": "public-arrival-and-routing-infrastructure",
+      "current_status": "筹备中",
+      "one_line_role": "Spaceport 2026 重建后的公共到达、导览、路线选择与 XR 入口。",
+      "frontstage_unit": "arrival-page + 3d-entry + route-console",
+      "best_entry": "./orbital-arrival-terminal/README.md",
+      "current_focus": [
+        "A00 到达大厅 v0.1",
+        "六端口路线协议",
+        "2D 前台与 3D 路线数据统一",
+        "后续 WebXR 入口"
+      ],
+      "trackers": {
+        "archive": {
+          "status": "已建立",
+          "note": "已建立 2026 Build Card 与 World Bible 关系"
+        },
+        "web": {
+          "status": "ui-ready",
+          "note": "已有独立交互灰盒入口 arrival-terminal-v0.1.html"
+        },
+        "system": {
+          "status": "生长中",
+          "note": "正在承担 Spaceport 的默认 arrival / routing 层"
+        },
+        "three_d": {
+          "status": "准备中",
+          "note": "已有可交互程序化灰盒，下一步进入 SceneForge 资产化"
+        }
+      },
+      "related_stations": [
+        "mova",
+        "balloon-live-space",
+        "teahouse-forest-pavilion",
+        "research-laboratory"
+      ],
+      "related_repositories": [
+        "VIRTURA-SpacePort",
+        "SceneForge",
+        "VIRTURA2114"
+      ],
+      "source_of_truth": [
+        "./orbital-arrival-terminal/README.md",
+        "./orbital-arrival-terminal/build-card-v0.1.md",
+        "../docs/world-bible/VIRTURA-SPACEPORT-WORLD-BIBLE-v1.0.md"
+      ]
+    },
     {
       "order": 1,
       "slug": "space-salon",
