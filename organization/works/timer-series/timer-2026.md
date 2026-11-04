@@ -46,3 +46,17 @@
 ---
 
 *规划中*
+
+
+## 2026.11 · Volumetric Desert / 体积化沙粒空间
+
+*Next chapter / Research in development*
+
+《TIMER》的空间版本将“时间”的推进、停滞与逆转转译为大量沙粒构成的体积空间。沙粒的聚集、悬浮、流动与重新排列，不只是屏幕中的运动效果，也成为观众感知尺度、距离与持续时间的方式。
+
+当前设想以 Apple Vision Pro 的全景观看为首个研究方向，再将可重编排的画面结构分别适配环幕、穹幕及大型多屏空间。粒子规模、实时性能、观看距离与播放格式需要在真实设备和具体场地中分别验证。
+
+**English** — *Volumetric Desert extends TIMER’s temporal language into a dense spatial field of simulated sand. Accumulation, suspension and reversal give time a material form. Panoramic viewing in Apple Vision Pro is the first study direction, followed by separate presentation tests for domes, curved screens and multi-screen venues.*
+
+**Publication status:** concept / research, not a released Vision Pro application, validated Sphere-compatible show or announced venue commission. Preserve the canonical **TIMER / 控时者** series identity.
+
