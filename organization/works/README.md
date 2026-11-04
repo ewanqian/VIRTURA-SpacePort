@@ -93,3 +93,12 @@ Newsroom = publication_view
 ---
 
 *作品档案目录 - 持续整理中*
+
+---
+
+## 2026 空间影像与扫描档案
+
+- [CNG Crystal — 中国国家地理酒店矿晶影像与三维采集](./cng-crystal-spatial-media-2026.md)：矿晶多屏视觉、酒店/体验中心空间记录、数字档案与全景浏览器
+- [SYSTEM × ERSHA — 二砂建筑点云与特效影像](./system-ersha-point-cloud-2026.md)：建筑扫描、三维重建、SYSTEM 影像合作，另有个人原创剪辑版本企划
+
+它们是具体项目，不需要再将同一件事分别归档到 Production / Spatial / Research 三个平级栏目。

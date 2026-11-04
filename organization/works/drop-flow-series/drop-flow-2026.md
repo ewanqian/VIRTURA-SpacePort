@@ -81,3 +81,14 @@
 ---
 
 *规划中*
+
+---
+
+## 2026.11 — Motion Capture / 动作捕捉再创作
+
+这一阶段不再仅仅是将旧影像移入头显，而是回到此前与舞者合作的动作资料。通过姿态、速度、轨迹和停顿重新设计实时影像，研究数字身体、舞台编排、空间叙事和 AR 媒介之间的关系。此前 Blender 舞台与 33 骨骼人物、BVH 动作数据已有归档；下一阶段的视觉重构与 XR 体验**尚未完成**。
+
+- [正式企划文案 / Ewan personal preview](https://github.com/ewanqian/portfolio/blob/homepage-editorial-rescue-20261102/docs/portfolio-maintenance-os/next-works-2026-2027.md)
+- [Motion Capture & Stage Previs source](https://github.com/ewanqian/dropflow-biennale-mocap)
+
+*Status: in development. 动作、舞者相关权益与再利用范围以原项目授权为准。*
