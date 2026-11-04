@@ -13,7 +13,7 @@ Ewan 计划基于现有数字空间重新剪辑原创影像，采用新的配乐
 ## 公开入口
 
 - [VIRTURA 项目页：SYSTEM × ERSHA](https://virtura.space/work/system-ersha.html)
-- [Ewan 项目档案源](https://github.com/ewanqian/portfolio/blob/editorial-q4-2026-works-and-notes-20261104/projects/system-ersha-2026.md)
+- [Ewan 项目档案源](https://github.com/ewanqian/portfolio/blob/homepage-editorial-rescue-20261102/projects/system-ersha-2026.md)
 - [合作署名与素材核对](https://github.com/ewanqian/portfolio/issues/26)
 
 ## English
