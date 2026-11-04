@@ -15,7 +15,7 @@
 - [VIRTURA 项目页：矿晶空间影像](https://virtura.space/work/natgeo-crystal.html)
 - [CNG Design Archive 源仓库](https://github.com/ewanqian/cng-design-archive)
 - [CNG Spatial Tour 源仓库](https://github.com/ewanqian/cng-spatial-tour)
-- [Ewan 个人项目资料](https://github.com/ewanqian/portfolio/blob/editorial-q4-2026-works-and-notes-20261104/projects/natgeo-crystal-2026.md)
+- [Ewan 个人项目资料](https://github.com/ewanqian/portfolio/blob/homepage-editorial-rescue-20261102/projects/natgeo-crystal-2026.md)
 
 **发布检查**：两个独立空间查看器的 GitHub Pages 正式公开地址、外部资源可用性及浏览器端移动适配尚需验证。不要将仓库源链接标注为“进入已部署体验”。
 
