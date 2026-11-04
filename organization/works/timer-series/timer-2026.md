@@ -53,6 +53,6 @@
 
 新版本的正式研究方向是以沙粒、颗粒和大规模动态模拟重新塑造 TIMER 的时间结构。画面将从环形屏中的指针与轨迹，转向可环绕观看的粒子景观：聚集、漂移、沉降、逆向流动与消散。首先测试 Apple Vision Pro 中的全景立体观看，再研究向穹顶、环幕与大型沉浸场馆的改编；这些场馆级应用仍是概念及技术研究目标。
 
-- [正式企划文案 / Ewan personal preview](https://github.com/ewanqian/portfolio/blob/editorial-q4-2026-works-and-notes-20261104/projects/timer-volumetric-desert-2026.md)
+- [正式企划文案 / Ewan personal preview](https://github.com/ewanqian/portfolio/blob/homepage-editorial-rescue-20261102/docs/portfolio-maintenance-os/next-works-2026-2027.md)
 
 *Status: in development. No claim of completed venue-scale production or partnership.*
