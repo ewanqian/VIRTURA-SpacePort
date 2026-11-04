@@ -73,6 +73,20 @@
 
 ---
 
+## 2026.11 · Capturing Movement / 动作捕捉
+
+*Next chapter / Research in development*
+
+下一阶段将从既有舞者动作捕捉资料出发，重新研究身体运动、叙事与剧场空间之间的关系。舞者的动作不只是被记录的画面：身体的方向、停顿、速度和运动轨迹，可以成为实时视觉与空间场景的组成部分。
+
+项目计划把这一批运动信息重新编排为可在舞台中演奏、在数字空间中体验的视觉内容，并探索增强现实、实时引擎和其他空间媒体的呈现方式。不同版本保留同一个 **Drop Flow** 作品身份，不另设独立旗舰项目。
+
+**English** — *The next chapter of Drop Flow revisits existing motion-capture material as a source for realtime imagery and spatial choreography. Movement, timing and bodily presence become compositional material across theatre, digital environments and future augmented-reality studies.*
+
+**Publication status:** concept / research, not a premiered AR installation or released realtime capture system. Credits for dancers and each performance version follow the corresponding source record.
+
+---
+
 ## 相关文档
 
 - [滴流 Drop Flow 作品全脉络与版本归档](./滴流 Drop Flow 作品全脉络与版本归档.md)
