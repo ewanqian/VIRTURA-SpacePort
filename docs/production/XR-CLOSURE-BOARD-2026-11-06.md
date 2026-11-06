@@ -6,8 +6,8 @@ Owner: VIRTURA / Experience Production. Purpose: **finish tested experiences**, 
 
 | Priority | Project | Observed baseline | Next verifiable outcome | Evidence |
 |---|---|---|---|---|
-| P0 | Greenhouse in Transit / MG-17 | Lore archive, MG17 intake, new WebXR engine prototype in review | Desktop browser QA; six objects and four cues verified, then Quest 3 | [Implementation PR](https://github.com/ewanqian/Greenhouse-in-Transit/pull/2), [hardware QA](https://github.com/ewanqian/Greenhouse-in-Transit/issues/3) |
-| P0 | CNG commercial-safe archive | Public archive, panorama navigation, partial lobby mesh | Rights-cleared tour, reliable desktop preview, tested sharing link | [Public QA](https://github.com/ewanqian/cng-design-archive/issues/1) |
+| P0 | Greenhouse in Transit / MG-17 | Lore archive and MG17 intake; XR engine merged and allowlisted in public Pages bundle (PR #2, #4) | Desktop browser QA; six objects and four cues verified, then Quest 3 | [Implementation PR](https://github.com/ewanqian/Greenhouse-in-Transit/pull/2), [hardware QA](https://github.com/ewanqian/Greenhouse-in-Transit/issues/3) |
+| P0 | CNG commercial-safe archive | Public archive: 8 areas, 12 visible panoramas, 0 missing runtime asset paths; partial lobby mesh | Rights-cleared tour, reliable desktop preview, tested sharing link | [Public QA](https://github.com/ewanqian/cng-design-archive/issues/1) |
 | P1 | VIRTURA SpacePort | Station frontstage and world-bible documentation exist | One working 3D station and at least two verified public routes | [Release QA](https://github.com/ewanqian/VIRTURA-SpacePort/issues/20) |
 | P1 | World Remix 2026 | Images and references in Greenhouse asset set; canonical engine repo not yet verified | Locate authorized source, create optimized desktop walkthrough, only then headset LOD | Source audit pending |
 | Shared R&D | Stage Casting / Spatial Instrument | WebXR → OSC → Max/MSP/Ableton research in progress | Reusable input adapter; do not gate the above public deliveries on it | Separate research track |
@@ -55,8 +55,8 @@ A project only earns DONE when all four are evidenced. Before that, mark SOURCE 
 
 ## Immediate blockers
 
-- Greenhouse: JS syntax and source structure inspected; not yet tested in a real visual browser or headsets. Procedural asset placeholders.
-- CNG: model regeneration needs the authorized original PC assets; do not claim whole-building 3D model from a partial mesh.
+- Greenhouse: JavaScript syntax parsed and public whitelist repaired; no browser-render or headset certification yet. Procedural 3D proxies.
+- CNG: 12 publicly configured viewpoints have no missing image paths; model regeneration still needs authorized source on the local PC. Do not claim whole-building 3D from the partial lobby mesh.
 - SpacePort: links must be validated after MG17 publication.
 - World Remix: canonical repo ownership and asset source must be confirmed before publishing derivative experience.
 
