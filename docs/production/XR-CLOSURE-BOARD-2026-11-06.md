@@ -61,3 +61,36 @@ A project only earns DONE when all four are evidenced. Before that, mark SOURCE 
 - World Remix: canonical repo ownership and asset source must be confirmed before publishing derivative experience.
 
 Last edited: 2026-11-06.
+
+## Agent subscription / work-round budget (2026-11-06)
+
+This replaces conventional person-day estimates with **reviewable Agent work rounds**. One round = scoped task, actual repository edit, local/static test, evidence, and human acceptance decision. A round may entail many model/tool requests and is **not** one API request or a guaranteed quota unit.
+
+Existing paid capacity (user-reported): OpenCode Go $10/month and Codex subscription. Verify current remaining allowances in each product; do not assume a full or unspent five-hour window. OpenCode Go enforces 5h/weekly/monthly model-specific limits; Codex usage depends on model and task.
+
+| Deliverable | Estimated rounds | Scope guard |
+|---|---:|---|
+| CNG desktop client-safe preview | 4–8 | Existing panoramas; does not rebuild full 3D building; original video source and rights need human validation |
+| Greenhouse Quest 3 interaction proof | 8–15 | Hand/controller selection → latch/evidence → greenhouse expansion; real headset tests must be done by operator |
+| SpacePort verified public entry | 4–7 | No fresh station lore, only working public links and a single useful 3D route |
+| World Remix first explorable Gaussian zone | 10–20 | One environment zone, optimized assets; not the festival-scale park |
+| Spatial Instrument reusable input module | 5–10 | WebXR hand events → bridge/OSC; avoid unrelated music production scope |
+
+Decision: **CNG commercial-safe preview first for immediate deliverability, Quest Greenhouse hand interactions second for differentiated XR research**. Small SpacePort link/publication tasks may use otherwise unfilled OpenCode allowance but must not displace these two P0 outcomes. Defer unbounded World Remix model/world design to pre-scoped asset batches, starting one reusable environment.
+
+### Daily practice loop
+
+1. Choose **one** deliverable (not a new project idea); write objective + test + stop condition.
+2. OpenCode Go: low-risk code, regression tests, asset manifests, texture/Lod batch scripts, documentation and link checking.
+3. Codex: hard cross-file engine changes, spatial input problems, performance/debugging and independent review when needed.
+4. End each session with a working commit/PR, artifact screenshot/capture, blockers and a short NEXT instruction. Small completed task is better than exhausting a quota without evidence.
+5. Keep WIP <= 1 build + 1 validation. Human checks: Quest/AVP headset input, artistic selection, actual Blender source asset permissions, commercial publication approval.
+
+### Current first tasks
+
+- Greenhouse Quest 3 interaction: https://github.com/ewanqian/Greenhouse-in-Transit/issues/5
+- Greenhouse overall QA: https://github.com/ewanqian/Greenhouse-in-Transit/issues/3
+- CNG internal 27-panorama delivery: https://github.com/ewanqian/cng-spatial-tour/issues/1
+- CNG public archive QA: https://github.com/ewanqian/cng-design-archive/issues/1
+
+Guidance: when extra 5-hour window remains, run bounded, independently valuable tests and asset inventory tasks. Do not create filler output, simulate hardware validation, or use a more expensive model merely to use credits.
